@@ -23,3 +23,17 @@
 | 17 | public void DeactivatePlayingReport() | 关闭状态上报 | × | |
 | 18 | public bool IsChannelAppInstalled() | 是否安装渠道应用 | × | |
 | 19 | public bool IsChannelSupportApi() | 应用API版本是否可用 | × | - |
+
+### 登录权限说明
+
+  * 权限列表可参考Facebook权限说明：[https://developers.facebook.com/docs/facebook-login/permissions/v2.4](https://developers.facebook.com/docs/facebook-login/permissions/v2.4)
+  
+  * Facebook 权限分为 读（read）和 写（write）两种模式的权限类型，并且两种权限类型不能在一次登录时同时获取
+
+    >按照Facebook的规则，开发者需要在必要时，获取用户的权限，需要避免一次性获取过多权限，一旦获取权限后，除非用户在配置页面删除该权限，这时候才需要重新获取权限。
+    >
+    >例如，需要获取用户邮件地址（email）和用户发帖权限（publish_actions），则需要分两次登录 ！
+
+  * 常见权限
+    * user_friends 获取用户好友列表，如果需要使用好友排行功能，需要在登录时获取
+    * publish_actions 不弹出Facebook界面的分享权限
