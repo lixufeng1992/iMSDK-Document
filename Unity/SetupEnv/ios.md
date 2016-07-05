@@ -66,7 +66,7 @@ Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSD
     - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
     ```
 
-    并在返回前添加如下代码调用
+    添加如下代码调用
 
     ```mm
     - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
