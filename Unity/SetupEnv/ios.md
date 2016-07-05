@@ -58,7 +58,7 @@ Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSD
 
     > YOUR_GAME_SECRET 为游戏访问iMSDK服务器秘钥串，需要换成真实的秘钥串，可以跟iMSDK后台获取，请[联系我们](../../Pre/contact.md)确认该值
 
-  2. 接收第三方App调用
+  2. 接收第三方App调用打开应用
 
     在UnityAppController.mm文件AppDelegate中，找到如下方法
 
