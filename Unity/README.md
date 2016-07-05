@@ -9,6 +9,7 @@ iMSDK Unity SDK 采用 C# 语言进行开发，并以源码的形式提供，并
 在开始接入之前，需要先申请使用渠道的平台App并完成相应的配置信息：
 
 * [渠道申请地址](../Pre/channellink.md)
+* [完成平台配置](../Channel/README.md)
 
 ## 开始接入
 
