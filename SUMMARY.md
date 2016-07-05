@@ -49,6 +49,8 @@
            * [4.4.13.13 Toy功能扩展](Unity/Module/Extend/toy.md)
    * [4.5 渠道功能说明](Unity/Channel/README.md)
        * [5.1 Facebook 功能说明](Unity/Channel/facebook.md)
+         * [5.1.1 Facebook 登录功能说明](Unity/Channel/Facebook/login.md)
+         * [5.1.1 Facebook 分享功能说明](Unity/Channel/Facebook/share.md)
 * [5. C++开发指引](Cpp/README.md)
    * [5.1 下载及使用](Cpp/download.md)
    * [5.2 配置开发环境](Cpp/setupenv.md)
