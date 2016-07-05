@@ -5,4 +5,4 @@
 | 渠道 |
 | :-- |
 | [Facebook配置](facebook.md) |
-| [Google](google.md) |
+| [Google配置](google.md) |
