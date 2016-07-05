@@ -1,6 +1,9 @@
 ## 6.1 Facebook设置
 
-### 申请应用
+
+### 平台配置
+
+业务需要自己申请相应的
 
 1. [Facebook 平台配置](Facebook/developers.md)
 
