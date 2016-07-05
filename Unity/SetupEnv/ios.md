@@ -15,7 +15,7 @@ iOS的所有配置，都需要在Unity中编译导出Xcode工程后，在Xcode�
 
 #### HTTPS证书文件
     
-  将iMSDKServer.cer证书文件拖到Xcode工程中，并在XCode工程 Build Phases -> Copy Bundle Resources中，确认iMSDKServer.cer文件已经添加到拷贝列表
+  将iMSDKServer.cer证书文件拖到Xcode工程中，并在Xcode工程 Build Phases -> Copy Bundle Resources中，确认iMSDKServer.cer文件已经添加到拷贝列表
     
   > 如果没有，可以点击下方“+”，在弹出的选择框中选中添加的证书文件，点击“Add”进行添加
    
