@@ -9,9 +9,9 @@ iOS的所有配置，都需要在Unity中编译导出Xcode工程后，在Xcode�
   ```sh
   -all_load
   ```
-  ![XCode配置编译选项](../Images/4_2_unity_setupenv_xcode_all_load.jpg)
+  ![Xcode配置编译选项](../Images/4_2_unity_setupenv_xcode_all_load.jpg)
   
-  如果遇到Bitcode报错（Unity 4.x版本不支持），可以通过在XCode工程 -> Build Settings -> Build Options -> Enable Bitcode 中，将值修改为No
+  如果遇到Bitcode报错（Unity 4.x版本不支持），可以通过在Xcode工程 -> Build Settings -> Build Options -> Enable Bitcode 中，将值修改为No
 
 #### HTTPS证书文件
     
@@ -19,7 +19,7 @@ iOS的所有配置，都需要在Unity中编译导出Xcode工程后，在Xcode�
     
   > 如果没有，可以点击下方“+”，在弹出的选择框中选中添加的证书文件，点击“Add”进行添加
    
-  ![XCode Https证书](../Images/4_2_unity_setupenv_xcode_cer.jpg)
+  ![Xcode Https证书](../Images/4_2_unity_setupenv_xcode_cer.jpg)
   
   如需要获取证书证书，请点击[HTTPS证书说明](../../Help/httpscertfile.md)查看具体方法
    
