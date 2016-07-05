@@ -1,2 +1,2 @@
-## Facebook配置
+## Facebook功能说明
 
