@@ -48,7 +48,7 @@
            * [4.4.13.12 Tapjoy功能扩展](Unity/Module/Extend/tapjoy.md)
            * [4.4.13.13 Toy功能扩展](Unity/Module/Extend/toy.md)
    * [4.5 渠道功能说明](Unity/Channel/README.md)
-       * [5.1 Kakao配置](Unity/Channel/facebook.md)
+       * [5.1 Facebook 功能说明](Unity/Channel/facebook.md)
 * [5. C++开发指引](Cpp/README.md)
    * [5.1 下载及使用](Cpp/download.md)
    * [5.2 配置开发环境](Cpp/setupenv.md)
