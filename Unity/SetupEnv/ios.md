@@ -70,10 +70,10 @@ Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSD
 
     ```mm
     - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-      return [[IMSDKApplicationDelegate sharedInstance] application:application
-                                                          openURL:url
-                                                sourceApplication:sourceApplication
-                                                       annotation:annotation];
+            return [[IMSDKApplicationDelegate sharedInstance] application:application
+                                                                  openURL:url
+                                                        sourceApplication:sourceApplication
+                                                                annotation:annotation];
 }
     ```
   
