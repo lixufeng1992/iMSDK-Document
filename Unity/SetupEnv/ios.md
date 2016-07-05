@@ -4,7 +4,7 @@ iOS的所有配置，都需要在Unity中编译导出Xcode工程后，在Xcode�
 
 ### 编译选项
 
-  在XCode工程 -> Build Settings -> Linking -> Other Linker Flags 中，添加如下编译选项：
+  在Xcode工程 -> Build Settings -> Linking -> Other Linker Flags 中，添加如下编译选项：
   
   ```sh
   -all_load
@@ -85,7 +85,7 @@ iOS工程配置主要是修改添加的IMSDKAppSetting.bundle资源文件目录�
 
   在每个游戏接入的时候，都会分配一个游戏ID作为iMSDK应用标识
 
-  在XCode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
+  在Xcode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
 
   ```xml
   <key>GameId</key>
@@ -96,7 +96,7 @@ iOS工程配置主要是修改添加的IMSDKAppSetting.bundle资源文件目录�
 
 * iMSDK 服务器地址配置
 
-    在XCode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
+    在Xcode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
 
     ```xml
     <key>IMSDKServer</key>
@@ -107,7 +107,7 @@ iOS工程配置主要是修改添加的IMSDKAppSetting.bundle资源文件目录�
 
 * 日志级别配置
 
-    在XCode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
+    在Xcode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
 
     ```xml
     <key>IMSDKLogLevel</key>
