@@ -4,4 +4,4 @@
 
 | 渠道 |
 | :-- |
-| [Facebook](Channel/facebook.md)
+| [Facebook](facebook.md)
