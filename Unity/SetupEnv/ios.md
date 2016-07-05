@@ -29,11 +29,11 @@ iOS的所有配置，都需要在Unity中编译导出Xcode工程后，在Xcode�
     
 #### 基础代码调用
 
-Unity编译导出XCode工程后，需要在工程中添加必要的代码，iMSDK插件才能正常运行
+Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSDK插件才能正常运行
 
 * 添加头文件
 
-  在XCode工作中，找到UnityAppController.mm文件，添加头文件引用
+  在Xcode工作中，找到UnityAppController.mm文件，添加头文件引用
 
   ```mm
   #import <IMSDKCoreKit/IMSDKCoreKit.h>
@@ -58,7 +58,7 @@ Unity编译导出XCode工程后，需要在工程中添加必要的代码，iMSD
 
     > YOUR_GAME_SECRET 为游戏访问iMSDK服务器秘钥串，需要换成真实的秘钥串，可以跟iMSDK后台获取，请[联系我们](../../Pre/contact.md)确认该值
 
-  2. 处理应用拉起
+  2. 接收第三方App调用
 
     在UnityAppController.mm文件AppDelegate中，找到如下方法
 
