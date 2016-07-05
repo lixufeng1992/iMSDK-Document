@@ -48,7 +48,7 @@ Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSD
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions
     ```
 
-    并在返回前添加如下代码调用
+    添加如下代码调用
 
     ```mm
     [[IMSDKApplicationDelegate sharedInstance] application:application
