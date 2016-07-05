@@ -1,6 +1,6 @@
 ## 6.1.2 Android 工程配置
 
-### Android工程配置
+### Android工程通用配置
 
 Facebook所需要的配置都官方文档都有详细说明，请参考：[https://developers.facebook.com/docs/android/getting-started/](https://developers.facebook.com/docs/android/getting-started/)
 
