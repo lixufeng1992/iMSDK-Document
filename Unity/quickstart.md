@@ -22,7 +22,7 @@ void Start() {
  IMSDKApi.Login.SetChannel("Facebook");
 ```
 
-**部分功能有默认渠道，可以不用指定。我们建议显示的调用SetChannel方法，让渠道字段更清晰**
+**部分功能有默认渠道，可以不用指定。我们建议显示的调用SetChannel方法，让[渠道字段](Channel/README.md)更清晰**
 
 ### 调用代码逻辑
 

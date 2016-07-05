@@ -2,18 +2,131 @@
 
 ### 基础信息
 
-| 命名空间 | 调用入口 |
-| -- | -- |
-| Tencent.iMSDK | IMSDKApi.Login |
+| 命名空间 | 调用入口 |使用说明|
+| :-- |:-- |:--|
+| Tencent.iMSDK | IMSDKApi.Login |用于用户认证，获取用户的基本资料|
 
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMLogin（GameObject）上，开发者不要主动销毁该对象！</font>
 
-### 模块使用说明
+### 快速入门
+1. [完成特定渠道配置](../../Channel/README.md)
+2. 代码实例
 
-该模块主要是用于用户认证，获取用户的基本资料
+```cs
+void Start() {
+    // 我们建议在游戏开始时就初始化登陆方法
+    IMSDKApi.Login.Initialize ();
+    // 设定渠道可以根据自己的需要，在调用登录方法之前调用
+    IMSDKApi.Login.SetChannel("Facebook");
+}
 
-#### 基本登录
+// 登录回调函数，处理登陆结果
+void TestLoginCallback(IMLoginResult result) {
+    if(result.RetCode == 1) {
+        Debug.Log("login ok, user open id is " + result.OpenId);
+    }
+    else {
+        Debug.Log("login error : " + result.ErrorMsg);
+    }
+}
+
+void TestLogin() {
+    // 设定登陆需要的权限，部分没有权限控制的，渠道填空的List即可
+    List<string> permissionList = new List<string>();
+    permissionList.Add("email");
+    // 调动登陆方法
+    IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
+}
+```
+
+### 参考
+
+* 登录返回结构体 <font color=blue>IMLoginResult</font>
+
+| 变量 | 说明 |
+| :-- | :-- |
+| public int RetCode | 登录状态码，1 为成功登录，其他为失败 |
+| public string ErrorMsg | 错误信息 |
+| public int ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
+| public string Channel | 当前登录渠道，如：Facebook |
+| public int GameId | iMSDK 游戏 ID，如：1010 |
+| public string OpenId | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
+| public string Guid | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
+| public string GuidToken | iMSDK 后台使用的Token，与 OpenId 配合使用 |
+| public uint GuidTokenExpire | GuidToken 有效时间，从北京时间1970年01月01日08时00分00秒的时间戳 |
+| public string GuidUserNick | 用户昵称 |
+| public string GuidUserBirthday | 用户生日，如：1990-01-01 |
+| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
+| public string GuidUserPortrait | 用户头像地址 |
+| public List< string > ChannelPermissions | 用户已有权限列表，部分渠道无法获取改字段 |
+
+* 回调代理函数 <font color=blue>LoginCallback</font>
+
+| 类型 | 说明 |
+| :-- | :-- |
+| public delegate void LoginCallback(IMLoginResult result);  | 登录回调函数，返回登录结果结构体 |
+
+* 用户绑定资料结构体 <font color=blue>IMBindInfo</font>
+
+| 类型 | 说明 |
+| :-- | :-- |
+| public string ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
+| public string GuidUserName | 用户昵称 |
+| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
+| public String GuidUserPortrait | 用户头像地址 |
+
+* 绑定查询返回结构体 <font color=blue>IMBindInfoResult</font>
+
+| 变量 | 说明 |
+| :-- | :-- |
+| public int RetCode | 登录状态码，1 为成功登录，其他为失败 |
+| public string ErrorMsg | 错误信息 |
+| public int ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
+| public int GameId | iMSDK 游戏 ID，如：1010 |
+| public string OpenId | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
+| public string Guid | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
+| public string GuidToken | iMSDK 后台使用的Token，与 OpenId 配合使用 |
+| public uint GuidTokenExpire | GuidToken 有效时间，从北京时间1970年01月01日08时00分00秒的时间戳 |
+| public string GuidUserNick | 用户昵称 |
+| public string GuidUserBirthday | 用户生日，如：1990-01-01 |
+| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
+| public string GuidUserPortrait | 用户头像地址 |
+| public List< IMBindInfo > InfoList | 用户绑定渠道资料 |
+
+* 查询绑定信息代理函数 <font color=blue>BindInfoCallback</font>
+
+| 类型 | 说明 |
+| :-- | :-- |
+| public delegate void BindInfoCallback(IMBindInfoResult result) | 查询绑定信息，返回用户登录结果列表 |
+
+* 登录方法类 <font color=blue>IMLogin</font>
+
+| 函数名 | 函数说明 |
+| :-- | :-- |
+| public bool Initialize() | 初始化方法，在调用其他函数之前必须需要调用该函数 |
+| public bool Initialize(string channel) | 初始化，并制定登录渠道，如Facebook |
+| public bool SetChannel(string channel) | 设置登录渠道，如Facebook |
+| public string GetChannel() | 获取当前设定渠道 |
+| public void SetType(string type) | 复杂渠道设置登录类型 |
+| public void Login( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 一般登录<br> callback 为回调函数，默认为null<br> permissionList 权限列表，权限可以从对应的平台找到 <br> needGuid 是否需要guid，建议使用默认值为true |
+| public void StrictLogin( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 严格登录，只有用户资料存在时才能登录成功<br> callback 为回调函数，默认为null<br> permissionList 权限列表，权限可以从对应的平台找到 <br> needGuid 是否需要guid，建议使用默认值为true |
+| public void QuickLogin(LoginCallback callback = null)  | 快速登录，该方法会尝使用上次登录保存的数据进行登录<br>如果之前没有登录，或者登录已经失效，将返回错误信息 |
+| public bool IsLogin() | 判断用户是否已经登录 |
+| public void AutoLogin(LoginCallback callback = null) | 自动登录，如果玩家之前已经登录过，就调用上一次的登录结果 |
+| public IMLoginResult GetLoginResult() | 获取当前登录返回数据 |
+| public void Logout() | 登出当前渠道 |
+| public void Bind(string channel, LoginCallback callback = null) | 绑定到其他渠道账号<br> <font color=orange>注意：不能绑定到游客（Guest）账户</font> |
+| public void GetBindInfo(BindInfoCallback callback=null) | 获取用户绑定渠道资料 |
+| public void SetPlayingReportChannel(string channel) | 设定状态上报渠道 |
+| public void ActivatePlayingReport(string extraJson="") | 上报状态 |
+| public void DeactivatePlayingReport() | 关闭上报 |
+| public bool IsChannelAppInstalled() | 是否安装渠道应用，只有部分渠道支持 |
+| public bool IsChannelSupportApi() | 应用API版本是否可用，只有部分渠道支持 |
+
+### 代码示例
+
+* #### 基本登录
 
 iMSDK调用登录功能十分简单，一般只需要调用三个函数即可
 
@@ -43,7 +156,7 @@ IMSDKApi.Login.Login(OnLogin);
 
 ```
 
-#### 多登陆态共存说明
+* #### 多登陆态共存说明
 
 iMSDK支持多登陆态共存，如:
 
@@ -81,7 +194,7 @@ IMSDKApi.Login.SetChannel("WeChat");
 IMSDKApi.Login.Logout();
 ```
 
-#### 绑定功能说明
+* #### 绑定功能说明
 
 iMSDK提供了一套账号绑定机制，可以实现不同渠道的账号关联。
 
@@ -102,7 +215,7 @@ IMSDKApi.Login.Bind("Facebook");
 2. 绑定返回数据可以能是原渠道数据，也有可能是目标渠道数据，可根据游戏需要进行配置，这一点需要特别小心！
 
 
-#### 本地登录态失效说明
+* #### 本地登录态失效说明
 
 <font color=orange>登录数据是有有效期的，游戏后台需要判断iMSDK的登录态</font>
 
@@ -150,7 +263,7 @@ IMSDKApi.Login.QuckLogin(OnQuickLogin);
 ...
 ```
 
-#### 子渠道登录说明
+* #### 子渠道登录说明
 
 部分渠道集成了许多子渠道，在调用登录组件时，需要指定子渠道，iMSDK 侧通过调用设定子渠道来调用相应的登录功能
 
@@ -162,7 +275,7 @@ IMSDKApi.Login.Login(OnGarenaFacebookLogin);
 
 子渠道可以在“渠道使用说明”章节中找到
 
-#### 严格登录说明
+* #### 严格登录说明
 
 严格登录(StrictLogin)是指，只有注册或者绑定用户才能登录成功，该功能可以实现登录是依附于一个基础账号的需求。
 
@@ -177,7 +290,7 @@ IMSDKApi.Login.StrictLogin(OnStrictLogin);
 4. 如果社交渠道尚未注册，调用该方法会返回失败
 
 
-#### 上报状态功能说明
+* #### 上报状态功能说明
 
 部分渠道支持状态上报功能（类似QQ在线状态），可以通过上报修改玩家的状态
 
@@ -200,7 +313,9 @@ IMSDKApi.Login.StrictLogin(OnStrictLogin);
   IMSDKApi.Login.DeactivatePlayingReport();
   ```
   
-#### 渠道安装判断说明
+
+  
+* #### 渠道安装判断说明
 
 目前，只有极少的几个渠道提供了判断渠道是否安装的方法（如微信），使用该接口是需要小心
 
@@ -222,116 +337,3 @@ IMSDKApi.Login.StrictLogin(OnStrictLogin);
   }
   ```
 
-
-### 参考
-
-* 登录返回结构体 <font color=blue>IMLoginResult</font>
-
-| 变量 | 说明 |
-| -- | -- |
-| public int RetCode | 登录状态码，1 为成功登录，其他为失败 |
-| public string ErrorMsg | 错误信息 |
-| public int ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
-| public string Channel | 当前登录渠道，如：Facebook |
-| public int GameId | iMSDK 游戏 ID，如：1010 |
-| public string OpenId | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
-| public string Guid | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
-| public string GuidToken | iMSDK 后台使用的Token，与 OpenId 配合使用 |
-| public uint GuidTokenExpire | GuidToken 有效时间，从北京时间1970年01月01日08时00分00秒的时间戳 |
-| public string GuidUserNick | 用户昵称 |
-| public string GuidUserBirthday | 用户生日，如：1990-01-01 |
-| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
-| public string GuidUserPortrait | 用户头像地址 |
-| public List< string > ChannelPermissions | 用户已有权限列表，部分渠道无法获取改字段 |
-
-* 回调代理函数 <font color=blue>LoginCallback</font>
-
-| 类型 | 说明 |
-| -- | -- |
-| public delegate void LoginCallback(IMLoginResult result);  | 登录回调函数，返回登录结果结构体 |
-
-* 用户绑定资料结构体 <font color=blue>IMBindInfo</font>
-
-| 类型 | 说明 |
-| -- | -- |
-| public string ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
-| public string GuidUserName | 用户昵称 |
-| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
-| public String GuidUserPortrait | 用户头像地址 |
-
-* 绑定查询返回结构体 <font color=blue>IMBindInfoResult</font>
-
-| 变量 | 说明 |
-| -- | -- |
-| public int RetCode | 登录状态码，1 为成功登录，其他为失败 |
-| public string ErrorMsg | 错误信息 |
-| public int ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
-| public int GameId | iMSDK 游戏 ID，如：1010 |
-| public string OpenId | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
-| public string Guid | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
-| public string GuidToken | iMSDK 后台使用的Token，与 OpenId 配合使用 |
-| public uint GuidTokenExpire | GuidToken 有效时间，从北京时间1970年01月01日08时00分00秒的时间戳 |
-| public string GuidUserNick | 用户昵称 |
-| public string GuidUserBirthday | 用户生日，如：1990-01-01 |
-| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
-| public string GuidUserPortrait | 用户头像地址 |
-| public List< IMBindInfo > InfoList | 用户绑定渠道资料 |
-
-* 查询绑定信息代理函数 <font color=blue>BindInfoCallback</font>
-
-| 类型 | 说明 |
-| -- | -- |
-| public delegate void BindInfoCallback(IMBindInfoResult result) | 查询绑定信息，返回用户登录结果列表 |
-
-* 登录方法类 <font color=blue>IMLogin</font>
-
-| 函数名 | 函数说明 |
-| -- | -- |
-| public bool Initialize() | 初始化方法，在调用其他函数之前必须需要调用该函数 |
-| public bool Initialize(string channel) | 初始化，并制定登录渠道，如Facebook |
-| public bool SetChannel(string channel) | 设置登录渠道，如Facebook |
-| public string GetChannel() | 获取当前设定渠道 |
-| public void SetType(string type) | 复杂渠道设置登录类型 |
-| public void Login( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 一般登录<br> callback 为回调函数，默认为null<br> permissionList 权限列表，权限可以从对应的平台找到 <br> needGuid 是否需要guid，建议使用默认值为true |
-| public void StrictLogin( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 严格登录，只有用户资料存在时才能登录成功<br> callback 为回调函数，默认为null<br> permissionList 权限列表，权限可以从对应的平台找到 <br> needGuid 是否需要guid，建议使用默认值为true |
-| public void QuickLogin(LoginCallback callback = null) | 快速登录，该方法会尝使用上次登录保存的数据进行登录<br>如果之前没有登录，或者登录已经失效，将返回错误信息 |
-| public bool IsLogin() | 判断用户是否已经登录 |
-| public void AutoLogin(LoginCallback callback = null) | 自动登录，如果玩家之前已经登录过，就调用上一次的登录结果 |
-| public IMLoginResult GetLoginResult() | 获取当前登录返回数据 |
-| public void Logout() | 登出当前渠道 |
-| public void Bind(string channel, LoginCallback callback = null) | 绑定到其他渠道账号<br> <font color=orange>注意：不能绑定到游客（Guest）账户</font> |
-| public void GetBindInfo(BindInfoCallback callback=null) | 获取用户绑定渠道资料 |
-| public void SetPlayingReportChannel(string channel) | 设定状态上报渠道 |
-| public void ActivatePlayingReport(string extraJson="") | 上报状态 |
-| public void DeactivatePlayingReport() | 关闭上报 |
-| public bool IsChannelAppInstalled() | 是否安装渠道应用，只有部分渠道支持 |
-| public bool IsChannelSupportApi() | 应用API版本是否可用，只有部分渠道支持 |
-
-### 代码示例
-
-```cs
-void Start() {
-    // 我们建议在游戏开始时就初始化登陆方法
-    IMSDKApi.Login.Initialize ();
-    // 设定渠道可以根据自己的需要，在调用登录方法之前调用
-    IMSDKApi.Login.SetChannel("Facebook");
-}
-
-// 登录回调函数，处理登陆结果
-void TestLoginCallback(IMLoginResult result) {
-    if(result.RetCode == 1) {
-        Debug.Log("login ok, user open id is " + result.OpenId);
-    }
-    else {
-        Debug.Log("login error : " + result.ErrorMsg);
-    }
-}
-
-void TestLogin() {
-    // 设定登陆需要的权限，部分没有权限控制的，渠道填空的List即可
-    List<string> permissionList = new List<string>();
-    permissionList.Add("email");
-    // 调动登陆方法
-    IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
-}
-```
