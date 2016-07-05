@@ -1,6 +1,6 @@
 # 4.2.2 iOS 环境配置
 
-iOS的所有配置，都需要在Unity中编译导出XCode工程后，在XCode工程进行配置
+iOS的所有配置，都需要在Unity中编译导出Xcode工程后，在Xcode工程进行配置
 
 ### 编译选项
 
