@@ -106,7 +106,7 @@ IMSDKApi.Login.Bind("Facebook");
 
 <font color=orange>登录数据是有有效期的，游戏后台需要判断iMSDK的登录态</font>
 
-QuickLogin及GetLoginResult是根据本地保存数据进行判断的，可能出现登录态失效的情况，所以，游戏服务器后台必须与iMSDK后台校验登录态。
+[QuickLogin](#1)及GetLoginResult是根据本地保存数据进行判断的，可能出现登录态失效的情况，所以，游戏服务器后台必须与iMSDK后台校验登录态。
 
 示例伪代码：
 
@@ -294,7 +294,7 @@ IMSDKApi.Login.StrictLogin(OnStrictLogin);
 | public void SetType(string type) | 复杂渠道设置登录类型 |
 | public void Login( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 一般登录<br> callback 为回调函数，默认为null<br> permissionList 权限列表，权限可以从对应的平台找到 <br> needGuid 是否需要guid，建议使用默认值为true |
 | public void StrictLogin( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 严格登录，只有用户资料存在时才能登录成功<br> callback 为回调函数，默认为null<br> permissionList 权限列表，权限可以从对应的平台找到 <br> needGuid 是否需要guid，建议使用默认值为true |
-| public void QuickLogin(LoginCallback callback = null) | 快速登录，该方法会尝使用上次登录保存的数据进行登录<br>如果之前没有登录，或者登录已经失效，将返回错误信息 |
+| public void <id="1>QuickLogin(LoginCallback callback = null) | 快速登录，该方法会尝使用上次登录保存的数据进行登录<br>如果之前没有登录，或者登录已经失效，将返回错误信息 |
 | public bool IsLogin() | 判断用户是否已经登录 |
 | public void AutoLogin(LoginCallback callback = null) | 自动登录，如果玩家之前已经登录过，就调用上一次的登录结果 |
 | public IMLoginResult GetLoginResult() | 获取当前登录返回数据 |
