@@ -5,3 +5,6 @@
 | 渠道 |
 | :-- |
 | [Facebook](facebook.md) |
+| [WeChat](wechat.md) |
+| [VK](vk.md) |
+| [Viber](viber.md) |
