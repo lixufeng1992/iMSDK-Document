@@ -1,4 +1,4 @@
-## 4.4.8 [分包下载(Expansion)]()
+## 4.4.8 分包下载(Expansion)
 
 ### 基础信息
 
@@ -8,7 +8,7 @@
 
 ### 快速入门
 
-1. #### [工程配置]()
+1. #### [完成配置]()
 2. #### 代码实例，如下代码块实现到Google Play进行[OBB](https://developer.android.com/google/play/expansion-files.html)的下载
 
 ```
