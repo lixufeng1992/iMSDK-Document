@@ -1,8 +1,6 @@
 ## 4.4.5.1 米大师支付
 
-#### 基本支付
-
-iMSDK基本支付大致包括：初始化、设置支付环境、支付预处理、最终支付四个流程。
+### 初始化、设置支付环境、支付预处理
 ```cs
 IMSDKApi.Pay.Initialize("");//模块功能初始化
 IMSDKApi.Pay.SetChannel("MidasGoogle");//设置渠道
@@ -10,6 +8,23 @@ IMSDKApi.Pay.SetEnv("test");//设置沙箱环境
 IMSDKApi.Pay.EnableDebugLog(true);//设置开启日志
 IMSDKApi.Pay.SetIDC("local");//设置IDC
 
+/*
+*构造IMPayPrepareContent结构体
+*/    
+IMPayPrepareContent prepareContent = new IMPayPrepareContent();
+prepareContent.AppId = "1450005285";
+prepareContent.OpenId = openId;
+prepareContent.OpenKey = accessToken;
+prepareContent.SessionId = "hy_gameid"; // usually "hy_gameid"
+prepareContent.SessionType = "st_overseas"; // check imsdk login status
+prepareContent.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");
+prepareContent.PfKey = "pfKey";
+prepareContent.ZoneId = "1";
+
+IMSDKApi.Pay.Prepare(prepareContent);//支付预处理
+```
+### iMSDK支付功能:
+```cs
 /*
 *构造Pay请求结构体
 */
@@ -32,22 +47,17 @@ IMMidasPayContent GetMidasPayContent() {
       content.payChannel = "all";//支付渠道,设置为"all"则支持所有支付渠道，即打开midas商城页
       return content;
     }
-    
-/*
-*构造IMPayPrepareContent结构体
-*/    
-IMPayPrepareContent prepareContent = new IMPayPrepareContent();
-prepareContent.AppId = GetMidasPayContent().OfferId;
-prepareContent.OpenId = GetMidasPayContent().OpenId;
-prepareContent.OpenKey = GetMidasPayContent().OpenKey;
-prepareContent.SessionId = GetMidasPayContent().SessionId;
-prepareContent.SessionType = GetMidasPayContent().SessionType;
-prepareContent.Pf = GetMidasPayContent().Pf;
-prepareContent.PfKey = GetMidasPayContent().PfKey;
-prepareContent.ZoneId = GetMidasPayContent().ZoneId;
-
-IMSDKApi.Pay.Prepare(prepareContent);//支付预处理
 IMSDKApi.Pay.Pay(GetMidasPayContent(),MidasPayCallback);//支付
 ```
 
+### 拓展功能：获取营销活动
+```cs
+IMSDKApi.Pay.GetMP(GetMidasPayContent(), MidasPayCallback);
+```
 
+### 拓展功能：获取商品信息
+```cs
+List<IMMidasPayContent> list = new List<IMMidasPayContent>();
+list.Add(GetMidasAndroidPayContent());
+IMSDKApi.Pay.GetProducts(list, MidasProdctCallback);
+```
