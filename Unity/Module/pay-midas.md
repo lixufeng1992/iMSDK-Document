@@ -2,18 +2,18 @@
 
 #### 基本支付
 
-iMSDK调用登录功能十分简单，一般只需要调用三个函数即可
+iMSDK基本支付大致包括：初始化、设置支付环境、支付预处理、最终支付四个流程。
 ```cs
-//模块功能初始化
-IMSDKApi.Pay.Initialize("");
-//设置渠道
-IMSDKApi.Pay.SetChannel("MidasGoogle");
-//设置沙箱环境
-IMSDKApi.Pay.SetEnv("test");
-//设置开启日志
-IMSDKApi.Pay.EnableDebugLog(true);
-//设置IDC
-IMSDKApi.Pay.SetIDC("local");
+
+IMSDKApi.Pay.Initialize("");//模块功能初始化
+
+IMSDKApi.Pay.SetChannel("MidasGoogle");//设置渠道
+
+IMSDKApi.Pay.SetEnv("test");//设置沙箱环境
+
+IMSDKApi.Pay.EnableDebugLog(true);//设置开启日志
+
+IMSDKApi.Pay.SetIDC("local");//设置IDC
 
 /*
 *构造Pay请求结构体
@@ -34,7 +34,7 @@ IMMidasPayContent GetMidasPayContent() {
       content.Country = "US";
       content.CurrencyType = "USD";
       content.BuyGameOrGoodsOrMonth = "Goods";//Game:钻石 Goods:道具 Month:月卡
-      //content.payChannel = "all";//设置为"all"则支持所有支付渠道，即打开midas商城页，如果使用接口购买，本行代码可以注释掉
+      content.payChannel = "all";//支付渠道,设置为"all"则支持所有支付渠道，即打开midas商城页
       return content;
     }
     
