@@ -3,7 +3,7 @@
 #### 基本支付
 
 iMSDK调用登录功能十分简单，一般只需要调用三个函数即可
-'''cs
+```cs
 //模块功能初始化
 IMSDKApi.Pay.Initialize("");
 //设置渠道
@@ -53,6 +53,6 @@ prepareContent.ZoneId = GetMidasPayContent().ZoneId;
 
 IMSDKApi.Pay.Prepare(prepareContent);//支付预处理
 IMSDKApi.Pay.Pay(GetMidasPayContent(),MidasPayCallback);//支付
-'''
+```
 
 
