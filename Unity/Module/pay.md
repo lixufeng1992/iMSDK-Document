@@ -16,7 +16,7 @@
 ### 开始接入
   支付模块区分为Midas支付(适用除iOS官方支付外的所有第三方支付)及iOS-IAP支付(iOS官方支付)2种模式.
 
-  * [Midas支付](Unity/Module/pay-midas.md)
-  * [iOS-IAP支付](Unity/Module/pay-iap.md)
+  * [Midas支付](pay-midas.md)
+  * [iOS-IAP支付](pay-iap.md)
 
 
