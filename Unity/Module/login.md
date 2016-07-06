@@ -228,7 +228,7 @@ IMSDKApi.Login.StrictLogin(OnStrictLogin);
 * 登录返回结构体 <font color=blue>IMLoginResult</font>
 
 | 变量 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public int RetCode | 登录状态码，1 为成功登录，其他为失败 |
 | public string ErrorMsg | 错误信息 |
 | public int ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
@@ -247,13 +247,13 @@ IMSDKApi.Login.StrictLogin(OnStrictLogin);
 * 回调代理函数 <font color=blue>LoginCallback</font>
 
 | 类型 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public delegate void LoginCallback(IMLoginResult result);  | 登录回调函数，返回登录结果结构体 |
 
 * 用户绑定资料结构体 <font color=blue>IMBindInfo</font>
 
 | 类型 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public string ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
 | public string GuidUserName | 用户昵称 |
 | public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
@@ -262,7 +262,7 @@ IMSDKApi.Login.StrictLogin(OnStrictLogin);
 * 绑定查询返回结构体 <font color=blue>IMBindInfoResult</font>
 
 | 变量 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public int RetCode | 登录状态码，1 为成功登录，其他为失败 |
 | public string ErrorMsg | 错误信息 |
 | public int ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
@@ -280,13 +280,13 @@ IMSDKApi.Login.StrictLogin(OnStrictLogin);
 * 查询绑定信息代理函数 <font color=blue>BindInfoCallback</font>
 
 | 类型 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public delegate void BindInfoCallback(IMBindInfoResult result) | 查询绑定信息，返回用户登录结果列表 |
 
 * 登录方法类 <font color=blue>IMLogin</font>
 
 | 函数名 | 函数说明 |
-| -- | -- |
+| :-- | :-- |
 | public bool Initialize() | 初始化方法，在调用其他函数之前必须需要调用该函数 |
 | public bool Initialize(string channel) | 初始化，并制定登录渠道，如Facebook |
 | public bool SetChannel(string channel) | 设置登录渠道，如Facebook |
