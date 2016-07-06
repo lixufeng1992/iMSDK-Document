@@ -14,8 +14,12 @@
 该模块主要是用于玩家购买（货币、道具、月点卡），获取营销活动信息，获取商品信息。
 
 ### 开始接入
-  支付模块区分为Midas支付及iOS-IAP支付2种模式，
-  * [Midas支付:适用除iOS官方支付外的所有第三方支付](Unity/Module/pay.md)
-  * [iOS-IAP支付:iOS官方支付](Unity/Module/pay-iap.md)
+  支付模块区分为
+  * Midas支付:适用除iOS官方支付外的所有第三方支付
+  * iOS-IAP支付:iOS官方支付
+  2种模式.
+
+  * [Midas支付](Unity/Module/pay-midas.md)
+  * [iOS-IAP支付](Unity/Module/pay-iap.md)
 
 
