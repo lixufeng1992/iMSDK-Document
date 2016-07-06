@@ -4,15 +4,10 @@
 
 iMSDK基本支付大致包括：初始化、设置支付环境、支付预处理、最终支付四个流程。
 ```cs
-
 IMSDKApi.Pay.Initialize("");//模块功能初始化
-
 IMSDKApi.Pay.SetChannel("MidasGoogle");//设置渠道
-
 IMSDKApi.Pay.SetEnv("test");//设置沙箱环境
-
 IMSDKApi.Pay.EnableDebugLog(true);//设置开启日志
-
 IMSDKApi.Pay.SetIDC("local");//设置IDC
 
 /*
