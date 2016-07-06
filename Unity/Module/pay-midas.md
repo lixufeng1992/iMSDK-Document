@@ -39,7 +39,7 @@ IMMidasPayContent GetMidasPayContent() {
     }
     
 /*
-*构造IMPayPrepareContent 该结构体适用于iOS-Midas支付&Android-Midas支付
+*构造IMPayPrepareContent结构体
 */    
 IMPayPrepareContent prepareContent = new IMPayPrepareContent();
 prepareContent.AppId = GetMidasPayContent().OfferId;
