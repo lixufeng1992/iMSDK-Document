@@ -34,7 +34,7 @@
 
 | 平台 | 语言 | 备注 |
 | :-- | :-- | :-- |
-| [Android](Android/README.md) | Java | - |
+| [Android](../Android/README.md) | Java | - |
 | [iOS](iOS/README.md) | C++(C98、C11) | - |
 | [Unity](Unity/README.md) | C# | 只支持Android、iOS手机平台 |
 | [C++引擎](Cpp/README.md) | C++ | 只支持Android、iOS手机平台 |
