@@ -3,8 +3,8 @@
 ### 基础信息
 
 |: 命名空间 |: 调用入口 |
-|: -- |: -- |
-|: Tencent.iMSDK |: IMSDKApi.Pay |
+|:- -- |:- -- |
+|:- Tencent.iMSDK |:- IMSDKApi.Pay |
 
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMPay（GameObject）上，开发者不要主动销毁该对象！</font>
