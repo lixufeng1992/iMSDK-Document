@@ -3,7 +3,7 @@
 ### 基础信息
 
 | 命名空间 | 调用入口 |
-| -- | -- |
+| :-- |:-- |
 | Tencent.iMSDK | IMSDKApi.Login |
 
 
