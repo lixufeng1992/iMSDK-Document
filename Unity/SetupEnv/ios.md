@@ -1,25 +1,25 @@
 # 4.2.2 iOS 环境配置
 
-iOS的所有配置，都需要在Unity中编译导出XCode工程后，在XCode工程进行配置
+iOS的所有配置，都需要在Unity中编译导出Xcode工程后，在Xcode工程进行配置
 
 ### 编译选项
 
-  在XCode工程 -> Build Settings -> Linking -> Other Linker Flags 中，添加如下编译选项：
+  在Xcode工程 -> Build Settings -> Linking -> Other Linker Flags 中，添加如下编译选项：
   
   ```sh
   -all_load
   ```
-  ![XCode配置编译选项](../Images/4_2_unity_setupenv_xcode_all_load.jpg)
+  ![Xcode配置编译选项](../Images/4_2_unity_setupenv_xcode_all_load.jpg)
   
-  如果遇到Bitcode报错（Unity 4.x版本不支持），可以通过在XCode工程 -> Build Settings -> Build Options -> Enable Bitcode 中，将值修改为No
+  如果遇到Bitcode报错（Unity 4.x版本不支持），可以通过在Xcode工程 -> Build Settings -> Build Options -> Enable Bitcode 中，将值修改为No
 
 #### HTTPS证书文件
     
-  将iMSDKServer.cer证书文件拖到XCode工程中，并在XCode工程 Build Phases -> Copy Bundle Resources中，确认iMSDKServer.cer文件已经添加到拷贝列表
+  将iMSDKServer.cer证书文件拖到Xcode工程中，并在Xcode工程 Build Phases -> Copy Bundle Resources中，确认iMSDKServer.cer文件已经添加到拷贝列表
     
   > 如果没有，可以点击下方“+”，在弹出的选择框中选中添加的证书文件，点击“Add”进行添加
    
-  ![XCode Https证书](../Images/4_2_unity_setupenv_xcode_cer.jpg)
+  ![Xcode Https证书](../Images/4_2_unity_setupenv_xcode_cer.jpg)
   
   如需要获取证书证书，请点击[HTTPS证书说明](../../Help/httpscertfile.md)查看具体方法
    
@@ -29,11 +29,11 @@ iOS的所有配置，都需要在Unity中编译导出XCode工程后，在XCode�
     
 #### 基础代码调用
 
-Unity编译导出XCode工程后，需要在工程中添加必要的代码，iMSDK插件才能正常运行
+Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSDK插件才能正常运行
 
 * 添加头文件
 
-  在XCode工作中，找到UnityAppController.mm文件，添加头文件引用
+  在Xcode工作中，找到UnityAppController.mm文件，添加头文件引用
 
   ```mm
   #import <IMSDKCoreKit/IMSDKCoreKit.h>
@@ -48,7 +48,7 @@ Unity编译导出XCode工程后，需要在工程中添加必要的代码，iMSD
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions
     ```
 
-    并在返回前添加如下代码调用
+    添加如下代码调用
 
     ```mm
     [[IMSDKApplicationDelegate sharedInstance] application:application
@@ -58,7 +58,7 @@ Unity编译导出XCode工程后，需要在工程中添加必要的代码，iMSD
 
     > YOUR_GAME_SECRET 为游戏访问iMSDK服务器秘钥串，需要换成真实的秘钥串，可以跟iMSDK后台获取，请[联系我们](../../Pre/contact.md)确认该值
 
-  2. 处理应用拉起
+  2. 接收第三方App调用打开应用
 
     在UnityAppController.mm文件AppDelegate中，找到如下方法
 
@@ -66,13 +66,15 @@ Unity编译导出XCode工程后，需要在工程中添加必要的代码，iMSD
     - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
     ```
 
-    并在返回前添加如下代码调用
+    添加如下代码调用
 
     ```mm
-    [[IMSDKApplicationDelegate sharedInstance] application:application
-                                                        openURL:url
-                                              sourceApplication:sourceApplication
-                                                     annotation:annotation];
+    - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+            return [[IMSDKApplicationDelegate sharedInstance] application:application
+                                                                  openURL:url
+                                                        sourceApplication:sourceApplication
+                                                                annotation:annotation];
+}
     ```
   
 #### 基础信息配置
@@ -83,7 +85,7 @@ iOS工程配置主要是修改添加的IMSDKAppSetting.bundle资源文件目录�
 
   在每个游戏接入的时候，都会分配一个游戏ID作为iMSDK应用标识
 
-  在XCode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
+  在Xcode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
 
   ```xml
   <key>GameId</key>
@@ -94,7 +96,7 @@ iOS工程配置主要是修改添加的IMSDKAppSetting.bundle资源文件目录�
 
 * iMSDK 服务器地址配置
 
-    在XCode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
+    在Xcode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
 
     ```xml
     <key>IMSDKServer</key>
@@ -105,7 +107,7 @@ iOS工程配置主要是修改添加的IMSDKAppSetting.bundle资源文件目录�
 
 * 日志级别配置
 
-    在XCode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
+    在Xcode工程中，找到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
 
     ```xml
     <key>IMSDKLogLevel</key>
