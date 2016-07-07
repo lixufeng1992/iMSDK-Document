@@ -3,7 +3,7 @@
 
 ### 平台配置
 
-业务需要自己申请相应的App并完成相应的配置信息
+业务需要自己到Google平台注册并完成相应的配置信息，才能使用Google的扩展包下载功能
 
 1. [Expansion 平台配置](Expansion/developer.md)
 
