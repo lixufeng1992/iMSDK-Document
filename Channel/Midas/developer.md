@@ -1,5 +1,7 @@
 ##6.4.1 Midas 开发者中心配置
 
+1. [Midasd 平台配置](Midas/developer.md)
+2. 
 ###A.模式一：游戏为外发模式（代理或投资公司）
     A.1:【提出需求】联系米大师产品jolinyang提出需求
   
@@ -12,6 +14,8 @@
       A.2.3:【接入配置】填写《海外版本接入信息备案表》  
       （填写接入基础信息，渠道参数信息，结算组，业务组，以及物品信息）支付接入联系人：cherryma
 
+1. [Midasd 平台配置](Midas/developer.md)
+2. 
     A.3:【沙箱联调】[请参看开发文档](../../Unity/Module/pay.md)
       A.3.1：接入iMSDK-Mdias支付插件
     
