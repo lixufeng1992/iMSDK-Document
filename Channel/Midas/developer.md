@@ -15,7 +15,7 @@
 
     A.3:【沙箱联调】
     
-    [请参看开发文档](../../Unity/Module/pay.md)
+        [请参看开发文档](../../Unity/Module/pay.md)
     
       A.3.1：接入iMSDK-Mdias支付插件
     
