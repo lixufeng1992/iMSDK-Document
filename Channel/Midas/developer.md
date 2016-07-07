@@ -13,6 +13,7 @@
       （填写接入基础信息，渠道参数信息，结算组，业务组，以及物品信息）支付接入联系人：cherryma
 
     A.3:【沙箱联调】
+    [Unity 工程配置](Midas/unity.md)
     [请参看开发文档](../../Unity/Module/pay.md)
     [请参看开发文档](../../Unity/Module/pay.md)
       A.3.1：接入iMSDK-Mdias支付插件
