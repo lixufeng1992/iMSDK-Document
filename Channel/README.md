@@ -6,4 +6,5 @@
 | :-- |
 | [Facebook配置](facebook.md) |
 | [Google配置](google.md) |
-| [Expansion 配置]()|
+| [Expansion 配置](expansion.md)|
+| [Midas 配置](midas.md)|
