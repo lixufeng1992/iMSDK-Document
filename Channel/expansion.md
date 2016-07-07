@@ -8,7 +8,7 @@
 1. [Expansion 平台配置](Expansion/developer.md)
 
 ### 工程配置
-根据不同的编译平台，需要的Facebook配置包括部分：
+根据不同的编译平台进行配置：
 
 1. [Android 工程配置](Expansion/android.md)
 2. [Unity 工程配置](Expansion/unity.md)
