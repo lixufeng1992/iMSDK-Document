@@ -96,18 +96,4 @@
   > 注意替换YOUR_PACKAGENAME、YOUR_ACCESS_ID和YOUR_ACCESS_KEY, [请参考信鸽开发者中心配置](developer.md) <br>
   > 并且数字需要写成"\\ 123456"这种模式，"\\"和空格不能少
 
-#### 2. 分享及好友模块配置
-
-如果使用分享及好友模块，需要增加如下配置：
-
-* 完成Faceboook通用配置
-  
-* provider配置，在Application节点下，添加如下provider配置
-
-  ```xml
-  <provider android:authorities="com.facebook.app.FacebookContentProvider423362744481374" 
-      android:name="com.facebook.FacebookContentProvider" 
-      android:exported="true"/>
-  ```
-  
-  其中，423362744481374这串数字需要改成游戏自己的App ID
+#### 2. 
