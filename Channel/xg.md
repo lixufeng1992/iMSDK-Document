@@ -14,4 +14,6 @@
 2. [Unity 工程配置](XG/unity.md)
 3. [C++ 工程配置](XG/cpp.md) 
 
+> 海外业务推荐使用[信鸽GCM版本](xg_gcm.md)
+
 ### [推送模块 (Push)](../Unity/Module/push.md)
