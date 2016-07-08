@@ -9,3 +9,5 @@
   * [Android 配置](android.md)
   * [Unity 配置](Unity.md)
   * [Cpp 配置](cpp.md)
+  
+  > [信鸽GCM 版本](../xg_gcm.md)是信鸽针对海外业务需求定制的，包含了GCM和信鸽功能。在GCM可以推送的情况下，优先走GCM通道，在GCM通道不通的情况下，还会走信鸽通道推送。
