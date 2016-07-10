@@ -73,7 +73,7 @@
     }
     
     /*
-    *prepare：支付预处理2,Android特有,增加支持返回google兑换码功能
+    *prepare：支付预处理重载方法,Android特有,增加支持返回google兑换码功能
     */
     void TestPrepareForGoogle(){
        IMSDKApi.Pay.Prepare(prepareContent,MidasPayUpdateCallback);
