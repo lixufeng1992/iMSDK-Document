@@ -91,7 +91,7 @@
 IMToolDeviceInfo deviceInfoObj = IMSDKApi.Tool.GetInfoObj();
 ```
 ```
-string deviceInfoStr = 
+string deviceInfoStr = IMSDKApi.Tool.GetInfoStr();
 ```
 
 if (GUI.Button (new Rect (0, height, itemWidth/2, itemHeight), "GetInfoStr")) {
