@@ -7,6 +7,7 @@
  #### 4. 选择对应平台进行配置
  
   * [Android 配置](android.md)
+  * [iOS 配置](ios.md)
   * [Unity 配置](Unity.md)
   * [Cpp 配置](cpp.md)
   
