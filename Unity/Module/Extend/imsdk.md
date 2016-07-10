@@ -88,135 +88,161 @@
 
 
 ```
-IMToolDeviceInfo deviceInfoObj = IMSDKApi.Tool.GetInfoObj();
-```
-```
-string deviceInfoStr = IMSDKApi.Tool.GetInfoStr();
-```
+	private string testInfoAll;
+	private string testInfo;
 
-if (GUI.Button (new Rect (0, height, itemWidth/2, itemHeight), "GetInfoStr")) {
+	private IMToolDeviceInfo deviceInfoObj;
+	private string deviceInfoStr;
+
+	private string packageChannelId;
+	private string guestId;
+
+	private string appVersionName;
+	private int appVersionCode;
+	private string osName;
+	private string osVersion;
+	private int width;
+	private int height;
+	private string network;
+	private string imei;
+	private string operators;
+	private string apn;
+	private string brand;
+	private string manufacturer;
+	private string model;
+	private string phoneName;
+	private string language;
+	private string country;
+	private string androidId;
+	private string mac;
+	private string seriesId;
+    
+    
+
+    if (GUI.Button (new Rect (0, height, itemWidth/2, itemHeight), "GetInfoStr")) {
 			deviceInfoStr = IMSDKApi.Tool.GetInfoStr();
 			testInfoAll = deviceInfoStr;
-		}
-		if (GUI.Button (new Rect (itemWidth/2, height, itemWidth/2, itemHeight), "GetInfoObj")) {
-			deviceInfoObj = IMSDKApi.Tool.GetInfoObj();
-			testInfoAll = " packageChannelId : " + deviceInfoObj.PackageChannelId
-				+ "\n " + "guestId : " + deviceInfoObj.GuestId
-					+ "\n " + "appVersionName : " + deviceInfoObj.AppVersionCode
-					+ "\n " + "appVersionCode : " + deviceInfoObj.AppVersionCode
-					+ "\n " + "osName : " + deviceInfoObj.OSName
-					+ "\n " + "osVersion : " + deviceInfoObj.OSVersion
-					+ "\n " + "width : " + deviceInfoObj.Width
-					+ "\n " + "height : " + deviceInfoObj.Height
-					+ "\n " + "network : " + deviceInfoObj.Network
-					+ "\n " + "imei : " + deviceInfoObj.IMEI
-					+ "\n " + "operators : " + deviceInfoObj.Operators
-					+ "\n " + "apn : " + deviceInfoObj.Apn
-					+ "\n " + "brand : " + deviceInfoObj.Brand
-					+ "\n " + "manufacturer : " + deviceInfoObj.Manufacturer
-					+ "\n " + "model : " + deviceInfoObj.Model
-					+ "\n " + "phoneName : " + deviceInfoObj.PhoneName
-					+ "\n " + "language : " + deviceInfoObj.Language
-					+ "\n " + "country : " + deviceInfoObj.Country
-					+ "\n " + "androidId : " + deviceInfoObj.AndroidId
-					+ "\n " + "mac : " + deviceInfoObj.Mac
-					+ "\n " + "seriesId : " + deviceInfoObj.SeriesId;
-		}
+    }
+    if (GUI.Button (new Rect (itemWidth/2, height, itemWidth/2, itemHeight), "GetInfoObj")) {
+        deviceInfoObj = IMSDKApi.Tool.GetInfoObj();
+        testInfoAll = " packageChannelId : " + deviceInfoObj.PackageChannelId
+            + "\n " + "guestId : " + deviceInfoObj.GuestId
+                + "\n " + "appVersionName : " + deviceInfoObj.AppVersionCode
+                + "\n " + "appVersionCode : " + deviceInfoObj.AppVersionCode
+                + "\n " + "osName : " + deviceInfoObj.OSName
+                + "\n " + "osVersion : " + deviceInfoObj.OSVersion
+                + "\n " + "width : " + deviceInfoObj.Width
+                + "\n " + "height : " + deviceInfoObj.Height
+                + "\n " + "network : " + deviceInfoObj.Network
+                + "\n " + "imei : " + deviceInfoObj.IMEI
+                + "\n " + "operators : " + deviceInfoObj.Operators
+                + "\n " + "apn : " + deviceInfoObj.Apn
+                + "\n " + "brand : " + deviceInfoObj.Brand
+                + "\n " + "manufacturer : " + deviceInfoObj.Manufacturer
+                + "\n " + "model : " + deviceInfoObj.Model
+                + "\n " + "phoneName : " + deviceInfoObj.PhoneName
+                + "\n " + "language : " + deviceInfoObj.Language
+                + "\n " + "country : " + deviceInfoObj.Country
+                + "\n " + "androidId : " + deviceInfoObj.AndroidId
+                + "\n " + "mac : " + deviceInfoObj.Mac
+                + "\n " + "seriesId : " + deviceInfoObj.SeriesId;
+    }
 
-		height += heightStep;
-		if(GUI.Button(new Rect(0,height,itemWidth/2, itemHeight), "PackageChannelId")){
-			packageChannelId = IMSDKApi.Tool.GetPackageChannelId();
-			testInfo = "packageChannelId is : " + packageChannelId;
-		}
-		if(GUI.Button (new Rect(itemWidth/2, height, itemWidth/2, itemHeight), "GuestId")){
-			guestId = IMSDKApi.Tool.GetGuestId();
-			testInfo = "guestId is : " + guestId;
-		}
-		height += heightStep;
-		if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "AppVersionName")){
-			appVersionName = IMSDKApi.Tool.GetAppVersionName();
-			testInfo = "appVersionName is : " + appVersionName;
-		}
-		if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "AppVersionCode")){
-			appVersionCode = IMSDKApi.Tool.GetAppVersionCode();
-			testInfo = "appVersionCode is : " + appVersionCode;
-		}
-		if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "OSName")) {
-			osName = IMSDKApi.Tool.GetOSName();
-			testInfo = "osName is : " + osName;
-		}
-		height += heightStep;
-		if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "OSVersion")){
-			osVersion = IMSDKApi.Tool.GetOSVersion();
-			testInfo = "osVersion is : " + osVersion;
-		}
-		if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "Width")){
-			width = IMSDKApi.Tool.GetWidth();
-			testInfo = "width is : " + width;
-		}
-		if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Height")) {
-			height = IMSDKApi.Tool.GetHeight();
-			testInfo = "height is : " + height;
-		}
-		height += heightStep;
-		if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "Network")){
-			network = IMSDKApi.Tool.GetNetwork();
-			testInfo = "network is : " + network;
-		}
-		if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "IMEI")){
-			imei = IMSDKApi.Tool.GetIMEI();
-			testInfo = "imei is : " + imei;
-		}
-		if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Operators")) {
-			operators = IMSDKApi.Tool.GetOperators();
-			testInfo = "operators is : " + operators;
-		}
-		height += heightStep;
-		if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "Apn")){
-			apn = IMSDKApi.Tool.GetApn();
-			testInfo = "apn is : " + apn;
-		}
-		if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "Brand")){
-			brand = IMSDKApi.Tool.GetBrand();
-			testInfo = "brand is : " + brand;
-		}
-		if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Manufacturer")) {
-			manufacturer = IMSDKApi.Tool.GetManufacturer();
-			testInfo = "manufacturer is : " + manufacturer;
-		}
-		height += heightStep;
-		if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "Model")){
-			model = IMSDKApi.Tool.GetModel();
-			testInfo = "model is : " + model;
-		}
-		if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "PhoneName")){
-			phoneName = IMSDKApi.Tool.GetPhoneName();
-			testInfo = "phoneName is : " + phoneName;
-		}
-		if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Language")) {
-			language = IMSDKApi.Tool.GetLanguage();
-			testInfo = "language is : " + language;
-		}
-		height += heightStep;
-		if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "Country")){
-			country = IMSDKApi.Tool.GetCountry();
-			testInfo = "country is : " + country;
-		}
-		if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "AndroidId")){
-			androidId = IMSDKApi.Tool.GetAndroidId();
-			testInfo = "androidId is : " + androidId;
-		}
-		if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Mac")) {
-			mac = IMSDKApi.Tool.GetMac();
-			testInfo = "mac is : " + mac;
-		}
-		height += heightStep;
-		if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "SeriesId")){
-			seriesId = IMSDKApi.Tool.GetSeriesId();
-			testInfo = "seriesId is : " + seriesId;
-		}
+    height += heightStep;
+    if(GUI.Button(new Rect(0,height,itemWidth/2, itemHeight), "PackageChannelId")){
+        packageChannelId = IMSDKApi.Tool.GetPackageChannelId();
+        testInfo = "packageChannelId is : " + packageChannelId;
+    }
+    if(GUI.Button (new Rect(itemWidth/2, height, itemWidth/2, itemHeight), "GuestId")){
+        guestId = IMSDKApi.Tool.GetGuestId();
+        testInfo = "guestId is : " + guestId;
+    }
+    height += heightStep;
+    if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "AppVersionName")){
+        appVersionName = IMSDKApi.Tool.GetAppVersionName();
+        testInfo = "appVersionName is : " + appVersionName;
+    }
+    if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "AppVersionCode")){
+        appVersionCode = IMSDKApi.Tool.GetAppVersionCode();
+        testInfo = "appVersionCode is : " + appVersionCode;
+    }
+    if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "OSName")) {
+        osName = IMSDKApi.Tool.GetOSName();
+        testInfo = "osName is : " + osName;
+    }
+    height += heightStep;
+    if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "OSVersion")){
+        osVersion = IMSDKApi.Tool.GetOSVersion();
+        testInfo = "osVersion is : " + osVersion;
+    }
+    if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "Width")){
+        width = IMSDKApi.Tool.GetWidth();
+        testInfo = "width is : " + width;
+    }
+    if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Height")) {
+        height = IMSDKApi.Tool.GetHeight();
+        testInfo = "height is : " + height;
+    }
+    height += heightStep;
+    if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "Network")){
+        network = IMSDKApi.Tool.GetNetwork();
+        testInfo = "network is : " + network;
+    }
+    if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "IMEI")){
+        imei = IMSDKApi.Tool.GetIMEI();
+        testInfo = "imei is : " + imei;
+    }
+    if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Operators")) {
+        operators = IMSDKApi.Tool.GetOperators();
+        testInfo = "operators is : " + operators;
+    }
+    height += heightStep;
+    if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "Apn")){
+        apn = IMSDKApi.Tool.GetApn();
+        testInfo = "apn is : " + apn;
+    }
+    if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "Brand")){
+        brand = IMSDKApi.Tool.GetBrand();
+        testInfo = "brand is : " + brand;
+    }
+    if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Manufacturer")) {
+        manufacturer = IMSDKApi.Tool.GetManufacturer();
+        testInfo = "manufacturer is : " + manufacturer;
+    }
+    height += heightStep;
+    if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "Model")){
+        model = IMSDKApi.Tool.GetModel();
+        testInfo = "model is : " + model;
+    }
+    if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "PhoneName")){
+        phoneName = IMSDKApi.Tool.GetPhoneName();
+        testInfo = "phoneName is : " + phoneName;
+    }
+    if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Language")) {
+        language = IMSDKApi.Tool.GetLanguage();
+        testInfo = "language is : " + language;
+    }
+    height += heightStep;
+    if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "Country")){
+        country = IMSDKApi.Tool.GetCountry();
+        testInfo = "country is : " + country;
+    }
+    if(GUI.Button(new Rect(itemWidth/3, height, itemWidth/3, itemHeight), "AndroidId")){
+        androidId = IMSDKApi.Tool.GetAndroidId();
+        testInfo = "androidId is : " + androidId;
+    }
+    if (GUI.Button (new Rect (2 * itemWidth / 3, height, itemWidth / 3, itemHeight), "Mac")) {
+        mac = IMSDKApi.Tool.GetMac();
+        testInfo = "mac is : " + mac;
+    }
+    height += heightStep;
+    if(GUI.Button(new Rect(0, height, itemWidth/3, itemHeight), "SeriesId")){
+        seriesId = IMSDKApi.Tool.GetSeriesId();
+        testInfo = "seriesId is : " + seriesId;
+    }
+```
 
-
+### 配置说明
 
 
 
