@@ -62,8 +62,8 @@
        * [6.1.3 iOS 工程配置](Channel/Facebook/ios.md)
    * [6.2 WeChat平台设置](Channel/wechat.md)
    * [6.4 Midas设置](Channel/64_midasshe_zhi.md)
-       * 6.4.2 iOS 工程配置
        * 6.4.1 Android 工程配置
+       * 6.4.2 iOS 工程配置
 * [7. iMSDK后台](Server/README.md)
 * [8. 常见问题说明](Help/README.md)
    * [8.1 常见错误码与错误说明](Help/commonerrno.md)
