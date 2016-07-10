@@ -5,7 +5,7 @@
 
 | 命名空间 | 调用入口 |使用说明|
 | :-- |:-- |:--|
-| Tencent.iMSDK | IMSDKApi.Login |用于用户认证，获取用户的基本资料|
+| Tencent.iMSDK | IMSDKApi.IMTool |iMSDK 的扩展工具|
 
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMLogin（GameObject）上，开发者不要主动销毁该对象！</font>
