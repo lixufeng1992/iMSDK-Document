@@ -16,7 +16,7 @@
 | 9 | public void reportAutoExceptionReport() | 登出当前渠道 | √ | - |
 
 
-### Bugly统计配置说明
+### Beacon 统计配置说明
 
  #### Android 端配置说明
  ``` xml
