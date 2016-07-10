@@ -203,7 +203,7 @@
 | public delegate void PayCallback(IMPayResult result) | 登录回调函数，返回支付结果结构体 |
 	
 |序号 | 方法名 | 方法说明 |
-| -- | -- | -- |
+| :-- | :-- | :-- |
 | 1.|public bool Initialize(List< string > payChannels, string googlePublicKey = "")| <font color=red>Android特有，初始化 </font>|
 | 2.|public bool Initialize(string googlePublicKey = "") | 同方法1， 默认从IMSDK/pay.json中读取payChannels |
 | 3.|public bool SetEnv(string env) | 设置支付环境 |
