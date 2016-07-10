@@ -79,7 +79,7 @@ void Start() {
 支持功能列表
 
 | 函数名 | 函数说明 |
-| -- | -- |
+| :-- | :-- |
 | public bool Initialize() | 初始化方法，并且须配置渠道列表，在调用其他函数之前需要调用该函数 |
 | public bool Initialize(IMStatChannelLists channelLists) | 指定渠道的初始化方法，在调用其他函数之前需要调用该函数 |
 | public void ReportEvent(string eventName, bool realtime = false) | 上报事件 |
