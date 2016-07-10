@@ -24,7 +24,6 @@
     deviceInfoStr = IMSDKApi.Tool.GetInfoStr();
     packageChannelId = deviceInfoObj.PackageChannelId;
 
-
 ```
 
 ### 参考
