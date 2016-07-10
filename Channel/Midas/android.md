@@ -2,7 +2,7 @@
 
 ### Android工程通用配置
 
-Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据插件本身的要求而各有不同（），
+Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据插件本身的要求而各有不同,详情见[Midas配置](../midas.md)，
 
 * Midas内核包权限配置，在AndroidManifest.xml中新增一下权限
 
