@@ -51,7 +51,7 @@
        * [4.5.1 Facebook 功能说明](Unity/Channel/facebook.md)
            * [4.5.1.1 Facebook 登录功能说明](Unity/Channel/Facebook/login.md)
            * [4.5.1.2 Facebook 分享功能说明](Unity/Channel/Facebook/share.md)
-       * [AppsFlyer](Unity/Channel/appsflyer.md)
+       * [AppsFlyer 功能说明](Unity/Channel/appsflyer.md)
            * [AppsFlyer 统计功能说明](Unity/Channel/AppsFlyer/stat.md)
        * Bugly 功能说明
 * [5. C++开发指引](Cpp/README.md)
