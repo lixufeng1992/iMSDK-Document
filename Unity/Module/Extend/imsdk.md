@@ -42,81 +42,45 @@
 | public int Height | 设备高 |
 | public string Network | 获取设备网络类型，如"tencent-staffwifi" |
 | public string IMEI | 设备imei号 |
-| public string Operators | 获取设备运营商 |
-| public string Apn | 获取设备网络apn，如"wap", "net"等 |
-| public string Brand | 获取设备brand |
-| public string Manufacturer | 获取设备制造商 |
-| public string Model | 获取设备model |
-| public string PhoneName | 获取设备名称 |
-| public string Language | 获取设备语言 |
-| public string Country |获取设备所在国家 |
-| public string AndroidId |获取设备AndroidId |
-| public string Mac |获取设备mac地址 |
-| public string SeriesId |获取设备SeriesId |
+| public string Operators | 设备运营商 |
+| public string Apn | 设备网络apn，如"wap", "net"等 |
+| public string Brand | 设备brand |
+| public string Manufacturer | 设备制造商 |
+| public string Model | 设备model |
+| public string PhoneName | 设备名称 |
+| public string Language | 设备语言 |
+| public string Country | 设备所在国家 |
+| public string AndroidId | 设备AndroidId |
+| public string Mac |设备mac地址 |
+| public string SeriesId | 设备SeriesId |
 
-
-* 回调代理函数 <font color=blue>LoginCallback</font>
-
-| 类型 | 说明 |
-| :-- | :-- |
-| public delegate void LoginCallback(IMLoginResult result);  | 登录回调函数，返回登录结果结构体 |
-
-* 用户绑定资料结构体 <font color=blue>IMBindInfo</font>
-
-| 类型 | 说明 |
-| :-- | :-- |
-| public string ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
-| public string GuidUserName | 用户昵称 |
-| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
-| public String GuidUserPortrait | 用户头像地址 |
-
-* 绑定查询返回结构体 <font color=blue>IMBindInfoResult</font>
-
-| 变量 | 说明 |
-| :-- | :-- |
-| public int RetCode | 登录状态码，1 为成功登录，其他为失败 |
-| public string ErrorMsg | 错误信息 |
-| public int ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
-| public int GameId | iMSDK 游戏 ID，如：1010 |
-| public string OpenId | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
-| public string Guid | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
-| public string GuidToken | iMSDK 后台使用的Token，与 OpenId 配合使用 |
-| public uint GuidTokenExpire | GuidToken 有效时间，从北京时间1970年01月01日08时00分00秒的时间戳 |
-| public string GuidUserNick | 用户昵称 |
-| public string GuidUserBirthday | 用户生日，如：1990-01-01 |
-| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
-| public string GuidUserPortrait | 用户头像地址 |
-| public List< IMBindInfo > InfoList | 用户绑定渠道资料 |
-
-* 查询绑定信息代理函数 <font color=blue>BindInfoCallback</font>
-
-| 类型 | 说明 |
-| :-- | :-- |
-| public delegate void BindInfoCallback(IMBindInfoResult result) | 查询绑定信息，返回用户登录结果列表 |
-
-* 登录方法类 <font color=blue>IMLogin</font>
+* 接口说明
 
 | 函数名 | 函数说明 |
 | :-- | :-- |
-| public bool Initialize() | 初始化方法，在调用其他函数之前必须需要调用该函数 |
-| public bool Initialize(string channel) | 初始化，并制定登录渠道，如Facebook |
-| public bool SetChannel(string channel) | 设置登录渠道，如Facebook |
-| public string GetChannel() | 获取当前设定渠道 |
-| public void SetType(string type) | 复杂渠道设置登录类型 |
-| public void Login( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 一般登录<br> callback 为回调函数，默认为null<br> permissionList 权限列表，权限可以从对应的平台找到 <br> needGuid 是否需要guid，建议使用默认值为true |
-| public void StrictLogin( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 严格登录，只有用户资料存在时才能登录成功<br> callback 为回调函数，默认为null<br> permissionList 权限列表，权限可以从对应的平台找到 <br> needGuid 是否需要guid，建议使用默认值为true |
-| public void QuickLogin(LoginCallback callback = null)  | 快速登录，该方法会尝使用上次登录保存的数据进行登录<br>如果之前没有登录，或者登录已经失效，将返回错误信息 |
-| public bool IsLogin() | 判断用户是否已经登录 |
-| public void AutoLogin(LoginCallback callback = null) | 自动登录，如果玩家之前已经登录过，就调用上一次的登录结果 |
-| public IMLoginResult GetLoginResult() | 获取当前登录返回数据 |
-| public void Logout() | 登出当前渠道 |
-| public void Bind(string channel, LoginCallback callback = null) | 绑定到其他渠道账号<br> <font color=orange>注意：不能绑定到游客（Guest）账户</font> |
-| public void GetBindInfo(BindInfoCallback callback=null) | 获取用户绑定渠道资料 |
-| public void SetPlayingReportChannel(string channel) | 设定状态上报渠道 |
-| public void ActivatePlayingReport(string extraJson="") | 上报状态 |
-| public void DeactivatePlayingReport() | 关闭上报 |
-| public bool IsChannelAppInstalled() | 是否安装渠道应用，只有部分渠道支持 |
-| public bool IsChannelSupportApi() | 应用API版本是否可用，只有部分渠道支持 |
+| GetInfoStr() | 获取所有信息，包括如下这些信息(返回 json 字符串) |
+| GetInfoObj() | 获取所有信息，包括如下信息(返回 IMToolDeviceInfo ) | 
+| GetPackageChannelId() | 获取渠道包apk的packageChannelId |
+| GetGuestId() | 获取用户guestId，guestId为用户imsdk用户游客id |
+| GetAppVersionName() | 获取应用的versionName |
+| GetAppVersionCode() | 获取应用的versionCode |
+| GetOSName() | 获取用户操作系统类型，Android用户为"Android" |
+| GetOSVersion() | 获取用户操作系统版本，如4.4.4 |
+| GetWidth() | 获取设备屏幕宽度 |
+| GetHeight() | 获取设备屏幕高度 |
+| GetNetwork() | 获取设备网络类型，如"tencent-staffwifi" |
+| GetIMEI() | 获取设备imei号 |
+| GetOperators() | 获取设备运营商 |
+| GetApn() | 获取设备网络apn，如"wap", "net"等 |
+| GetBrand() | 获取设备brand |
+| GetManufacturer() | 获取设备制造商 |
+| GetModel() | 获取设备model |
+| GetPhoneName() | 获取设备名称 | 
+| GetLanguage():获取设备语言 |
+| GetCountry() | 获取设备所在国家 |
+| GetAndroidId() | 获取设备AndroidId |
+| GetMac() | 获取设备mac地址 |
+| GetSeriesId() | 获取设备SeriesId |
 
 ### 代码示例
 
