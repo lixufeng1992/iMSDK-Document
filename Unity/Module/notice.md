@@ -23,10 +23,10 @@ void Start() {
 // 拉取公告回调函数，处理登陆结果
 void TestOnLoadNoticeCallback(IMLoadNoticeResult result){
         if(result.RetCode == 1) {
-        Debug.Log("login ok, user open id is " + result.ToUnityString ());
+        Debug.Log("load notice ok,  " + result.ToUnityString ());
     }
     else {
-        Debug.Log("login error : " + result.ErrorMsg);
+        Debug.Log("load notice error : " + result.ErrorMsg);
     }
 }
 
@@ -107,14 +107,14 @@ void TestLoadNotice() {
 
 
 ### 代码示例  
-* ####渠道说明     
+* **渠道说明**     
 通过设置不同渠道拉取不同来源的公告,例如imsdk表示从iMSDK拉取公告。    
 
 ```cs
   IMSDKApi.Notice.Initialize ();	//初始化
   IMSDKApi.Notice.SetChannel("imsdk");//设置渠道
 ```
-* ####拉取公告
+* **拉取公告**
 
 ```cs 	
   IMSDKApi.Notice.Initialize ();	//初始化
