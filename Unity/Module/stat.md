@@ -14,7 +14,7 @@
 2. 代码实例
 
 ```json
-//stat.json 格式示例
+//stat.json 文件格式示例
 {
     "eventReport":["MTA","Adjust"],
     "eventTrack":["MTA"],
