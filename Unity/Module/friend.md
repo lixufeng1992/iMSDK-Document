@@ -14,12 +14,15 @@
 2. 代码实例
 
   ```cs
-  // 初始化
+  
   void Start() {
+      // 初始化
       IMSDKApi.Friend.Initialize ();
+      // 设定渠道
       IMSDKApi.Friend.SetChannel("Facebook");
   }
 
+  // 回调函数
   void TestGetFriendsCallback(IMFriendResult result) {
       if(result.RetCode == 1) {
           Debug.Log("get friend ok");
