@@ -8,3 +8,4 @@
 | [WeChat](wechat.md) |
 | [VK](vk.md) |
 | [Viber](viber.md) |
+| [Midas](viber.md) |

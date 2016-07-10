@@ -1,6 +1,7 @@
 ### 4.4.5.1 米大师支付
 
-#### * 初始化、设置支付环境、支付预处理
+
+#### * 初始化：设置支付环境、支付预处理
 ```cs
     IMSDKApi.Pay.Initialize("");//模块功能初始化
     IMSDKApi.Pay.SetChannel("MidasGoogle");//设置渠道
@@ -23,7 +24,7 @@
 
     IMSDKApi.Pay.Prepare(prepareContent);//支付预处理
 ```
-#### * 基础支付功能:
+#### * 基础功能:支付
 ```cs
     /*
     *构造Pay请求结构体
@@ -50,12 +51,12 @@
     IMSDKApi.Pay.Pay(GetMidasPayContent(),MidasPayCallback);//支付
 ```
 
-#### * 高级功能：获取营销活动
+#### * 进阶功能：获取营销活动
 ```cs
     IMSDKApi.Pay.GetMP(GetMidasPayContent(), MidasPayCallback);
 ```
 
-#### * 高级功能：获取商品信息(从Midas后台获取)
+#### * 进阶功能：获取商品信息(从Midas后台获取)
 ```cs
     List<IMMidasPayContent> list = new List<IMMidasPayContent>();
     list.Add(GetMidasAndroidPayContent());
