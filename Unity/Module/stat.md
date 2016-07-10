@@ -118,7 +118,7 @@ void Start() {
   InitializeStat();
   ...
 }
-
+IMSDKApi.Stat.ReportEvent("start");
 ```
 
 ### 实时上报说明
