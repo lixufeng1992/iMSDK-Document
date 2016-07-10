@@ -33,20 +33,20 @@
 | 变量 | 说明 |
 | :-- | :-- |
 | public string PackageChannelId  | 打包渠道ID |
-| public string GuestId | 设备GuestID |
-| public string AppVersionName | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
-| public int AppVersionCode | 当前登录渠道，如：Facebook |
-| public string OSName | iMSDK 游戏 ID，如：1010 |
-| public string OSVersion | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
-| public int Width | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
-| public int Height | iMSDK 后台使用的Token，与 OpenId 配合使用 |
-| public string Network | GuidToken 有效时间，从北京时间1970年01月01日08时00分00秒的时间戳 |
-| public string IMEI | 用户昵称 |
-| public string Operators | 用户生日，如：1990-01-01 |
-| public string Apn | 用户性别，0-未知；1-男；2-女 |
-| public string Brand | 用户头像地址 |
-| public string Manufacturer | 用户已有权限列表，部分渠道无法获取改字段 |
-| public string Model | |
+| public string GuestId | 用户GuestID |
+| public string AppVersionName | app的versionName |
+| public int AppVersionCode | app的versionCode |
+| public string OSName | 设备的系统名称 |
+| public string OSVersion | 设备系统版本号 | 
+| public int Width | 设备宽 |
+| public int Height | 设备高 |
+| public string Network | 获取设备网络类型，如"tencent-staffwifi" |
+| public string IMEI | 设备imei号 |
+| public string Operators | 获取设备运营商 |
+| public string Apn | 获取设备网络apn，如"wap", "net"等 |
+| public string Brand | 获取设备brand |
+| public string Manufacturer | 获取设备制造商 |
+| public string Model |获取设备model|
 | public string PhoneName | |
 | public string Language | |
 | public string Country | |
