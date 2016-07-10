@@ -18,7 +18,7 @@
 | 12 | public void reportAutoExceptionReport() | 登出当前渠道 | √ | - |
 
 
-### 登录权限说明
+### 统计权限说明
 
   * 权限列表可参考Facebook权限说明：[https://developers.facebook.com/docs/facebook-login/permissions/v2.4](https://developers.facebook.com/docs/facebook-login/permissions/v2.4)
   
