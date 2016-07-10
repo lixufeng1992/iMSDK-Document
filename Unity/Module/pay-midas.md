@@ -141,7 +141,7 @@
 * 支付信息结构体 <font color=blue>IMMidasPayContent</font>
 
 | 变量 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public string OfferId | 支付应用ID，又称为AppId，从米大师获取 |
 | public string OpenId | 用户 OpenID，取值为登录（Login）模块返回的 OpenID |
 | public string OpenKey | 用户校验凭证，取值为登录（Login）模块返回的 GuidToken |
@@ -175,13 +175,13 @@
 * 获取商品信息结构体 <font color=blue>IMMidasProductContent</font>
 
 | 变量 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public string ProductId | 米大师商品ID，用于标识一件商品，在米大师管理端进行配置获取 |
 
 * 一般支付结果结构体 <font color=blue>IMPayResult</font>
 
 | 类型 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public int RetCode | 登录状态码，一般 1 为成功，其他为失败 |
 | public string ErrorMsg | 错误信息 |
 | public int InnerCode | |
@@ -199,7 +199,7 @@
 * 支付回调 <font color=blue>PayCallback</font>
 
 | 类型 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public delegate void PayCallback(IMPayResult result) | 登录回调函数，返回支付结果结构体 |
 	
 |序号 | 方法名 | 方法说明 |
