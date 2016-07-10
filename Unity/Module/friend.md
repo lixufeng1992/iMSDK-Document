@@ -14,7 +14,6 @@
 2. 代码实例
 
   ```cs
-  
   void Start() {
       // 初始化
       IMSDKApi.Friend.Initialize ();
@@ -22,7 +21,7 @@
       IMSDKApi.Friend.SetChannel("Facebook");
   }
 
-  // 回调函数
+  // 获取好友列表回调函数
   void TestGetFriendsCallback(IMFriendResult result) {
       if(result.RetCode == 1) {
           Debug.Log("get friend ok");
@@ -37,9 +36,11 @@
   }
 
   void TestGetFriends() {
+      // 获取好友列表
       IMSDKApi.Friend.GetFriends(1, 100, TestGetFriendsCallback);
   }
 
+  // 一般操作回调函数
   void TestFriendCallback(IMFriendResult result) {
       if(result.RetCode == 1) {
           Debug.Log("message ok "");
