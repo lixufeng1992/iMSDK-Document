@@ -65,7 +65,7 @@
        * [6.4.1 Android 工程配置](Channel/Midas/android.md)
        * [6.4.2 iOS 工程配置](Channel/Midas/ios.md)
            * [米大师_IAP支付](Channel/Midas/Channel/Midas/ios_ipa.md)
-           * 米大师_外发渠道支付
+           * [米大师_外发渠道支付](Channel/Midas/Channel/Midas/ios_extend.md)
 * [7. iMSDK后台](Server/README.md)
 * [8. 常见问题说明](Help/README.md)
    * [8.1 常见错误码与错误说明](Help/commonerrno.md)
