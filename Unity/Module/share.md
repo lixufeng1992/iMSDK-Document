@@ -5,6 +5,9 @@
 ```cs
 using Tencent.iMSDK
 ```
+| 命名空间 | 调用入口 |使用说明|
+| :-- |:-- |:--|
+| Tencent.iMSDK | IMSDKApi.Login |用于用户认证，获取用户的基本资料|
     
 ### 接口类
 
