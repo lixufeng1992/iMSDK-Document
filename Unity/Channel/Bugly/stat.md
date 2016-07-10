@@ -8,21 +8,15 @@
 | :--: | -- |:-------: | :-----: | -- |
 | 1 | public bool Initialize() | 初始化方法 | √ | - |
 | 2 | public bool Initialize(IMStatChannelLists channelLists)  | 初始化方法 | √ | - |
-| 3 | public bool SetChannel(string channel) | 设置登录渠道| √ | |
-| 6 | public void reportEvent | 事件上报 | √ | |
-| 7 | public void reportPurchase() | 购买行为上报 | √ | |
-| 8 | public void trackEvent() | 事件跟踪 | √ | |
-| 9 | public bool IsLogin() | 判断用户是否已经登录 | √ | |
-| 10 | public void AutoLogin(LoginCallback callback = null) | 自动登录 | √ | |
-| 11 | public IMLoginResult GetLoginResult() | 获取当前登录返回数据 | √ | |
-| 12 | public void Logout() | 登出当前渠道 | √ | |
-| 13 | public void Bind(string channel, LoginCallback callback = null) | 绑定到其他渠道账号 | √ | |
-| 14 | public void GetBindInfo(BindInfoCallback callback=null) | 获取用户绑定渠道资料 | √ | |
-| 15 | public void SetPlayingReportChannel(string channel) | 设定状态上报渠道 | × | |
-| 16 | public void ActivatePlayingReport(string extraJson="") | 上报状态 | × | |
-| 17 | public void DeactivatePlayingReport() | 关闭状态上报 | × | |
-| 18 | public bool IsChannelAppInstalled() | 是否安装渠道应用 | × | |
-| 19 | public bool IsChannelSupportApi() | 应用API版本是否可用 | × | - |
+| 3 | public bool SetChannel(string channel) | 设置登录渠道| √ | - |
+| 6 | public void reportEvent | 事件上报 | √ | - |
+| 7 | public void reportPurchase() | 购买行为上报 | √ | - |
+| 8 | public void trackEvent() | 事件跟踪 | √ | - |
+| 9 | public bool trackPage() | 判断用户是否已经登录 | √ | - |
+| 10 | public void speedTest() | 自动登录 | √ | - |
+| 11 | public void reportCrash() | 获取当前登录返回数据 | √ | - | 
+| 12 | public void reportAutoExceptionReport() | 登出当前渠道 | √ | - |
+
 
 ### 登录权限说明
 
