@@ -17,8 +17,10 @@
 ```cs
 	private IMToolDeviceInfo deviceInfoObj;
 	private string deviceInfoStr;
+    private string public string packageChannelId;;
     deviceInfoObj = IMSDKApi.Tool.GetInfoObj();
     deviceInfoStr = IMSDKApi.Tool.GetInfoStr();
+    packageChannelId = deviceInfoObj.PackageChannelId;
 
 
 ```
