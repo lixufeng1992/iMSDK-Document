@@ -18,11 +18,11 @@
 * 应用ID（Offer ID或App ID），在米大师进行应用注册后获取，用于标识一个应用
 * 商品ID（Product ID），是指购买物品的唯一ID，在米大师后台进行配置
 * 商品类型（Product Type），是指苹果内购商品类型：
-* 消费类产品（Consumables），是指可以被消耗的商品或服务，如游戏内一次性道具
-* 非消费类产品（Non-Consumables），是指永久性的商品或服务，如解锁游戏内特殊关卡
-* 包月（订阅）+自动续费（Auto-Renewable Subscriptions），是指用户购买一段时间的服务或功能，并且会自动扣费，如订阅电子杂志
-* 免费（订阅）（Free Subscriptions），用于Newsstand应用，免费但是用户可以随时取消
-* 包月（订阅）+非自动续费（Non-Renewing Subscriptions），与Auto-Renewable Subscriptions不同的地方，是到期后不会自动续费
+  * 消费类产品（Consumables），是指可以被消耗的商品或服务，如游戏内一次性道具
+  * 非消费类产品（Non-Consumables），是指永久性的商品或服务，如解锁游戏内特殊关卡
+  * 包月（订阅）+自动续费（Auto-Renewable Subscriptions），是指用户购买一段时间的服务或功能，并且会自动扣费，如订阅电子杂志
+  * 免费（订阅）（Free Subscriptions），用于Newsstand应用，免费但是用户可以随时取消
+  * 包月（订阅）+非自动续费（Non-Renewing Subscriptions），与Auto-Renewable Subscriptions不同的地方，是到期后不会自动续费
 * 支付环境（Env），是指支付环境，一般有测试（test）和正式（release）两种环境，支付时需要留意自己的支付环境
 * 账户（Open ID），是指开放平台的账户ID，在iMSDK环境中，一般用登陆（Login）模块返回的OpenID字段
 * 账户凭证（Open Key），是指与账户对应的校验Token，与Open ID组成用户的登录态，米大师用与于账号验证
