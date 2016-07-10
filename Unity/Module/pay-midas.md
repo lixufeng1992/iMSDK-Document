@@ -1,7 +1,8 @@
 ### 4.4.5.1 米大师支付
 
+####快速入门
 
-#### * 初始化：设置支付环境、支付预处理
+##### * 初始化：设置支付环境、支付预处理
 ```cs
     IMSDKApi.Pay.Initialize("");//模块功能初始化
     IMSDKApi.Pay.SetChannel("MidasGoogle");//设置渠道
@@ -24,7 +25,7 @@
 
     IMSDKApi.Pay.Prepare(prepareContent);//支付预处理
 ```
-#### * 基础功能:支付
+##### * 基础功能:支付
 ```cs
     /*
     *构造Pay请求结构体
