@@ -9,6 +9,69 @@
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMFriend（GameObject）上，开发者不要主动销毁该对象！</font>
 
+### 快速入门
+1. [完成特定渠道配置](../../Channel/README.md)
+2. 代码实例
+
+  ```cs
+  void Start() {
+      IMSDKApi.Friend.Initialize ();
+      IMSDKApi.Friend.SetChannel("Facebook");
+  }
+
+  void TestGetFriendsCallback(IMFriendResult result) {
+      if(result.RetCode == 1) {
+          Debug.Log("get friend ok");
+
+          foreach(IMFriendInfo item in result.FriendInfoList) {
+              Debug.Log("get friend : " + item.OpenId);
+          }
+      }
+      else {
+          Debug.Log("get friend error : " + result.ErrorMsg);
+      }
+  }
+
+  void TestGetFriends() {
+      IMSDKApi.Friend.GetFriends(1, 100, TestGetFriendsCallback);
+  }
+
+  void TestFriendCallback(IMFriendResult result) {
+      if(result.RetCode == 1) {
+          Debug.Log("message ok "");
+      }
+      else {
+          Debug.Log("message error : " + result.ErrorMsg);
+      }
+  }
+
+  void TestInvite() {
+      IMFriendContent content = new IMFriendContent();
+
+      content.Type = IMFriendContent.MessageType.LINK_DIALOG;
+      content.Title = "this is title";
+      content.Content = "this is content";
+      content.Link = "http://ieg.qq.com";
+      content.ImagePath = "http://ossweb-img.qq.com/images/game/ieg/web201404/logo.png";
+      content.ThumbImage = "http://ossweb-img.qq.com/images/game/ieg/web201404/roles/lol.png";
+
+      IMSDKApi.Friend.Invite(content, TestFriendCallback);
+  }
+
+  void TestSendMessage() {
+      IMFriendContent content = new IMFriendContent();
+
+      content.Type = IMFriendContent.MessageType.LINK_DIALOG;
+      content.Title = "this is title";
+      content.Content = "this is content";
+      content.Link = "http://ieg.qq.com";
+      content.ImagePath = "http://ossweb-img.qq.com/images/game/ieg/web201404/logo.png";
+      content.ThumbImage = "http://ossweb-img.qq.com/images/game/ieg/web201404/roles/lol.png";
+
+      IMSDKApi.Friend.SendMessage(content, TestFriendCallback);
+  }
+
+  ```
 
 ## 参考
 
