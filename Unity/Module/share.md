@@ -1,22 +1,22 @@
 ## 4.4.2 分享模块(Share)
 
-## 命名空间
+### 命名空间
 
 ```cs
 using Tencent.iMSDK
 ```
     
-## 接口类
+### 接口类
 
 ```cs
 IMSDKApi.Share
 ```
 
-## 模块使用说明
+### 模块使用说明
 
 该模块主要是用来分享功能，类似微信朋友圈、微博的功能
 
-### 分享类型说明
+#### 分享类型说明
 
 分享一般分为两类：
 
@@ -25,17 +25,17 @@ IMSDKApi.Share
 
 在<font color=blue>IMShareContent.ShareType</font>中定义了iMSDK支持的分享类
 
-## 工程配置说明
+### 工程配置说明
 
-### Android工程配置说明
+#### Android工程配置说明
 
 > 主要需要修改Assets/Plugins/Android/AndroidManifest.xml文件，具体内容可参考渠道功能文档。
 
-### iOS工程配置说明
+#### iOS工程配置说明
 
 > 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
 
-## 参考
+### 参考
 
 * 分享参数类 <font color=blue>IMShareContent</font>
 
@@ -85,7 +85,7 @@ IMSDKApi.Share
 
 
 
-## 代码示例
+### 代码示例
 
 	
 ```cs
