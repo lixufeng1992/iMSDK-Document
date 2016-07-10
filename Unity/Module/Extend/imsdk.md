@@ -37,15 +37,23 @@
 | public string AppVersionName | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
 | public int AppVersionCode | 当前登录渠道，如：Facebook |
 | public string OSName | iMSDK 游戏 ID，如：1010 |
-| public string OpenId | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
-| public string Guid | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
-| public string GuidToken | iMSDK 后台使用的Token，与 OpenId 配合使用 |
-| public uint GuidTokenExpire | GuidToken 有效时间，从北京时间1970年01月01日08时00分00秒的时间戳 |
-| public string GuidUserNick | 用户昵称 |
-| public string GuidUserBirthday | 用户生日，如：1990-01-01 |
-| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
-| public string GuidUserPortrait | 用户头像地址 |
-| public List< string > ChannelPermissions | 用户已有权限列表，部分渠道无法获取改字段 |
+| public string OSVersion | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
+| public int Width | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
+| public int Height | iMSDK 后台使用的Token，与 OpenId 配合使用 |
+| public string Network | GuidToken 有效时间，从北京时间1970年01月01日08时00分00秒的时间戳 |
+| public string IMEI | 用户昵称 |
+| public string Operators | 用户生日，如：1990-01-01 |
+| public string Apn | 用户性别，0-未知；1-男；2-女 |
+| public string Brand | 用户头像地址 |
+| public string Manufacturer | 用户已有权限列表，部分渠道无法获取改字段 |
+| public string Model | |
+| public string PhoneName | |
+| public string Language | |
+| public string Country | |
+| public string AndroidId | |
+| public string Mac | |
+| public string SeriesId | |
+
 
 * 回调代理函数 <font color=blue>LoginCallback</font>
 
