@@ -35,8 +35,8 @@
       }
   }
 
+  // 获取好友列表
   void TestGetFriends() {
-      // 获取好友列表
       IMSDKApi.Friend.GetFriends(1, 100, TestGetFriendsCallback);
   }
 
@@ -50,6 +50,7 @@
       }
   }
 
+  // 发送邀请
   void TestInvite() {
       IMFriendContent content = new IMFriendContent();
 
