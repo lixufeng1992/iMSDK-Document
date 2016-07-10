@@ -15,4 +15,4 @@
 2. [Unity 工程配置](XG_GCM/unity.md)
 3. [C++ 工程配置](XG_GCM/cpp.md) 
 
-### [推送模块 (Push)](../Unity/Module/push.md)
+### [推送模块详细使用说明 (Push)](../Unity/Module/push.md)
