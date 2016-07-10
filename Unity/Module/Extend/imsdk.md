@@ -32,9 +32,9 @@
 
 | 变量 | 说明 |
 | :-- | :-- |
-| public int RetCode | 登录状态码，1 为成功登录，其他为失败 |
-| public string ErrorMsg | 错误信息 |
-| public int ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
+| public string PackageChannelId  | 打包渠道ID |
+| public string GuestId | 设备GuestID |
+| public string AppVersionName | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
 | public string Channel | 当前登录渠道，如：Facebook |
 | public int GameId | iMSDK 游戏 ID，如：1010 |
 | public string OpenId | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
