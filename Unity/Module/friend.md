@@ -63,7 +63,8 @@
 
       IMSDKApi.Friend.Invite(content, TestFriendCallback);
   }
-
+  
+  // 给好友发消息
   void TestSendMessage() {
       IMFriendContent content = new IMFriendContent();
 
