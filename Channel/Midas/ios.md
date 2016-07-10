@@ -7,4 +7,5 @@ IAP支付。米大师直接调用iOS Store应用内付费（简称IAP, In app pu
 
 ###外发渠道支付
 + 外发渠道支付。米大师通过第三方合作方支付系统，完成支付流程。
-+![外发渠道支付](../Images/Midas/pay_extend.png)
+
+![外发渠道支付](../Images/Midas/pay_extend.png)
