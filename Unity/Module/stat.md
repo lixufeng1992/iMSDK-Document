@@ -23,7 +23,7 @@
     "crashReport":["Bugly"],
     "pageTrack":["MTA"],
     "testSpeed":["MTA"]
-  }
+ }
 ```
 其中：
 * eventReport 为事件上报渠道列表
