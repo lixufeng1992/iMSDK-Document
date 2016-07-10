@@ -10,6 +10,7 @@
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMShare（GameObject）上，开发者不要主动销毁该对象！</font>
 
 ### 快速入门
+
 1. [完成特定渠道配置](../../Channel/README.md)
 2. 代码实例
 
@@ -48,3 +49,51 @@
       IMSDKApi.Share.Share(content, TestShareCallback);
   }
   ```
+  
+  ## 参考
+
+* 分享参数类 <font color=blue>IMShareContent</font>
+
+| 变量 | 说明 |
+| -- | -- |
+| Type | 分享类型，取值取值可以从 <font color=blue>IMShareContent.ShareType</font> 获取 |
+| Title | 标题（部分分享无效） |
+| Content | 分享内容，为文字 |
+| Link | 链接，如： http://www.qq.com |
+| ImagePath | 分享图片文件路径，可以是网络上的链接，或者是 Android 或 iOS 可以读取的文件路径 |
+| ThumbImage | 缩略图，在WeChat（微信）分享用到 |
+| ExtraJson | 附加字段，一般无需赋值，在有特殊说明的功能时填写 |
+
+* 分享类型 <font color=blue>IMShareContent.ShareType</font>
+
+| 类型 | 说明 |
+| -- | -- |
+| ShareType.TEXT | 文字，后台分享无界面 |
+| ShareType.TEXT_DIALOG | 文本，弹窗分享 |
+| ShareType.LINK | 链接，后台无界面 |
+| ShareType.LINK_DIALOG | 链接，弹窗分享 |
+| ShareType.IMAGE | 图片，后台无界面 |
+| ShareType.IMAGE_DIALOG | 图片，弹窗分享 |
+
+* 返回结构体 <font color=blue>IMResult</font>
+
+| 变量 | 说明 |
+| -- | -- |
+| public int RetCode | 分享状态码，1为成功分享，其他为失败 |
+| public string ErrorMsg | 错误信息 |
+
+* 回调代理函数 <font color=blue>ShareCallback</font>
+
+| 类型 | 说明 |
+| -- | -- |
+| public delegate void ShareCallback(IMResult result) | 分享回调函数，返回分享结果结构体 |
+
+* 分享方法类 <font color=blue>IMShare</font>
+
+| 函数名 | 函数说明 |
+| -- | -- |
+| public bool Initialize() | 初始化方法，在调用其他函数之前需要调用该函数 |
+| public bool Initialize(string channel) | 初始化，并制定分享渠道（如Facebook） |
+| public bool SetChannel(string channel) | 设置分享渠道 |
+| public string GetChannel() | 获取当前设定渠道 |
+| public void Share(<br> &emsp;&emsp;IMShareContent content, <br> &emsp;&emsp;ShareCallback callback = null) | 分享函数<br> content 为分享参数，具体参见 IMShareContent 说明<br> callback 为分享回调 |
