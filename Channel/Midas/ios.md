@@ -10,4 +10,5 @@ IAP支付。米大师直接调用iOS Store应用内付费（简称IAP, In app pu
 
 ![外发渠道支付](../Images/Midas/pay_extend.png)
 
-MidasIAPSDK.framework为米大师核心包，MidasIAPSDKRescources.bundle为米大师
+MidasIAPSDK.framework为米大师核心包，MidasIAPSDKRescources.bundle为米大师资源包，二者均为必选。
+plugins分别为米大师不同支付外发渠道，根据实际项目需求引入不同的支付渠道即可。
