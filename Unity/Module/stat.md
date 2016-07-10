@@ -7,7 +7,7 @@
 | Tencent.iMSDK | IMSDKApi.Stat |用于上报统计数据|
 
 
-<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMLogin（GameObject）上，开发者不要主动销毁该对象！</font>
+<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMStat（GameObject）上，开发者不要主动销毁该对象！</font>
 
 ### 快速入门
 1. [完成特定渠道配置](../../Channel/README.md)
