@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tencent.imsdk.your.packagename"
-    android:versionCode="1"
-    android:versionName="1.0" >
-    <!--================Midas通用权限 start==========================-->
+## 6.4.2.1 MidasGoogle 工程配置
+
+### MidasGoogle配置
+
+Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据插件本身的要求而各有不同（），
+
+* MidasGoogle权限配置，在AndroidManifest.xml中新增一下权限
+
+  ```xml
+   <!--================Midas通用权限 start==========================-->
      <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,8 +19,12 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="com.android.vending.BILLING" />
     <!--==================MdiasGoogle 权限end=========================-->
+  ```
 
-    <!--=======================Midas通用Activity start==========================-->
+* MidasGoogle Activity 配置，在Application节点中添加如下activity配置
+
+  ```xml
+   <!--=======================Midas通用Activity start==========================-->
         <activity
             android:name="com.tencent.midas.oversea.business.APMallActivity"
             android:screenOrientation="landscape"
@@ -32,6 +40,6 @@
     <!--=======================Midas通用Activity end==========================-->
 
     <!--======================MidasGoogle Activity start=========================-->
-            <!--无-->
+            <!--无Activity-->
     <!--======================MidasGoogle Activity end===========================-->
-    </manifest>
+  ```
