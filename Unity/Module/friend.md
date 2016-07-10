@@ -14,6 +14,7 @@
 2. 代码实例
 
   ```cs
+  // 初始化
   void Start() {
       IMSDKApi.Friend.Initialize ();
       IMSDKApi.Friend.SetChannel("Facebook");
