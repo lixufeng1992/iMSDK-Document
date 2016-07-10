@@ -6,7 +6,7 @@
 
 ```cs
     /*
-    *构造IMPayPrepareContent结构体
+    *构造支付预处理结构体：IMPayPrepareContent
     */  
     IMPayPrepareContent CreatePrepareContent(){
       IMPayPrepareContent prepareContent = new IMPayPrepareContent();
@@ -20,6 +20,29 @@
       prepareContent.ZoneId = "1";
   }
    
+   /*
+    *构造支付结构体：IMMidasPayContent
+    */ 
+   IMMidasPayContent GetMidasPayContent(){
+          IMMidasPayContent content = new IMMidasPayContent ();
+          content.OfferId = "1450005285";
+          content.OpenId = openId;
+          content.OpenKey = accessToken;
+          content.SessionId = "hy_gameid"; // usually "hy_gameid"
+          //content.SessionType = "st_overseas"; // check imsdk login status
+          content.SessionType = "st_dummy"; // do NOT check imsdk login status
+          content.ZoneId = "1";
+          content.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");
+          content.PfKey = "pfKey";
+          content.ProductId = "midas_product_1";
+          content.ResId = "unipay_abroad_iconload";
+          content.Country = "US";
+          content.CurrencyType = "USD";
+          content.BuyGameOrGoodsOrMonth = "Goods";//Game:钻石 Goods:道具 Month:月卡
+          //支付渠道,设置为"all"则支持所有支付渠道，即打开midas商城页
+          content.payChannel = "all";
+          return content;
+   }
     /*
     *初始化：设置支付环境、支付预处理等
     */
@@ -36,34 +59,26 @@
     *支付
     */
     void TestPay(){
-          IMMidasPayContent content = new IMMidasPayContent ();
-          content.OfferId = "1450005285";
-          content.OpenId = openId;
-          content.OpenKey = accessToken;
-          content.SessionId = "hy_gameid"; // usually "hy_gameid"
-          //content.SessionType = "st_overseas"; // check imsdk login status
-          content.SessionType = "st_dummy"; // do NOT check imsdk login status
-          content.ZoneId = "1";
-          content.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");
-          content.PfKey = "pfKey";
-          content.ProductId = "midas_product_1";
-          content.ResId = "unipay_abroad_iconload";
-          content.Country = "US";
-          content.CurrencyType = "USD";
-          content.BuyGameOrGoodsOrMonth = "Goods";//Game:钻石 Goods:道具 Month:月卡
-          content.payChannel = "all";//支付渠道,设置为"all"则支持所有支付渠道，即打开midas商城页
-          
-          IMSDKApi.Pay.Pay(content,MidasPayCallback);//支付
+        IMSDKApi.Pay.Pay(GetMidasPayContent(),MidasPayCallback);//支付
     }
 ```
 
-####进阶功能：获取营销活动、获取商品信息
-1. 代码实例
-   ```cs
+####进阶功能：获取营销活动、获取商品信息、获取谷歌兑换码
+1. 代码实例   
+ 
+```cs
+   void Start() {
+        //初始化：设置支付环境、支付预处理等
+    }
+    
     /*
-    *GetMP:获取营销活动,适用于iOS-Midas支付&Android-Midas支付
+    *GetMP:获取营销活动
     */
-    IMSDKApi.Pay.GetMP(GetMidasAndroidPayContent(), MidasPayCallback);
+    void TestGetMP(){
+       IMSDKApi.Pay.GetMP(GetMidasAndroidPayContent(), MidasPayCallback);
+    }
+    
+   
 
     /*
     *GetProducts:获取商品信息(从Midas后台获取),适用于iOS-Midas支付&Android-Midas支付
@@ -80,7 +95,7 @@
     list.Add("your_google_productId2");
     ...
     IMSDKApi.Pay.GetProducts(list, MidasProdctCallback);
-   ```
+```
 #### 支付流程说明
 
 * 米大师支付分为初始化（Initialize）、设置支付渠道（SetChannel）、设置支付环境（SetEnv）、设置支付区域（SetIDC）、支付准备（Prepare）、支付（Pay）这几个步骤
