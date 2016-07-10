@@ -15,13 +15,12 @@
 2. 代码实例
 
 ```cs
-void TestLogin() {
-    // 设定登陆需要的权限，部分没有权限控制的，渠道填空的List即可
-    List<string> permissionList = new List<string>();
-    permissionList.Add("email");
-    // 调动登陆方法
-    IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
-}
+	private IMToolDeviceInfo deviceInfoObj;
+	private string deviceInfoStr;
+    deviceInfoObj = IMSDKApi.Tool.GetInfoObj();
+    deviceInfoStr = IMSDKApi.Tool.GetInfoStr();
+
+
 ```
 
 ### 参考
