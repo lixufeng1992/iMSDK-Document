@@ -66,7 +66,7 @@ void Start() {
 * 渠道初始化列表构体 <font color=blue>IMStatChannelLists</font>
 
 | 变量 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public List<string> EventReportChannels | 事件上报渠道列表 |
 | public List<string> EventTrackChannels | 事件跟踪渠道列表 |
 | public List<string> PageTrackChannels | 页面跟踪渠道列表 |
