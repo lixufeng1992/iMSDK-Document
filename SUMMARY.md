@@ -53,6 +53,7 @@
            * [4.5.1.2 Facebook 分享功能说明](Unity/Channel/Facebook/share.md)
        * [AppsFlyer](Unity/Channel/appsflyer.md)
            * [AppsFlyer 统计功能说明](Unity/Channel/AppsFlyer/stat.md)
+       * Bugly 功能说明
 * [5. C++开发指引](Cpp/README.md)
    * [5.1 下载及使用](Cpp/download.md)
    * [5.2 配置开发环境](Cpp/setupenv.md)
