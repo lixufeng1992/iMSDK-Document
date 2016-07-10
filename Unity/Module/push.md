@@ -9,13 +9,13 @@
 ### 快速入门
 
 1. #### [选择渠道，完成配置](../../Channel/README.md)
-2. #### 代码实例，根据以下代码可以快速接入
+2. #### 代码实例，下面的代码块是最基本调用代码
 
 ```
 	void Start() {
         //初始化
 		IMSDKApi.Push.Initialize ();
-        //设置需要使用推送渠道
+        //设置需要使用推送渠道，比如“XG”就是使用信鸽推送
 		IMSDKApi.Push.SetChannel("XG");
         //进行注册，控制台看到“注册成功”，就可以接收到后台消息推送
 		IMSDKApi.Push.Register();
@@ -48,4 +48,40 @@
 
 
 ### 代码示例
+1. 使用opendId进行注册，这样可以对单个openId进行推送
+
+```
+	void Start() {
+        //初始化
+		IMSDKApi.Push.Initialize ();
+        //设置需要使用推送渠道，比如“XG”就是使用信鸽推送
+		IMSDKApi.Push.SetChannel("XG");
+        //监听注册，可以获取是否注册成功的消息
+        IMSDKApi.Push.SetRegisterCallback(PushCallback callback);
+        //进行注册
+		IMSDKApi.Push.Register("openId");
+	}
+```
+
+2. 7天内未登录的用户，进行推送，需要用户自己的服务器后台配合
+
+```
+	void Start() {
+        //初始化
+		IMSDKApi.Push.Initialize ();
+        //设置需要使用推送渠道，比如“XG”就是使用信鸽推送
+		IMSDKApi.Push.SetChannel("XG");
+        //监听注册，可以获取是否注册成功的消息
+        IMSDKApi.Push.SetRegisterCallback(PushCallback callback);
+        //进行注册
+		IMSDKApi.Push.Register("openId");
+        //获取当前时间保存在本地，并且上报给服务器。
+        //这样后台就清楚哪些客户在那一天登录，就可以筛选出7天未登录的用户
+        IMSDKApi.Push.SetTag("本次登录时间");
+        //获取保存在本地的上一次登录时间
+        IMSDKApi.Push.DelTag("上一次登录时间");
+	}
+```
+
+
 
