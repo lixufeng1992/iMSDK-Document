@@ -25,6 +25,6 @@
  <!-- Bugly配置，配置官网上获取的APPID，注意：需要在APPID之前添加字符串：“bugly”--> 
 <meta-data
     android:name="APPID_BUGLY"
-    android:value="bugly900003637" />
+    android:value="bugly900003637" /> 
 <!-- Bugly配置结束 -->
  ```
