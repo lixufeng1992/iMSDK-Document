@@ -122,7 +122,7 @@
 * 支付准备信息结构体 <font color=blue>IMPayPrepareContent</font>
 
 | 变量 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public string AppId | 支付应用ID，又称为OfferId，从米大师获取 |
 | public string OpenId | 用户 OpenID，取值为登录（Login）模块返回的 OpenID |
 | public string OpenKey | 用户校验凭证，取值为登录（Login）模块返回的 GuidToken |
