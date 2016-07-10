@@ -43,6 +43,7 @@
           content.payChannel = "all";
           return content;
    }
+   
     /*
     *初始化：设置支付环境、支付预处理等
     */
