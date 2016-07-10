@@ -20,9 +20,9 @@
 
  #### Android 端配置说明
  ``` xml
- <!-- Bugly配置，配置官网上获取的APPID，注意：需要在APPID之前添加字符串：“bugly”--> 
+<!-- DENGTA配置，官网上获取的APPKEY --> 
 <meta-data
-    android:name="APPID_BUGLY"
-    android:value="bugly900003637" /> 
-<!-- Bugly配置结束 -->
+    android:name="APPKEY_DENGTA"
+    android:value="0I40061SZ81FIQ8L" />
+<!-- DENGTA配置结束 -->
  ```
