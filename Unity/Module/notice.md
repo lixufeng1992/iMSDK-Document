@@ -10,14 +10,14 @@
 
 ### 快速入门
 1. [完成特定渠道配置](../../Channel/README.md)
-2. 代码实例
+2. [代码实例](#demo)
 
 ```cs
 void Start() {
     // 我们建议在游戏开始时就初始化登陆方法
-    IMSDKApi.Login.Initialize ();
+    IMSDKApi.Notice.Initialize ();
     // 设定渠道可以根据自己的需要，在调用登录方法之前调用
-    IMSDKApi.Login.SetChannel("Facebook");
+    IMSDKApi.Notice.SetChannel("imsdk");
 }
 
 // 登录回调函数，处理登陆结果
@@ -37,30 +37,15 @@ void TestLogin() {
     // 调动登陆方法
     IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
 }
-```
+``` 
+###参考
 
-    
+* Noitce类方法 <font color=blue>IMNotice</font>   
 
-###平台配置   
-
-###iOS 使用说明     
- 
-+ Notice需要升级IMSDKCoreKit 1.3.6   
-+ Notice的unity部分与android共用（即下载android时的unity部分）
-
-###Android 使用说明
- + 
- 
- 
-##参考
-
-* 
-Noitce类方法 <font color=blue>IMNotice</font>   
-
-| 函数名 | 函数说明 |
-| -- | -- |    
-| public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数  |
-|  public bool Initialize(string channel) |  指定某渠道进行初始化 |    
+| 函数名 | 函数说明 |     
+| :-- | :-- |     
+| public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数  |      
+|  public bool Initialize(string channel) |  指定某渠道进行初始化 |        
 |public bool SetChannel(string channel)|channel为渠道名，传入“imsdk”表示为IMSDK的公告| 
 | public string GetChannel() | 获取渠道  |   
 | public void LoadNoticeData(string version, string language, int region, int partition, bool isUseCache, string extraJson=null, NoticeLoadCallback callback = null)|version    app版本<br>language   需要的语言环境**（见附：语言）**<br> region     地区**(见附：region)**<br>partition  游戏大区<br>isUseCache 如果有图片是否使用本地缓存图片<br>extraJson  扩展字段<br> NoticeLoadCallback回调函数|      
@@ -72,7 +57,7 @@ Noitce类方法 <font color=blue>IMNotice</font>
 + 回调  
 
 |回调函数名|回调说明|  
-| -- | -- |  
+| :-- | :-- |  
 | public delegate void NoticeLoadCallback(IMLoadNoticeResult result);|加载Notice回调，结果参考**IMLoadNoticeResult**|
 
   
@@ -80,7 +65,7 @@ Noitce类方法 <font color=blue>IMNotice</font>
 + Notice结果  （IMLoadNoticeResult）
 
 |属性|说明|  
-| -- | -- |  
+| :-- | :-- |  
 | public int retCode|返回码|   
 |public string retMsg|返回信息|   
 |public int imsdkRetCode|IMSDK返回码|    
@@ -97,7 +82,7 @@ Noitce类方法 <font color=blue>IMNotice</font>
 + Notice信息 (IMNoticeInfo) 
 
 |属性|说明| 
-| -- | -- |  
+| :-- | :-- |  
 |public int NoticeId|公告Id|   
 | public string AppId|AppID|   
 | public string OpenIdt|用户openId|   
@@ -117,14 +102,14 @@ Noitce类方法 <font color=blue>IMNotice</font>
 + Notice图片信息（IMNoitcePic）     
 
 |属性|说明| 
-| -- | -- |  
+| :-- | :-- |  
 |public int NoticeId|用户姓名|   
 |public int ScreenDir|屏幕方向1:横竖屏 2:竖屏 3:横屏|   
 |public string MpicHash|图片hash值|   
 |public string ExtraJson|扩展参数|    
 
 
-##代码示例（参考NoticeSample）
+### <span id="demo">代码示例</span>
 
 ```
 			IMSDKApi.Notice.Initialize ();	//初始化
@@ -134,7 +119,7 @@ Noitce类方法 <font color=blue>IMNotice</font>
 			IMSDKApi.Notice.LoadNoticeData("1.0.0","en",0,0,true, "",OnLoadNoticeCallback);  //拉取公告数据
 		
 ```
-##附:语言   
+###附:语言   
 
 ```
 af-ZA	南非语
