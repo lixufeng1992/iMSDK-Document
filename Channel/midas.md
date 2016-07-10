@@ -11,6 +11,6 @@
 根据不同的编译平台，需要的Facebook配置包括部分：
 
 1. [Android 工程配置](Midas/android.md)
-   * MidasGoogle
+   * [MidasGoogle](../Unity/Channel/Midas/midasgoogle.md)
 2. [Unity 工程配置](Midas/unity.md)
 3. [C++ 工程配置](Midas/cpp.md) 
