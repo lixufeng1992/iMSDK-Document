@@ -35,7 +35,7 @@
 | public string PackageChannelId  | 打包渠道ID |
 | public string GuestId | 设备GuestID |
 | public string AppVersionName | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
-| public string Channel | 当前登录渠道，如：Facebook |
+| public int AppVersionCode | 当前登录渠道，如：Facebook |
 | public int GameId | iMSDK 游戏 ID，如：1010 |
 | public string OpenId | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
 | public string Guid | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
