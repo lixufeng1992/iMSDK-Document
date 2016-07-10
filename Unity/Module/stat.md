@@ -66,15 +66,22 @@ void Start() {
 
 支持功能列表
 
-| 功能 | 函数说明 | 备注 |
-| :-- | :-- | :-- |
-| 事件上报 | ReportEvent | - |
-| 事件跟踪 | TrackEventBegin、TrackEventEnd | 两个函数成对出现 |
-| 跟踪页面 | TrackPageBegin、TrackPageEnd | 两个函数成对出现 |
-| 支付上报 | ReportPurchase | - |
-| 网速统计 | SpeedTest | - |
-| 开启异常上报 | SetAutoExceptionReport | - |
-| 开启崩溃上报 | SetAutoCrashReport | - |
+| 函数名 | 函数说明 |
+| -- | -- |
+| public bool Initialize() | 初始化方法，并且须配置渠道列表，在调用其他函数之前需要调用该函数 |
+| public bool Initialize(IMStatChannelLists channelLists) | 指定渠道的初始化方法，在调用其他函数之前需要调用该函数 |
+| public void ReportEvent(string eventName, bool realtime = false) | 上报事件 |
+| public void ReportEvent(string eventName, string eventBody, bool realtime = false) | 上报事件，并设定事件体 |
+| public void ReportEvent(string eventName,  Dictionary< string, string> paramDict, bool realtime = false) | 上报事件，并设定事件体 |
+| public void ReportPurchase(string purchaseName, string currencyCode, string expense, bool realtime = false) | 上报支付事件 |
+| public void TrackEventBegin(string eventName, string eventBody) | 事件跟踪开始 |
+| public void TrackEventEnd(string eventName, string eventBody) | 事件跟踪结束 |
+| public void TrackPageBegin(string pageName) | 页面跟踪开始 |
+| public void TrackPageEnd(string pageName) | 页面跟踪结束 |
+| public void SpeedTest(List< string > hostList) | 网络测试 |
+| public void SpeedTest(Dictionary< string, int > hostDict) | 带端口的网络测试 |
+| public void SetAutoExceptionReport(bool enable = false) | 设定异常自动上报开关 |
+| public void SetAutoCrashReport(bool enable = false) | 设定异常退出上报开关 |
 
 
 
