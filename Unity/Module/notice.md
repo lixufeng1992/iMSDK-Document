@@ -1,17 +1,23 @@
 ## 4.4.8 公告模块(Notice)
+### 基础信息
 
-##命名空间
+| 命名空间 | 调用入口 |使用说明|
+| :-- |:-- |:--|
+| Tencent.iMSDK | IMSDKApi.Notice |用于用户认证，获取用户的基本资料|
 
-```
-Tencent.iMSDK
-```
 
-##接口类
+<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMNotice（GameObject）上，开发者不要主动销毁该对象！</font>
+
+### 快速入门
+
+
+
+###接口类
 
     IMSDKApi.Notice
     
 
-##平台配置   
+###平台配置   
 
 ###iOS 使用说明     
  
