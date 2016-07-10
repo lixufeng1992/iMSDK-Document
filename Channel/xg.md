@@ -17,4 +17,4 @@
 
 > Android版独有，海外业务推荐使用[信鸽GCM版本](xg_gcm.md)
 
-### [推送模块 (Push)](../Unity/Module/push.md)
+### [推送模块详细使用说明 (Push)](../Unity/Module/push.md)
