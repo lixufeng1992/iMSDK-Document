@@ -1,4 +1,4 @@
-#i'fu# 6.4.2 Midas(iOS) 工程配## 6.4.2 Midas(iOS) 工程配zh支付# 6.4.2 Midas(iOS) 工程配## 6.4.2 Midas(iOS) 工程配zhui'fu# 6.4.2 Midas(iOS) 工程配## 6.4.2 Midas(iOS) 工程配zh支付# 6.4.2 Midas(iOS) 工程配## 6.4.2 Midas(iOS) 工程配zh置
+##6.4.2 Midas(iOS) 工程配
 
 米大师iOS支付分为两部分，**iOS应用内支付（IAP）**与**外发渠道支付**。
 
