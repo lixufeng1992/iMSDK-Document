@@ -1,56 +1,68 @@
 ## 4.4.8 公告模块(Notice)
+### 基础信息
 
-##命名空间
+| 命名空间 | 调用入口 |使用说明|
+| :-- |:-- |:--|
+| Tencent.iMSDK | IMSDKApi.Notice |从指定渠道拉取公告信息|
 
-```
-Tencent.iMSDK
-```
 
-##接口类
+<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMNotice（GameObject）上，开发者不要主动销毁该对象！</font>
 
-    IMSDKApi.Notice
-    
+### 快速入门
+1. [完成特定渠道配置](../../Channel/README.md)
+2. 代码实例
 
-##平台配置   
+```cs
+void Start() {
+    // 我们建议在游戏开始时就初始化登陆方法
+    IMSDKApi.Notice.Initialize ();
+    // 设定渠道可以根据自己的需要，在拉取公告之前设置
+    IMSDKApi.Notice.SetChannel("imsdk");
+}
 
-###iOS 使用说明     
- 
-+ Notice需要升级IMSDKCoreKit 1.3.6   
-+ Notice的unity部分与android共用（即下载android时的unity部分）
+// 拉取公告回调函数，处理登陆结果
+void TestOnLoadNoticeCallback(IMLoadNoticeResult result){
+        if(result.RetCode == 1) {
+        Debug.Log("load notice ok,  " + result.ToUnityString ());
+    }
+    else {
+        Debug.Log("load notice error : " + result.ErrorMsg);
+    }
+}
 
-###Android 使用说明
- + 
- 
- 
-##参考
+void TestLoadNotice() {
+    //调用拉取公告方法，参数定义参考函数说明部分
+    IMSDKApi.Notice.LoadNoticeData("0.0.0.1","zh-TW",886,0,true, 1,"", TestOnLoadNoticeCallback);
+}
+``` 
+###参考
 
-* 
-Noitce类方法 <font color=blue>IMNotice</font>   
+* Noitce类方法 <font color=blue>IMNotice</font>   
 
-| 函数名 | 函数说明 |
-| -- | -- |    
-| public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数  |
-|  public bool Initialize(string channel) |  指定某渠道进行初始化 |    
+| 函数名 | 函数说明 |     
+| :-- | :-- |     
+| public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数  |      
+|  public bool Initialize(string channel) |  指定某渠道进行初始化 |        
 |public bool SetChannel(string channel)|channel为渠道名，传入“imsdk”表示为IMSDK的公告| 
 | public string GetChannel() | 获取渠道  |   
-| public void LoadNoticeData(string version, string language, int region, int partition, bool isUseCache, string extraJson=null, NoticeLoadCallback callback = null)|version    app版本<br>language   需要的语言环境**（见附：语言）**<br> region     地区**(见附：region)**<br>partition  游戏大区<br>isUseCache 如果有图片是否使用本地缓存图片<br>extraJson  扩展字段<br> NoticeLoadCallback回调函数|      
-|public void LoadNoticeData(string noticeId, int loadDataType = 1, string scene = null, string extraJson = null, NoticeLoadCallback callback = null)|加载公告:<br>noticeId:指定需要获取的notice ID(可选,如不指定将按loadDataType自动获取)<br> loadDataType: 1:从第三方渠道获取数据 2:从deepLink获取数据 3：预留：从imsdk自研平台获取数据（返回的是IMNoticeInfo）4...<br>scene:指定的场景<br>extraJson:附加参数   | 
-| public void ShowNotice(string noticeId, int noticeType = 1, string scene = null, string extraJson = null, NoticeShowCallback callback = null) | 展示公告:<br> noticeType: 1:notice(普通公告) 2:banner(标题公告) 3:endBanner(标题结束公告) 4:termsOfAgree(用户协议) 5:showSettlementFund(资金支付协议) 6：updateInfo(更新信息) 7...<br>noticeId: 在后台配置的notice ID<br>scene:指定场景<br>extraJson:附加参数 |    
+| public void LoadNoticeData(string version, string language, int region, int partition, bool isUseCache,int noticeType=1, string extraJson=null, NoticeLoadCallback callback = null)|version    app版本<br>language   需要的语言环境**（见附：语言）**<br> region     地区**(见附：region)**<br>partition  游戏大区<br>isUseCache 如果有图片是否使用本地缓存图片<br>noticeType: 公告类型<li> 1 : 登录前公告</li><li> 2 : 登录后公告</li><li> 3 : 标题公告</li><li> 4 : 底部标题公告</li><li> 5 : 用户协议</li><li> 6 : 更新信息</li><br>extraJson  扩展字段<br> NoticeLoadCallback回调函数|      
+|public void LoadNoticeData(string noticeId, int loadDataType = 1, string scene = null,int noticeType =1, string extraJson = null, NoticeLoadCallback callback = null)|加载公告:<br>noticeId:指定需要获取的notice ID(可选,如不指定将按loadDataType自动获取)<br> loadDataType: 1:从第三方渠道获取数据 2:从deepLink获取数据 3：预留：从imsdk自研平台获取数据（返回的是IMNoticeInfo）4...<br>scene:指定的场景<br>noticeType: 公告类型<li> 1 : 登录前公告</li><li> 2 : 登录后公告</li><li> 3 : 标题公告</li><li> 4 : 底部标题公告</li><li> 5 : 用户协议</li><li> 6 : 更新信息</li>extraJson:附加参数   | 
+| public void ShowNotice(string noticeId, int noticeType = 1, string scene = null, string extraJson = null, NoticeShowCallback callback = null) | 展示公告:<br> noticeType: 公告类型<li> 1 : 登录前公告</li><li> 2 : 登录后公告</li><li> 3 : 标题公告</li><li> 4 : 底部标题公告</li><li> 5 : 用户协议</li><li> 6 : 更新信息</li><br>noticeId: 在后台配置的notice ID<br>scene:指定场景<br>extraJson:附加参数 |    
 |public void SetUserTargetingData(IMUserTargetingData targetingData, string extraJson = null)|设置用户唯一标识码及标签|    
 |public void UpdateUserTargetingDataToSvr(string extraJson = null)|将SetUserTargetingData的数据同步至服务器|     
 |1public void CloseNotice(string noticeId = "", int closeType = 1, string extraJson = null)|关闭公告：<br> noticeId:指定需要关闭的notice ID(可选,如不指定将按closeType值关闭)<br>closeType:1：关闭最上端弹窗 2：关闭所有弹窗，包括等待中的弹窗|   
-+ 回调  
+* 回调  
 
 |回调函数名|回调说明|  
-| -- | -- |  
+| :-- | :-- |  
 | public delegate void NoticeLoadCallback(IMLoadNoticeResult result);|加载Notice回调，结果参考**IMLoadNoticeResult**|
 
   
 
-+ Notice结果  （IMLoadNoticeResult）
+* Notice结果  （IMLoadNoticeResult）
 
 |属性|说明|  
-| -- | -- |  
+| :-- | :-- |  
 | public int retCode|返回码|   
 |public string retMsg|返回信息|   
 |public int imsdkRetCode|IMSDK返回码|    
@@ -64,10 +76,10 @@ Noitce类方法 <font color=blue>IMNotice</font>
 
 
 
-+ Notice信息 (IMNoticeInfo) 
+* Notice信息 (IMNoticeInfo) 
 
 |属性|说明| 
-| -- | -- |  
+| :-- | :-- |  
 |public int NoticeId|公告Id|   
 | public string AppId|AppID|   
 | public string OpenIdt|用户openId|   
@@ -84,27 +96,33 @@ Noitce类方法 <font color=blue>IMNotice</font>
 |public string ExtraJson|扩展参数|
 
 
-+ Notice图片信息（IMNoitcePic）     
+* Notice图片信息（IMNoitcePic）     
 
 |属性|说明| 
-| -- | -- |  
+| :-- | :-- |  
 |public int NoticeId|用户姓名|   
 |public int ScreenDir|屏幕方向1:横竖屏 2:竖屏 3:横屏|   
 |public string MpicHash|图片hash值|   
 |public string ExtraJson|扩展参数|    
 
 
-##代码示例（参考NoticeSample）
+### 代码示例  
+* **渠道说明**     
+通过设置不同渠道拉取不同来源的公告,例如imsdk表示从iMSDK拉取公告。    
 
+```cs
+  IMSDKApi.Notice.Initialize ();	//初始化
+  IMSDKApi.Notice.SetChannel("imsdk");//设置渠道
 ```
-			IMSDKApi.Notice.Initialize ();	//初始化
-			
-			IMSDKApi.Notice.SetChannel("imsdk");//设置渠道
-			
-			IMSDKApi.Notice.LoadNoticeData("1.0.0","en",0,0,true, "",OnLoadNoticeCallback);  //拉取公告数据
+* **拉取公告**
+
+```cs 	
+  IMSDKApi.Notice.Initialize ();	//初始化
+  IMSDKApi.Notice.SetChannel("imsdk");//设置渠道
+  IMSDKApi.Notice.LoadNoticeData("1.0.0","en",0,0,true, "",OnLoadNoticeCallback);  //拉取公告数据
 		
 ```
-##附:语言   
+###附:语言   
 
 ```
 af-ZA	南非语
@@ -256,7 +274,7 @@ zh-SG	中文(新加坡)
 zh-TW	中文(繁体)
 zu-ZA	祖鲁语     
 ```       
-##附：区域（region）    
+###附：区域（region）    
 
 ```    
 1	美国|加拿大
