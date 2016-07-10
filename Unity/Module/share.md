@@ -7,7 +7,7 @@ using Tencent.iMSDK
 ```
 | 命名空间 | 调用入口 |使用说明|
 | :-- |:-- |:--|
-| Tencent.iMSDK | IMSDKApi.Share |用于用户分享、邀请好友、给好友发消息等|
+| Tencent.iMSDK | IMSDKApi.Share |用于用户分享、邀请好友、给好友发消息等社交功能|
     
 ### 接口类
 
