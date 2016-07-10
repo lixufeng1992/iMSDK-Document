@@ -14,4 +14,4 @@
 2. [Unity 工程配置](Expansion/unity.md)
 3. [C++ 工程配置](Expansion/cpp.md) 
 
-### [分包下载(Expansion)](../Unity/Module/obb.md)
+### [Expansion 模块详细使用说明](../Unity/Module/obb.md)
