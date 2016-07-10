@@ -64,23 +64,16 @@ void TestLogin() {
 ### 参考
 
 * 登录返回结构体 <font color=blue>IMLoginResult</font>
+| 变量 | 函数说明 | 备注 |
+| :-- | :-- | :-- |
+| 事件上报 | ReportEvent |
+| 事件跟踪 | TrackEventBegin、TrackEventEnd | 两个函数成对出现 |
+| 跟踪页面 | TrackPageBegin、TrackPageEnd | 两个函数成对出现 |
+| 支付上报 | ReportPurchase | - |
+| 网速统计 | SpeedTest | - |
+| 开启异常上报 | SetAutoExceptionReport | - |
+| 开启崩溃上报 | SetAutoCrashReport | - |
 
-| 变量 | 说明 |
-| :-- | :-- |
-| public int RetCode | 登录状态码，1 为成功登录，其他为失败 |
-| public string ErrorMsg | 错误信息 |
-| public int ChannelId | iMSDK 渠道 ID ，如：Facebook的渠道 ID 为 1 |
-| public string Channel | 当前登录渠道，如：Facebook |
-| public int GameId | iMSDK 游戏 ID，如：1010 |
-| public string OpenId | OpenId，用户游戏账号，在游戏内应该使用该字段作为用户标识 | 
-| public string Guid | 用户全局ID，IMSDK提供的用户标识，在多款游戏中可以定位到用一个用户的 ID |
-| public string GuidToken | iMSDK 后台使用的Token，与 OpenId 配合使用 |
-| public uint GuidTokenExpire | GuidToken 有效时间，从北京时间1970年01月01日08时00分00秒的时间戳 |
-| public string GuidUserNick | 用户昵称 |
-| public string GuidUserBirthday | 用户生日，如：1990-01-01 |
-| public int GuidUserSex | 用户性别，0-未知；1-男；2-女 |
-| public string GuidUserPortrait | 用户头像地址 |
-| public List< string > ChannelPermissions | 用户已有权限列表，部分渠道无法获取改字段 |
 
 * 回调代理函数 <font color=blue>LoginCallback</font>
 
