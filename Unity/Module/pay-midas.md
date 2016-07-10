@@ -20,7 +20,6 @@
       prepareContent.ZoneId = "1";
   }
    
-    
     /*
     *初始化：设置支付环境、支付预处理等
     */
@@ -58,6 +57,30 @@
     }
 ```
 
+####进阶功能：获取营销活动、获取商品信息
+1. 代码实例
+   ```cs
+    /*
+    *GetMP:获取营销活动,适用于iOS-Midas支付&Android-Midas支付
+    */
+    IMSDKApi.Pay.GetMP(GetMidasAndroidPayContent(), MidasPayCallback);
+
+    /*
+    *GetProducts:获取商品信息(从Midas后台获取),适用于iOS-Midas支付&Android-Midas支付
+    */
+    List<IMMidasPayContent> list = new List<IMMidasPayContent>();
+    list.Add(GetMidasAndroidPayContent());
+    IMSDKApi.Pay.GetProducts(list, MidasProdctCallback);
+
+    /*
+    *GetProducts:获取商品信息2(从Google后台获取),只适用于Android-Midas支付
+    */
+    List<IMMidasProductContent> list = new List<IMMidasProductContent>();
+    list.Add("your_google_productId1");
+    list.Add("your_google_productId2");
+    ...
+    IMSDKApi.Pay.GetProducts(list, MidasProdctCallback);
+   ```
 #### 支付流程说明
 
 * 米大师支付分为初始化（Initialize）、设置支付渠道（SetChannel）、设置支付环境（SetEnv）、设置支付区域（SetIDC）、支付准备（Prepare）、支付（Pay）这几个步骤
