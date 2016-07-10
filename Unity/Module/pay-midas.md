@@ -68,7 +68,14 @@
  
 ```cs
    void Start() {
-        //初始化：设置支付环境、支付预处理等
+        //见快速入门 初始化：设置支付环境、支付预处理等
+    }
+    
+    /*
+    *prepare：支付预处理2,Android特有,增加支持返回google兑换码功能
+    */
+    void TestPrepareForGoogle(){
+       IMSDKApi.Pay.Prepare(prepareContent,MidasPayUpdateCallback);
     }
     
     /*
@@ -78,23 +85,26 @@
        IMSDKApi.Pay.GetMP(GetMidasAndroidPayContent(), MidasPayCallback);
     }
     
-   
-
-    /*
-    *GetProducts:获取商品信息(从Midas后台获取),适用于iOS-Midas支付&Android-Midas支付
+   /*
+    *GetProducts:获取商品信息(从Midas后台获取)
     */
-    List<IMMidasPayContent> list = new List<IMMidasPayContent>();
-    list.Add(GetMidasAndroidPayContent());
-    IMSDKApi.Pay.GetProducts(list, MidasProdctCallback);
-
+    void TestGetProducts(){
+       List<IMMidasPayContent> list = new List<IMMidasPayContent>();
+       list.Add(GetMidasAndroidPayContent());
+       IMSDKApi.Pay.GetProducts(list, MidasProdctCallback);
+    }
+    
     /*
-    *GetProducts:获取商品信息2(从Google后台获取),只适用于Android-Midas支付
+    *GetProducts:获取商品信息2(从Google后台获取),只适用于Android平台
     */
-    List<IMMidasProductContent> list = new List<IMMidasProductContent>();
-    list.Add("your_google_productId1");
-    list.Add("your_google_productId2");
-    ...
-    IMSDKApi.Pay.GetProducts(list, MidasProdctCallback);
+    void TestGetProductsFromGoogleSRV(){
+       List<IMMidasProductContent> list = new List<IMMidasProductContent>();
+       list.Add("your_google_productId1");
+       list.Add("your_google_productId2");
+       ...
+      IMSDKApi.Pay.GetProducts(list, MidasProdctCallback);
+    }
+    
 ```
 #### 支付流程说明
 
