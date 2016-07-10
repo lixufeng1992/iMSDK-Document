@@ -98,7 +98,7 @@
     }
     
     /*
-    *GetProducts:获取商品信息2(从Google后台获取),只适用于Android平台
+    *GetProducts:获取商品信息重载方法(从Google后台获取),Android特有
     */
     void TestGetProductsFromGoogleSRV(){
        List<IMMidasProductContent> list = new List<IMMidasProductContent>();
