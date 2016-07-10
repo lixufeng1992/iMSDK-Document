@@ -12,5 +12,6 @@
 
 1. [Android 工程配置](Midas/android.md)
    * [MidasGoogle](../Unity/Channel/Midas/midasgoogle.md)
-2. [Unity 工程配置](Midas/unity.md)
-3. [C++ 工程配置](Midas/cpp.md) 
+2. [iOS 工程配置](Midas/ios.md)
+3. [Unity 工程配置](Midas/unity.md)
+4. [C++ 工程配置](Midas/cpp.md) 
