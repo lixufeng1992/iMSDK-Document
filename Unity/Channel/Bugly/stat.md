@@ -9,11 +9,9 @@
 | 1 | public bool Initialize() | 初始化方法 | √ | - |
 | 2 | public bool Initialize(IMStatChannelLists channelLists)  | 初始化方法 | √ | - |
 | 3 | public bool SetChannel(string channel) | 设置登录渠道| √ | |
-| 4 | public string GetChannel() | 获取当前设定渠道 | √ | |
-| 5 | public void SetType(string type) | 复杂渠道设置登录类型 | × | |
-| 6 | public void Login( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 一般登录 | √ | |
-| 7 | public void StrictLogin( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 严格登录 | √ | |
-| 8 | public void QuickLogin(LoginCallback callback = null) | 快速登录 | √ | |
+| 6 | public void reportEvent | 事件上报 | √ | |
+| 7 | public void reportPurchase() | 购买行为上报 | √ | |
+| 8 | public void trackEvent() | 事件跟踪 | √ | |
 | 9 | public bool IsLogin() | 判断用户是否已经登录 | √ | |
 | 10 | public void AutoLogin(LoginCallback callback = null) | 自动登录 | √ | |
 | 11 | public IMLoginResult GetLoginResult() | 获取当前登录返回数据 | √ | |
