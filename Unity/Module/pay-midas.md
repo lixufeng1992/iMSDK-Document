@@ -54,7 +54,7 @@
           content.BuyGameOrGoodsOrMonth = "Goods";//Game:钻石 Goods:道具 Month:月卡
           content.payChannel = "all";//支付渠道,设置为"all"则支持所有支付渠道，即打开midas商城页
           
-          IMSDKApi.Pay.Pay(GetMidasPayContent(),MidasPayCallback);//支付
+          IMSDKApi.Pay.Pay(content,MidasPayCallback);//支付
     }
     
 
