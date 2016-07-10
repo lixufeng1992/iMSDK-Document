@@ -25,6 +25,14 @@
     "testSpeed":["MTA"]
   }
 ```
+其中：
+* eventReport 为事件上报渠道列表
+* eventTrack 为事件跟踪渠道列表
+* pageTrack 为页面跟踪渠道列表
+* purchaseReport 为支付上报渠道列表
+* testSpeed 为网速统计渠道列表
+* exceptionReport 为异常上报渠道列表
+* crashReport 为崩溃上报渠道列表
 
 ```cs
 void Start() {
