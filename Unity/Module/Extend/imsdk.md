@@ -23,6 +23,8 @@
     deviceInfoObj = IMSDKApi.Tool.GetInfoObj();
     deviceInfoStr = IMSDKApi.Tool.GetInfoStr();
     packageChannelId = deviceInfoObj.PackageChannelId;
+    //或者
+    //packageChannelId = IMSDKApi.Tool.GetPackageChannelId();
 
 ```
 
