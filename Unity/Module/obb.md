@@ -52,6 +52,11 @@ void OnStart(){
 
 ```
 
+> 扩展包的格式：main.{version}.{package-name}.obb, 比如： main.314159.com.example.app.obb <br>
+> 扩展包在手机中的存放路径： storage/Android/obb/{package-name}/
+
+
+
 ### 参考
 
 * IMExpansionFilesDownload
