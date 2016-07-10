@@ -9,6 +9,6 @@
 | [关系链](friend.md) | 邀请、获取好友列表及发送消息 | Facebook、Google(GooglePlus)、WeChat（微信） |
 | [支付](pay.md) | 手机支付功能 | [MidasGoogle（米大师Google支付）](../Channel/Midas/midasgoogle.md) |
 | [推送](push.md) | 手机消息推送 | XG（信鸽）、XGGCM（信鸽GCM版） | 
-| [统计](stat.md) | 统计功能 | [AppsFlyer](../Channel/appsflyer.md)、[Bugly](../Channel/bugly.md)、MTA、Beacon | 
+| [统计](stat.md) | 统计功能 | [AppsFlyer](../Channel/appsflyer.md)、[Bugly](../Channel/bugly.md)、[MTA](../Channel/mta.md)、[Beacon](../Channel/beacon.md) | 
 
 
