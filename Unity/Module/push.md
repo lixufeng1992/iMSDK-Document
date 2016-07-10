@@ -8,7 +8,7 @@
 
 ### 快速入门
 
-1. #### [完成配置](../../Channel/xg.md)
+1. #### [完成配置](../../Channel/README.md)
 2. #### 代码实例，如下代码块实现到Google Play进行[OBB](https://developer.android.com/google/play/expansion-files.html)的下载
 
 ```
