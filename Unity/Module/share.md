@@ -9,11 +9,6 @@ using Tencent.iMSDK
 | :-- |:-- |:--|
 | Tencent.iMSDK | IMSDKApi.Share |用于用户分享、邀请好友、给好友发消息等社交功能|
     
-### 接口类
-
-```cs
-IMSDKApi.Share
-```
 
 ### 模块使用说明
 
