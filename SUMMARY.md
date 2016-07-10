@@ -61,6 +61,7 @@
        * [6.1.2 Android 工程配置](Channel/Facebook/android.md)
        * [6.1.3 iOS 工程配置](Channel/Facebook/ios.md)
    * [6.2 WeChat平台设置](Channel/wechat.md)
+   * [6.3 WeChat平台设置](Channel/wechat.md)
    * [6.4 Midas设置](Channel/midas.md)
        * [6.4.1 Android 工程配置](Channel/Midas/android.md)
        * [6.4.2 iOS 工程配置](Channel/Midas/ios.md)
