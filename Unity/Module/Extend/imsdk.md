@@ -28,7 +28,7 @@
 
 ### 参考
 
-* 登录返回结构体 <font color=blue>IMLoginResult</font>
+* GetInfoObj返回结构体 <font color=blue>IMToolDeviceInfo </font>
 
 | 变量 | 说明 |
 | :-- | :-- |
