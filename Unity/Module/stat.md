@@ -62,6 +62,18 @@ void Start() {
 
 
 ### 参考
+
+* 渠道初始化列表构体 <font color=blue>IMStatChannelLists</font>
+
+| 变量 | 说明 |
+| -- | -- |
+| public List<string> EventReportChannels | 事件上报渠道列表 |
+| public List<string> EventTrackChannels | 事件跟踪渠道列表 |
+| public List<string> PageTrackChannels | 页面跟踪渠道列表 |
+| public List<string> TestSpeedChannels | 网络统计渠道列表 |
+| public List<string> ExceptionReportChannels | 异常上报渠道列表 |
+| public List<string> CrashReportChannels | 崩溃上报渠道列表 |
+
 * 统计方法类IMStat
 
 支持功能列表
