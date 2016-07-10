@@ -9,4 +9,5 @@
 | [Expansion 配置](expansion.md)|
 | [Midas 配置](midas.md)|
 | [信鸽 配置](xg.md)|
-| [信鸽GCM 配置](xg_gcm.md)|
+| [信鸽GCM 配置](xg_gcm.md)|    
+|Notice配置|
