@@ -86,30 +86,9 @@
 
 ### 代码示例
 
-* #### 基本登录
 
-iMSDK调用登录功能十分简单，一般只需要调用三个函数即可
+* 
 
-```cs
-// 初始化功能模块
-IMSDKApi.Login.Initialize();
-
-// 设定渠道
-IMSDKApi.Login.SetChannel("Facebook");
-
-// 定义回调函数
-void OnLogin(IMLoginResult loginResult) {
-  if(loginResult.RetCode == 1) {
-    // TODO
-    Debug.Log("user name : " + loginResut.GuidUserNick);
-    Debug.Log("open id : " + loginResut.OpenId);
-    Debug.Log("iMSDK token : " + loginResut.GuidToken);
-  }
-  else {
-    // TODO
-    Debug.Log("login error : " + loginResult.ErrorMsg);
-  }
-}
 
 // 调用登录
 IMSDKApi.Login.Login(OnLogin);
