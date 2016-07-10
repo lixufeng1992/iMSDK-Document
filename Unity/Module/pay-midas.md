@@ -275,29 +275,3 @@
 | 20.|public void SetDistributeCallback(PayCallback callback) | 设定发货回调 |
 | 21.|public void SetPayCallback(PayCallback callback) | 设定支付回调 |
 | 22.|public void SetErrorCallback(PayCallback callback) | 设定其他出错回调 |
-
-
-
-##### * 基础功能:支付
-```cs
-    /*
-    *构造Pay请求结构体
-    */
-    IMMidasPayContent GetMidasPayContent() {
-          
-          return content;
-        }
-    
-```
-
-#### * 进阶功能：获取营销活动
-```cs
-    IMSDKApi.Pay.GetMP(GetMidasPayContent(), MidasPayCallback);
-```
-
-#### * 进阶功能：获取商品信息(从Midas后台获取)
-```cs
-    List<IMMidasPayContent> list = new List<IMMidasPayContent>();
-    list.Add(GetMidasAndroidPayContent());
-    IMSDKApi.Pay.GetProducts(list, MidasProdctCallback);
-```
