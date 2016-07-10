@@ -18,16 +18,13 @@
 | 12 | public void reportAutoExceptionReport() | 登出当前渠道 | √ | - |
 
 
-### 统计权限说明
+### Bugly统计配置说明
 
-  * 权限列表可参考Facebook权限说明：[https://developers.facebook.com/docs/facebook-login/permissions/v2.4](https://developers.facebook.com/docs/facebook-login/permissions/v2.4)
-  
-  * Facebook 权限分为 读（read）和 写（write）两种模式的权限类型，并且两种权限类型不能在一次登录时同时获取
-
-    >按照Facebook的规则，开发者需要在必要时，获取用户的权限，需要避免一次性获取过多权限，一旦获取权限后，除非用户在配置页面删除该权限，这时候才需要重新获取权限。
-    >
-    >例如，需要获取用户邮件地址（email）和用户发帖权限（publish_actions），则需要分两次登录 ！
-
-  * 常见权限
-    * user_friends 获取用户好友列表，如果需要使用好友排行功能，需要在登录时获取
-    * publish_actions 不弹出Facebook界面的分享权限
+ #### Android 端配置说明
+ ``` xml
+ <!-- Bugly配置，配置官网上获取的APPID，注意：需要在APPID之前添加字符串：“bugly”--> 
+<meta-data
+    android:name="APPID_BUGLY"
+    android:value="bugly900003637" />
+<!-- Bugly配置结束 -->
+ ```
