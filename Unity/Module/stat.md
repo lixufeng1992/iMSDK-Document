@@ -13,6 +13,19 @@
 1. [完成特定渠道配置](../../Channel/README.md)
 2. 代码实例
 
+```json
+//stat.json 格式示例
+{
+    "eventReport":["MTA","Adjust"],
+    "eventTrack":["MTA"],
+    "purchaseReport":["Adjust","Facebook"],
+    "exceptionReport":["Bugly"],
+    "crashReport":["Bugly"],
+    "pageTrack":["MTA"],
+    "testSpeed":["MTA"]
+  }
+```
+
 ```cs
 void Start() {
     // 我们建议在游戏开始时就初始化登陆方法
