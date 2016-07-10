@@ -9,6 +9,20 @@
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMShare（GameObject）上，开发者不要主动销毁该对象！</font>
 
+### 模块使用说明
+
+该模块主要是用来分享功能，类似微信朋友圈、微博的功能
+
+#### 分享类型说明
+
+分享一般分为两类：
+
+* 后台分享，调用Api后直接分享，在应用后台执行并无弹窗
+* 弹窗分享，调用Api后弹出分享框，用户需要进一步操作才能分享
+
+在<font color=blue>IMShareContent.ShareType</font>中定义了iMSDK支持的分享类
+
+
 ### 快速入门
 
 1. [完成特定渠道配置](../../Channel/README.md)
