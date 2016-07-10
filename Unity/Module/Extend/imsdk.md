@@ -46,13 +46,13 @@
 | public string Apn | 获取设备网络apn，如"wap", "net"等 |
 | public string Brand | 获取设备brand |
 | public string Manufacturer | 获取设备制造商 |
-| public string Model |获取设备model|
-| public string PhoneName | |
-| public string Language | |
-| public string Country | |
-| public string AndroidId | |
-| public string Mac | |
-| public string SeriesId | |
+| public string Model | 获取设备model |
+| public string PhoneName | 获取设备名称 |
+| public string Language | 获取设备语言 |
+| public string Country |获取设备所在国家 |
+| public string AndroidId |获取设备AndroidId |
+| public string Mac |获取设备mac地址 |
+| public string SeriesId |获取设备SeriesId |
 
 
 * 回调代理函数 <font color=blue>LoginCallback</font>
