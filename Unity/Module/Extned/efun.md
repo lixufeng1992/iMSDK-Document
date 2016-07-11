@@ -22,7 +22,7 @@
 Efun扩展类方法 <font color=blue>IMEfun</font>   
 
 | 函数名 | 函数说明 |
-| -- | -- |
+| :-- | :-- |
 | public void ShowPlatform(EfunPlatformEntity param)|Platform展示,<br>param说明参考EfunPlatformEntity结构体|
 |public void HiddenPlatform(bool isHidePlatform = true)|Platform隐藏，<br>isHidePlatform为true时隐藏，否则不隐藏|
 | public void Relate2ThirdAccount(int kind,EfunRelate2ThirAccountCallback callback = null)|关联第三方平台账号，<br>Kind分别为 0：Facebook；1：Kakao；2：VK；3：Twitter|
@@ -41,7 +41,7 @@ Efun扩展类方法 <font color=blue>IMEfun</font>
 + 好友结果信息   （EfunFriendResult）
 
 |属性|说明|  
-| -- | -- |  
+| :-- | :-- |  
 | public int retCode|返回码|   
 |public string retMsg|返回信息|   
 |public int imsdkRetCode|IMSDK返回码|    
@@ -76,7 +76,7 @@ Efun扩展类方法 <font color=blue>IMEfun</font>
 |public bool isSilhouette|不知道haha|    
 |public string imageUrl|用户头像URL|
 
-## 代码示例（参考EfunSample）
+## 代码示例
 	```
 			//show platform
 			EfunPlatformEntity param = new EfunPlatformEntity();
