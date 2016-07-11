@@ -1,48 +1,22 @@
 ## 4.4.13.4 Efun功能扩展
 
 
+### 基础信息
 
-##1.1 命名空间
+| 命名空间 | 调用入口 |使用说明|
+| :-- |:-- |:--|
+| Tencent.iMSDK | IMSDKApi.Efun |Efun扩展功能|
 
-```
-Tencent.iMSDK
-```
 
-##1.2 接口类
+<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMEfun（GameObject）上，开发者不要主动销毁该对象！</font>
 
-    IMSDKApi.Efun
+### 快速入门
+
     
 
-##1.3 平台配置   
 
-###1.3.1 iOS 使用说明     
- 
-+ 配置与Login一样
-
-###1.3.2 Android 使用说明
- + 	参考Login，作如下修改
- + 	（1）删除如下权限
-		<uses-permission android:name="android.permission.GET_TASKS" />
-	
-	（2）删除如下配置：
-		
-        <service android:name="com.efun.push.client.service.EfunPushService" >
-        </service>
-
-        <receiver android:name="com.efun.push.client.receiver.EfunPushReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name="com.efun.push.client.Dispatcher" />
-                <action android:name="com.efun.delete.notification.action" />
-            </intent-filter>
-        </receiver>
-        
-
-	（3）修改原sdk中所有Activity中的android:screenOrientation属性：
-		将android:screenOrientation="landscape" 改为 android:screenOrientation="sensorLandscape"
   
-##1.4 API参考
+###参考
 
 * 
 Efun扩展类方法 <font color=blue>IMEfun</font>   
@@ -94,7 +68,7 @@ Efun扩展类方法 <font color=blue>IMEfun</font>
 + 用户信息（EfunUserProfile）     
 
 |属性|说明| 
-| -- | -- |  
+| :-- | :-- |  
 |public string userName|用户姓名|   
 |public string userId|用户ID|   
 |public string loginType|登入子渠道|   
