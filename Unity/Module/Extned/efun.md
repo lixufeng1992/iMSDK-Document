@@ -12,7 +12,29 @@
 
 ### 快速入门
 1.代码实例
-    
+  ```
+			//展示 platform
+			EfunPlatformEntity param = new EfunPlatformEntity();
+			param.serverCode = "9999";
+			param.roleId = "1";
+			param.roleLevel = "1";
+			param.roleName = "think";
+			IMSDKApi.Efun.ShowPlatform(param);
+			
+			//隐藏 platform
+			IMSDKApi.Efun.HiddenPlatform(true);
+	
+			//关联第三方社交平台
+			IMSDKApi.Efun.Relate2ThirdAccount(0,OnRelate2ThirdAccount);
+			
+			//获取好友
+			IMSDKApi.Efun.GetInvitableFriends(0,OnGetFriends);
+	
+			//获取用户信息
+			IMSDKApi.Efun.GetUserProfile(0， 100， 100 ,OnGetUserProfile);
+		
+		
+```
 
 
   
@@ -76,8 +98,8 @@ Efun扩展类方法 <font color=blue>IMEfun</font>
 |public bool isSilhouette|不知道haha|    
 |public string imageUrl|用户头像URL|
 
-## 代码示例
-	```
+### 代码示例
+```
 			//show platform
 			EfunPlatformEntity param = new EfunPlatformEntity();
 			param.serverCode = "9999";
@@ -99,7 +121,7 @@ Efun扩展类方法 <font color=blue>IMEfun</font>
 			IMSDKApi.Efun.GetUserProfile(0， 100， 100 ,OnGetUserProfile);
 		
 		
-	```
+```
 ###配置说明   
 
 #### iOS 配置说明     
