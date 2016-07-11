@@ -3,3 +3,9 @@
 ![填写GCM示例图](../Images/XG_GCM/xg_gcm_2.png)
 #### 2. 获取SenderID和Server API Key，将这两个值提交给信鸽后台同学<font color="red">jusisli(李爽)</font> 进行配置
 ![获取SenderId示例图](../Images/XG_GCM/xg_gcm_1.png)
+ #### 3. 选择对应平台进行配置
+ 
+  * [Android 配置](android.md)
+  * [iOS 配置](ios.md)
+  * [Unity 配置](Unity.md)
+  * [Cpp 配置](cpp.md)
