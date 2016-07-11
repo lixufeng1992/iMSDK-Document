@@ -11,7 +11,7 @@
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMEfun（GameObject）上，开发者不要主动销毁该对象！</font>
 
 ### 快速入门
-
+1.代码实例
     
 
 
