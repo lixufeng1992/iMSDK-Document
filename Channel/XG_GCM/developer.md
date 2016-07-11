@@ -5,7 +5,6 @@
 ![获取SenderId示例图](../Images/XG_GCM/xg_gcm_1.png)
  #### 3. 选择对应平台进行配置
  
-  * [Android 配置](android.md)
-  * [iOS 配置](ios.md)
+  * [信鸽 GCM Android 配置](android.md)
   * [Unity 配置](Unity.md)
   * [Cpp 配置](cpp.md)
