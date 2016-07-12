@@ -57,7 +57,7 @@
            * Bugly 统计功能说明
        * [kakao功能说明](Unity/Channel/kakao.md)
            * [Kakao 登录功能说明](Unity/Channel/Unity/Channel/Kakao/login.md)
-           * [Kakao 好友功能说明](Unity/Channel/Unity/Channel/Kakao/friend.md)
+           * [Kakao 好友功能说明](Unity/Channel/Kakao/friend.md)
 * [5. C++开发指引](Cpp/README.md)
    * [5.1 下载及使用](Cpp/download.md)
    * [5.2 配置开发环境](Cpp/setupenv.md)
