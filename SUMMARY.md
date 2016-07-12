@@ -55,7 +55,7 @@
            * [AppsFlyer 统计功能说明](Unity/Channel/AppsFlyer/stat.md)
        * [Bugly 功能说明](Unity/Channel/bugly.md)
            * Bugly 统计功能说明
-       * [kakao功能模块说明](Unity/Channel/Unity/Channel/kakao.md)
+       * [kakao功能说明](Unity/Channel/Unity/Channel/kakao.md)
            * [Kakao登录功能说明](Unity/Channel/Unity/Channel/login.md)
 * [5. C++开发指引](Cpp/README.md)
    * [5.1 下载及使用](Cpp/download.md)
