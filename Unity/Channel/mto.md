@@ -6,4 +6,5 @@
 | :-- | :------- | :--- |
 | [Login](MTO/login.md) | 登录模块 | - |
 | [Share](MTO/share.md) | 分享 | - |
-| [Friend](MTO/friend.md) | 关系链 | - |
+| [Friend](MTO/friend.md) | 关系链 | - |    
+| [Help](MTO/help.md) | 帮助系统 | - |
