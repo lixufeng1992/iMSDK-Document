@@ -7,7 +7,7 @@
 | :--: | -- |:-------: | :-----: | -- |   
 | 1 | public bool Initialize() | 初始化方法 | √ | - |    
 | 2 | public bool Initialize(string channel) | 初始化，并制定登录渠道 |√ |  |   
-| 3 | public bool SetChannel(string channel) | 设置登录渠道| √ |  |    
+| 3 | public bool SetChannel(string channel) | 设置登录渠道| √ |  |      
 | 4 | public string GetChannel() | 获取当前设定渠道 | √ | |    
 | 5 | public void SetType(string type) | 复杂渠道设置登录类型 | × |  |    
 | 6 | public void Login( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 一般登录 | √ |  |     
