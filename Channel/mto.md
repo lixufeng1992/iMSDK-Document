@@ -10,6 +10,6 @@
 ### 工程配置
 根据不同的编译平台进行配置：
 
-1. [Android 工程配置](XG_GCM/android.md)
-2. [Unity 工程配置](XG_GCM/unity.md)
+1. [Android 工程配置](MTO/android.md)
+2. [iOS工程配置](MTO/ios.md)
 3. [C++ 工程配置](XG_GCM/cpp.md) 
