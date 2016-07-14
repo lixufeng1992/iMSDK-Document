@@ -23,6 +23,7 @@
 			</array>
 		</dict>
 ```   
+
 ###3.Xcode配置   
 * 在 Build Settings =》Other linker Flags中添加 -ObjC；
 * 在 info中, 做如下修改:   
@@ -47,3 +48,20 @@
    <string>fbauth2</string>
    </array>
   ```
+  
+###4.添加系统库
+AddressBook.framework   
+AdSupport.framework   
+CoreLocation.framework   
+CoreTelephony.framework   
+CoreGraphics.framework   
+QuartzCore.framework   
+StoreKit.framework    
+AVFoundation.framework    
+MediaPlayer.framework    
+AssetsLibrary.framework    
+CoreMotion.framework    
+Security.framework     
+SystemConfiguration.framework    
+libz.tbd    
+libc++.tbd    
