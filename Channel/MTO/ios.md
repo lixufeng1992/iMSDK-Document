@@ -1,5 +1,5 @@
 ## MTO iOS 工程配置    
-###[MTO Facebook配置](Facebook/ios.md)
+###[MTO Facebook配置](Channel/Facebook/ios.md)
 
 Facebook所需要的配置在官方文档都有详细说明，请参考：[https://developers.facebook.com/docs/ios/getting-started/](https://developers.facebook.com/docs/ios/getting-started/)
 
