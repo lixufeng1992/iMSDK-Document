@@ -28,7 +28,9 @@
 
 ```
   hidePlatform()
-
+  /**
+   * hidePlatform 隐藏platform
+   */
 ```
 
  #### Android 端配置说明
