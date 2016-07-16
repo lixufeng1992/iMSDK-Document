@@ -6,7 +6,7 @@
 | :--: | -- |:-------: | :-----: | -- |
 | 1 | public bool Initialize() | 初始化方法 | √ | - |
 | 2 | public void showPlatform() | 显示platform | √ | - |
-| 4 | public void hidePlatform() | 隐藏platform | x | - |
+| 4 | public void hidePlatform() | 隐藏platform | √ | - |
 
 ### MTO Extend接口说明
 ```
