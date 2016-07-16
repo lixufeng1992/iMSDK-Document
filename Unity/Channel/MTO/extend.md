@@ -6,7 +6,7 @@
 | :--: | -- |:-------: | :-----: | -- |
 | 1 | public bool Initialize() | 初始化方法 | √ | - |
 | 2 | public void showPlatform() | 显示platform | √ | - |
-| 4 | public void reportPurchase() | 购买行为上报 | x | - |
+| 4 | public void hidePlatform() | 隐藏platform | x | - |
 | 5 | public void trackEvent() | 事件跟踪 | x | - |
 | 6 | public bool trackPage() | 页面跟踪 | x | - |
 | 7 | public void speedTest() | 测速 | x | - |
