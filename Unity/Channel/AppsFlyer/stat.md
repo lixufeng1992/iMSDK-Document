@@ -5,7 +5,7 @@
 ### 统计支持接口列表
 
 | 序号 | 方法名 | 方法说明 | 是否支持 | 备注 |
-| :--: | -- |:-------: | :-----: | -- |
+| :--: | :--: |:-------: | :-----: | :--: |
 | 1 | public bool Initialize() | 初始化方法 | √ | - |
 | 2 | public bool Initialize(IMStatChannelLists channelLists)  | 初始化方法 | √ | - |
 | 3 | public void reportEvent | 事件上报 | √ | - |
