@@ -34,6 +34,19 @@
 ```
 
 ### MTO生命周期接口
+> 游戏需在自己的入口activity中，在对应的接口调用下面的函数。
+
+```
+onActivityResult(int requestCode, int resultCode, Intent data)
+/**
+ * onActivityResult callback
+ * @param requestCode requestCode
+ * @param resultCode resultCode
+ * @param data data
+ */
+    
+```
+
 ```
 
 ```
