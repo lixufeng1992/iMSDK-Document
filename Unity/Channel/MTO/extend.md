@@ -10,20 +10,20 @@
 
 ### MTO Extend接口说明
 ```
-showPlatform(int position)
-/**
-* showPlatform
-* @param position  see as follow
-* TOP_LEFT = 1;
-* TOP_CENTER = 2;
-* TOP_RIGHT = 3;
-* RIGHT_CENTER = 4;
-* BUTTOM_RIGHT = 5;
-* BUTTOM_CENTER = 6;
-* BUTTON_LEFT = 7;
-* LEFT_CENTER = 8;
-* default : 1---TOP_LEFT
-*/
+  showPlatform(int position)
+  /**
+  * showPlatform  显示platform
+  * @param position  see as follow
+  * TOP_LEFT = 1;
+  * TOP_CENTER = 2;
+  * TOP_RIGHT = 3;
+  * RIGHT_CENTER = 4;
+  * BUTTOM_RIGHT = 5;
+  * BUTTOM_CENTER = 6;
+  * BUTTON_LEFT = 7;
+  * LEFT_CENTER = 8;
+  * default : 1---TOP_LEFT
+  */
 
 ```
 
