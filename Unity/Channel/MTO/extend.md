@@ -1,4 +1,4 @@
-## MTO 统计功能说明
+## MTO Extend功能说明
 
 ### MTO Extend 接口列表
 
@@ -32,6 +32,7 @@
    * hidePlatform 隐藏platform
    */
 ```
+##### 备注:要调用showPlatform和hidePlatform， 需在调用登录Initialize（）后再次调用Extend模块的Initialize（）
 
 ### MTO生命周期接口
 > 游戏需在自己的入口activity中，在对应的接口调用下面的函数。
