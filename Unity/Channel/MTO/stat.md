@@ -20,8 +20,8 @@
  #### Android 端配置说明
  ``` xml
  <!-- MTO配置 APPSFLYER KEY，配置官网上获取 --> 
-<meta-data
-    android:name="APPID_BUGLY"
-    android:value="bugly900003637" /> 
+ <meta-data
+            android:name="APPSFLYER_KEY"
+            android:value="abcdefghijklmn" />
 <!-- Bugly配置结束 -->
  ```
