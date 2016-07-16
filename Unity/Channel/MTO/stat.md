@@ -23,5 +23,5 @@
  <meta-data
       android:name="APPSFLYER_KEY"
       android:value="YOUR_APPSFLYER_KEY" />
-<!-- Bugly配置结束 -->
+<!-- MTO配置配置结束 -->
  ```
