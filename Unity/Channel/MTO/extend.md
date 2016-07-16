@@ -24,7 +24,6 @@
   * LEFT_CENTER = 8;
   * default : 1---TOP_LEFT
   */
-
 ```
 
  #### Android 端配置说明
