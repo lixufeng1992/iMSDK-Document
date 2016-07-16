@@ -33,6 +33,7 @@
    */
 ```
 
+### MTO生命周期接口
  #### Android 端配置说明
  ``` xml
  <!-- MTO配置 APPSFLYER KEY，配置官网上获取 --> 
