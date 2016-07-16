@@ -21,7 +21,7 @@
  ``` xml
  <!-- MTO配置 APPSFLYER KEY，配置官网上获取 --> 
  <meta-data
-            android:name="APPSFLYER_KEY"
-            android:value="abcdefghijklmn" />
+      android:name="APPSFLYER_KEY"
+      android:value="abcdefghijklmn" />
 <!-- Bugly配置结束 -->
  ```
