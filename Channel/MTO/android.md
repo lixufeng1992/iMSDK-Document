@@ -48,13 +48,13 @@
 		<!-- vng gameid define, can not empty & must right value -->
         <meta-data
             android:name="appID"
-            android:value="your appID" />
+            android:value="your_appID" />
         <meta-data
             android:name="mto_game_id"
-            android:value="your gameId" />
+            android:value="your_gameId" />
         <meta-data
             android:name="mto_payment_key_1"
-            android:value="your appKey" />
+            android:value="your_appKey" />
 
         
 
