@@ -14,7 +14,7 @@
         android:name="YOUR_PACKAGE.C2D_MESSAGE"
         android:protectionLevel="signature" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="com.vng.wemoba.permission.C2D_MESSAGE" />
+    <uses-permission android:name="YOUR_PACKAGE.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
