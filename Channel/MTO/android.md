@@ -174,7 +174,7 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.facebook.FacebookActivity"
+            android:name="com.facebook.FacebookActivity"    
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
