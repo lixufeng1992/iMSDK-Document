@@ -69,19 +69,19 @@
             android:value="0" />
         <meta-data
             android:name="conversion_id"
-            android:value="your conversion id" />
+            android:value="your_conversion id" />
         <meta-data
             android:name="mto_label"
-            android:value="mto label" />
+            android:value="mto_label" />
         <meta-data
             android:name="sender_id"
-            android:value="your sender id" />
+            android:value="your_sender_id" />
         <meta-data
             android:name="mto_AgeValidation"
-            android:value="your mto_AgeValidation" />
+            android:value="your_mto_AgeValidation" />
         <meta-data
             android:name="googleWalletPubKey"
-            android:value="your googleWalletPubKey" />
+            android:value="your_googleWalletPubKey" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
