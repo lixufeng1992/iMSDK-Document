@@ -51,15 +51,3 @@ onActivityResult(int requestCode, int resultCode, Intent data)
 ```
 onResume()         
 ```
-
-
-
-
- #### Android 端配置说明
- ``` xml
- <!-- MTO配置 APPSFLYER KEY，配置官网上获取 --> 
- <meta-data
-      android:name="APPSFLYER_KEY"
-      android:value="YOUR_APPSFLYER_KEY" />
-<!-- MTO配置配置结束 -->
- ```
