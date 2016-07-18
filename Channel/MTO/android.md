@@ -243,7 +243,7 @@
         <!-- AppsFlyer -->
         <meta-data
             android:name="APPSFLYER_KEY"
-            android:value="your APPSFLYER_KEY" />			
+            android:value="your_APPSFLYER_KEY" />			
 
 		
 		<meta-data android:name="com.tencent.imsdk.mto.GameVersion" android:value="your gameVersion" />			
