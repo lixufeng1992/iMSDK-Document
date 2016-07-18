@@ -54,9 +54,7 @@
             android:value="your_gameId" />
         <meta-data
             android:name="mto_payment_key_1"
-            android:value="your_appKey" />
-
-        
+            android:value="your_appKey" />        
 
         <meta-data
             android:name="configOffSuccessDialog"
