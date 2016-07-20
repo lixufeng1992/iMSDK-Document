@@ -41,7 +41,8 @@
 如果拉出帮助中心，需要传入roleName， level， serverId等值，需要在调showHelpCenter接口前，调用对应的set接口。
 ```
 SetLevel(string level);
-SetRoleName(string roleName)
+SetRoleName(string roleName);
+SetServerId(string serverId);
 ```
        
 
