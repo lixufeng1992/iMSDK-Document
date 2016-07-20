@@ -38,5 +38,6 @@
   ```
   
 ###SET接口说明
+如果拉出帮助中心，需要传入roleName， level， serverId等值，需要在调showHelpCenter接口前，调用对应的set接口。
        
 
