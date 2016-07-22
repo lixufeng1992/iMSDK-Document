@@ -8,9 +8,6 @@ iOS的所有配置，都需要在Unity中编译导出Xcode工程后，在Xcode�
   
   ```sh
   -all_load
-  
-  
-  ll
   ```
   ![Xcode配置编译选项](../Images/4_2_unity_setupenv_xcode_all_load.jpg)
   
