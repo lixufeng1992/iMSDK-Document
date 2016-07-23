@@ -10,6 +10,6 @@
 | [Viber](viber.md) |
 | [Midas](midas.md) |
 | [MTO](mto.md) |
-| [MTO](mto.md) |
-| [MTO](mto.md) |
-| [MTO](mto.md) |
+| [Garena](garena.md) |
+| [Efun](efun.md) |
+| [Toy](toy.md) |
