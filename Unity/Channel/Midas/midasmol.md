@@ -6,7 +6,7 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 
 *  MidasMOL 权限配置，在AndroidManifest.xml中新增一下权限
 
-  ```xml
+```xml
  <!--通用权限--> <uses-permission android:name="android.permission.INTERNET" /> 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
