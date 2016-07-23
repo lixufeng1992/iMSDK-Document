@@ -8,21 +8,7 @@
 ### 前端工程配置
 根据不同的编译平台，需要的Midas配置包括部分：
 
-1. [Android 工程配置](Midas/android.md)
- * [MidasGoogle(米大师谷歌支付)](../Unity/Channel/Midas/midasgoogle.md)
- * [MidasEfun(米大师Efun支付)](../Unity/Channel/Midas/midasefun.md)
- * [MidasFeiliu(米大师飞流支付)](../Unity/Channel/Midas/midasfeiliu.md)
- * [MidasFortumo(米大师Fortumo支付)](../Unity/Channel/Midas/midasfortumo.md)
- * [MidasGarena(米大师Garena支付)](../Unity/Channel/Midas/midasgarena.md)
- * [MidasGM(米大师GM支付)](../Unity/Channel/Midas/midasgm.md)
- * [MidasBoku(米大师Boku支付)](../Unity/Channel/Midas/midasboku.md)
- * [MidasLink (米大师Link支付) ](../Unity/Channel/Midas/midaslink.md)
- * [MidasMOL(米大师MOL支付)](../Unity/Channel/Midas/midasmol.md)
- * [MidasPW(米大师Paymentwall支付)](../Unity/Channel/Midas/midaspaymentwall.md)
- * [MidasZalo(米大师Zalo支付)](../Unity/Channel/Midas/midaszalo.md)
- * [MidasGM(米大师G妹支付)](../Unity/Channel/Midas/midasgm.md)
- * [SQW(三七玩支付)](../Unity/Channel/Midas/midassqw.md)
-
-2. [iOS 工程配置](Midas/ios.md)
-3. [Unity 工程配置](Midas/unity.md)
-4. [C++ 工程配置](Midas/cpp.md)
+1. [Android 工程配置]( Garena /android.md)
+2. [iOS 工程配置]( Garena /ios.md)
+3. [Unity 工程配置]( Garena /unity.md)
+4. [C++ 工程配置]( Garena /cpp.md)
