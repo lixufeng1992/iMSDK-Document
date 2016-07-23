@@ -18,11 +18,11 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
  <uses-permission android:name="android.permission.RECEIVE_SMS" />
  <uses-permission android:name="android.permission.SEND_SMS" />
  <!--Fortumo支付自定义权限，XXXX部分请定义为您自己的包名
- 从Android L开始，signature的自定义权限需要签名相同。
- <permission android:name="XXXX.permission.PAYMENT_BROADCAST_PERMISSION"-->
+ 从Android L开始，signature的自定义权限需要签名相同。 --> 
+ <permission android:name="XXXX.permission.PAYMENT_BROADCAST_PERMISSION"
  <permission android:name="[your_package_name].permission.PAYMENT_BROADCAST_PERMISSION"
- android:label="Read payment status"
- android:protectionLevel="signature" />
+     android:label="Read payment status"
+     android:protectionLevel="signature" />
  <!-- "signature" permission granted automatically by system, without notifying user. -->
  <uses-permission android:name="[your_package_name].permission.PAYMENT_BROADCAST_PERMISSION" />
  ```
