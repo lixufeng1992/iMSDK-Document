@@ -236,13 +236,21 @@ void TestShare() {
  return content;
  }
 
+/*
+ *Type = TEXT_DIALOG
+ *Android支持登录渠道：GRN_BT
+ */
  private void testGarenaShareTextDialog() {
  IMShareContent content = createDemoShareContent();
  content.ExtraJson = "{\"mediaTagName\":\"your mediaTagName\"}";//mediaTagName
  content.Type = IMShareContent.ShareType.TEXT_DIALOG;
  IMSDKApi.Share.Share(content);
  }
-
+ /*
+ *Type = IMAGE_DIALOG
+ *Android支持登录渠道：GRN_BT GRN_FB
+ *注意：当登录渠道为GRN_Gas时，可以设置shareType=GRN_FB来分享至指定渠道（FB）
+ */
  private void testGarenaShareImageDialog() {
  IMShareContent content = createDemoShareContent();
  /*
@@ -253,7 +261,11 @@ void TestShare() {
  content.Type = IMShareContent.ShareType.IMAGE_DIALOG;
  IMSDKApi.Share.Share(content);
  }
-
+ /*
+ *Type = LINK_DIALOG
+ *Android支持登录渠道：GRN_BT GRN_FB
+ *注意：当登录渠道为GRN_Gas时，可以设置shareType=GRN_FB来分享至指定渠道（FB）
+ */
  private void testGarenaShareLinkDialog() {
  IMShareContent content = createDemoShareContent();
  /*
