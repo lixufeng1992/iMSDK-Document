@@ -1,10 +1,10 @@
-## 6.4.2.1 MidasGoogle 工程配置
+## 6.4.2.1 MidasGarena 工程配置
 
-### MidasGoogle配置
+### MidasGarena配置
 
 Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据插件本身的要求而各有不同。
 
-* MidasGoogle权限配置，在AndroidManifest.xml中新增一下权限
+*  MidasGarena 权限配置，在AndroidManifest.xml中新增一下权限
 
   ```xml
 
@@ -41,6 +41,6 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 
   
 
-### MidasGoogle代码实例
+###  MidasGarena 代码实例
 
 * 与[米大师支付](../../Module/pay-midas.md)文档一致，请参见文档
