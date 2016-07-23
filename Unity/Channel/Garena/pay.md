@@ -1,3 +1,4 @@
 # Garena支付模块
 
-Garena暂无扩展功能
+ 参考 
+ * [ MidasGarena(米大师Garena支付)](Unity/Channel/Midas/midasgarena.md)
