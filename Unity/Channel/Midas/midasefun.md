@@ -339,8 +339,6 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
  content.Extras = "roleId=aaaa&roleName=bbbb&roleLevel=cccc&serverId=1";
 ```
 
-
-
 ```cs
 /*
 *Android-Midas 初始化
