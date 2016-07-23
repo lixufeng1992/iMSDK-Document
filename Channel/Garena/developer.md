@@ -4,10 +4,10 @@
     
  有别与Facebook、Google等大型、成熟渠道接入方可自行配置、调试    
 
- Garena一般是通过运营方配置
+ Garena一般是通过运营方配置...
 
      
 
-5. 配置iMSDK后台
+2. 配置iMSDK后台
 
  请到iMSDK管理段进行后台配置，联系人RTX：hirryli
