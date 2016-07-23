@@ -346,7 +346,7 @@
     IMSDKApi.Pay.SetIDC("local");
 
     /*
-    *构造Android：IMMidasPayContent 该结构体适用于iOS-Midas支付&Android-Midas支付
+    *构造Android：IMMidasPayContent
     */
     IMMidasPayContent GetMidasAndroidPayContent() {
      IMMidasPayContent content = new IMMidasPayContent ();
@@ -375,7 +375,7 @@
      }
 
     /*
-    *构造iOS：IMMidasPayContent 该结构体适用于iOS-Midas支付&Android-Midas支付
+    *构造iOS：IMMidasPayContent
     *请注意在构造Android和iOS时的细微差别
     */
     IMMidasPayContent GetMidasIOSPayContent() {
@@ -396,7 +396,7 @@
      }
 
     /*
-     *构造IMPayPrepareContent 该结构体适用于iOS-Midas支付&Android-Midas支付
+     *构造IMPayPrepareContent
     */
     IMPayPrepareContent prepareContent = new IMPayPrepareContent();
     prepareContent.AppId = GetMidasAndroidPayContent().OfferId;
