@@ -19,7 +19,7 @@
 
 ### Android工程配置
 
-* 参考Efun Login配置
+* 参考Efun 配置
 
 
 ### iOS工程配置
