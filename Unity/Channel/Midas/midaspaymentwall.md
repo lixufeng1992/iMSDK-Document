@@ -7,35 +7,35 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 *  MidasPW 权限配置，在AndroidManifest.xml中新增一下权限
 
 ```xml
- <!--通用权限--> <uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-<!--MOL支付需要的权限-->
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-<uses-permission android:name="android.permission.WRITE_SETTINGS" />
-<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
-<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-<uses-permission android:name="android.permission.SEND_SMS"/>
-
-<!--通用Activity-->
+ <!--通用权限-->
+ <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+ <application>
+ <!-- midas paymentwall start -->
+ <!--通用 Activity-->
  <activity
- android:name="com.tencent.midas.oversea.business.APMallActivity"
- android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
- android:screenOrientation="landscape"
- android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+     android:name="com.tencent.midas.oversea.business.APMallActivity"
+     android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+     android:screenOrientation="landscape"
+     android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
  </activity>
  <activity
- android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
- android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
- android:screenOrientation="landscape"
- android:theme="@android:style/Theme.Translucent.NoTitleBar">
+     android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
+     android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+     android:screenOrientation="landscape"
+     android:theme="@android:style/Theme.Translucent.NoTitleBar">
  </activity>
-<!--MOL Activity 无-->
+ <!--Paymentwall Activity-->
+ <activity
+     android:name="com.paymentwall.sdk.pwlocal.ui.PwLocalActivity"
+     android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+     android:screenOrientation="landscape"
+     android:theme="@android:style/Theme.Translucent" />
+ <!-- midas paymentwall end -->
+ </application>
 
  ```
 
