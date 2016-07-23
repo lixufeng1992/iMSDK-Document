@@ -20,7 +20,7 @@
    * [MidasBoku(米大师Boku支付)](../Unity/Channel/Midas/midasboku.md)
    * [MidasLink (米大师Link支付) ](../Unity/Channel/Midas/midaslink.md)
    * [MidasMOL(米大师MOL支付)](../Unity/Channel/Midas/midasmol.md)
-   * [Midaspaymentwall(米大师PW支付)](../Unity/Channel/Midas/midaspaymentwall.md)
+   * [MidasPW(米大师Paymentwall支付)](../Unity/Channel/Midas/midaspaymentwall.md)
 
 2. [iOS 工程配置](Midas/ios.md)
 3. [Unity 工程配置](Midas/unity.md)
