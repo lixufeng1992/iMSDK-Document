@@ -21,35 +21,35 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 <uses-permission
- android:name="android.permission.READ_EXTERNAL_STORAGE"
- android:maxSdkVersion="18" />
+     android:name="android.permission.READ_EXTERNAL_STORAGE"
+     android:maxSdkVersion="18" />
 <activity
- android:name="com.tencent.midas.oversea.business.APMallActivity"
- android:screenOrientation="landscape"
- android:configChanges="keyboard|keyboardHidden"
- android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+     android:name="com.tencent.midas.oversea.business.APMallActivity"
+     android:screenOrientation="landscape"
+     android:configChanges="keyboard|keyboardHidden"
+     android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 </activity>
 <activity
- android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
- android:screenOrientation="landscape"
- android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
- android:theme="@android:style/Theme.Translucent.NoTitleBar">
+     android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
+     android:screenOrientation="landscape"
+     android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+     android:theme="@android:style/Theme.Translucent.NoTitleBar">
 </activity>
 <activity
- android:name="com.tencent.midas.oversea.business.payhub.link.APProxyActivity"
- android:screenOrientation="landscape"
- android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
- android:theme="@android:style/Theme.Translucent.NoTitleBar">
+     android:name="com.tencent.midas.oversea.business.payhub.link.APProxyActivity"
+     android:screenOrientation="landscape"
+     android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+     android:theme="@android:style/Theme.Translucent.NoTitleBar">
 </activity>
 <meta-data
- android:name="com.google.android.gms.version"
- android:value="@integer/google_play_services_version" />
+     android:name="com.google.android.gms.version"
+     android:value="@integer/google_play_services_version" />
 <meta-data
- android:name="com.aiming.link.purchase.Base64PublicKey"
- android:value="your Bse64PublicKey" />
+     android:name="com.aiming.link.purchase.Base64PublicKey"
+     android:value="your Bse64PublicKey" />
 <meta-data
- android:name="com.aiming.link.purchase.ItemDisplayName"
- android:value="your ItemDisplayName" />
+     android:name="com.aiming.link.purchase.ItemDisplayName"
+     android:value="your ItemDisplayName" />
 
  ```
 
