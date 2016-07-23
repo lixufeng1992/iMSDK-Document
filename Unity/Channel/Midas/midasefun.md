@@ -315,8 +315,7 @@
     ```
   
 ### MidasEfun代码实例
-<font color=red>以下为细微差别部分</font>    
-
+  
 ```cs
     /*
      *差别部分：
@@ -334,8 +333,6 @@
      */
      content.Extras = "roleId=aaaa&roleName=bbbb&roleLevel=cccc&serverId=1";
 ```
-    
-
 
 ```cs
     /*        
