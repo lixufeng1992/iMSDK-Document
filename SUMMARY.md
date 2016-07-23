@@ -72,7 +72,7 @@
            * [ 4.5.5.11 MidasZalo(米大师Zalo支付)](Unity/Channel/Midas/midaszalo.md)
            * [ 4.5.5.12 MidasGM(米大师G妹支付)](Unity/Channel/Midas/midasgm.md)
            * [ 4.5.5.13 SQW(三七玩支付)](Unity/Channel/Midas/midassqw.md)
-      * [ 4.5.6 Garena功能说明](Unity/Channel/garena.md)
+       * [ 4.5.6 Garena功能说明](Unity/Channel/garena.md)
            * [ 4.5.6.1 Garena 登录功能说明](Unity/Channel/Garena/login.md)
            * [ 4.5.6.2 Garena 好友功能说明](Unity/Channel/Garena/friend.md)
            * [ 4.5.6.3 Garena 分享功能说明](Unity/Channel/Garena/share.md)
