@@ -44,7 +44,7 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 ###  MidasMOL 代码实例
 
 * 与[米大师支付](../../Module/pay-midas.md) 大致一致，在入参时有细微差别 
-<font color=red>* 以下为细微差别部分</font>
+以下为细微差别部分
 
 ```cs
 /*
