@@ -36,7 +36,7 @@ IMSDKApi.UToy
 * 关闭Notice结构体 <font color=blue>IMToyNoticeCloseResult</font>
 
 | 变量 | 说明 |
-| -- | -- |
+|  :-- |  :-- |
 | public int RetCode | 返回码，1 为成功，其他为失败 |
 | public string ErrorMsg | 错误信息 |
 | public string screenName | 当前场景名称 |
@@ -44,14 +44,14 @@ IMSDKApi.UToy
 * 关闭Notice回调代理函数 <font color=blue>ShowNoticeCallback</font>
 
 | 类型 | 说明 |
-| -- | -- |
+|  :--  |  :--  |
 | public delegate void ShowNoticeCallback(IMToyNoticeCloseResult result) | 获取展示Notice回调函数，返回关闭Notice结构体 |
 
 ###展示Banner结构体及回调代理函数
 * 展示Banner结构体 <font color=blue>IMToyBannerResult</font>
 
 | 变量 | 说明 |
-| -- | -- |
+|  :--  |  :--  |
 | public int RetCode | 返回码，1 为成功，其他为失败 |
 | public string ErrorMsg | 错误信息 |
 | public string state | 展示Notice事件状态, 1001:展示notice失败 1002：关闭notice 1003:点击Notice 1004:退出Notice|
@@ -59,12 +59,12 @@ IMSDKApi.UToy
 * 展示Banner回调代理函数 <font color=blue>ShowBannerCallback</font>
 
 | 类型 | 说明 |
-| -- | -- |
+|  :--  |  :--  |
 | public delegate void ShowBannerCallback(IMToyBannerResult result) | 展示Banner回调函数，返回浏览器状态结构体 |
 
 ###IMToyUserInfo:Toy玩家信息结构体
 | 变量 | 说明 |
-| -- | -- |
+|  :--  |  :--  |
 | public string memType | User authentication type |
 | public string npsn | User identification value in NPA |
 | public string subID | Identification value used in the relevant authentication method |
@@ -82,7 +82,7 @@ IMSDKApi.UToy
 
 ###IMToyFriend:Toy关系链信息结构体及回调代理函数
 | 变量 | 说明 |
-| -- | -- |
+|  :--  |  :--  |
 | public int hasNext | 下一页 |
 | public IMToyUserInfo friends | 登录账号中已玩该游戏的好友 |
 | public IMToyUserInfo invites | 登录账号中未玩该游戏的好友 |
@@ -90,14 +90,14 @@ IMSDKApi.UToy
 * 获取关系链回调代理函数 <font color=blue>GetFriendsCallback</font>
 
 | 类型 | 说明 |
-| -- | -- |
+|  :--  |  :--  |
 | public delegate void GetFriendsCallback(IMToyFriend result) | 获取关系链回调函数，返回关系链结构体 |
 
 
 * UToy方法类 <font color=blue>IMUToy</font>
 
 | 函数名 | 函数说明 |
-| -- | -- |
+|  :--  |  :--  |
 | public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数 |
 | public void ShowBanner(int groupCode, ShowBannerCallback callback = null) | 展示Banner |
 | public void ShowEndingBanner(ShowEndingBannerCallback callback = null) | 展示应用退出时的Banner |
