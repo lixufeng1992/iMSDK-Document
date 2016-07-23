@@ -6,7 +6,7 @@
 1. [Garena平台、后台配置](Garena/developer.md)
 
 ### 前端工程配置
-根据不同的编译平台，需要的Midas配置包括部分：
+根据不同的编译平台，需要的Garena配置包括部分：
 
 1. [Android 工程配置]( Garena /android.md)
 2. [iOS 工程配置]( Garena /ios.md)
