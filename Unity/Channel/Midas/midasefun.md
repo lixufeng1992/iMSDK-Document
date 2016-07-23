@@ -312,7 +312,7 @@
      android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
      android:theme="@android:style/Theme.Translucent.NoTitleBar">
  </activity>
-    ```
+```
   
 ### MidasEfun代码实例
   
