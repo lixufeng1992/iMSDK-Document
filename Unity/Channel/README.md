@@ -8,5 +8,8 @@
 | [WeChat](wechat.md) |
 | [VK](vk.md) |
 | [Viber](viber.md) |
-| [Midas](viber.md) |
+| [Midas](midas.md) |
+| [MTO](mto.md) |
+| [MTO](mto.md) |
+| [MTO](mto.md) |
 | [MTO](mto.md) |
