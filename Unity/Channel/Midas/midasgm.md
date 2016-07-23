@@ -1,10 +1,10 @@
-## 6.4.2.12 SQW 工程配置
+## 6.4.2.12 MidasGM工程配置
 
-### SQW 配置
+###  MidasGM 配置
 
 Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据插件本身的要求而各有不同。
 
-* SQW 权限配置，在AndroidManifest.xml中新增一下权限
+*  MidasGM 权限配置，在AndroidManifest.xml中新增一下权限
 
 ```xml
  <uses-permission android:name="android.permission.INTERNET"/>
@@ -107,6 +107,6 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 
 
 
-### SQW 代码实例
+###  MidasGM 代码实例
 
 * 与[米大师支付](../../Module/pay-midas.md) 一致
