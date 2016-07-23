@@ -72,6 +72,10 @@
            * [MidasZalo(米大师Zalo支付)](Unity/Channel/Midas/midaszalo.md)
            * [MidasGM(米大师G妹支付)](Unity/Channel/Midas/midasgm.md)
            * [SQW(三七玩支付)](Unity/Channel/Midas/midassqw.md)
+      * [Garena功能说明](Unity/Channel/garena.md)
+           * [ Garena 登录功能说明](Unity/Channel/Garena/login.md)
+           * [ Garena 好友功能说明](Unity/Channel/Garena/friend.md)
+
 * [5. C++开发指引](Cpp/README.md)
    * [5.1 下载及使用](Cpp/download.md)
    * [5.2 配置开发环境](Cpp/setupenv.md)
