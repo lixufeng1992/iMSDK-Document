@@ -317,7 +317,7 @@
 ### MidasEfun代码实例
 <font color=red>以下为细微差别部分</font>    
 
-    ```cs
+```cs
     /*
      *差别部分：
      *payChannel值为：os_efun时，开启Efun谷歌支付
@@ -333,11 +333,11 @@
      *serverId值
      */
      content.Extras = "roleId=aaaa&roleName=bbbb&roleLevel=cccc&serverId=1";
-    ```
+```
     
 
 
-    ```cs
+```cs
     /*        
     *Android-Midas 初始化
     */
@@ -422,4 +422,4 @@
     /*
     *efun暂时不支持 获取营销活动、获取商品信息功能
     */
-     ```
+```
