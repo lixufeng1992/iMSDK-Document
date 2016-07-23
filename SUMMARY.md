@@ -75,6 +75,9 @@
       * [Garena功能说明](Unity/Channel/garena.md)
            * [ Garena 登录功能说明](Unity/Channel/Garena/login.md)
            * [ Garena 好友功能说明](Unity/Channel/Garena/friend.md)
+           * [ Garena 分享功能说明](Unity/Channel/Garena/share.md)
+           * [ Garena 支付功能说明](Unity/Channel/Garena/pay.md)
+           * [ Garena 扩展功能说明](Unity/Channel/Garena/extend.md)
 
 * [5. C++开发指引](Cpp/README.md)
    * [5.1 下载及使用](Cpp/download.md)
