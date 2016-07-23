@@ -3,7 +3,7 @@
 ## 支持接口列表
 
 | 序号 | 方法名 | 方法说明 | 是否支持 |
-| :--: | -- |:-------: | :-----: |
+| :-- |  :-- |:------- | :----- |
 | 1 | public bool Initialize() | 初始化方法 | √ |
 | 2 | public bool Initialize(string channel) | 初始化，并制定登录渠道 |√ |
 | 3 | public bool SetChannel(string channel) | 设置登录渠道| √ |
@@ -30,7 +30,7 @@
  * 子渠道列表，即SetType（string type）的入参说明：
 
 | 子渠道 | 子渠道说明 |
-| :--: | :--: |
+| :-- | :-- |
 | "Toy_DF" | 默认拉起登陆界面，显示渠道需要Toy进行配置。默认显示Guest 、Email以及Twitter|
 | "Toy_GU" | Guest 用户登陆|
 | "Toy_FB" | Facebook登陆|
