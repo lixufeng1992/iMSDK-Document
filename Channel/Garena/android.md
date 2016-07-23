@@ -1,10 +1,8 @@
-## 6.4.1 Midas(Android) 工程配置
+## 6.4.1 Garena(Android) 工程配置
 
 ### Android工程通用配置
 
-Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据插件本身的要求而各有不同,详情见[Midas配置](../midas.md)，
-
-* Midas内核包权限配置，在AndroidManifest.xml中新增一下权限
+*  Garena在AndroidManifest.xml中配置如下
 
  ```xml
  <uses-permission android:name="android.permission.INTERNET" />
