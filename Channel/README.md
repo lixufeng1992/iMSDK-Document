@@ -13,3 +13,4 @@
 |[MTO配置](mto.md)||
 |[Garena配置](garena.md)||
 |[Efun配置](efun.md)||
+|[Toy配置](toy.md)||
