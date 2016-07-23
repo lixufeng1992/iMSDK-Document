@@ -1,8 +1,8 @@
-## 6.4.1 Garena(Android) 工程配置
+## 6.4.1 Efun(Android) 工程配置
 
 ### Android工程通用配置
 
-* Garena在AndroidManifest.xml中配置如下
+*  Efun 在AndroidManifest.xml中配置如下
 
  ```xml
  <uses-permission android:name="android.permission.INTERNET" />
