@@ -1,6 +1,6 @@
 ## 6.4.2.4 MidasFortumo 工程配置
 
-### MidasGoogle配置
+###  MidasFortumo配置
 
 Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据插件本身的要求而各有不同。
 
