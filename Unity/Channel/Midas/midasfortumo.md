@@ -30,24 +30,46 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 * MidasGoogle Activity 配置，在Application节点中添加如下activity配置
 
  ```xml
- <!--=======================Midas通用Activity start==========================-->
+ <!-- midas fortumo start -->
+ <!--midas通用Activity-->
  <activity
  android:name="com.tencent.midas.oversea.business.APMallActivity"
- android:screenOrientation="landscape"
- android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
+ android:screenOrientation="sensorLandscape"
+ android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
  </activity>
  <activity
  android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
- android:screenOrientation="landscape"
- android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
+ android:screenOrientation="sensorLandscape"
+ android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
  android:theme="@android:style/Theme.Translucent.NoTitleBar">
  </activity>
- <!--=======================Midas通用Activity end==========================-->
 
- <!--======================MidasGoogle Activity start=========================-->
- <!--无Activity-->
- <!--======================MidasGoogle Activity end===========================-->
+ <!--Fortumo专用-->
+ <activity
+ android:name="com.tencent.midas.oversea.business.payhub.fortumo.APProxyActivity"
+ android:screenOrientation="sensorLandscape"
+ android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+ android:theme="@android:style/Theme.Translucent.NoTitleBar">
+ </activity>
+ <receiver android:name="mp.MpSMSReceiver">
+ <intent-filter>
+ <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+ </intent-filter>
+ </receiver>
+ <service android:name="mp.MpService" />
+ <service android:name="mp.StatusUpdateService" />
+ <activity android:name="mp.MpActivity"
+ android:theme="@android:style/Theme.Translucent.NoTitleBar"
+ android:configChanges="orientation|keyboardHidden|screenSize" />
+ <!-- 实现自己的广播类来监听Fortumo的支付状态,需要 "signature" permission -->
+ <receiver android:name="com.tencent.imsdk.pay.midasfortumo.FortumoPaymentStatusReceiver"
+ android:permission="com.tencent.midas.oversea.permission.PAYMENT_BROADCAST_PERMISSION">
+ <intent-filter>
+ <action android:name="mp.info.PAYMENT_STATUS_CHANGED" />
+ </intent-filter>
+ </receiver>
+ <!-- midas fortumo end -->
  ```
 
 ### MidasGoogle代码实例
