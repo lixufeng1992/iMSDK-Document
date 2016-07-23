@@ -65,7 +65,7 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
  android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
  android:theme="@android:style/Theme.Translucent.NoTitleBar" >
  </activity>
- <!-- 支付Activity end -->
+
   ```
 
   
