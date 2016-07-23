@@ -22,45 +22,12 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
 <uses-permission android:name="android.permission.SEND_SMS"/>
 
-  ```
-
-*  MidasMOL Activity 配置，在Application节点中添加如下activity配置
-
-  ```xml
-
-   <!--=======================Midas通用Activity start==========================-->
-
-        <activity
-
-            android:name="com.tencent.midas.oversea.business.APMallActivity"
-
-            android:screenOrientation="landscape"
-
-            android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
-
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-
-        </activity>
-
-        <activity
-
-            android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
-
-            android:screenOrientation="landscape"
-
-            android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
-
-            android:theme="@android:style/Theme.Translucent.NoTitleBar">
-
-        </activity>  
-
-    <!--=======================Midas通用Activity end==========================-->
-
-    <!--======================MidasGoogle Activity start=========================-->
-
-            <!--无Activity-->
-
-    <!--======================MidasGoogle Activity end===========================-->
+<!--通用Activity--> 
+<activity 
+    android:name="com.tencent.midas.oversea.business.APMallActivity"                         android:configChanges="keyboard|keyboardHidden|orientation|screenSize"                 android:screenOrientation="landscape"         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> </activity> 
+<activity android:name="com.tencent.midas.oversea.business.APProxyMallActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar"> 
+</activity> 
+<!--MOL Activity 无-->
 
   ```
 
