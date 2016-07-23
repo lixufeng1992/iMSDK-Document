@@ -38,10 +38,101 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
     android:required="false" />
   ```
 
-* MidasGoogle Activity 配置，在Application节点中添加如下activity配置
+* MidasEfun Activity 配置，在Application节点中添加如下activity配置
 
-  ```xml
-  efun.tc.google.BillingActivity"
+```xml
+  <activity
+ android:name="com.efun.tc.ui.PageContainer"
+ android:configChanges="orientation|keyboardHidden|screenSize"
+ android:screenOrientation="sensorLandscape"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+ <activity
+ android:name="com.efun.tc.ui.AutoLoginActivity"
+ android:configChanges="orientation|keyboardHidden|screenSize"
+ android:screenOrientation="sensorLandscape"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+ <activity
+ android:name="com.efun.tc.ui.FacebookActivity"
+ android:configChanges="orientation|keyboardHidden|screenSize"
+ android:screenOrientation="sensorLandscape"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+ <activity
+ android:name="com.facebook.FacebookActivity"
+ android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+ android:screenOrientation="sensorLandscape" />
+ <!-- facebook activity声明 -->
+ <!-- 邀请 -->
+ <activity
+ android:name="com.efun.invite.activity.InviteActivity"
+ android:configChanges="orientation|keyboardHidden|screenSize"
+ android:screenOrientation="sensorLandscape"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+ <!-- 粉丝页 -->
+ <activity
+ android:name="com.efun.invite.activity.EfunFansActivity"
+ android:configChanges="orientation|keyboardHidden|screenSize"
+ android:screenOrientation="sensorLandscape"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+ <!-- 功能说明 -->
+ <activity
+ android:name="com.efun.invite.activity.InformaActivity"
+ android:configChanges="orientation|keyboardHidden"
+ android:screenOrientation="sensorLandscape"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+
+ <!-- facebook activity声明 -->
+ <activity
+ android:name="com.facebook.FacebookActivity"
+ android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+ android:screenOrientation="sensorLandscape" />
+
+ <!-- facebook功能 -->
+
+ <!-- 分享 -->
+ <activity
+ android:name="com.efun.facebook.share.activity.EfunFBFunctionActivity"
+ android:configChanges="orientation|keyboardHidden|screenSize"
+ android:screenOrientation="sensorLandscape"
+ android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+ <activity
+ android:name="com.facebook.LoginActivity"
+ android:screenOrientation="sensorLandscape" />
+ <activity
+ android:name="com.efun.invite.activity.EfunFacebookActivity"
+ android:configChanges="orientation|keyboardHidden|screenSize"
+ android:screenOrientation="sensorLandscape"
+ android:theme="@style/Transparent"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+
+ <!-- 客服 -->
+ <activity
+ android:name="com.efun.tc.service.EfunCustomerService"
+ android:configChanges="orientation|keyboardHidden"
+ android:launchMode="singleTask"
+ android:screenOrientation="sensorLandscape"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+ <!-- google 储值 -->
+ <activity
+ android:name="com.efun.tc.google.EfunWebGoogleActivity"
+ android:configChanges="orientation|keyboardHidden"
+ android:launchMode="singleTask"
+ android:screenOrientation="sensorLandscape"
+ android:windowSoftInputMode="stateHidden" >
+ </activity>
+
+ <!-- google 储值 -->
+ <activity
+ android:name="com.efun.tc.google.BillingActivity"
  android:configChanges="orientation|keyboardHidden"
  android:launchMode="singleTask"
  android:screenOrientation="sensorLandscape"
@@ -223,7 +314,7 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
  android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
  android:theme="@android:style/Theme.Translucent.NoTitleBar">
  </activity>
-  ```
+```
   
 ### MidasGoogle代码实例
 
