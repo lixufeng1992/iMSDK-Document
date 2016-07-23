@@ -57,7 +57,7 @@
 
 ### Android工程配置
 
-* 参考Efun Login配置和依赖
+* 参考Efun 配置和依赖
 
 ### iOS工程配置
 
