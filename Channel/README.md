@@ -11,5 +11,5 @@
 | [信鸽 配置](xg.md)|
 | [信鸽GCM 配置](xg_gcm.md)|    
 |[MTO配置](mto.md)||
-|[MTO配置](mto.md)||
-|[MTO配置](mto.md)||
+|[Garena配置](garena.md)||
+|[Efun配置](efun.md)||
