@@ -3,7 +3,6 @@
 ### Android工程通用配置
 
 * Toy在AndroidManifest.xml中配置如下
-
  ```xml
 <application
  android:allowBackup="true"
