@@ -1,6 +1,7 @@
 ## 6.1.1  Garena 开发者中心配置
 
 1. 注册、配置Garena账号信息
+     首先，需要先注册Facebook账号。 
 
 5. 配置iMSDK后台
 
