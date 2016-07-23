@@ -21,6 +21,9 @@
    * [MidasLink (米大师Link支付) ](../Unity/Channel/Midas/midaslink.md)
    * [MidasMOL(米大师MOL支付)](../Unity/Channel/Midas/midasmol.md)
    * [MidasPW(米大师Paymentwall支付)](../Unity/Channel/Midas/midaspaymentwall.md)
+   * [MidasZalo(米大师Zalo支付)](../Unity/Channel/Midas/midaszalo.md)
+   * [MidasGM(米大师G妹支付)](../Unity/Channel/Midas/midasgm.md)
+   * [SQW(三七玩支付)](../Unity/Channel/Midas/midassqw.md)
 
 2. [iOS 工程配置](Midas/ios.md)
 3. [Unity 工程配置](Midas/unity.md)

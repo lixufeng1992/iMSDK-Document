@@ -2,7 +2,7 @@
 
 ### MidasEfun配置
 
-* MidasGoogle权限配置，在AndroidManifest.xml中新增以下权限
+* MidasEfun权限配置，在AndroidManifest.xml中新增以下权限
 
   ```xml
     <uses-permission android:name="android.permission.INTERNET" />
