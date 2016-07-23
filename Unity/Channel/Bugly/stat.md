@@ -14,7 +14,7 @@
 | 6 | public bool trackPage() | 页面跟踪 | x | - |
 | 7 | public void speedTest() | 测速 | x | - |
 | 8 | public void reportCrash() | 获取当前登录返回数据 | √ | - | 
-| 9 | public void reportAutoExceptionReport() | 登出当前渠道 | √ | - |
+| 9 | public void reportAutoExceptionReport() | 异常上报 | √ | - |
 
 
 ### Bugly统计配置说明
