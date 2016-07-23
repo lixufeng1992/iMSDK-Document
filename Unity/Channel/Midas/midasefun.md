@@ -315,7 +315,7 @@
     ```
   
 ### MidasEfun代码实例
-<font color=red>* 以下为细微差别部分</font>
+<font color=red>以下为细微差别部分</font>
 ```cs
     /*
      *差别部分：
