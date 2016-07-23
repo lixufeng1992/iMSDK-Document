@@ -7,28 +7,17 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 * MidasGoogle权限配置，在AndroidManifest.xml中新增一下权限
 
   ```xml
-
-   <!--================Midas通用权限 start==========================-->
-
-     <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
-    <!--===============Midas通用权限 end=============================-->
-
-    <!--==================MdiasGoogle 权限start========================-->
-
-    <uses-permission android:name="android.permission.INTERNET"/>
-
-    <uses-permission android:name="com.android.vending.BILLING" />
-
-    <!--==================MdiasGoogle 权限end=========================-->
+ <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+ <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ <uses-permission android:name="android.permission.READ_LOGS" />
+ <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+ <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+ <uses-permission android:name="com.android.vending.BILLING" />
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+ <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+ <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
   ```
 
