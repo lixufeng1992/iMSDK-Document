@@ -12,6 +12,16 @@
 
 1. [Android 工程配置](Midas/android.md)
    * [MidasGoogle](../Unity/Channel/Midas/midasgoogle.md)
+   * [Midasefun](../Unity/Channel/Midas/midasefun.md)
+   * [Midasfeiliu](../Unity/Channel/Midas/midasfeiliu.md)
+   * [Midasfortumo](../Unity/Channel/Midas/midasfortumo.md)
+   * [Midasgarena](../Unity/Channel/Midas/midasgarena.md)
+   * [Midasgm](../Unity/Channel/Midas/midasgm.md)
+   * [Midasboku](../Unity/Channel/Midas/midasboku.md)
+   * [Midaslink](../Unity/Channel/Midas/midaslink.md)
+   * [Midasmol](../Unity/Channel/Midas/midasmol.md)
+   * [Midaspaymentwall](../Unity/Channel/Midas/midaspaymentwall.md)
+
 2. [iOS 工程配置](Midas/ios.md)
 3. [Unity 工程配置](Midas/unity.md)
 4. [C++ 工程配置](Midas/cpp.md) 
