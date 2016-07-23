@@ -17,24 +17,24 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 
  <!-- Midas common activity begin -->
  <activity
- android:name="com.tencent.midas.oversea.business.APMallActivity"
- android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
- android:screenOrientation="sensorLandscape"
- android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+     android:name="com.tencent.midas.oversea.business.APMallActivity"
+     android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+     android:screenOrientation="sensorLandscape"
+     android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
  </activity>
  <activity
- android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
- android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
- android:screenOrientation="sensorLandscape"
- android:theme="@android:style/Theme.Translucent.NoTitleBar">
+     android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
+     android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+     android:screenOrientation="sensorLandscape"
+     android:theme="@android:style/Theme.Translucent.NoTitleBar">
  </activity>
 
  <meta-data
- android:name="MIDAS.APP_SDK_ASSIGN_ID"
- android:value="\ 100051" />
+     android:name="MIDAS.APP_SDK_ASSIGN_ID"
+     android:value="\ 100051" />
  <meta-data
- android:name="MIDAS.VIRTUAL_CURRENCY_NAME"
- android:value="Diamond" />
+     android:name="MIDAS.VIRTUAL_CURRENCY_NAME"
+     android:value="Diamond" />
  <!-- Midas end -->
 
   ```
