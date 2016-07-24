@@ -51,6 +51,9 @@
 | 支付 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |集成米大师（Midas）海外支付功能 |
 | 推送 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
 | 统计 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
+| 游戏服务 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
 | 公告 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
-| 帮助 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
-| 帮助 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
+| 分包下载 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
+| 位置服务 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
+| 帮助反馈 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
+| 内置浏览器 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
