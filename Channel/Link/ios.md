@@ -27,7 +27,7 @@
  - isDebugMode，标识是否启用Garena的Debug模式，正式环境应该设置为`false`。
  - linkAccessToken，由Garena侧分配，正式环境和测试环境不同。
  - linkBaseUrl
- - twitterConsumerKey,twitterConsumerSecret
+ - twitterConsumerKey、twitterConsumerSecret，
  - googleClientID
 
 * 工程Plist文件配置
