@@ -24,7 +24,11 @@ void OnSetup(IMResult result) {
     }
 }
 
-void OnGooglePlayLogout(IMResult) {
+void OnShowUI(IMResult) {
+    if(IMResult.RetCode != 1) {
+        // 当界面显示出错时，需要重新加载游戏或退出
+        Application.Quit();
+    }
 }
 
 void Start() {
