@@ -23,3 +23,7 @@
 | 18 | public bool IsChannelAppInstalled() | 是否安装渠道应用 | × | |  | | | | | | |
 | 19 | public bool IsChannelSupportApi() | 应用API版本是否可用 | × | - |  | | | | | | |
 
+##社交
+
+##数据上报
+
