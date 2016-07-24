@@ -5,7 +5,6 @@
   * [1.2 架构介绍](Pre/arch.md)
   * [1.3 渠道申请](Pre/channellink.md)
   * [1.4 联系我们](Pre/contact.md)
-
 * [2. Android开发指引](Android/README.md)
   * [2.1 下载及使用](Android/download.md)
   * [2.2 配置开发环境](Android/setupenv.md)
