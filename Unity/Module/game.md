@@ -1,16 +1,10 @@
 ## 4.4.7 游戏服务(Game)
 
-## 命名空间
+### 基础信息
 
-```cs
-using Tencent.iMSDK
-```
-
-## 接口类
-
-```cs
-IMSDKApi.GameService
-```
+| 命名空间 | 调用入口 |使用说明|
+| :-- |:-- |:--|
+| Tencent.iMSDK | IMSDKApi.IMGame |用于用户认证，获取用户的基本资料|
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMGame（GameObject）上，开发者不要主动销毁该对象！</font>
 
