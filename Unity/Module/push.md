@@ -51,16 +51,16 @@ void Start() {
 1. 使用opendId进行注册，这样可以对单个openId进行推送
 
 ```
-	void Start() {
-        //初始化
-		IMSDKApi.Push.Initialize ();
-        //设置需要使用推送渠道，比如“XG”就是使用信鸽推送
-		IMSDKApi.Push.SetChannel("XG");
-        //监听注册，可以获取是否注册成功的消息
-        IMSDKApi.Push.SetRegisterCallback(PushCallback callback);
-        //进行注册
-		IMSDKApi.Push.Register("openId");
-	}
+void Start() {
+    //初始化
+    IMSDKApi.Push.Initialize ();
+    //设置需要使用推送渠道，比如“XG”就是使用信鸽推送
+    IMSDKApi.Push.SetChannel("XG");
+    //监听注册，可以获取是否注册成功的消息
+    IMSDKApi.Push.SetRegisterCallback(PushCallback callback);
+    //进行注册
+    IMSDKApi.Push.Register("openId");
+}
 ```
 
 2. 7天内未登录的用户，进行推送，需要用户自己的服务器后台配合
