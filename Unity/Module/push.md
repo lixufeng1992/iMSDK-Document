@@ -8,8 +8,8 @@
 
 ### 快速入门
 
-1. #### [选择渠道，完成配置](../../Channel/README.md)
-2. #### 代码实例，下面的代码块是最基本调用代码
+1.  [选择渠道，完成配置](../../Channel/README.md)
+2.  代码实例，下面的代码块是最基本调用代码
 
 ```
 	void Start() {
@@ -28,7 +28,7 @@
 推送方法类 <font color=blue>IMPush</font>
 
 | 函数名 | 函数说明 |
-| -- | -- |
+|: -- |: -- |
 | public bool Initialize() | 初始化方法，在调用其他函数之前需要调用该函数 |
 | public bool SetChannel(string channel) | 设置推送渠道，如：XG（信鸽） |
 | public string GetChannel() | 获取当前设定渠道 |
