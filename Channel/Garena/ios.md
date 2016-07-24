@@ -21,7 +21,7 @@
 
  找到或新建如下节点:
 
-```plist
+ ```plist
 <key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -71,6 +71,6 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-```
+ ```
 
  其中，string值wxef53dd2d66ca6c54需要修改为游戏自己微信的App ID
