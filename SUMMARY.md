@@ -99,7 +99,6 @@
     * [6.1.1 Facebook 开发者中心配置](Channel/Facebook/developers.md)
     * [6.1.2 Android 工程配置](Channel/Facebook/android.md)
     * [6.1.3 iOS 工程配置](Channel/Facebook/ios.md)
-
   * [6.2 Google平台设置](Channel/google.md)
     * [6.2.1 Google 开发者中心配置](Channel/Google/developers.md)
     * [6.2.2 Android 工程配置](Channel/Google/android.md)
