@@ -1,19 +1,14 @@
 ## 4.4.13.13 Toy功能扩展
 
+###1. 基础信息
 
-###1. 命名空间
+| 命名空间 | 调用入口 |使用说明|
+| :-- |:-- |:--|
+| Tencent.iMSDK | IMSDKApi.UToy |Toy扩展功能|
 
-```cs
-using Tencent.iMSDK
-```
 
-###2. 接口类
+<font color=red>该类自动绑定在Unity的Tencent.iMSDK.UToy（GameObject）上，开发者不要主动销毁该对象！</font>
 
-```cs
-IMSDKApi.UToy
-```
-
-<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMUToy（GameObject）上，开发者不要主动销毁该对象！</font>
 
 ###3. 模块使用说明
 与iMSDKToy登录模块、iMSDKToy分享模块、iMSDKToy关系链模块、iMSDKToy推送模块配合使用
@@ -63,7 +58,7 @@ IMSDKApi.UToy
 |  :--  |  :--  |
 | public delegate void ShowBannerCallback(IMToyBannerResult result) | 展示Banner回调函数，返回浏览器状态结构体 |
 
-####5.3IMToyUserInfo:Toy玩家信息结构体
+####5.3 IMToyUserInfo:Toy玩家信息结构体
 | 变量 | 说明 |
 |  :--  |  :--  |
 | public string memType | User authentication type |
@@ -81,7 +76,7 @@ IMSDKApi.UToy
 | public string middleName | |
 | public string lastName | |
 
-####5.4IMToyFriend:Toy关系链信息结构体及回调代理函数
+####5.4 IMToyFriend:Toy关系链信息结构体及回调代理函数
 | 变量 | 说明 |
 |  :--  |  :--  |
 | public int hasNext | 下一页 |
