@@ -1,6 +1,6 @@
 ### iOS 配置
 
-*  iMSDK配置
+* iMSDK配置
 
  添加完iOS插件后，在XCode工程中找到**IMSDKAppSetting.bundle/Contents/Resources/app.plist**文件，增加或修改如下配置：
 
