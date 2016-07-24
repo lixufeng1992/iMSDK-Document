@@ -17,6 +17,13 @@
 
 ###配置说明 
 
+* 接口说明
+
+| 函数名 | 函数说明 | 备注 |
+| :-- | :-- |
+| SetLogCache() | | |
+| BuglyLog() |  | |
+| BuglyPutUserData() | | |
 #### iOS 配置说明 
 
 #### Android 配置说明
