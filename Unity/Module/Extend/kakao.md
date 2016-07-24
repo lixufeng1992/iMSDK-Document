@@ -68,14 +68,13 @@ if (GUI.Button (NextRect (), "unlink")) { IMSDKApi.Kakao.Unlink(OnResult); }
 | 变量 | 说明 |
 | :-- | :-- |
 | public string UserId | 游戏用户ID |
+| public string UuId | 游戏用户ID |
 | public string UserId | 游戏用户ID |
 | public string UserId | 游戏用户ID |
 | public string UserId | 游戏用户ID |
 | public string UserId | 游戏用户ID |
 | public string UserId | 游戏用户ID |
 | public string UserId | 游戏用户ID |
-| public string UserId | 游戏用户ID |
-
 | public string UserId | 游戏用户ID |
 
 ###配置说明
