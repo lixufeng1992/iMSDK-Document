@@ -1,43 +1,33 @@
 ## 4.4.3 好友模块(Friend)
 
-## 命名空间
+### 基础信息
 
-```cs
-using Tencent.iMSDK
-```
-
-## 接口类
-
-```cs
-IMSDKApi.Friend
-```
+| 命名空间 | 调用入口 |使用说明|
+| :-- |:-- |:--|
+| Tencent.iMSDK | IMSDKApi.Friend |主要包括三大功能：1、获取好友列表（授权过游戏的好友）；2、应用要求；3、给好友发送消息|
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMFriend（GameObject）上，开发者不要主动销毁该对象！</font>
 
-## 模块使用说明
-
-主要包括三大功能：1、获取好友列表（授权过游戏的好友）；2、应用要求；3、给好友发送消息
-
-### 获取好友列表
+#### 获取好友列表
 
 在调用获取授权过游戏的好友列表。如果用户的好友没有玩过游戏，则无法获取
 
-### 邀请功能
+#### 邀请功能
 
 应用邀请功能，可以通过邀请吸引更多用户
 
 
-## 工程配置说明
+### 工程配置说明
 
-### Android工程配置说明
+#### Android工程配置说明
 
 > 主要需要修改Assets/Plugins/Android/AndroidManifest.xml文件，具体内容可参考渠道功能文档。
 
-### iOS工程配置说明
+#### iOS工程配置说明
 
 > 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
 
-## 参考
+### 参考
 
 * 消息参数类 <font color=blue>IMFriendContent</font>
 
@@ -111,7 +101,7 @@ IMSDKApi.Friend
 | public void Invite(<br> &emsp;&emsp;IMFriendContent content, <br> &emsp;&emsp;FriendCallback callback=null<br>&emsp;&emsp;) | 邀请好友<br> content 为消息参数，具体参见 IMFriendContent 说明<br> callback 为发送消息回调 |
 | public void SendMessage(<br> &emsp;&emsp;IMFriendContent content, <br> &emsp;&emsp;FriendCallback callback=null<br>&emsp;&emsp;) | 给好友发消息 <br> content 为消息参数，具体参见 IMFriendContent 说明<br> callback 为发送消息回调 |
 
-## 代码示例
+### 代码示例
 
 ```cs
 void Start() {
