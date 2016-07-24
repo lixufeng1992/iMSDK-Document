@@ -1,4 +1,4 @@
-## 6.8.2 
+## 6.8.2 Android 工程配置
 
 Kakao的工程配置需要，官方文档地址为：[https://gamecenter.kakao.com/docs/documents/281](https://gamecenter.kakao.com/docs/documents/281)
 
