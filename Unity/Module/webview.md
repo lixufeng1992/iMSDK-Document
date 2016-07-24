@@ -1,6 +1,6 @@
 ## 4.4.11 内置浏览器(WebView)
 
-### 基础信息
+### 1、基础信息
 
 | 命名空间 | 调用入口 |使用说明|
 | :-- |:-- |:--|
@@ -10,11 +10,11 @@
 
 
 
-### 浏览器基本功能
+### 2、浏览器基本功能
 
 包括打开、关闭、设置大小等功能，这里不再赘述
 
-### 获取网络票据
+### 3、获取网络票据
 
 可以通过函数回调获取网络票据，获取票据之后，可以通过网络票据用于网页登录授权
 
@@ -24,9 +24,9 @@ public void GetTicket(WebViewTicketCallback callback=null)
 
 <font color=red>注意：如果用户没有登录，无法获取票据</font>
 
-### 工程配置说明
+### 4、工程配置说明
 
-#### Android工程配置说明
+#### 4.1、Android工程配置说明
 
 ```cs
 <uses-permission android:name="android.permission.INTERNET" />
@@ -52,11 +52,11 @@ public void GetTicket(WebViewTicketCallback callback=null)
 <!-- webview end -->
 ```
 
-#### iOS工程配置说明
+#### 4.2、iOS工程配置说明
 
 > 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
     
-### 参考
+### 5、参考
 
 * 网络票据结构体 <font color=blue>IMWebViewTicketResult</font>
 
@@ -123,7 +123,7 @@ public void GetTicket(WebViewTicketCallback callback=null)
 | public void GetTicket(<br>&emsp;&emsp;WebViewTicketCallback callback=null<br>&emsp;&emsp;) | 获取WebView登陆凭证 |
 | public void SetWebViewActionCallback(<br>&emsp;&emsp;WebViewActionCallback callback<br>&emsp;&emsp;) | 监听WebView事件回调(打开、关闭等) |
 
-### 代码示例
+### 6、代码示例
 
 ```cs
 /**
