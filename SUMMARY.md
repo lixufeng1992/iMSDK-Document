@@ -129,7 +129,7 @@
        * [6.8.2 Android 工程配置](Channel/Kakao/android.md)
        * [6.8.3 iOS 工程配置](Channel/Kakao/ios.md)
    * [6.9 Link设置](Channel/Link.md)
-       * [Link平台配置](Channel/LInk/developers.md)
+       * [Link平台配置](Channel/Link/developers.md)
        * [Android 配置](Channel/Link/android.md)
        * [iOS 配置](Channel/Link/ios.md)
 * [7. 后台](Server/README.md)
