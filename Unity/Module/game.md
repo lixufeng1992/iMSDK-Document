@@ -17,7 +17,7 @@
 ```cs
 void Start() {
  // 我们建议在游戏开始时就初始化登陆方法
- IMSDKApi.Login.Initialize ();
+ IMSDKApi.Game.Initialize ();
  IMSDKApi.Game.Setup();
 }
 
