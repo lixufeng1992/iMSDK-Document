@@ -9,7 +9,6 @@
 ### 工程配置
 根据不同的编译平台，需要的**WeChat**配置包括：
 
-1. [Android 工程配置](Facebook/android.md)
-2. [iOS 工程配置](Facebook/ios.md)
-3. [Unity 工程配置](Facebook/unity.md)
-4. [C++ 工程配置](Facebook/cpp.md) 
+1. [Android 工程配置](WeChat/android.md)
+2. [iOS 工程配置](WeChat/ios.md)
+3. [Unity 工程配置](WeChat/unity.md)
