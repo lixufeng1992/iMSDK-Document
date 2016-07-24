@@ -12,7 +12,12 @@
 ### 快速入门
 
 1. [完成特定渠道配置](../../Channel/README.md)
-2. 
+2. 代码实现
+
+```cs
+IMSDKApi.Game.Initailize();
+
+```
 
 ### 工程配置说明
 
