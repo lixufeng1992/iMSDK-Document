@@ -23,6 +23,12 @@ void Start() {
 // 解锁成就
 IMSDKApi.Game.UnlockAchieve("CgkIkcSMwNYHEAIQAQ");
 
+// 显示成就
+IMSDKApi.Game.ShowAchieves();
+
+// 上报分苏
+IMSDKApi.Game.SetScore("CgkIkcSMwNYHEAIQAw", 10000);
+
 ```
 
 ### 工程配置说明
