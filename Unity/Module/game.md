@@ -15,9 +15,19 @@
 2. 代码实现
 
 ```cs
+
+bool isSetup = false;
+
+void OnSetup(IMResult result) {
+    if（result.RetCode == 1）{
+        isSetup = true;
+    }
+}
+
 void Start() {
  // 我们建议在游戏开始时就初始化登陆方法
  IMSDKApi.Game.Initialize ();
+ // 调用
  IMSDKApi.Game.Setup();
 }
 
