@@ -18,6 +18,7 @@
 void Start() {
  // 我们建议在游戏开始时就初始化登陆方法
  IMSDKApi.Login.Initialize ();
+ IMSDKApi.Game.Setup();
 }
 
 // 解锁成就
@@ -33,6 +34,13 @@ IMSDKApi.Game.SetScore("CgkIkcSMwNYHEAIQAw", 10000);
 IMSDKApi.Game.ShowLeaderBoard();
 
 ```
+
+### 【重要】问题说明
+
+* 渠道说明
+
+    目前，iMSDK只支持GooglePlay和GameCenter的两个游戏服务，暂时不需要设置渠道
+* 
     
 ### 参考
 
