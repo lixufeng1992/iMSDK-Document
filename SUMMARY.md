@@ -58,6 +58,7 @@
     * [4.5.4 kakao功能说明](Unity/Channel/kakao.md)
       * [4.5.4.1 Kakao 登录功能说明](Unity/Channel/Kakao/login.md)
       * [4.5.4.2 Kakao 好友功能说明](Unity/Channel/Kakao/friend.md)
+      * [4.5.4.3 Kakao 扩展功能说明](Unity/Channel/Kakao/extend.md)
     * [4.5.5 Midas功能说明](Unity/Channel/midas.md)
       * [4.5.5.1 MidasGoogle\(米大师谷歌支付\)](Unity/Channel/Midas/midasgoogle.md)
       * [4.5.5.2 MidasEfun\(米大师Efun支付\)](Unity/Channel/Midas/midasefun.md)
