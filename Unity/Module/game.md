@@ -26,8 +26,11 @@ IMSDKApi.Game.UnlockAchieve("CgkIkcSMwNYHEAIQAQ");
 // 显示成就
 IMSDKApi.Game.ShowAchieves();
 
-// 上报分苏
+// 上报分数（用于排行榜）
 IMSDKApi.Game.SetScore("CgkIkcSMwNYHEAIQAw", 10000);
+
+// 显示排行
+IMSDKApi.Game.ShowLeaderBoard();
 
 ```
 
