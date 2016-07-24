@@ -194,45 +194,44 @@
 
 ```cs
 void Start() {
- IMSDKApi.Login.Initialize ();
- IMSDKApi.Login.SetChannel("Garena");
+    IMSDKApi.Login.Initialize ();
+    IMSDKApi.Login.SetChannel("Garena");
 
- /*
- *Garena有4子渠道，
- *GRN_BT:Garena-Beetalk渠道
- *GRN_GU:Garena-Guest渠道
- *GRN_FB:Garena-Facebook渠道
- *GRN_Gas:Garena-本身渠道
- */
- IMSDKApi.Login.SetType("GRN_BT");
+    /*
+     *Garena有4子渠道，
+     *GRN_BT:Garena-Beetalk渠道
+     *GRN_GU:Garena-Guest渠道
+     *GRN_FB:Garena-Facebook渠道
+     *GRN_Gas:Garena-本身渠道
+     */
+    IMSDKApi.Login.SetType("GRN_BT");
 }
 
-void TestLoginCallback(IMLoginResult result) {
- if(result.RetCode == 1) {
- Debug.Log("login ok, user open id is " + result.OpenId);
+ void TestLoginCallback(IMLoginResult result) {
+     if(result.RetCode == 1) {
+         Debug.Log("login ok, user open id is " + result.OpenId);
+     } else {
+         Debug.Log("login error : " + result.ErrorMsg);
+     }
  }
- else {
- Debug.Log("login error : " + result.ErrorMsg);
+
+ void TestLogin() {
+     List<string> permissionList = new List<string>();
+     permissionList.Add("email");
+     
+     IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
  }
-}
+ ```
+ 
+ 以下为Android代码，非Unity代码，Android侧特别注意：由于Garena需要调用生命周期，所以提供下面方法
+ - 方法1：
+ 游戏继承iMSDK提供的Activity:com.tencent.imsdk.unity.garena.UnityPlayerNativeActivity
+ - 方法2：  
+ 业务在自己的主Activity中调用  
 
-void TestLogin() {
- List<string> permissionList = new List<string>();
- permissionList.Add("email");
 
- IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
-}
-
-/*
-*=====================================================================
-*======================以下为Android代码，非Unity代码===================
-*==========Android侧特别注意：由于Garena需要调用生命周期，所以=============
-*方法1：
-游戏继承iMSDK提供的Activity:com.tencent.imsdk.unity.garena.UnityPlayerNativeActivity
-
-*或者方法2：
-业务在自己的主Activity中调用
-public class YourMainActivity extends Activity{
+ ```java
+ public class YourMainActivity extends Activity{
 
  @Override
  protected void onCreate(Bundle savedInstanceState) {
@@ -263,6 +262,5 @@ public class YourMainActivity extends Activity{
  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
  IMSDKExtendGarena.onActivityResult(requestCode, resultCode, data);
  }
-*/
 ```
 

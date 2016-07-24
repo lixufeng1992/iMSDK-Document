@@ -8,7 +8,7 @@
 | Tencent.iMSDK | IMSDKApi.IMTool |iMSDK 的扩展工具|
 
 
-<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMLogin（GameObject）上，开发者不要主动销毁该对象！</font>
+<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMTool（GameObject）上，开发者不要主动销毁该对象！</font>
 
 ### 快速入门
 

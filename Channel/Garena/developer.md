@@ -1,13 +1,7 @@
-## 6.1.1  Garena 开发者中心配置
+### 6.1.1  Garena 开发者中心配置
 
-1. 注册、配置Garena账号信息    
+#### Garena 平台信息    
     
- 有别与Facebook、Google等大型、成熟渠道接入方可自行配置、调试    
+Garena渠道提供Facebook、Gas、BeeTalk和Guest登录，并提供Facebook和Gas的好友功能。
+接入Garena功能的业务配置信息由Garena方配置再提供给业务方。
 
- Garena一般是通过运营方配置...
-
-     
-
-2. 配置iMSDK后台
-
- 请到iMSDK管理段进行后台配置，联系人RTX：hirryli

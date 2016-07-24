@@ -1,12 +1,13 @@
 ## MTO Extend功能说明
 
 ### MTO Extend 接口列表
-
-| 序号 | 方法名 | 方法说明 | 是否支持 | 备注 |
-| :--: | -- |:-------: | :-----: | -- |
+|序号|方法名|方法说明|是否支持|备注|   
+|:--|:--|:--|:--|:--|
 | 1 | public bool Initialize() | 初始化方法 | √ | - |
 | 2 | public void showPlatform() | 显示platform | √ | - |
-| 4 | public void hidePlatform() | 隐藏platform | √ | - |
+| 4 | public void hidePlatform() | 隐藏platform | √ | - |   
+| 5 | public void ShowWeb(string roleName,string roleID, string level,string guild, string serverID,string key) | 显示MTO webview | √ | - |
+| 6 | public void LoadUrl(string url) | 加载url | √ | - |
 
 ### MTO Extend接口说明
 ```
@@ -33,6 +34,17 @@
    */
 ```
 ##### 备注:要调用showPlatform和hidePlatform， 需在调用登录Initialize（）后再次调用Extend模块的Initialize（）
+
+```
+  LoginFB(MTOLoginFBCallback callback = null)
+    /**
+    *登录FB，刷新FB Token
+    */
+
+    
+
+```
+
 
 ### MTO生命周期接口
 > 游戏需在自己的入口activity中，在对应的接口调用下面的函数。

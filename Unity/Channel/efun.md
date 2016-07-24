@@ -8,4 +8,4 @@
 | [ imsdkshareefun ](../Channel/Efun/share.md) |  Efun 分享 | - |
 | [ imsdkfriendefun ](../Channel/Efun/friend.md) |  Efun 关系链 | - |
 | [ imsdkpayefun ](../Channel/Efun/pay.md) |  Efun 支付 | - |
-| [ imsdkextendefun ](../Channel/Efun/extend.md) |  Efun 扩展 | - |
+
