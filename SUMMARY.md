@@ -111,7 +111,6 @@
     * [6.4.1 Midas 开发者中心配置](Channel/Midas/developer.md)
     * [6.4.2 Android 工程配置](Channel/Midas/android.md)
     * [6.4.3 iOS 工程配置](Channel/Midas/ios.md)
-
   * [6.5 Garena设置](Channel/garena.md)
     * [6.5.1 Garena 开发者中心配置](Channel/Garena/developer.md)
     * [6.5.2 Android 工程配置](Channel/Garena/android.md)
