@@ -24,6 +24,9 @@ void OnSetup(IMResult result) {
     }
 }
 
+void OnGooglePlayLogout(IMResult) {
+}
+
 void Start() {
  // 我们建议在游戏开始时就初始化登陆方法
  IMSDKApi.Game.Initialize ();
@@ -65,7 +68,7 @@ if(isSetup) {
 
 * GooglePlay 登出问题
 
-    
+    GooglePlay显示成就和排行榜界面的界面
 
 
     
