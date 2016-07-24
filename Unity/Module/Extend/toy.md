@@ -9,6 +9,48 @@
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.UToy（GameObject）上，开发者不要主动销毁该对象！</font>
 
+###2.快速入门
+1. 代码示例      
+
+```cs
+void Start() {
+ IMSDKApi.UToy.Initialize();
+}
+
+IMSDKApi.UToy.ShowBanner(1, this.OnShowBannerCallback);
+IMSDKApi.UToy.ShowEndingBanner(this.OnShowEndingBannerCallback);
+IMSDKApi.UToy.ShowTermsOfAgree(this.OnShowTermsOfAgreeCallback);
+IMSDKApi.UToy.ShowNotice(this.OnShowNoticeCallback);
+IMSDKApi.UToy.ShowSettlementFund("zuan1000", "jinbi40000", this.OnShowSettlementFundCallback);
+
+/*
+*Show Plate & ShowHelpCenter & ShowCustomerService
+*/
+IMParamsa paramsa = new IMParamsa();
+paramsa["GameID"] = "5";
+paramsa["ChracterName"] = "name";
+paramsa.questionInfos.Add("GameVersion");
+paramsa.questionInfos.Add("CHRACTERID");
+IMSDKApi.UToy.ShowPlate(0, paramsa, this.OnShowPlateActionPerformedCallback);
+IMSDKApi.UToy.ShowHelpCenter(paramsa);
+IMSDKApi.UToy.ShowCustomerService(paramsa);
+
+/*
+*获取关系链
+*/
+IMSDKApi.UToy.GetFriends(0, 1, "invites", this.OnGetFriendsCallback);
+IMSDKApi.UToy.ShowFAQ();
+IMSDKApi.UToy.ShowForumWithId(1);
+IMSDKApi.UToy.SetLocal("zh_CN");//ko_KR en_US ja_JP zh_TW zh_CN de_DE pt_PT pt_BR es_ES ru_RU
+IMSDKApi.UToy.SetCountry("CN");//US CN CA JP KR TW DE IT RU BR FR ES
+
+/*
+*游客账号备份及迁移
+*/
+IMSDKApi.UToy.ShowDataBackup();
+IMSDKApi.UToy.ShowDataRestore();
+
+```
 
 ###3. 模块使用说明
 与iMSDKToy登录模块、iMSDKToy分享模块、iMSDKToy关系链模块、iMSDKToy推送模块配合使用
@@ -111,47 +153,9 @@
 | public void ShowDataBackup(string title = "", ShowDataBackupCallback callback = null) | 游客账号数据备份 |
 | public void ShowDataRestore(string title = "", ShowDataRestoreCallback callback = null) | 游客账号数据迁移 |
 
-###6. 代码示例
 
-```cs
-void Start() {
- IMSDKApi.UToy.Initialize();
-}
 
-IMSDKApi.UToy.ShowBanner(1, this.OnShowBannerCallback);
-IMSDKApi.UToy.ShowEndingBanner(this.OnShowEndingBannerCallback);
-IMSDKApi.UToy.ShowTermsOfAgree(this.OnShowTermsOfAgreeCallback);
-IMSDKApi.UToy.ShowNotice(this.OnShowNoticeCallback);
-IMSDKApi.UToy.ShowSettlementFund("zuan1000", "jinbi40000", this.OnShowSettlementFundCallback);
 
-/*
-*Show Plate & ShowHelpCenter & ShowCustomerService
-*/
-IMParamsa paramsa = new IMParamsa();
-paramsa["GameID"] = "5";
-paramsa["ChracterName"] = "name";
-paramsa.questionInfos.Add("GameVersion");
-paramsa.questionInfos.Add("CHRACTERID");
-IMSDKApi.UToy.ShowPlate(0, paramsa, this.OnShowPlateActionPerformedCallback);
-IMSDKApi.UToy.ShowHelpCenter(paramsa);
-IMSDKApi.UToy.ShowCustomerService(paramsa);
-
-/*
-*获取关系链
-*/
-IMSDKApi.UToy.GetFriends(0, 1, "invites", this.OnGetFriendsCallback);
-IMSDKApi.UToy.ShowFAQ();
-IMSDKApi.UToy.ShowForumWithId(1);
-IMSDKApi.UToy.SetLocal("zh_CN");//ko_KR en_US ja_JP zh_TW zh_CN de_DE pt_PT pt_BR es_ES ru_RU
-IMSDKApi.UToy.SetCountry("CN");//US CN CA JP KR TW DE IT RU BR FR ES
-
-/*
-*游客账号备份及迁移
-*/
-IMSDKApi.UToy.ShowDataBackup();
-IMSDKApi.UToy.ShowDataRestore();
-
-```
 
 
 
