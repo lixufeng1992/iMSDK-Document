@@ -1,4 +1,4 @@
-## 6.2 Facebook设置
+## 6.2 Goole设置
 
 ### 平台配置
 
@@ -14,3 +14,4 @@
 2. [iOS 工程配置](Goole/ios.md)
 3. [Unity 工程配置](Goole/unity.md)
 4. [C++ 工程配置](Goole/cpp.md)
+
