@@ -130,6 +130,7 @@
        * [6.8.3 iOS 工程配置](Channel/Kakao/ios.md)
    * [6.9 Link设置](Channel/Link.md)
        * [Link平台配置](Channel/LInk/developers.md)
+       * Android 配置
 * [7. 后台](Server/README.md)
 * [8. FAQs](Help/README.md)
    * [8.1 常见错误码与错误说明](Help/commonerrno.md)
