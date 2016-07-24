@@ -3,14 +3,15 @@
 目前，iMSDK 提供了众多的平台SDK支持，游戏开发者需要在各大平台申请及配置相关信息
 
 | 渠道 |
-| :-- |
+| :--- |
 | [Facebook配置](facebook.md) |
 | [Google配置](google.md) |
-| [Expansion 配置](expansion.md)|
-| [Midas 配置](midas.md)|
-| [信鸽 配置](xg.md)|
-| [信鸽GCM 配置](xg_gcm.md)|    
-|[MTO配置](mto.md)||
-|[Garena配置](garena.md)||
-|[Efun配置](efun.md)||
-|[Toy配置](toy.md)||
+| [Expansion 配置](expansion.md) |
+| [Midas 配置](midas.md) |
+| [信鸽 配置](xg.md) |
+| [信鸽GCM 配置](xg_gcm.md) |
+| [MTO配置](mto.md) |
+| [Garena配置](garena.md) |
+| [Efun配置](efun.md) |
+| [Toy配置](toy.md) |
+
