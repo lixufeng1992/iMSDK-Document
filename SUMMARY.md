@@ -132,8 +132,6 @@
     * [6.7.1 Toy 开发者中心配置](Channel/Toy/developer.md)
     * [6.7.2 Android 工程配置](Channel/Toy/android.md)
     * [6.7.3 iOS 工程配置](Channel/Toy/ios.md)
-
-
 * [7. 后台](Server/README.md)
 * [8. FAQs](Help/README.md)
   * [8.1 常见错误码与错误说明](Help/commonerrno.md)
