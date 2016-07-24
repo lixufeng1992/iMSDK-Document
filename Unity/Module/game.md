@@ -25,8 +25,8 @@ void OnSetup(IMResult result) {
 }
 
 // Android : 当显示GooglePlay和GameCenter成就或排行榜界面出错时，建议重启游戏
-void OnShowUI(IMResult) {
-    if(IMResult.RetCode != 1) {
+void OnShowUI(IMResult result) {
+    if(result.RetCode != 1) {
         // 当界面显示出错时，需要重新加载游戏或退出
         Application.Quit();
     }
