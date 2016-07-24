@@ -103,6 +103,7 @@
        * [6.2.2 Android 工程配置](Channel/Google/android.md)
        * [6.2.3 iOS 工程配置](Channel/Google/ios.md)
    * [6.3 WeChat平台设置](Channel/wechat.md)
+       * 6.3.1 WeChat配置
    * [6.4 Midas设置](Channel/midas.md)
        * [6.4.1 Midas 开发者中心配置](Channel/Midas/developer.md)
        * [6.4.2 Android 工程配置](Channel/Midas/android.md)
