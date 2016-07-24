@@ -131,7 +131,7 @@
    * [6.9 Link设置](Channel/Link.md)
        * [6.9.1 Link平台配置](Channel/Link/developers.md)
        * [6.9.2 Android 配置](Channel/Link/android.md)
-       * [iOS 配置](Channel/Link/ios.md)
+       * [6.9.3 iOS 配置](Channel/Link/ios.md)
 * [7. 后台](Server/README.md)
 * [8. FAQs](Help/README.md)
    * [8.1 常见错误码与错误说明](Help/commonerrno.md)
