@@ -27,14 +27,3 @@
 ### 快速登录说明
 
 使用快速登录时，只是 iMSDK 验证可以通过，但是 Kakao 本身并没有登录，无法使用 Kakao 的相关接口调用
-
-
-### 工程配置
-
-1. 增加ProxyActivity配置
-
- ```xml
- <activity android:name="com.tencent.imsdk.kakao.login.KakaoProxyActivity"
- android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
- android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
- ```
