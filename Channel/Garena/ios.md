@@ -73,4 +73,5 @@
 	</dict>
  ```
 
- 其中，string值wxef53dd2d66ca6c54需要修改为游戏自己微信的App ID
+   - FacebookAppID，Garena侧提供的`Facebook App ID`。
+   - GOPAppID，Garena侧提供的`Garena App ID`。
