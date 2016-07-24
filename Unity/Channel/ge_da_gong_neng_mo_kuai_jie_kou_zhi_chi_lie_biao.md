@@ -1,7 +1,7 @@
 # 各大功能模块接口支持列表
 
 ##登录
-| 序号 | 方法名 | 方法说明 | Facebook | WeChat | GameCenter | GooglePlay | GooglePlus | Kakao | Viver | 备注 | 备注 | 备注 |
+| 序号 | 方法名 | 方法说明 | Facebook | WeChat | GameCenter | GooglePlay | GooglePlus | Kakao | Viber | 备注 | 备注 | 备注 |
 | :--: | -- |:-------: | :-----: | -- |
 | 1 | public bool Initialize() | 初始化方法 | √ | - |
 | 2 | public bool Initialize(string channel) | 初始化，并制定登录渠道 |√ | |
