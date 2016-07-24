@@ -8,6 +8,11 @@
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMGame（GameObject）上，开发者不要主动销毁该对象！</font>
 
+
+### 快速入门
+
+1. 完成Google服务[平台开发者中心配置](../../)
+
 ### 工程配置说明
 
 #### Android工程配置说明
