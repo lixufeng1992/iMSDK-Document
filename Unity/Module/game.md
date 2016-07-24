@@ -18,12 +18,14 @@
 
 bool isSetup = false;
 
+// 初始化环境回调，会拉起GooglePlay、GameCenter登录
 void OnSetup(IMResult result) {
     if（result.RetCode == 1）{
         isSetup = true;
     }
 }
 
+// 当显示GooglePlay和GameCenter成就或排行榜界面出错时，建议重启游戏
 void OnShowUI(IMResult) {
     if(IMResult.RetCode != 1) {
         // 当界面显示出错时，需要重新加载游戏或退出
