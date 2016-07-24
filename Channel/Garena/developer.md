@@ -1,5 +1,7 @@
 ### 6.1.1  Garena 开发者中心配置
 
-####1. 注册、配置Garena账号信息    
+#### Garena 平台信息    
     
-Garena提供Facebook、Gas、BeeTalk、Guest登录，提供Facebook和Gas平台的社交功能，平台的配置信息由Garena人员直接分配给业务。 
+Garena渠道提供Facebook、Gas、BeeTalk和Guest登录，并提供Facebook和Gas的好友功能。
+接入Garena功能的业务配置信息由Garena方配置再提供给业务方。
+
