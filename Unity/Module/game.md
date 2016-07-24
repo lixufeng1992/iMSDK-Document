@@ -93,9 +93,9 @@ if(isSetup) {
 | public void UnlockAchieve(string achieve, double percent, GameCallback callback =null) | 【iOS】按百分比解锁成就，achieve为成就ID |
 | public void ShowAchieves() | 显示成就 |
 | public void ShowAchieves(GameCallback callback) | 【Android】显示成就，并提供回调 |
-| public void SetScore(string board, int score,GameCallback callback = null) | 设定排行榜分数 |
-| public void ShowLeaderBoard(string board) | 显示排行榜 | 
-| public void ShowLeaderBoard(string board, GameCallback callback) | 【Android】显示排行榜 |
+| public void SetScore(string board, int score, GameCallback callback = null) | 设定排行榜分数, board为排行榜ID |
+| public void ShowLeaderBoard(string board) | 显示排行榜，board为排行榜ID | 
+| public void ShowLeaderBoard(string board, GameCallback callback) | 【Android】显示排行榜，board为排行榜ID |
 
 
 
