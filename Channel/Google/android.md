@@ -24,6 +24,8 @@
  android:value="263738040849-kgcholbfoi8163lpn8ke3l3dsc3pvtu4.apps.googleusercontent.com" />
   ```
 
+  可以在[开发者中心配置](developers.md)过程中，找到这两个值
+
 
 
 
