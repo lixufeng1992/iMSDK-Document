@@ -2,9 +2,9 @@
 
 1. 注册、配置VK账号信息
 
- 有别与Facebook、Google等大型、成熟渠道接入方可自行配置、调试
-
- Toy一般是通过运营方配置...
+  * 在VK官方创建一个app
+  * 获取app的 APP_ID
+  * App Bundle
 
 
 
