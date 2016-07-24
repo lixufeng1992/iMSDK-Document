@@ -119,7 +119,6 @@
     * [6.6.1 Efun开发者中心配置](Channel/Efun/developer.md)
     * [6.6.2 Android 工程配置](Channel/Efun/android.md)
     * [6.6.3 iOS 工程配置](Channel/Efun/ios.md)
-
   * [6.7 Toy设置](Channel/toy.md)
     * [6.7.1 Toy 开发者中心配置](Channel/Toy/developer.md)
     * [6.7.2 Android 工程配置](Channel/Toy/android.md)
