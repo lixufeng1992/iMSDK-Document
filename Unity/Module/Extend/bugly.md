@@ -4,7 +4,7 @@
 
 | 命名空间 | 调用入口 |使用说明|
 | :-- |:-- |:--|
-| Tencent.iMSDK | IMSDKApi.IMStatExtendBugly |iMSDK 的扩展工具|
+| Tencent.iMSDK | IMSDKApi.IMStatExtendBugly |Bugly扩展功能，包括|
 
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMStatExtendBugly（GameObject）上，开发者不要主动销毁该对象！</font>
