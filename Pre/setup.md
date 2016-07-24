@@ -8,29 +8,27 @@
   
   iMSDK由三分部组成：
   
-  * 基础包，主要是提供统一接口、封装基础方法和通用方法，是其他功能的基础
+  * **基础包**，提供统一接口、封装通用方法，是其他部分的基础
   
-  * 插件包，iMSDK所有的功能模块都是以插件（Plugin）的模式提供，也是iMSDK最重要的组成部分
+  * **插件包**，iMSDK所有的功能模块都是以插件（Plugin）的模式提供，也是iMSDK最重要的组成部分
   
-  * 扩展包，在iMSDK框架之外的功能，我们以扩展模块的形式提供
+  * **扩展包**，在iMSDK框架之外的功能，以扩展模块的形式提供
 
   在这种框架下，任何的功能都可以以插件的模式进行添加、删除
   
 2. 什么是渠道？
 
-  iMSDK把一个功能平台定义为一个渠道，如：Facebook、WeChat（微信）等都是一种渠道
+  iMSDK把一个功能平台定义为一个渠道，如：Facebook、WeChat（微信）
 
 3. 什么是 iMSDK 的 Game ID ？
 
-  iMSDK Game ID 是 iMSDK来标记一个业务的ID，一般来说，如果业务在不同区域发行不同的版本，那业务在每个区域应该有不同的Game ID
+  iMSDK Game ID是iMSDK用来唯一标记一个业务的ID，一般来说，如果业务在不同区域发行不同的版本，那业务在每个区域应该申请不同的Game ID
  
-  Game ID 在接入 iMSDK时，由iMSDK进行分配
+  Game ID在接入iMSDK时，由iMSDK后台分配
 
 ### 平台支持
 
-目前，我们支持Android、iOS两大移动平台，并提供Unity、C++版本的接口封装
-
-** 需要注意的是，我们并不是全平台支持，目前iMSDK只支持Android、iOS两大移动平台**
+目前，支持Android、iOS两大移动平台，并提供Unity、C++版本接口
 
 | 平台 | 语言 | 备注 |
 | :-- | :-- | :-- |
@@ -39,9 +37,11 @@
 | [Unity](Unity/README.md) | C# | 只支持Android、iOS手机平台 |
 | [C++引擎](Cpp/README.md) | C++ | 只支持Android、iOS手机平台 |
 
+>**需要注意的是，iMSDK并不是全平台支持，目前只支持Android、iOS两大移动平台**
+
 ### 功能支持
 
-iMSDK按常见的接入功能分成如下常见功能模块：
+按接入功能分成如下常见功能模块：
 
 | 功能 | 支持平台 | 介绍 |
 | :-- | :-- | :-- |
@@ -50,3 +50,7 @@ iMSDK按常见的接入功能分成如下常见功能模块：
 | 好友 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |邀请好友，获取好友列表及向好友发送消息等功能 |
 | 支付 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |集成米大师（Midas）海外支付功能 |
 | 推送 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
+| 统计 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
+| 公告 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
+| 帮助 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
+| 帮助 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) |提供信鸽等消息推送机制
