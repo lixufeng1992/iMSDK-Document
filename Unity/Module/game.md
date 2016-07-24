@@ -74,8 +74,7 @@ if(isSetup) {
 
 * GooglePlay 登出问题
 
-    GooglePlay显示成就和排行榜界面的界面
-
+    GooglePlay显示成就和排行榜界面的界面时，需要重新调用登录逻辑重新进入游戏，有可能用户在UI界面中替换了用户或者登出
 
     
 ### 参考
