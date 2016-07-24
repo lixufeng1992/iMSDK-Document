@@ -60,7 +60,7 @@ if(loadKakaoFriend) {
 * Kakao 好友信息返回结果 <font color=blue>IMKakaoGetFriendsResult</font>
 
 | 变量 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public int RetCode | 返回码 |
 | public string ErrorMsg | 错误信息 |
 | public List< IMKakaoFriendInfo > Friendlist| Kakao 好友信息列表|
