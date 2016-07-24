@@ -20,10 +20,13 @@ Tencent.iMSDK
 
 ####3.2 Android 使用说明
  + 	参考Login，作如下修改
- + 	（1）删除如下权限
+ + 	（1）删除如下权限    
+   ```
 		<uses-permission android:name="android.permission.GET_TASKS" />
+   ```
 	
-	（2）删除如下配置：
+	（2）删除如下配置：     
+    ```
 		
         <service android:name="com.efun.push.client.service.EfunPushService" >
         </service>
@@ -36,7 +39,7 @@ Tencent.iMSDK
                 <action android:name="com.efun.delete.notification.action" />
             </intent-filter>
         </receiver>
-        
+      ```
 
 	（3）修改原sdk中所有Activity中的android:screenOrientation属性：
 		将android:screenOrientation="landscape" 改为 android:screenOrientation="sensorLandscape"
@@ -102,7 +105,8 @@ Efun扩展类方法 <font color=blue>IMEfun</font>
 |public string imageUrl|用户头像URL|
 
 ###5. 代码示例（参考EfunSample）
-	```
+
+```
 			//show platform
 			EfunPlatformEntity param = new EfunPlatformEntity();
 			param.serverCode = "9999";
@@ -124,4 +128,4 @@ Efun扩展类方法 <font color=blue>IMEfun</font>
 			IMSDKApi.Efun.GetUserProfile(0， 100， 100 ,OnGetUserProfile);
 		
 		
-	```
+```
