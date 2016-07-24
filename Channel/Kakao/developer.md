@@ -10,12 +10,12 @@
 
  在管理端 [https://gamecenter.kakao.com/admin/apps](https://gamecenter.kakao.com/admin/apps) 中选择对应的App，在“Detail Info”中找到“Native App Key”字段，即可获取 native app key
 
- ![Kakao Native App ID](Images/Kakao/kakao_get_native_app_id.jpg)
+ ![Kakao Native App ID](../../assets/Images/Kakao/kakao_get_native_app_id.jpg)
 
 3. 设置消息模板
 
  在“Manage Message Templates”菜单中，可以新增消息模板。该模板需要审核，通过后可以看到对应的对应的消息模板
 
- ![Kakao message template](Images/Kakao/kakao_message_template.jpg)
+ ![Kakao message template](../../assets/Images/Kakao/kakao_message_template.jpg)
 
  *<font color=red>注意：消息模板需要区分类别，普通的feed和邀请invite不能混用<font>*
