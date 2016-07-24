@@ -71,6 +71,6 @@
 
 11. 配置成就和排行榜
 
-    ![add achievement](../../assets/Images/Google/google_play_achievement.jpg)
+    ![add achievement](../../assets/Images/Google/google_play_achievements.jpg)
 
 
