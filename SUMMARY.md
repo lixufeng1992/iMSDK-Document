@@ -128,6 +128,7 @@
        * [6.8.1 Kakao 开发者中心配置](Channel/Kakao/developer.md)
        * [6.8.2 Android 工程配置](Channel/Kakao/android.md)
        * [6.8.3 iOS 工程配置](Channel/Kakao/ios.md)
+   * 6.9 Link设置
 * [7. 后台](Server/README.md)
 * [8. FAQs](Help/README.md)
    * [8.1 常见错误码与错误说明](Help/commonerrno.md)
