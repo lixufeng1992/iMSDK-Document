@@ -8,21 +8,17 @@
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMGame（GameObject）上，开发者不要主动销毁该对象！</font>
 
-## 模块使用说明
+### 工程配置说明
 
-该模块主要是提供游戏服务，如成就、排行榜等
-
-## 工程配置说明
-
-### Android工程配置说明
+#### Android工程配置说明
 
 > 主要需要修改Assets/Plugins/Android/AndroidManifest.xml文件，具体内容可参考渠道功能文档。
 
-### iOS工程配置说明
+#### iOS工程配置说明
 
 > 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
     
-## 参考
+### 参考
 
 * 游戏服务方法类 <font color=blue>IMGame</font>
 
