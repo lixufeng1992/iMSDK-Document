@@ -14,7 +14,7 @@
       ![img](../../assets/Images/VK/setting.png)
       * settings下就可以看到app id
       ![img](../../assets/Images/VK/setting1.png)
-    * Settings    
+    * Settings示例    
     ![img](../../assets/Images/VK/setting_demo.png)
  
     * 关于Android fingerprint的计算    
