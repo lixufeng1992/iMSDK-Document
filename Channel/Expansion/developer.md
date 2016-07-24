@@ -1,9 +1,9 @@
 ## 6.3.1 Expansion 开发者中心配置
 
 1. 登录[Google Play Developer Console](https://play.google.com/apps/publish/)，添加新应用，如下：
-  ![添加新应用示例图](../Images/Expansion/expansion_1.png)
+  ![](/assets/Images/Expansion/expansion_1.png)
 2. 为刚刚提交的APK文件添加扩张文件，具体步骤如下：
-  ![](/Channel/Images/Expansion/expansion_2.png)
+  ![](/assets/Images/Expansion/expansion_2.png)
 
 ```
 请注意：如果您上传的是新应用，那么扩展文件将无法添加到您上传的第一个 APK 文件中。
