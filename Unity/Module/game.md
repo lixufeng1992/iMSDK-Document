@@ -58,7 +58,12 @@ if(isSetup) {
 * 渠道说明
 
     目前，iMSDK只支持GooglePlay和GameCenter的两个游戏服务，暂时不需要设置渠道
-* 
+
+* 初始化说明
+    
+    必须先调用Setup成功之后，才能调用相关的上报函数
+
+
     
 ### 参考
 
