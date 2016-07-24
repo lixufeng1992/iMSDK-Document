@@ -32,58 +32,52 @@
 
 * 工程Plist文件配置
 
- 找到或新建如下节点:
+ 修改或新建如下节点:
 
  ```plist
  <key>CFBundleURLTypes</key>
  <array>
      <dict>
-		 <key>CFBundleTypeRole</key>
-		 <string>Editor</string>
-		 <key>CFBundleURLName</key>
-		 <string>facebook</string>
-		 <key>CFBundleURLSchemes</key>
-		 <array>
-			 <string>fb423362744481374</string>
-		 </array>
-	 </dict>
-	 <dict>
-		 <key>CFBundleTypeRole</key>
-		 <string>Editor</string>
-		 <key>CFBundleURLName</key>
-		 <string>gop</string>
-		 <key>CFBundleURLSchemes</key>
-		 <array>
-			 <string>gop100050</string>
-		 </array>
-	 </dict>
+         <key>CFBundleTypeRole</key>
+         <string>Editor</string>
+         <key>CFBundleURLName</key>
+         <string>facebook</string>
+         <key>CFBundleURLSchemes</key>
+         <array>
+             <string>fb414489312041120</string>
+         </array>
+     </dict>
+     <dict>
+         <key>CFBundleTypeRole</key>
+         <string>Editor</string>
+         <key>CFBundleURLName</key>
+         <string>com.aiming.linkdev</string>
+         <key>CFBundleURLSchemes</key>
+         <array>
+             <string>com.aiming.linkdev</string>
+         </array>
+     </dict>
  </array>
  <key>FacebookAppID</key>
- <string>423362744481374</string>
- <key>GOPAppID</key>
- <string>100050</string>
+ <string>414489312041120</string>
  <key>LSApplicationQueriesSchemes</key>
  <array>
-	 <string>beetalk</string>
-	  <string>garenagc</string>
-	 <string>fb</string>
-	 <string>fbapi</string>
-	 <string>fbapi20130214</string>
-	 <string>fbapi20130410</string>
-	 <string>fbapi20140410</string>
-	 <string>fbapi20140116</string>
-	 <string>fbapi20150313</string>
-	 <string>fbapi20150629</string>
-	 <string>fbauth</string>
-	 <string>fbauth2</string>
-	 <string>fb-messenger-api20140430</string>
-     <string>gop100050</string>
+     <string>fbapi</string>
+     <string>fbapi20130214</string>
+     <string>fbapi20130410</string>
+     <string>fbapi20130702</string>
+     <string>fbapi20131010</string>
+     <string>fbapi20131219</string>    
+     <string>fbapi20140410</string>
+     <string>fbapi20140116</string>
+     <string>fbapi20150313</string>
+     <string>fbapi20150629</string>
+     <string>fbauth</string>
+     <string>fbauth2</string>
+     <string>fb-messenger-api20140430</string>
  </array>
- <key>NSAppTransportSecurity</key>
- <dict>
-     <key>NSAllowsArbitraryLoads</key>
-     <true/>
- </dict>
+ <key>AimingLinkDeleteAuthToken</key>
+ <true/>
  ```
 
    - FacebookAppID，由Garena侧提供的`Facebook App ID`。
