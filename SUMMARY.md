@@ -21,7 +21,6 @@
   * [4.2 配置开发环境](Unity/setupenv.md)
     * [4.2.1 Android 环境配置](Unity/SetupEnv/android.md)
     * [4.2.2 iOS 环境配置](Unity/SetupEnv/ios.md)
-
   * [4.3 快速集成指南](Unity/quickstart.md)
   * [4.4 功能模块](Unity/Module/README.md)
     * [4.4.1 登录模块\(Login\)](Unity/Module/login.md)
@@ -51,23 +50,17 @@
       * [4.4.13.11 SQW\(37玩\)功能扩展](Unity/Module/Extend/sqw.md)
       * [4.4.13.12 Tapjoy功能扩展](Unity/Module/Extend/tapjoy.md)
       * [4.4.13.13 Toy功能扩展](Unity/Module/Extend/toy.md)
-
-
   * [4.5 渠道功能说明](Unity/Channel/README.md)
     * [4.5.1 Facebook 功能说明](Unity/Channel/facebook.md)
       * [4.5.1.1 Facebook 登录功能说明](Unity/Channel/Facebook/login.md)
       * [4.5.1.2 Facebook 分享功能说明](Unity/Channel/Facebook/share.md)
-
     * [4.5.2 AppsFlyer 功能说明](Unity/Channel/appsflyer.md)
       * [4.5.2.1 AppsFlyer 统计功能说明](Unity/Channel/AppsFlyer/stat.md)
-
     * [4.5.3 Bugly 功能说明](Unity/Channel/bugly.md)
       * 4.5.3.1 Bugly 统计功能说明
-
     * [4.5.4 kakao功能说明](Unity/Channel/kakao.md)
       * [4.5.4.1 Kakao 登录功能说明](Unity/Channel/Kakao/login.md)
       * [4.5.4.2 Kakao 好友功能说明](Unity/Channel/Kakao/friend.md)
-
     * [4.5.5 Midas功能说明](Unity/Channel/midas.md)
       * [4.5.5.1 MidasGoogle\(米大师谷歌支付\)](Unity/Channel/Midas/midasgoogle.md)
       * [4.5.5.2 MidasEfun\(米大师Efun支付\)](Unity/Channel/Midas/midasefun.md)
@@ -81,36 +74,29 @@
       * [4.5.5.10 MidasPW\(米大师Paymentwall支付\)](Unity/Channel/Midas/midaspaymentwall.md)
       * [4.5.5.11 MidasZalo\(米大师Zalo支付\)](Unity/Channel/Midas/midaszalo.md)
       * [4.5.5.13 SQW\(三七玩支付\)](Unity/Channel/Midas/midassqw.md)
-
     * [4.5.6 Garena功能说明](Unity/Channel/garena.md)
       * [4.5.6.1 Garena 登录功能说明](Unity/Channel/Garena/login.md)
       * [4.5.6.2 Garena 好友功能说明](Unity/Channel/Garena/friend.md)
       * [4.5.6.3 Garena 分享功能说明](Unity/Channel/Garena/share.md)
       * [4.5.6.4 Garena 支付功能说明](Unity/Channel/Garena/pay.md)
       * [4.5.6.5 Garena 扩展功能说明](Unity/Channel/Garena/extend.md)
-
     * [4.5.7 Efun功能说明](Unity/Channel/efun.md)
       * [4.5.7.1  Efun 登录功能说明](Unity/Channel/Efun/login.md)
       * [4.5.7.2  Efun 好友功能说明](Unity/Channel/Efun/friend.md)
       * [4.5.7.3  Efun 分享功能说明](Unity/Channel/Efun/share.md)
       * [4.5.7.4  Efun 支付功能说明](Unity/Channel/Efun/pay.md)
       * [4.5.7.5  Efun 扩展功能说明](Unity/Channel/Efun/extend.md)
-
     * [4.5.8 Toy功能说明](Unity/Channel/toy.md)
       * [4.5.8.1  Toy 登录功能说明](Unity/Channel/Toy/login.md)
       * [4.5.8.2  Toy 好友功能说明](Unity/Channel/Toy/friend.md)
       * [4.5.8.3  Toy 分享功能说明](Unity/Channel/Toy/share.md)
       * [4.5.8.4  Toy 帮助功能说明](Unity/Channel/Toy/helper.md)
       * [4.5.8.5  Toy 扩展功能说明](Unity/Channel/Toy/extend.md)
-
     * [各大功能模块接口支持列表](Unity/Channel/ge_da_gong_neng_mo_kuai_jie_kou_zhi_chi_lie_biao.md)
-
-
 * [5. C++开发指引](Cpp/README.md)
   * [5.1 下载及使用](Cpp/download.md)
   * [5.2 配置开发环境](Cpp/setupenv.md)
   * [5.3 快速集成指南](Cpp/quickstart.md)
-
 * [6. 渠道平台设置](Channel/README.md)
   * [6.1 Facebook设置](Channel/facebook.md)
     * [6.1.1 Facebook 开发者中心配置](Channel/Facebook/developers.md)
