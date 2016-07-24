@@ -103,7 +103,6 @@
     * [6.2.1 Google 开发者中心配置](Channel/Google/developers.md)
     * [6.2.2 Android 工程配置](Channel/Google/android.md)
     * [6.2.3 iOS 工程配置](Channel/Google/ios.md)
-
   * [6.3 WeChat设置](Channel/wechat.md)
     * [6.3.1 WeChat 开放平台配置](Channel/WeChat/developers.md)
     * [6.3.2 Android 配置](Channel/WeChat/android.md)
