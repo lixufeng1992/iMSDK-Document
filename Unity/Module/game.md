@@ -25,7 +25,7 @@ void OnSetup(IMResult result) {
     }
 }
 
-// 当显示GooglePlay和GameCenter成就或排行榜界面出错时，建议重启游戏
+// Android : 当显示GooglePlay和GameCenter成就或排行榜界面出错时，建议重启游戏
 void OnShowUI(IMResult) {
     if(IMResult.RetCode != 1) {
         // 当界面显示出错时，需要重新加载游戏或退出
@@ -84,15 +84,15 @@ if(isSetup) {
 | 函数名 | 函数说明 |
 | -- | -- |
 | public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数 |
-| public bool SetChannel(string channel) | 设定游戏服务渠道 |
-| public void Setup(GameCallback callback=null) | 初始化环境 |
+| public bool SetChannel(string channel) | 设定游戏服务渠道，GooglePlay或GameCenter可以不用调用 |
+| public void Setup(GameCallback callback=null) | 初始化环境，必须成功后再调用其他函数 |
 | public void CheckGMSInstall(GameCallback callback) | 【Android】检查Google服务是否安装 |
-| public bool Available() | 【Android】服务是否可用 |
-| public void UnlockAchieve(string achieve, GameCallback callback =null) | 解锁单步成就 |
-| public void UnlockAchieve(string achieve, int count, GameCallback callback =null) | 【Android】解锁多步成就 |
-| public void UnlockAchieve(string achieve, double percent, GameCallback callback =null) | 【iOS】按百分比解锁成就 |
+| public bool Available() | 【Android】检查Google服务是否可用 |
+| public void UnlockAchieve(string achieve, GameCallback callback =null) | 解锁单步成就，achieve为成就ID |
+| public void UnlockAchieve(string achieve, int count, GameCallback callback =null) | 【Android】解锁多步成就，achieve为成就ID |
+| public void UnlockAchieve(string achieve, double percent, GameCallback callback =null) | 【iOS】按百分比解锁成就，achieve为成就ID |
 | public void ShowAchieves() | 显示成就 |
-| public void ShowAchieves(GameCallback callback) | 【Android】显示成就 |
+| public void ShowAchieves(GameCallback callback) | 【Android】显示成就，并提供回调 |
 | public void SetScore(string board, int score,GameCallback callback = null) | 设定排行榜分数 |
 | public void ShowLeaderBoard(string board) | 显示排行榜 | 
 | public void ShowLeaderBoard(string board, GameCallback callback) | 【Android】显示排行榜 |
