@@ -36,13 +36,13 @@
 
     iMSDK后台需要获取用户的基础信息，所以需要添加权限，GooglePlus必须添加权限后测试，或者将app发布
 
- 5. 确认API
+5. 确认API
 
      ![Confirm API](../../assets/Images/Google/google_plus_confirm_api.png)
 
      确保上面的权限已经添加
 
- 6. 建立 OAuth
+6. 建立 OAuth
 
      ![Add OAuth](../../assets/Images/Google/google_plus_add_oauth.png)
 
