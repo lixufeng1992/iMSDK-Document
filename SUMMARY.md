@@ -107,7 +107,6 @@
     * [6.3.1 WeChat 开放平台配置](Channel/WeChat/developers.md)
     * [6.3.2 Android 配置](Channel/WeChat/android.md)
     * [6.3.3 iOS 配置](Channel/WeChat/ios.md)
-
   * [6.4 Midas设置](Channel/midas.md)
     * [6.4.1 Midas 开发者中心配置](Channel/Midas/developer.md)
     * [6.4.2 Android 工程配置](Channel/Midas/android.md)
