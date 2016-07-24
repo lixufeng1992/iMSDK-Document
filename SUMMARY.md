@@ -99,7 +99,6 @@
            * [4.5.10.1 VK 登入功能说明](Unity/Channel/VK/login.md)
            * [4.5.10.2 VK 好友功能说明](Unity/Channel/VK/friend.md)
            * [4.5.10.3 VK 分享功能说明](Unity/Channel/VK/share.md)
-          
 * [5. C++开发指引](Cpp/README.md)
    * [5.1 下载及使用](Cpp/download.md)
    * [5.2 配置开发环境](Cpp/setupenv.md)
@@ -136,9 +135,8 @@
        * [6.8.3 iOS 工程配置](Channel/MTO/ios.md)
    * [6.9 VK设置](Channel/vk.md)
        * [6.9.1 VK 开发者中心配置](Channel/VK/developer.md)
-       * [6.9.2 Android 工程配置](Channel/VK/android.md)
        * [6.9.3 iOS 工程配置](Channel/VK/ios.md)
-      
+       * [6.9.2 Android 工程配置](Channel/VK/android.md)
 * [7. 后台](Server/README.md)
 * [8. FAQs](Help/README.md)
    * [8.1 常见错误码与错误说明](Help/commonerrno.md)
