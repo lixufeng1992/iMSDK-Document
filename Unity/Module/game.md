@@ -15,7 +15,6 @@
 2. 代码实现
 
 ```cs
-
 bool isSetup = false;
 
 // 初始化环境回调，会拉起GooglePlay、GameCenter登录
