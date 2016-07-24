@@ -64,7 +64,7 @@
   }
   ```
   
-  ## 参考
+## 参考
 
 * 分享参数类 <font color=blue>IMShareContent</font>
 
