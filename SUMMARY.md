@@ -115,7 +115,6 @@
     * [6.5.1 Garena 开发者中心配置](Channel/Garena/developer.md)
     * [6.5.2 Android 工程配置](Channel/Garena/android.md)
     * [6.5.3 iOS 工程配置](Channel/Garena/ios.md)
-
   * [6.6 Efun设置](Channel/efun.md)
     * [6.6.1 Efun开发者中心配置](Channel/Efun/developer.md)
     * [6.6.2 Android 工程配置](Channel/Efun/android.md)
