@@ -82,7 +82,7 @@ if(loadKakaoFriend) {
 * Kakao 扩展方法类 <font color=blue>IMKakao</font>
 
 | 函数名 | 函数说明 |
-| -- | -- |
+| :-- | :-- |
 | public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数 |
 | public void GetInvitableFriends(int count, KakaoGetFriendsCallbck callback) | 获取可邀请好友列表 |
 | public void GetRegisteredFriends(int count, KakaoGetFriendsCallbck callback) | 获取已注册好友列表 |
