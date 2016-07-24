@@ -9,7 +9,12 @@
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMNotice（GameObject）上，开发者不要主动销毁该对象！</font>
 
 ### 快速入门
-1. [完成特定渠道配置](../../Channel/README.md)
+1. 只有Android平台需要声明权限，iOS没有其他的配置
+
+```xml
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18" />
+```
+
 2. 代码实例
 
 ```cs
