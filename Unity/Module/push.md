@@ -12,14 +12,14 @@
 2.  代码实例，下面的代码块是最基本调用代码
 
 ```
-	void Start() {
-        //初始化
-		IMSDKApi.Push.Initialize ();
-        //设置需要使用推送渠道，比如“XG”就是使用信鸽推送
-		IMSDKApi.Push.SetChannel("XG");
-        //进行注册，控制台看到“注册成功”，就可以接收到后台消息推送
-		IMSDKApi.Push.Register();
-	}
+void Start() {
+    //初始化
+    IMSDKApi.Push.Initialize ();
+    //设置需要使用推送渠道，比如“XG”就是使用信鸽推送
+    IMSDKApi.Push.SetChannel("XG");
+    //进行注册，控制台看到“注册成功”，就可以接收到后台消息推送
+    IMSDKApi.Push.Register();
+}
 ```
 
 ### 参考
