@@ -15,7 +15,12 @@
 2. 代码实现
 
 ```cs
-IMSDKApi.Game.Initailize();
+void Start() {
+ // 我们建议在游戏开始时就初始化登陆方法
+ IMSDKApi.Login.Initialize ();
+ // 设定渠道可以根据自己的需要，在调用登录方法之前调用
+ // IMSDKApi.Login.SetChannel("GooglePlay");
+}
 
 ```
 
