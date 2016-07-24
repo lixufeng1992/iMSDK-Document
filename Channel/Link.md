@@ -1,7 +1,8 @@
-### 6.9 Link平台设置
+### 6.9 Link设置
 
-#### Garena 平台信息    
+#### Link 平台信息    
     
-Garena渠道提供Facebook、Gas、BeeTalk和Guest登录，并提供Facebook和Gas的好友功能。
-接入Garena功能的业务配置信息由Garena方配置再提供给业务方。
+Link提供以游客为中心的账号服务，可将游客账户绑定到Facebook、Google、Twitter社交账号，绑定游客的社交账号可用来恢复被绑定游客。
+
+接入Link平台的业务配置信息由Link方提供。
 
