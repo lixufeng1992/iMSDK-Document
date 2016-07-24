@@ -134,6 +134,9 @@
        * [6.8.1 MTO 开发者中心设置](Channel/MTO/developer.md)
        * [6.8.2 Android 工程配置](Channel/MTO/android.md)
        * [6.8.3 iOS 工程配置](Channel/MTO/ios.md)
+   * [6.9 VK设置]
+       * [6.9.1 VK 开发者中心配置](Channel/VK/developer.md)
+       * 
 * [7. 后台](Server/README.md)
 * [8. FAQs](Help/README.md)
    * [8.1 常见错误码与错误说明](Help/commonerrno.md)
