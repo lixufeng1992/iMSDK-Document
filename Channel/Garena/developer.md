@@ -3,7 +3,3 @@
 ####1. 注册、配置Garena账号信息    
     
 Garena提供Facebook、Gas、BeeTalk、Guest登录，提供Facebook和Gas平台的社交功能，平台的配置信息由Garena人员直接分配给业务。 
-
-2. 配置iMSDK后台
-
-请到iMSDK管理段进行后台配置，联系人RTX：hirryli
