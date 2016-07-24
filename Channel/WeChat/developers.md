@@ -1,6 +1,5 @@
 ### 6.3.1 WeChat 开放平台配置
 
-
 1. 注册微信开放平台账号
 
   进入开放平台网址：[https:\/\/open.weixin.qq.com](https://open.weixin.qq.com)
