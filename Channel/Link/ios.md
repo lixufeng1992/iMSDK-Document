@@ -80,6 +80,7 @@
  <true/>
  ```
 
-   - FacebookAppID，由Garena侧提供的`Facebook App ID`。
-   - GOPAppID，由Garena侧提供的`Garena App ID`。
+   - FacebookAppID，由Link侧提供的`Facebook App ID`。
+   - AimingLinkDeleteAuthToken，设置应用删除后是否重置LinkAuthToken。
+   - Url Scheme，设置Facebook和Link的Url Scheme
 
