@@ -23,9 +23,9 @@ public void GetTicket(WebViewTicketCallback callback=null)
 
 <font color=red>注意：如果用户没有登录，无法获取票据</font>
 
-## 工程配置说明
+### 工程配置说明
 
-### Android工程配置说明
+#### Android工程配置说明
 
 ```cs
 <uses-permission android:name="android.permission.INTERNET" />
@@ -51,11 +51,11 @@ public void GetTicket(WebViewTicketCallback callback=null)
 <!-- webview end -->
 ```
 
-### iOS工程配置说明
+#### iOS工程配置说明
 
 > 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
     
-## 参考
+### 参考
 
 * 网络票据结构体 <font color=blue>IMWebViewTicketResult</font>
 
@@ -122,7 +122,7 @@ public void GetTicket(WebViewTicketCallback callback=null)
 | public void GetTicket(<br>&emsp;&emsp;WebViewTicketCallback callback=null<br>&emsp;&emsp;) | 获取WebView登陆凭证 |
 | public void SetWebViewActionCallback(<br>&emsp;&emsp;WebViewActionCallback callback<br>&emsp;&emsp;) | 监听WebView事件回调(打开、关闭等) |
 
-## 代码示例
+### 代码示例
 
 ```cs
 /**
