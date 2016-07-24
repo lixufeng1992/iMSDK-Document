@@ -1,6 +1,6 @@
 ## Google 开发者中心配置
 
-<font color=orange>由于Google Plus 谷歌官方即将放弃，建议直接新建 Play 应用，Play 应用也可以用 Plus 登录</font>
+由于Google Plus 谷歌官方即将放弃，建议直接新建 Play 应用，Play 应用也可以用 Plus 登录
 
 1. 建立应用
 
