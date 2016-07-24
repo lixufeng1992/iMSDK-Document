@@ -33,16 +33,6 @@ IMSDKApi.Game.SetScore("CgkIkcSMwNYHEAIQAw", 10000);
 IMSDKApi.Game.ShowLeaderBoard();
 
 ```
-
-### 工程配置说明
-
-#### Android工程配置说明
-
-> 主要需要修改Assets/Plugins/Android/AndroidManifest.xml文件，具体内容可参考渠道功能文档。
-
-#### iOS工程配置说明
-
-> 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
     
 ### 参考
 
