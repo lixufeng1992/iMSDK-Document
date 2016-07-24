@@ -1,8 +1,8 @@
 ### 6.3.1 WeChat 开放平台配置
 1. 注册微信开放平台账号
    
-   首先，需要先注册Facebook账号。
+   前往[微信开放平台](https://open.weixin.qq.com/)注册账号，根据提示完成邮箱认证和完善开发者资料
    
-   请到Facebook官网注册账号：[https://www.facebook.com](https://www.facebook.com)，并根据提示完成账号认证（Email或者手机认证）。
+   
 
 
