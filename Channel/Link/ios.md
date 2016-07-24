@@ -7,6 +7,8 @@
  ```plist
  <key>Link</key>
  <dict>
+     <key>isDebugMode</key>
+     <true/>
      <key>twitterConsumerKey</key>
      <string>HZ7K6ONuzsOsA2NV625Uokjmw</string>
      <key>twitterConsumerSecret</key>
@@ -19,13 +21,14 @@
      <string>a41bbbb9d01de59b984ac098df0a83a6</string>
      <key>keyStoreIdentifier</key>
      <string></string>
-     <key>isDebugMode</key>
-     <true/>
  </dict>
  ```
  
  - isDebugMode，标识是否启用Garena的Debug模式，正式环境应该设置为`false`。
- - loginKey，由Garena侧分配，正式环境和测试环境不同。
+ - linkAccessToken，由Garena侧分配，正式环境和测试环境不同。
+ - linkBaseUrl
+ - twitterConsumerKey,twitterConsumerSecret
+ - googleClientID
 
 * 工程Plist文件配置
 
