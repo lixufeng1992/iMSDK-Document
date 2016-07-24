@@ -32,9 +32,9 @@
 
 5. 添加测试权限
 
-        ![Confirm permission](../../assets/Images/Google/google_plus_add_tester.png)
+    ![Confirm permission](../../assets/Images/Google/google_plus_add_tester.png)
 
-     iMSDK后台需要获取用户的基础信息，所以需要添加权限，GooglePlus必须添加权限后测试，或者将app发布
+    iMSDK后台需要获取用户的基础信息，所以需要添加权限，GooglePlus必须添加权限后测试，或者将app发布
 
  5. 确认API
 
