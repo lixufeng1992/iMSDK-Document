@@ -22,8 +22,8 @@
  找到或新建如下节点:
 
  ```plist
-<key>CFBundleURLTypes</key>
-	<array>
+ <key>CFBundleURLTypes</key>
+	 <array>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
