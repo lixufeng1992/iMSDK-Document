@@ -5,6 +5,7 @@
 | 命名空间 | 调用入口 |使用说明|
 | :-- |:-- |:--|
 | Tencent.iMSDK | IMSDKApi.Share |用于用户分享、邀请好友、给好友发消息等社交功能|
+<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMShare（GameObject）上，开发者不要主动销毁该对象！</font>
 
 #### 分享类型说明
 
