@@ -95,6 +95,8 @@
            * [4.5.9.3 MTO 分享功能说明](Unity/Channel/MTO/share.md)
            * [4.5.9.4 MTO 帮助功能说明](Unity/Channel/MTO/help.md)
            * [4.5.9.5 MTO 统计功能说明](Unity/Channel/MTO/stat.md)
+       * [4.5.10 VK功能说明](Unity/Channel/vk.md)
+           *
 * [5. C++开发指引](Cpp/README.md)
    * [5.1 下载及使用](Cpp/download.md)
    * [5.2 配置开发环境](Cpp/setupenv.md)
