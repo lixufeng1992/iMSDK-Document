@@ -2,9 +2,7 @@
 
 ####1. 注册、配置Garena账号信息    
     
-有别与Facebook、Google等大型、成熟渠道接入方可自行配置、调试    
-
-Garena一般是通过运营方配置...
+Garena提供Facebook、Gas、BeeTalk、Guest登录，提供Facebook和Gas平台的社交功能，平台的配置信息由Garena人员直接分配给业务。 
 
 2. 配置iMSDK后台
 
