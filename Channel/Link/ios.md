@@ -24,11 +24,11 @@
  </dict>
  ```
  
- - isDebugMode，标识是否启用Garena的Debug模式，正式环境应该设置为`false`。
- - linkAccessToken，由Garena侧分配，正式环境和测试环境不同。
- - linkBaseUrl
- - twitterConsumerKey、twitterConsumerSecret，
- - googleClientID
+ - isDebugMode，标识是否启用Link的Debug模式，正式环境应该设置为`false`。
+ - linkAccessToken，由Link侧提供的配置，正式环境和测试环境不同。
+ - linkBaseUrl，由Link侧提供的Link配置，正式环境和测试环境配置不同。
+ - twitterConsumerKey、twitterConsumerSecret，由Link侧提供的Twitter配置。
+ - googleClientID，由Link侧提供的Google Plus配置
 
 * 工程Plist文件配置
 
