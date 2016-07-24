@@ -62,6 +62,6 @@
 
 6. 配置iMSDK后台
 
-    请到iMSDK管理段进行后台配置，联系人RTX：hirryli
+    请到iMSDK管理段进行后台配置，[联系我们](../../Pre/contact.md)
 
 
