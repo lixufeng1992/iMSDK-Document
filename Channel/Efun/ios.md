@@ -9,17 +9,30 @@ Xcode->Project->Edit Project Settings，打开你的工程配置,在工程配置
 
 <font color = red >AdSupport.framework, Social.framework</font>
 
-CFNetwork.framework, CoreMedia.framework, EventKitUI.framework, iAd.framework, FacebookSDK.framework
-
-StroeKit.framework, QuartzCore.framework, SystemConfiguration.framework, CoreTelephony.framework, 
-
-Accounts.framework, Security.framework, CoreMotion.framework, MediaPlayer.framework, EventKit.framework
-
-CoreLocation.framework, MessageUI.framework, MobileCoreServices.framework, libz.dylib(Xcode7.3或以上为libz.tbd), AudioToolbox.framework,
-
-AVFoundation.framework, CoreData.framework ,CoreText.framework
-###3. 工程中Info.plist文件相关选项配置(要完全按配置，否则会crash)
-+ 游戏的BundleID为：com.vqw.hkqmcs *(根据实际情况修改)*
+CFNetwork.framework,     
+CoreMedia.framework,     
+EventKitUI.framework,     
+iAd.framework,     
+FacebookSDK.framework    
+StroeKit.framework,    
+QuartzCore.framework,  
+SystemConfiguration.framework,     
+CoreTelephony.framework,    
+Accounts.framework,    
+Security.framework,     
+CoreMotion.framework,     
+MediaPlayer.framework,    
+EventKit.framework    
+CoreLocation.framework,     
+MessageUI.framework,     
+MobileCoreServices.framework,    
+libz.dylib(Xcode7.3或以上为libz.tbd),     
+AudioToolbox.framework,    
+AVFoundation.framework,      
+CoreData.framework ,     
+CoreText.framework
+###3. 工程中Info.plist文件相关选项配置(配置项都要对应配，否则会crash)
++ 游戏的BundleID为：com.vqw.hkqmcs 
 
 + 添加 URLSchemes、URL identifier 与 FacebookAppID、FacebookDisplayName 和程序标识符
 
