@@ -4,7 +4,7 @@
 
 | 命名空间 | 调用入口 |使用说明|
 | :-- |:-- |:--|
-| Tencent.iMSDK | IMSDKApi.IMGame |用于用户认证，获取用户的基本资料|
+| Tencent.iMSDK | IMSDKApi.IMGame |该模块主要是提供游戏服务，如成就、排行榜等|
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMGame（GameObject）上，开发者不要主动销毁该对象！</font>
 
