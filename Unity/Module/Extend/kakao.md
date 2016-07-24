@@ -8,10 +8,75 @@
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMKakao（GameObject）上，开发者不要主动销毁该对象！</font>
 
 ### 快速入门
++ 声明回调函数
+
 ```
+void OnGetFriend(IMKakaoGetFriendsResult result) {
+ IMLog.Log ("get friend callback ...");
+ string resultString = result.ToUnityString ();
+ IMLog.Log ("result string : " + resultString);
+}
+
+void OnResult(IMResult result) {
+ IMLog.Log ("operation callback ...");
+ string resultString = result.ToUnityString ();
+ IMLog.Log ("result string : " + resultString);
+}
+
+void OnProfile(IMKakaoUserProfileResult result) {
+ IMLog.Log ("profile callback ...");
+ string resultString = result.ToUnityString ();
+ IMLog.Log ("result string : " + resultString);
+}
+
+```
+
++ 功能调用示例
+
+```
+if (GUI.Button (NextRect (), "initailize")) { IMSDKApi.Kakao.Initialize (); }
+if (GUI.Button (NextRect (), "get invitable friends")) { IMSDKApi.Kakao.GetInvitableFriends (100, OnGetFriend); }
+if (GUI.Button (NextRect (), "get registered friends")) { IMSDKApi.Kakao.GetRegisteredFriends (100, OnGetFriend); }
+if (GUI.Button (NextRect (), "is story user")) { IMSDKApi.Kakao.IsStoryUser(OnResult); }
+if (GUI.Button (NextRect (), "post story")) { IMSDKApi.Kakao.PostStory("111", "hhhh", OnResult); }
+if (GUI.Button (NextRect (), "get talk profile")) { IMSDKApi.Kakao.GetTalkUserProfile (OnProfile); }
+if (GUI.Button (NextRect (), "get game profile")) { IMSDKApi.Kakao.GetGameUserProfile (OnProfile); }
+if (GUI.Button (NextRect (), "update game profile")) { Dictionary<string, string> properties = new Dictionary<string, string> (); properties.Add ("name", "hahaha"); IMSDKApi.Kakao.UpdateGameUserProfile (properties, OnResult); }
+if (GUI.Button (NextRect (), "unlink")) { IMSDKApi.Kakao.Unlink(OnResult); }
 ```
 
 ### 参考
+
+* kakao好友信息结构体 **IMKakaoFriendInfo**
+| 变量 | 说明 |
+| :-- | :-- |
+| public string UserId |  游戏用户ID  |
+| public string UuId |  未绑定游戏的用户识别参数  |
+| public string ServiceUserId |  kakao会员编号  |
+| public string NickName |  kakaotalk昵称  |
+| public bool AppRegistered |  好友是否加入游戏  |
+| public bool AllowedTalkMessaging |  判断是否允许接收信息  |
+| public string ThumbnailURL |  kakaotalk个人信息图片链接，1100px*1100px  |
+| public int StoryRelation |  判断是否kakao story关系：0-好友 1-非好友 2-未知  |
+| public int TalkOS |  kakaotalk中设备信息：0-未知 1-IOS 2-Androind  |
+| public int TalkRelation |  判断是否kakao好友：0-好友 1-非好友 2-未知  |
+| public int GroupChatMessageRemainingCount |  今天内可发送聊天室信息的剩余量  |
+| public int InviteMessageRemainingCount |  今天可发送邀请信息的剩余量  |
+
+*  kakao个人信息结构体 **IMKakaoUserProfileResult**
+
+| 变量 | 说明 |
+| :-- | :-- |
+| public string UserId | 游戏用户ID |
+| public string UserId | 游戏用户ID |
+| public string UserId | 游戏用户ID |
+| public string UserId | 游戏用户ID |
+| public string UserId | 游戏用户ID |
+| public string UserId | 游戏用户ID |
+| public string UserId | 游戏用户ID |
+| public string UserId | 游戏用户ID |
+
+| public string UserId | 游戏用户ID |
 
 ###配置说明
 #### iOS 配置说明
