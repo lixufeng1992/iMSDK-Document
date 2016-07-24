@@ -4,8 +4,14 @@
 
 | 命名空间 | 调用入口 |使用说明|
 | :-- |:-- |:--|
-| Tencent.iMSDK | IMSDKApi.Share |用于用户分享、邀请好友、给好友发消息等社交功能|
+| Tencent.iMSDK | IMSDKApi.Share | 用于分享，如朋友圈、Facebook等 |
+
+
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMShare（GameObject）上，开发者不要主动销毁该对象！</font>
+
+### 模块使用说明
+
+该模块主要是用来分享功能，类似微信朋友圈、微博的功能
 
 #### 分享类型说明
 
@@ -16,17 +22,49 @@
 
 在<font color=blue>IMShareContent.ShareType</font>中定义了iMSDK支持的分享类
 
-### 工程配置说明
 
-#### Android工程配置说明
+### 快速入门
 
-> 主要需要修改Assets/Plugins/Android/AndroidManifest.xml文件，具体内容可参考渠道功能文档。
+1. [完成特定渠道配置](../../Channel/README.md)
+2. 代码实例
 
-#### iOS工程配置说明
+  ```cs
+  void Start() {
+      IMSDKApi.Share.Initialize ();
+      IMSDKApi.Share.SetChannel("Facebook");
+  }
 
-> 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
+  void TestShareCallback(IMResult result) {
+      if(result.RetCode == 1) {
+          Debug.Log("share ok");
+      }
+      else {
+          Debug.Log("share error : " + result.ErrorMsg);
+      }
+  }
 
-### 参考
+  void TestShare() {
+
+      content.Type = IMShareContent.ShareType.LINK_DIALOG;
+      content.Title = "this is title";
+      content.Content = "this is content";
+      content.Link = "http://ieg.qq.com";
+
+      /*
+      *iMSDK Android 支持3种地址：
+      *1.网络地址：以http打头
+      *2.本地媒体，如手机相册:以content打头
+      *3.本地决对路径：以file打头
+      */
+      content.ImagePath = "http://ossweb-img.qq.com/images/game/ieg/web201404/logo.png";
+      content.ThumbImage = "http://ossweb-img.qq.com/images/game/ieg/web201404/roles/lol.png";
+      //content.ThumbImage = "file:///storage/emulated/0/Tencent/QQfile_recv/share_f.jpg;
+
+      IMSDKApi.Share.Share(content, TestShareCallback);
+  }
+  ```
+  
+  ## 参考
 
 * 分享参数类 <font color=blue>IMShareContent</font>
 
@@ -73,45 +111,3 @@
 | public bool SetChannel(string channel) | 设置分享渠道 |
 | public string GetChannel() | 获取当前设定渠道 |
 | public void Share(<br> &emsp;&emsp;IMShareContent content, <br> &emsp;&emsp;ShareCallback callback = null) | 分享函数<br> content 为分享参数，具体参见 IMShareContent 说明<br> callback 为分享回调 |
-
-
-
-### 代码示例
-
-	
-```cs
-void Start() {
-    IMSDKApi.Share.Initialize ();
-    IMSDKApi.Share.SetChannel("Facebook");
-}
-
-void TestShareCallback(IMResult result) {
-    if(result.RetCode == 1) {
-        Debug.Log("share ok");
-    }
-    else {
-        Debug.Log("share error : " + result.ErrorMsg);
-    }
-}
-
-void TestShare() {
-
-    content.Type = IMShareContent.ShareType.LINK_DIALOG;
-    content.Title = "this is title";
-    content.Content = "this is content";
-    content.Link = "http://ieg.qq.com";
-    
-    /*
-    *iMSDK支持3种地址：
-    *1.网络地址：以http打头
-    *2.本地媒体，如手机相册:以content打头
-    *3.本地决对路径：以file打头
-    */
-    content.ImagePath = "http://ossweb-img.qq.com/images/game/ieg/web201404/logo.png";
-    content.ThumbImage = "http://ossweb-img.qq.com/images/game/ieg/web201404/roles/lol.png";
-    //content.ThumbImage = "file:///storage/emulated/0/Tencent/QQfile_recv/share_f.jpg;
-
-    IMSDKApi.Share.Share(content, TestShareCallback);
-}
-
-```

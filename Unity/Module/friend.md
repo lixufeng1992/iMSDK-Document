@@ -4,30 +4,83 @@
 
 | 命名空间 | 调用入口 |使用说明|
 | :-- |:-- |:--|
-| Tencent.iMSDK | IMSDKApi.Friend |主要包括三大功能：1、获取好友列表（授权过游戏的好友）；2、应用要求；3、给好友发送消息|
+| Tencent.iMSDK | IMSDKApi.Friend | 用于获取好友关系，给好友发送邀请、消息等功能 |
+
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMFriend（GameObject）上，开发者不要主动销毁该对象！</font>
 
-#### 获取好友列表
+### 快速入门
+1. [完成特定渠道配置](../../Channel/README.md)
+2. 代码实例
 
-在调用获取授权过游戏的好友列表。如果用户的好友没有玩过游戏，则无法获取
+  ```cs
+  void Start() {
+      // 初始化
+      IMSDKApi.Friend.Initialize ();
+      // 设定渠道
+      IMSDKApi.Friend.SetChannel("Facebook");
+  }
 
-#### 邀请功能
+  // 获取好友列表回调函数
+  void TestGetFriendsCallback(IMFriendResult result) {
+      if(result.RetCode == 1) {
+          Debug.Log("get friend ok");
 
-应用邀请功能，可以通过邀请吸引更多用户
+          foreach(IMFriendInfo item in result.FriendInfoList) {
+              Debug.Log("get friend : " + item.OpenId);
+          }
+      }
+      else {
+          Debug.Log("get friend error : " + result.ErrorMsg);
+      }
+  }
 
+  // 获取好友列表
+  void TestGetFriends() {
+      IMSDKApi.Friend.GetFriends(1, 100, TestGetFriendsCallback);
+  }
 
-### 工程配置说明
+  // 一般操作回调函数
+  void TestFriendCallback(IMFriendResult result) {
+      if(result.RetCode == 1) {
+          Debug.Log("message ok "");
+      }
+      else {
+          Debug.Log("message error : " + result.ErrorMsg);
+      }
+  }
 
-#### Android工程配置说明
+  // 发送邀请
+  void TestInvite() {
+      IMFriendContent content = new IMFriendContent();
 
-> 主要需要修改Assets/Plugins/Android/AndroidManifest.xml文件，具体内容可参考渠道功能文档。
+      content.Type = IMFriendContent.MessageType.LINK_DIALOG;
+      content.Title = "this is title";
+      content.Content = "this is content";
+      content.Link = "http://ieg.qq.com";
+      content.ImagePath = "http://ossweb-img.qq.com/images/game/ieg/web201404/logo.png";
+      content.ThumbImage = "http://ossweb-img.qq.com/images/game/ieg/web201404/roles/lol.png";
 
-#### iOS工程配置说明
+      IMSDKApi.Friend.Invite(content, TestFriendCallback);
+  }
+  
+  // 给好友发消息
+  void TestSendMessage() {
+      IMFriendContent content = new IMFriendContent();
 
-> 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
+      content.Type = IMFriendContent.MessageType.LINK_DIALOG;
+      content.Title = "this is title";
+      content.Content = "this is content";
+      content.Link = "http://ieg.qq.com";
+      content.ImagePath = "http://ossweb-img.qq.com/images/game/ieg/web201404/logo.png";
+      content.ThumbImage = "http://ossweb-img.qq.com/images/game/ieg/web201404/roles/lol.png";
 
-### 参考
+      IMSDKApi.Friend.SendMessage(content, TestFriendCallback);
+  }
+
+  ```
+
+## 参考
 
 * 消息参数类 <font color=blue>IMFriendContent</font>
 
@@ -100,65 +153,3 @@
 | public void GetFriends(<br> &emsp;&emsp;int page, int count,<br> &emsp;&emsp;FriendCallback callback<br>&emsp;&emsp;) | 获取好友列表<br> page 为起始页数，从 1 开始<br> count 为每页好友数<br> callback 为关系链回调函数 |
 | public void Invite(<br> &emsp;&emsp;IMFriendContent content, <br> &emsp;&emsp;FriendCallback callback=null<br>&emsp;&emsp;) | 邀请好友<br> content 为消息参数，具体参见 IMFriendContent 说明<br> callback 为发送消息回调 |
 | public void SendMessage(<br> &emsp;&emsp;IMFriendContent content, <br> &emsp;&emsp;FriendCallback callback=null<br>&emsp;&emsp;) | 给好友发消息 <br> content 为消息参数，具体参见 IMFriendContent 说明<br> callback 为发送消息回调 |
-
-### 代码示例
-
-```cs
-void Start() {
-    IMSDKApi.Friend.Initialize ();
-    IMSDKApi.Friend.SetChannel("Facebook");
-}
-
-void TestGetFriendsCallback(IMFriendResult result) {
-    if(result.RetCode == 1) {
-        Debug.Log("get friend ok");
-
-        foreach(IMFriendInfo item in result.FriendInfoList) {
-            Debug.Log("get friend : " + item.OpenId);
-        }
-    }
-    else {
-        Debug.Log("get friend error : " + result.ErrorMsg);
-    }
-}
-
-void TestGetFriends() {
-    IMSDKApi.Friend.GetFriends(1, 100, TestGetFriendsCallback);
-}
-
-void TestFriendCallback(IMFriendResult result) {
-    if(result.RetCode == 1) {
-        Debug.Log("message ok "");
-    }
-    else {
-        Debug.Log("message error : " + result.ErrorMsg);
-    }
-}
-
-void TestInvite() {
-    IMFriendContent content = new IMFriendContent();
-
-    content.Type = IMFriendContent.MessageType.LINK_DIALOG;
-    content.Title = "this is title";
-    content.Content = "this is content";
-    content.Link = "http://ieg.qq.com";
-    content.ImagePath = "http://ossweb-img.qq.com/images/game/ieg/web201404/logo.png";
-    content.ThumbImage = "http://ossweb-img.qq.com/images/game/ieg/web201404/roles/lol.png";
-
-    IMSDKApi.Friend.Invite(content, TestFriendCallback);
-}
-
-void TestSendMessage() {
-    IMFriendContent content = new IMFriendContent();
-
-    content.Type = IMFriendContent.MessageType.LINK_DIALOG;
-    content.Title = "this is title";
-    content.Content = "this is content";
-    content.Link = "http://ieg.qq.com";
-    content.ImagePath = "http://ossweb-img.qq.com/images/game/ieg/web201404/logo.png";
-    content.ThumbImage = "http://ossweb-img.qq.com/images/game/ieg/web201404/roles/lol.png";
-
-    IMSDKApi.Friend.SendMessage(content, TestFriendCallback);
-}
-
-```

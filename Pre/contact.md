@@ -6,4 +6,4 @@
 | Android SDK | [aeonyang](aeonyang@tencent.com) |
 | iOS SDK | [brightwan](brightwan@tencent.com) |
 | Unity SDK | [aeonyang](aeonyang@tencent.com) |
-| 服务器 | [hirryli](hirryli@tencent.com) |
+| 后台 | [hirryli](hirryli@tencent.com) |
