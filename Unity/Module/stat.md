@@ -1,18 +1,10 @@
 ## 4.4.6 统计模块(Stat)
 
- # 数据上报模块(Stat)
+### 基础信息
 
-## 命名空间
-
-```cs
-Tencent.iMSDK
-```
-
-## 接口类
-
-```cs
-    IMSDKApi.Stat
-```
+| 命名空间 | 调用入口 |使用说明|
+| :-- |:-- |:--|
+| Tencent.iMSDK | IMSDKApi.Login |用于数据上报、网速监控、异常（崩溃）上报等|
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMStat（GameObject）上，开发者不要主动销毁该对象！</font>
 
