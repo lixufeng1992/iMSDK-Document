@@ -36,25 +36,25 @@
 
     iMSDK后台需要获取用户的基础信息，所以需要添加权限，GooglePlus必须添加权限后测试，或者将app发布
 
-5. 确认API
+6. 确认API
 
     ![Confirm API](../../assets/Images/Google/google_plus_confirm_api.png)
 
     确保上面的权限已经添加
 
-6. 建立 OAuth
+7. 建立 OAuth
 
      ![Add OAuth](../../assets/Images/Google/google_plus_add_oauth.png)
 
      需要添加Android、Web两种，Android用于手机端登录，Web端用于iMSDK服务器获取用户信息
 
-7. 配置 OAuth
+8. 配置 OAuth
 
      ![Add OAth](../../assets/Images/Google/google_plus_config_oauth.png)
 
      对于Android的OAuth，需要配置KeyStore的SHA1和包名，这两个值需要确保正确，否则登录流程将出现异常
 
-8. 获取 Server Client ID
+9. 获取 Server Client ID
 
      网络应用程序中的用户端ID即为Server Client ID，需要注意不是Android的那一个
 
@@ -65,8 +65,10 @@
      ```xml
      <meta-data android:name="com.google.android.gms.serverclientid" android:value="100xxxxxxx-xxxxxxxxxxx.apps.googleusercontent.com" />
      ```
-9. 下载Web认证json文件
+10. 下载Web认证json文件
 
      在OAuth的截图中，点击网络应用程式最右侧的下载按钮，将下载后的文件[提供给我们](../../Pre/contact.md)
+
+
 
 
