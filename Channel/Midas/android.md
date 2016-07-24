@@ -18,15 +18,15 @@ Midas支付分为Midas内核包及Midas插件包，其中插件包配置依据�
 
   ```xml
   <activity
-            android:name="com.tencent.midas.oversea.business.APMallActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-        </activity>
-        <activity
-            android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:screenOrientation="sensorLandscape"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar">
-        </activity>  
+      android:name="com.tencent.midas.oversea.business.APMallActivity"
+      android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+      android:screenOrientation="sensorLandscape"
+      android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+  </activity>
+  <activity
+      android:name="com.tencent.midas.oversea.business.APProxyMallActivity"
+      android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+      android:screenOrientation="sensorLandscape"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar">
+  </activity>  
   ```
