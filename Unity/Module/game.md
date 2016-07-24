@@ -32,16 +32,24 @@ void Start() {
 }
 
 // 解锁成就
-IMSDKApi.Game.UnlockAchieve("CgkIkcSMwNYHEAIQAQ");
+if(isSetup) {
+    IMSDKApi.Game.UnlockAchieve("CgkIkcSMwNYHEAIQAQ");
+}
 
 // 显示成就
-IMSDKApi.Game.ShowAchieves();
+if(isSetup) {
+    IMSDKApi.Game.ShowAchieves();
+}
 
 // 上报分数（用于排行榜）
-IMSDKApi.Game.SetScore("CgkIkcSMwNYHEAIQAw", 10000);
+if(isSetup) {
+    IMSDKApi.Game.SetScore("CgkIkcSMwNYHEAIQAw", 10000);
+}
 
 // 显示排行
-IMSDKApi.Game.ShowLeaderBoard();
+if(isSetup) {
+    IMSDKApi.Game.ShowLeaderBoard();
+}
 
 ```
 
