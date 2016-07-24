@@ -21,6 +21,7 @@ void Start() {
 }
 
 // 解锁成就
+IMSDKApi.Game.UnlockAchieve("CgkIkcSMwNYHEAIQAQ");
 
 ```
 
