@@ -54,7 +54,7 @@
 
      对于Android的OAuth，需要配置KeyStore的SHA1和包名，这两个值需要确保正确，否则登录流程将出现异常
 
- 8. 获取 Server Client ID
+8. 获取 Server Client ID
 
      网络应用程序中的用户端ID即为Server Client ID，需要注意不是Android的那一个
 
@@ -65,7 +65,7 @@
      ```xml
      <meta-data android:name="com.google.android.gms.serverclientid" android:value="100xxxxxxx-xxxxxxxxxxx.apps.googleusercontent.com" />
      ```
- 9. 下载Web认证json文件
+9. 下载Web认证json文件
 
      在OAuth的截图中，点击网络应用程式最右侧的下载按钮，将下载后的文件[提供给我们](../../Pre/contact.md)
 
