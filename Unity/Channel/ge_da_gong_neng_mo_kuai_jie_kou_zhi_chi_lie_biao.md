@@ -3,7 +3,7 @@
 ##登录
 | 序号 | 方法名 | 方法说明 | Facebook | WeChat | GameCenter | GooglePlay | GooglePlus | Kakao | Viber | Garena | Zalo | Efun |
 | :--: | :--: |:-------: | :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: |  :-----: | :-----: |  :-----: |  :-----: | 
-| 1 | public bool Initialize() | 初始化方法 | √ | - | | | | | | | | |
+| 1 | public bool Initialize() | 初始化方法 | √ |  √ | | | | | | | | |
 | 2 | public bool Initialize(string channel) | 初始化，并制定登录渠道 |√ | |  | | | | | | |
 | 3 | public bool SetChannel(string channel) | 设置登录渠道| √ | |  | | | | | | |
 | 4 | public string GetChannel() | 获取当前设定渠道 | √ | |  | | | | | | |
