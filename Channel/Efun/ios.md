@@ -1,10 +1,10 @@
 ##6.6.3 Efun iOS工程配置
-###1. 配置
-####1.1 Xcode工程配置
+
+###1. Xcode工程配置
 Xcode->Project->Edit Project Settings，打开你的工程配置,在工程配置中找到Linking部分，修改 Other Linker Flags 添加以下参数： -lsqlite3.0 –ObjC
 
 
-####1.2 SDK所依赖Framework的添加
+###2. SDK所依赖Framework的添加
 请在你的工程中添加以下Framework,其中方框外红色的Framework需设置为Optional:(如果不进行设置有可能会造成低版本的ios无法进入游戏)
 
 <font color = red >AdSupport.framework, Social.framework</font>
@@ -18,8 +18,8 @@ Accounts.framework, Security.framework, CoreMotion.framework, MediaPlayer.framew
 CoreLocation.framework, MessageUI.framework, MobileCoreServices.framework, libz.dylib(Xcode7.3或以上为libz.tbd), AudioToolbox.framework,
 
 AVFoundation.framework, CoreData.framework ,CoreText.framework
-####1.3 工程中Info.plist文件相关选项配置(要完全按配置，否则会crash)
-+ 游戏的BundleID为：com.vqw.hkqmcs
+###3. 工程中Info.plist文件相关选项配置(要完全按配置，否则会crash)
++ 游戏的BundleID为：com.vqw.hkqmcs *(根据实际情况修改)*
 
 + 添加 URLSchemes、URL identifier 与 FacebookAppID、FacebookDisplayName 和程序标识符
 
@@ -57,12 +57,12 @@ AVFoundation.framework, CoreData.framework ,CoreText.framework
 
 
 
-##1.4 添加KeyChainGroup描述
+###4. 添加KeyChainGroup描述
 在Build Setting中指定设置项Code Signing Entilements的值为SDK中配置文件EfunConfig/EFUNSDK_iOS.entilements，如果游戏本身也有使用Keychain，则只需将该配置文件中KeyChainGroup描述添加到游戏工程原本的.entilements文件中即可。
 
 PS：由于Capabilities下的KeyChain Sharing开关是与开发者账号中的应用配置相关的，无需理会，只要用我们给到的证书打包即可  
 
-##1.5 IMSDKAppsettings.bundle
+###5. IMSDKAppsettings.bundle
 
 
 ```
