@@ -30,7 +30,7 @@
 
     ![Goto console](../../assets/Images/Google/google_play_app_goto_console.png)
 
-    1. 添加测试权限
+5. 添加测试权限
 
         ![Confirm permission](../../assets/Images/Google/google_plus_add_tester.png)
 
