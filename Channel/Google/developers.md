@@ -38,9 +38,9 @@
 
 5. 确认API
 
-     ![Confirm API](../../assets/Images/Google/google_plus_confirm_api.png)
+    ![Confirm API](../../assets/Images/Google/google_plus_confirm_api.png)
 
-     确保上面的权限已经添加
+    确保上面的权限已经添加
 
 6. 建立 OAuth
 
