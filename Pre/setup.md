@@ -51,7 +51,7 @@
 | 支付 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 集成米大师（Midas）海外支付，包括Google Pay、IAP和第三方支付 |
 | 推送 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 提供信鸽等消息推送功能 |
 | 统计 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 提供统一的第三方事件统计 |
-| 游戏服务 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 提供Google Play和Game Center的挑战和排行榜接入支持 |
+| 游戏服务 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 提供Google Play和Game Center的挑战和排行榜功能 |
 | 公告 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 提供公告接入和显示功能 |
 | 分包下载 | [Android](../Android/README.md) | 提供Android OBB分包下载功能 |
 | 位置服务 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 提供玩家位置信息服务 |
