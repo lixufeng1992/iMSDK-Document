@@ -73,4 +73,6 @@
 
     ![add achievement](../../assets/Images/Google/google_play_achievements.jpg)
 
+    根据游戏需要，可以在游戏服务中找到添加成就和排行榜的菜单功能
+
 
