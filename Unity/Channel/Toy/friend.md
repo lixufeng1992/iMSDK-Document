@@ -475,6 +475,7 @@ void TestFriendCallback(IMFriendResult result) {
 
 void TestInvite() {
  IMFriendContent content = new IMFriendContent();
+ content.user = "subID1,subID2,subID3,subID4,subID5,...";
  content.Title = "this is title";
  content.Content = "this is content";
  content.Link = "http://ieg.qq.com";
