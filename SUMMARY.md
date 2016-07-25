@@ -135,6 +135,7 @@
 * [7. iMSDK后台](Server/README.md)
     * [登录态判定接口定义](Server/登录态判定接口定义.md)
     * [errorcode定义](Server/errorcode定义.md)
+    * [通过第3方uid获取Openid接口定义](Server/通过第3方uid获取openid接口定义.md)
 * [8. FAQs](Help/README.md)
     * [8.1 常见错误码与错误说明](Help/commonerrno.md)
     * [8.2 Android入口Activity问题](Help/androidmainactivity.md)
