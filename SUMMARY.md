@@ -141,6 +141,7 @@
     * [获取用户信息接口](Server/获取用户信息.md)
 * [8. FAQs](Help/README.md)
     * [8.1 常见错误码与错误说明](Help/commonerrno.md)
+        * [iMSDK SERVER端返回](Help/imsdk-server端返回.md)
     * [8.2 Android入口Activity问题](Help/androidmainactivity.md)
     * [8.3 iOS C++98与C++11说明](Help/ioscppversion.md)
     * [8.4 HTTPS证书说明](Help/httpscertfile.md)
