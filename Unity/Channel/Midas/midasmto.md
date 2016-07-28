@@ -6,21 +6,7 @@
 ### MidasEfun代码实例
   
 ```cs
-    /*
-     *差别部分：
-     *payChannel值为：os_efun时，开启Efun谷歌支付
-     *payChannel值为：os_efunwap，开启Efun普通支付
-     */
-     content.payChannel = "os_efun";
-
-     /*
-     *需要游戏拼凑该字符串
-     *roleId值
-     *roleName值
-     *roleLevel值
-     *serverId值
-     */
-     content.Extras = "roleId=aaaa&roleName=bbbb&roleLevel=cccc&serverId=1";
+     content.payChannel = "os_vng";
 ```
 
 ```cs
@@ -29,7 +15,7 @@
     */
     IMSDKApi.Pay.Initialize(androidGooglePublicKey);
 
-    IMSDKApi.Pay.SetChannel("MidasEfun");
+    IMSDKApi.Pay.SetChannel("MidasMTO");
     IMSDKApi.Pay.SetEnv("dev");//目前暂时只支持dev环境
     IMSDKApi.Pay.EnableDebugLog(true);
     IMSDKApi.Pay.SetIDC("local");
