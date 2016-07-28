@@ -7,7 +7,7 @@
 ### MidasMTO代码实例
 ```
     测试帐号
-    testinapppay@gmail.com  271828@!!
+    testinapppay@gmail.com   271828@!!
 ```
   
 ```cs
