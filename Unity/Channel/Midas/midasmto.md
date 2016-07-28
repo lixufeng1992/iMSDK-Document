@@ -29,7 +29,7 @@
      content.OpenId = "midasoversea";
      content.OpenKey = "midasoversea";
      content.SessionId = "hy_gameid"; // usually "hy_gameid"
-     //content.SessionType = "st_dummy"; // check imsdk login status
+     //content.SessionType = "st_overseas"; // check imsdk login status
      content.SessionType = "st_dummy"; // do NOT check imsdk login status
      content.ZoneId = "1";
      content.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");
