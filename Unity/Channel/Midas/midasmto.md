@@ -8,6 +8,8 @@
 ```
     测试帐号
     testinapppay@gmail.com   271828@!!
+    打包keystore
+    咨询Midas
 ```
   
 ```cs
