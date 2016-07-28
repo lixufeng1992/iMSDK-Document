@@ -34,7 +34,7 @@
      content.ZoneId = "1";
      content.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");
      content.PfKey = "pfKey";
-     content.ProductId = "tw.qmcs.100usd";
+     content.ProductId = "com.vng.wmb.item20";
      content.ResId = "unipay_abroad_iconload";
      content.Country = "US";
      content.CurrencyType = "USD";
