@@ -39,13 +39,7 @@
      content.Country = "US";
      content.CurrencyType = "USD";
      content.BuyGameOrGoodsOrMonth = "Game";//Game:钻石 Goods:道具 Month:月卡
-
-     /*
-         *payChannel值为：os_efun时，开启Efun谷歌支付
-         *payChannel值为：os_efunwap，开启Efun普通支付
-     */
-     content.payChannel = "os_efun";
-     content.Extras = "roleId=aaaa&roleName=bbbb&roleLevel=cccc&serverId=1";
+     content.payChannel = "os_vng";
      return content;
      }
 
