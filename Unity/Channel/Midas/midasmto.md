@@ -91,7 +91,4 @@
     */
     IMSDKApi.Pay.Pay(GetMidasAndroidPayContent(),MidasPayCallback);
 
-    /*
-    *efun暂时不支持 获取营销活动、获取商品信息功能
-    */
 ```
