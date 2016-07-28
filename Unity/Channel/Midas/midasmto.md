@@ -2,8 +2,13 @@
 
 ### MidasMTO配置
 * 参考MTO login配置
+* 
 
 ### MidasMTO代码实例
+```
+测试帐号
+testinapppay@gmail.com  271828@!!
+```
   
 ```cs
      content.payChannel = "os_vng";
