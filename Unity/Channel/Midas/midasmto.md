@@ -3,7 +3,7 @@
 ### MidasMTO配置
 * 参考MTO login配置
 
-### MidasEfun代码实例
+### MidasMTO代码实例
   
 ```cs
      content.payChannel = "os_vng";
@@ -25,11 +25,11 @@
     */
     IMMidasPayContent GetMidasAndroidPayContent() {
      IMMidasPayContent content = new IMMidasPayContent ();
-     content.OfferId = "1450007160";
-     content.OpenId = openId;
-     content.OpenKey = accessToken;
+     content.OfferId = "1450007518";
+     content.OpenId = "midasoversea";
+     content.OpenKey = "midasoversea";
      content.SessionId = "hy_gameid"; // usually "hy_gameid"
-     //content.SessionType = "st_overseas"; // check imsdk login status
+     //content.SessionType = "st_dummy"; // check imsdk login status
      content.SessionType = "st_dummy"; // do NOT check imsdk login status
      content.ZoneId = "1";
      content.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");
