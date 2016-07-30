@@ -226,17 +226,10 @@ void Start() {
  以下为Android代码，非Unity代码，Android侧特别注意：由于Garena需要调用生命周期，所以提供下面方法
 - 方法1：
 游戏继承iMSDK提供的Activity:com.tencent.imsdk.unity.garena.UnityPlayerNativeActivity
-－ afd  
+－ 或者方法2：
+业务在自己的主Activity中调用  
  ```java
-/*
-*=====================================================================
-*=========================================
-*==========，所以=============
-*
-
-*或者方法2：
-业务在自己的主Activity中调用
-public class YourMainActivity extends Activity{
+ public class YourMainActivity extends Activity{
 
  @Override
  protected void onCreate(Bundle savedInstanceState) {
