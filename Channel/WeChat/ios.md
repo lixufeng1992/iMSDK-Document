@@ -4,7 +4,7 @@
 
  添加完iOS插件后，在XCode工程中找到**IMSDKAppSetting.bundle/Contents/Resources/app.plist**文件，增加或修改如下配置：
 
- ```xml
+ ```plsit
  <key>WeChat</key>
  <dict>
  <key>appid</key>
@@ -18,7 +18,7 @@
 
  找到或新建如下节点:
 
- ```xml
+ ```plist
  <key>CFBundleURLTypes</key>
      <array>
      <dict>
