@@ -194,34 +194,33 @@
 
 ```cs
 void Start() {
- IMSDKApi.Login.Initialize ();
- IMSDKApi.Login.SetChannel("Garena");
+    IMSDKApi.Login.Initialize ();
+    IMSDKApi.Login.SetChannel("Garena");
 
- /*
- *Garena有4子渠道，
- *GRN_BT:Garena-Beetalk渠道
- *GRN_GU:Garena-Guest渠道
- *GRN_FB:Garena-Facebook渠道
- *GRN_Gas:Garena-本身渠道
- */
- IMSDKApi.Login.SetType("GRN_BT");
+    /*
+     *Garena有4子渠道，
+     *GRN_BT:Garena-Beetalk渠道
+     *GRN_GU:Garena-Guest渠道
+     *GRN_FB:Garena-Facebook渠道
+     *GRN_Gas:Garena-本身渠道
+     */
+    IMSDKApi.Login.SetType("GRN_BT");
 }
 
-void TestLoginCallback(IMLoginResult result) {
- if(result.RetCode == 1) {
- Debug.Log("login ok, user open id is " + result.OpenId);
+ void TestLoginCallback(IMLoginResult result) {
+     if(result.RetCode == 1) {
+         Debug.Log("login ok, user open id is " + result.OpenId);
+     } else {
+         Debug.Log("login error : " + result.ErrorMsg);
+     }
  }
- else {
- Debug.Log("login error : " + result.ErrorMsg);
+
+ void TestLogin() {
+     List<string> permissionList = new List<string>();
+     permissionList.Add("email");
+     
+     IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
  }
-}
-
-void TestLogin() {
- List<string> permissionList = new List<string>();
- permissionList.Add("email");
-
- IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
-}
 
 /*
 *=====================================================================
