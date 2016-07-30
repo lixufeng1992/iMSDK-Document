@@ -228,7 +228,8 @@ void Start() {
 游戏继承iMSDK提供的Activity:com.tencent.imsdk.unity.garena.UnityPlayerNativeActivity
 － 或者方法2：
 业务在自己的主Activity中调用  
- 
+
+
  ```java
  public class YourMainActivity extends Activity{
 
