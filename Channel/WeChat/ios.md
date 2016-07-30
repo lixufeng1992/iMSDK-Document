@@ -12,7 +12,7 @@
  </dict>
  ```
 
- 其中，appid值wxef53dd2d66ca6c54需要修改为游戏自己微信的App ID
+ 其中，appid值wxef53dd2d66ca6c54需要修改为游戏申请的微信App ID
 
 * 工程Plist文件配置
 
@@ -40,4 +40,4 @@
  </dict>
  ```
 
- 其中，string值wxef53dd2d66ca6c54需要修改为游戏自己微信的App ID
+ 其中，`wxef53dd2d66ca6c54`需要修改为游戏申请的微信App ID
