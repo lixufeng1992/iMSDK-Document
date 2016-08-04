@@ -1,6 +1,6 @@
 # Android 配置
 ```xml
-<!-- permission -->
+<!-- permission application 节点外-->
 <!-- Link 权限-->
 <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 <uses-permission android:name="android.permission.INTERNET" />
