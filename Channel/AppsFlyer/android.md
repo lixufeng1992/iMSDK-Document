@@ -33,6 +33,8 @@
     <!-- GCM Project NUM -->			
 	<meta-data android:name="GCM_PROJECT_NUM" android:value="your_gcm_project_num"/>
  ```
+ 
+ 
 
  -----------------
  ``` xml 
