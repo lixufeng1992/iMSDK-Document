@@ -36,8 +36,7 @@
 
  -----------------
  ``` xml 
- 
- 
+ <!-- version 1.8.0 and upper -->
  <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.tencent.imsdk.appsflyer.stat">
