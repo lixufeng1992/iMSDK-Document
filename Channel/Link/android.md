@@ -21,6 +21,7 @@
 <meta-data android:name="com.aiming.link.DeleteAuthToken" android:value = "@string/link_delete_auth_token"/>
 <meta-data android:name="com.aiming.link.debuglevel" android:value = "@string/link_debuglevel"/>
 
+<!-- Activity配置  Application 节点内 -->
 <activity
 android:name="com.facebook.FacebookActivity"
 android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
