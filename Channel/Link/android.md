@@ -8,7 +8,7 @@
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
 
 
-
+<!-- meta-data 配置-->
 <meta-data android:name="com.aiming.link.LinkUrlBase" android:value="@string/link_url_base" />
 <meta-data android:name="com.aiming.link.LinkAccessToken" android:value="@string/link_access_token" />
 <meta-data android:name="com.aiming.link.TwitterKey" android:value="@string/link_twitter_key" />
