@@ -1,7 +1,7 @@
 ### AppsFlyer统计配置说明
 
  #### Android 端配置说明
- ``` xml
+ ``` xml   version 1.6.0
     <uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -32,3 +32,8 @@
     <!-- GCM Project NUM -->			
 	<meta-data android:name="GCM_PROJECT_NUM" android:value="your_gcm_project_num"/>
  ```
+ 
+ 
+ 
+ 
+ -----------------
