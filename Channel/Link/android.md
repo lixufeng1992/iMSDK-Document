@@ -18,7 +18,7 @@
 <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/link_google_app_id" />
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" /> 
 
-<meta-data android:name="com.aiming.link.DeleteAuthToken" android:value = "@string/link_delete_auth_token"/>
+<meta-data android:name="com.aiming.link.DeleteAuthToken" android:value = "@string/link_delete_auth_token"/> <!-- true of false-->
 <meta-data android:name="com.aiming.link.debuglevel" android:value = "@string/link_debuglevel"/> <!-- true of false-->
 
 <!-- Activity配置  Application 节点内 -->
