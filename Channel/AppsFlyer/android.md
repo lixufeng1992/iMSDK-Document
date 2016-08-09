@@ -84,5 +84,6 @@
 
 ```
 * 1.8.0版本后，增加卸载追踪功能，并更新依赖的AppsFlyer版本
+* 1.9.0版本， 需在游戏主activity，onCreate()中调用ExtendAppsFlyer.onCreate(Context context)
  
  
