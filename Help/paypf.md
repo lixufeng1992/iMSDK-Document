@@ -11,7 +11,8 @@ PF示例：
 * android 为设备类型，Android 填 “android”， iOS 填 “iap”
 * 2011 为安装渠道，默认值为 “2011”
 * GU 登录渠道简称，可以参考[渠道简称列表](channelshort.md)
-* 1100 为 iMSDM 游戏 ID
+* 1100 为 iMSDK 游戏 ID
+* 123456 为 iMSDK OpenID
 
 
 
