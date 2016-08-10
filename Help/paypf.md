@@ -13,7 +13,7 @@ PF示例：
 * GU 登录渠道简称，可以参考[渠道简称列表](channelshort.md)
 * 1100 为 iMSDK 游戏 ID
 * 123456 为 iMSDK OpenID
-
+* IMSDK 为业务简称
 
 
 IEG_iTOP-2001-android-2011-GU-11-123456-IMSDK
