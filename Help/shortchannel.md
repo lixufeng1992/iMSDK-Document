@@ -1,7 +1,5 @@
 ## 8.5 渠道简称列表
 
-
-
 | **登录渠道** | **渠道简称** | **备注** |
 | :--- | :--- | :--- |
 | Facebook | FB |  |
@@ -32,4 +30,5 @@
 | MTO | MTO\_GU | MTO内部游客渠道 |
 | MTO | MTO\_FB | MTO内部Facebook渠道 |
 | MTO | MTO\_GG | MTO内部Google渠道 |
+| Kakao | Kakao | MTO内部Google渠道 |
 
