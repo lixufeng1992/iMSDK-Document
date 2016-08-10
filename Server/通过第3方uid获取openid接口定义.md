@@ -1,4 +1,4 @@
-# **通过ChannelId获取Openid接口定义**
+## 7.3 通过ChannelId获取Openid接口定义
 
 测试服接口url：[http:\/\/srvapi-beta.itop.qq.com\/v1.0\/user\/getAccount](http://srvapi-beta.itop.qq.com/v1.0/user/getAccount)
 
