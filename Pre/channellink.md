@@ -2,11 +2,11 @@
 
 渠道 App 及管理端地址
 
-| 渠道 | 链接 |
-| :-- | :-- |
-| Facebook | [https://developers.facebook.com](https://developers.facebook.com) |
-| Google | [https://console.developers.google.com/](https://console.developers.google.com/) |
-| GooglePlay | [https://play.google.com/apps/publish/](https://play.google.com/apps/publish/) |
-| WeChat(微信) | [http://dev.wechat.com](http://dev.wechat.com) |
-| Kakao |  [https://gamecenter.kakao.com/](https://gamecenter.kakao.com/) |
+| 渠道 | 链接 | 备注 |
+| :-- | :-- | :-- |
+| Facebook | [https://developers.facebook.com](https://developers.facebook.com) | | 
+| Google | [https://console.developers.google.com/](https://console.developers.google.com/) | | 
+| GooglePlay | [https://play.google.com/apps/publish/](https://play.google.com/apps/publish/) | | 
+| WeChat(微信) | [http://dev.wechat.com](http://dev.wechat.com) | | 
+| Kakao |  [https://gamecenter.kakao.com/](https://gamecenter.kakao.com/) | |
 | Midas(米大师支付) | 请联系米大师产品联系人jolinyang|
