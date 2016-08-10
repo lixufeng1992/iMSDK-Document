@@ -4,7 +4,7 @@
 
 | 渠道 | 链接 | 备注 |
 | :-- | :-- | :-- |
-| MTA | 
+| Bugly | [https://bugly.qq.com/v2/](https://bugly.qq.com/v2/) | 腾讯游戏请走内部申请渠道 |
 | Facebook | [https://developers.facebook.com](https://developers.facebook.com) | | 
 | Google | [https://console.developers.google.com/](https://console.developers.google.com/) | | 
 | GooglePlay | [https://play.google.com/apps/publish/](https://play.google.com/apps/publish/) | | 
