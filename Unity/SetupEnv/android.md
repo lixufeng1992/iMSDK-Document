@@ -40,6 +40,7 @@ iMSDK插件包在提供的时候，已经提供了测试环境下的HTTPS证书�
     ```sh
     keytool -exportcert -alias androiddebugkey -keystore debug.keystore -list -v |grep SHA1 | awk '{print tolower($2)}' |tr -d ":"
     ```
+    > 其中，androiddebugkey 为别名，debug.keystore 为 Keystore 文件路径
 
   * iMSDK 服务器地址配置
 
