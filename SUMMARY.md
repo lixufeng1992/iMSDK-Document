@@ -1,28 +1,34 @@
 # Summary
 
 * [1. iMSDK介绍](README.md)
+
   * [1.1 基础准备](Pre/setup.md)
   * [1.2 架构介绍](Pre/arch.md)
   * [1.3 渠道申请](Pre/channellink.md)
   * [1.4 联系我们](Pre/contact.md)
 
 * [2. Android开发指引](Android/README.md)
+
   * [2.1 下载及使用](Android/download.md)
   * [2.2 配置开发环境](Android/setupenv.md)
   * [2.3 快速集成指南](Android/quickstart.md)
 
 * [3. iOS开发指引](iOS/README.md)
+
   * [3.1 下载及使用](iOS/download.md)
   * [3.2 配置开发环境](iOS/setupenv.md)
   * [3.3 快速集成指南](iOS/quickstart.md)
 
 * [4. Unity开发指引](Unity/README.md)
+
   * [4.1 下载及使用](Unity/download.md)
   * [4.2 配置开发环境](Unity/setupenv.md)
+
     * [4.2.1 Android 环境配置](Unity/SetupEnv/android.md)
     * [4.2.2 iOS 环境配置](Unity/SetupEnv/ios.md)
 
   * [4.3 快速集成指南](Unity/quickstart.md)
+
   * [4.4 功能模块](Unity/Module/README.md)
     * [4.4.1 登录模块\(Login\)](Unity/Module/login.md)
     * [4.4.2 分享模块\(Share\)](Unity/Module/share.md)
@@ -51,23 +57,31 @@
       * [4.4.13.11 SQW\(37玩\)功能扩展](Unity/Module/Extend/sqw.md)
       * [4.4.13.12 Tapjoy功能扩展](Unity/Module/Extend/tapjoy.md)
       * [4.4.13.13 Toy功能扩展](Unity/Module/Extend/toy.md)
+
+
   * [4.5 渠道功能说明](Unity/Channel/README.md)
+
     * [4.5.1 Facebook 功能说明](Unity/Channel/facebook.md)
+
       * [4.5.1.1 Facebook 登录功能说明](Unity/Channel/Facebook/login.md)
       * [4.5.1.2 Facebook 分享功能说明](Unity/Channel/Facebook/share.md)
 
     * [4.5.2 AppsFlyer 功能说明](Unity/Channel/appsflyer.md)
+
       * [4.5.2.1 AppsFlyer 统计功能说明](Unity/Channel/AppsFlyer/stat.md)
 
     * [4.5.3 Bugly 功能说明](Unity/Channel/bugly.md)
+
       * 4.5.3.1 Bugly 统计功能说明
 
     * [4.5.4 kakao功能说明](Unity/Channel/kakao.md)
+
       * [4.5.4.1 Kakao 登录功能说明](Unity/Channel/Kakao/login.md)
       * [4.5.4.2 Kakao 好友功能说明](Unity/Channel/Kakao/friend.md)
       * [4.5.4.3 Kakao 扩展功能说明](Unity/Channel/Kakao/extend.md)
 
     * [4.5.5 Midas功能说明](Unity/Channel/midas.md)
+
       * [4.5.5.1 MidasGoogle\(米大师谷歌支付\)](Unity/Channel/Midas/midasgoogle.md)
       * [4.5.5.2 MidasEfun\(米大师Efun支付\)](Unity/Channel/Midas/midasefun.md)
       * [4.5.5.3 MidasFeiliu\(米大师飞流支付\)](Unity/Channel/Midas/midasfeiliu.md)
@@ -82,6 +96,7 @@
       * [4.5.5.13 SQW\(三七玩支付\)](Unity/Channel/Midas/midassqw.md)
 
     * [4.5.6 Garena功能说明](Unity/Channel/garena.md)
+
       * [4.5.6.1 Garena 登录功能说明](Unity/Channel/Garena/login.md)
       * [4.5.6.2 Garena 好友功能说明](Unity/Channel/Garena/friend.md)
       * [4.5.6.3 Garena 分享功能说明](Unity/Channel/Garena/share.md)
@@ -89,6 +104,7 @@
       * [4.5.6.5 Garena 扩展功能说明](Unity/Channel/Garena/extend.md)
 
     * [4.5.7 Efun功能说明](Unity/Channel/efun.md)
+
       * [4.5.7.1  Efun 登录功能说明](Unity/Channel/Efun/login.md)
       * [4.5.7.2  Efun 好友功能说明](Unity/Channel/Efun/friend.md)
       * [4.5.7.3  Efun 分享功能说明](Unity/Channel/Efun/share.md)
@@ -96,6 +112,7 @@
       * [4.5.7.5  Efun 扩展功能说明](Unity/Channel/Efun/extend.md)
 
     * [4.5.8 Toy功能说明](Unity/Channel/toy.md)
+
       * [4.5.8.1  Toy 登录功能说明](Unity/Channel/Toy/login.md)
       * [4.5.8.2  Toy 好友功能说明](Unity/Channel/Toy/friend.md)
       * [4.5.8.3  Toy 分享功能说明](Unity/Channel/Toy/share.md)
@@ -104,58 +121,73 @@
 
     * [4.5.9 各大功能模块接口支持列表](Unity/Channel/ge_da_gong_neng_mo_kuai_jie_kou_zhi_chi_lie_biao.md)
 
+
+
 * [5. C++开发指引](Cpp/README.md)
+
   * [5.1 下载及使用](Cpp/download.md)
   * [5.2 配置开发环境](Cpp/setupenv.md)
   * [5.3 快速集成指南](Cpp/quickstart.md)
 
 * [6. 渠道平台设置](Channel/README.md)
+
   * [6.1 Facebook设置](Channel/facebook.md)
+
     * [6.1.1 Facebook 开发者中心配置](Channel/Facebook/developers.md)
     * [6.1.2 Android 工程配置](Channel/Facebook/android.md)
     * [6.1.3 iOS 工程配置](Channel/Facebook/ios.md)
 
   * [6.2 Google平台设置](Channel/google.md)
+
     * [6.2.1 Google 开发者中心配置](Channel/Google/developers.md)
     * [6.2.2 Android 工程配置](Channel/Google/android.md)
     * [6.2.3 iOS 工程配置](Channel/Google/ios.md)
 
   * [6.3 WeChat设置](Channel/wechat.md)
+
     * [6.3.1 WeChat 开放平台配置](Channel/WeChat/developers.md)
     * [6.3.2 Android 配置](Channel/WeChat/android.md)
     * [6.3.3 iOS 配置](Channel/WeChat/ios.md)
 
   * [6.4 Midas设置](Channel/midas.md)
+
     * [6.4.1 Midas 开发者中心配置](Channel/Midas/developer.md)
     * [6.4.2 Android 工程配置](Channel/Midas/android.md)
     * [6.4.3 iOS 工程配置](Channel/Midas/ios.md)
 
   * [6.5 Garena设置](Channel/garena.md)
+
     * [6.5.1 Garena 开发者中心配置](Channel/Garena/developer.md)
     * [6.5.2 Android 配置](Channel/Garena/android.md)
     * [6.5.3 iOS 配置](Channel/Garena/ios.md)
 
   * [6.6 Efun设置](Channel/efun.md)
+
     * [6.6.1 Efun开发者中心配置](Channel/Efun/developer.md)
     * [6.6.2 Android 工程配置](Channel/Efun/android.md)
     * [6.6.3 iOS 工程配置](Channel/Efun/ios.md)
 
   * [6.7 Toy设置](Channel/toy.md)
+
     * [6.7.1 Toy 开发者中心配置](Channel/Toy/developer.md)
     * [6.7.2 Android 工程配置](Channel/Toy/android.md)
     * [6.7.3 iOS 工程配置](Channel/Toy/ios.md)
 
   * [6.8 Kakao设置](Channel/kakao.md)
+
     * [6.8.1 Kakao 开发者中心配置](Channel/Kakao/developer.md)
     * [6.8.2 Android 工程配置](Channel/Kakao/android.md)
     * [6.8.3 iOS 工程配置](Channel/Kakao/ios.md)
 
   * [6.9 Link设置](Channel/Link.md)
+
     * [6.9.1 Link平台配置](Channel/Link/developers.md)
     * [6.9.2 Android 配置](Channel/Link/android.md)
     * [6.9.3 iOS 配置](Channel/Link/ios.md)
 
+
 * [7. iMSDK后台](Server/README.md)
+
   * [7.1 登录态判定接口定义](Server/登录态判定接口定义.md)
   * [7.2 iMSDK Server 错误码定义](Server/errorcode定义.md)
   * [7.3 通过第3方uid获取Openid接口定义](Server/通过第3方uid获取openid接口定义.md)
@@ -164,12 +196,16 @@
   * [7.6 获取用户信息接口](Server/获取用户信息.md)
 
 * [8. FAQs](Help/README.md)
+
   * [8.1 常见错误码与错误说明](Help/commonerrno.md)
+
     * [8.1.1 iMSDK SERVER端常见错误码](Help/imsdk-server端返回.md)
 
   * [8.2 Android入口Activity问题](Help/androidmainactivity.md)
+
   * [8.3 iOS C++98与C++11说明](Help/ioscppversion.md)
   * [8.4 HTTPS证书说明](Help/httpscertfile.md)
   * [8.5 渠道简称列表](Help/shortchannel.md)
+  * [8.6 支付PF字段填写规则](Help/paypf.md)
 
 
