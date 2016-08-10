@@ -182,7 +182,6 @@
     * [6.9.2 Android 配置](Channel/Link/android.md)
     * [6.9.3 iOS 配置](Channel/Link/ios.md)
 
-
 * [7. iMSDK后台](Server/README.md)
 
   * [7.1 登录态判定接口定义](Server/登录态判定接口定义.md)
