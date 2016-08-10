@@ -134,7 +134,7 @@
         * [6.9.3 iOS 配置](Channel/Link/ios.md)
 * [7. iMSDK后台](Server/README.md)
     * [7.1 登录态判定接口定义](Server/登录态判定接口定义.md)
-    * [7.2 errorcode定义](Server/errorcode定义.md)
+    * [7.2 iMSDK Server 错误码定义](Server/errorcode定义.md)
     * [7.3 通过第3方uid获取Openid接口定义](Server/通过第3方uid获取openid接口定义.md)
     * [7.4 通过openid获取第3方uid接口定义](Server/通过openid获取第3方uid接口定义.md)
     * [7.5 各个平台变量名对应关系表](Server/各个平台变量名对应关系表.md)
