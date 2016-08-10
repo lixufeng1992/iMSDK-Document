@@ -198,7 +198,6 @@
 * [8. FAQs](Help/README.md)
 
   * [8.1 常见错误码与错误说明](Help/commonerrno.md)
-
     * [8.1.1 iMSDK SERVER端常见错误码](Help/imsdk-server端返回.md)
 
   * [8.2 Android入口Activity问题](Help/androidmainactivity.md)
