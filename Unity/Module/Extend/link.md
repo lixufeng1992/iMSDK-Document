@@ -12,7 +12,7 @@
 
 ## 模块使用说明
 
-该模块主要用于Link用户管理功能，包括连接社交帐号，获取连接社交帐号状态，恢复社交帐号，删除社交帐号，获取link的AuthToken和设置link的AuthToken
+该模块主要用于Link用户管理功能，包括连接社交帐号，获取连接社交帐号状态，恢复社交帐号，删除社交帐号，获取link的AuthToken和设置link的AuthToken等
 
 ## API参考
 
