@@ -33,11 +33,13 @@ void OnStart() {
     IMSDKApi.Link.Initialize ();
 }
 
-void OnGetFriend(IMKakaoGetFriendsResult result) { 
-    if(result.RetCode == 1) { 
-        loadKakaoFriend = true; 
-    }
-}
+	void OnLink(IMResult result) {
+		testInfo = "retcode : " + result.RetCode + "\nmessage : " + result.ErrorMsg;
+	}
+
+	void OnState(IMLinkStateResult result) {
+		testInfo = "retcode : " + result.RetCode + "\nmessage : " + result.ErrorMsg + "\nflag : " + result.Result;
+	}
 ...
 
 if(loadKakaoFriend) { 
