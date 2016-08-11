@@ -32,21 +32,43 @@
 void OnStart() { 
     IMSDKApi.Link.Initialize ();
 }
-
-	void OnLink(IMResult result) {
+void OnLink(IMResult result) {
 		testInfo = "retcode : " + result.RetCode + "\nmessage : " + result.ErrorMsg;
-	}
-
-	void OnState(IMLinkStateResult result) {
+}
+void OnState(IMLinkStateResult result) {
 		testInfo = "retcode : " + result.RetCode + "\nmessage : " + result.ErrorMsg + "\nflag : " + result.Result;
-	}
+}
 ...
 
-if(loadKakaoFriend) { 
-    IMSDKApi.Friend.Invite(content, callback);
+if (GUI.Button (new Rect(0,height,itemwidth,itemHeight), "bind sns")) {
+    IMSDKApi.Link.Bind(OnLink);
+}
+		
+if (GUI.Button (new Rect(0,height,itemwidth,itemHeight), "delete account")) {
+    IMSDKApi.Link.DeleteAccount(OnLink);
+}
+
+if (GUI.Button (new Rect(0,height,itemwidth,itemHeight), "restore from sns")) {
+    IMSDKApi.Link.RestoreFromSNS(OnState);
+}
+
+if (GUI.Button (new Rect(0,height,itemwidth,itemHeight), "get state")) {
+    IMSDKApi.Link.QueryConnectState(OnState);
+}
+
+if (GUI.Button (new Rect(0,height,itemwidth,itemHeight), "restore from GC")) {
+    IMSDKApi.Link.ConnectAndRestoreWithGameCenter(OnState);
+}
+
+if (GUI.Button (new Rect (0, height, itemwidth, itemHeight), "getLinkAuthToken")){
+    IMSDKApi.Link.GetLinkAuthToken();
+}
+
+if (GUI.Button (new Rect (0, height, itemwidth, itemHeight), "setLinkAuthToken")) {
+    string linkAuthToken = IMSDKApi.Link.GetLinkAuthToken();
+    IMSDKApi.Link.SetLinkAuthToken(linkAuthToken);
 }
 ```
-如果没有获取可邀请好友，直接发送邀请，会返回参数错误
 
 ## 参考
 
