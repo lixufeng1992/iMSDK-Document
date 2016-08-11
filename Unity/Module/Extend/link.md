@@ -75,7 +75,7 @@ if (GUI.Button (new Rect (0, height, itemwidth, itemHeight), "setLinkAuthToken")
 
 | 变量 | 说明 |
 | :-- | :-- |
-| public string UserId | Kakao 用户 ID |
+| public bool Result | Link绑定状态 |
 | public string UuId | Kakao 用户 UUID |
 | public string ServiceUserId | Kakao 好友用户ID，只针对特定的App有效<br>(친구의 카카오 회원번호. 앱의 특정 카테고리나 특정 권한에 한해 내려줌) |
 | public string NickName | 好友昵称 |
