@@ -16,7 +16,11 @@
 
 ## API参考
 
-安装 Kakao 的邀请逻辑，在邀请之前，需要先获取可邀请好友，只能向可邀请好友发送消息，所以在调用 Kakao 好友之前调用获取可邀请好友，这样才能保证能够正常发送邀请：
+| 函数名 | 函数说明 |
+| :--: | :--: |
+| public void Bind(LinkCallback callback = null) | 连接（绑定）社交帐号 |
+
+
 
 ```cs
 protected bool loadKakaoFriend = false;
