@@ -17,7 +17,7 @@
 ## API参考
 
 | 函数名 | 函数说明 |
-| :-- : | :--: |
+| :-- : | :-- : |
 | public void Bind(LinkCallback callback = null) | 连接（绑定）社交帐号 <br>  |
 | public void DeleteAccount(LinkCallback callback= null) | 删除社交帐号（慎用） |
 | public void RestoreFromSNS(LinkStateCallback callback = null) | 从社交平台恢复社交帐号 |
