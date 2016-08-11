@@ -73,7 +73,7 @@ if (GUI.Button (new Rect (0, height, itemwidth, itemHeight), "setLinkAuthToken")
 | public void SetLinkAuthToken(string linkAuthToken) | 设置用户当前的linkAuthToken |
 
 
-* Link绑定社交帐号和恢复社交帐号结果结构体 <font color=blue>IMLinkStateResult</font>
+* Link绑定和恢复社交帐号结果状态结构体 <font color=blue>IMLinkStateResult</font>
 > 该结构体继承自IMResult
 
 | 变量 | 说明 |
