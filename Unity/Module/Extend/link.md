@@ -71,7 +71,7 @@ if (GUI.Button (new Rect (0, height, itemwidth, itemHeight), "setLinkAuthToken")
 | public string GetLinkAuthToken() | 获取用户当前的linkAuthToken |
 | public void SetLinkAuthToken(string linkAuthToken) | 设置用户当前的linkAuthToken |
 
-* Kakao好友信息结构体 <font color=blue>IMKakaoFriendInfo</font>
+* Link绑定结果结构体 <font color=blue>IMLinkStateResult</font>
 
 | 变量 | 说明 |
 | :-- | :-- |
