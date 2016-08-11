@@ -29,11 +29,8 @@
 
 
 ```cs
-protected bool loadKakaoFriend = false;
-
 void OnStart() { 
-    IMSDKApi.Friend.Initialize(); 
-    IMSDKApi.SetChannel("Kakao"); IMSDKApi.Kakao.Initialize();
+    IMSDKApi.Link.Initialize ();
 }
 
 void OnGetFriend(IMKakaoGetFriendsResult result) { 
