@@ -19,6 +19,7 @@
 | 函数名 | 函数说明 |
 | :--: | :--: |
 | public void Bind(LinkCallback callback = null) | 连接（绑定）社交帐号 |
+|
 
 
 
