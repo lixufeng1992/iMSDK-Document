@@ -67,16 +67,15 @@ if (GUI.Button (new Rect (0, height, itemwidth, itemHeight), "setLinkAuthToken")
 | public void DeleteAccount(LinkCallback callback= null) | 删除社交帐号（慎用） |
 | public void RestoreFromSNS(LinkStateCallback callback = null) | 从社交平台恢复社交帐号 |
 | public void QueryConnectState(LinkStateCallback callback = null) | 查询连接（绑定）状态 |
-| public void ConnectAndRestoreWithGameCenter(LinkStateCallback callback = null) |  ... | 
+| public void ConnectAndRestoreWithGameCenter(LinkStateCallback callback = null) |  从GameCenter恢复帐号 | 
 | public string GetLinkAuthToken() | 获取用户当前的linkAuthToken |
 | public void SetLinkAuthToken(string linkAuthToken) | 设置用户当前的linkAuthToken |
 
 
 * Link绑定结果结构体 <font color=blue>IMLinkStateResult</font>
 > 该结构体继承自IMResult
-
 | 变量 | 说明 |
-| :-- | :-- |
+| :-- | :--: |
 | public bool Result | Link绑定状态 |
 
 
