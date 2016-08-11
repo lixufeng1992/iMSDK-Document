@@ -63,7 +63,8 @@ if (GUI.Button (new Rect (0, height, itemwidth, itemHeight), "setLinkAuthToken")
 
 | 函数名 | 函数说明 |
 | :-- : | :-- : |
-| public void Bind(LinkCallback callback = null) | 连接（绑定）社交帐号 <br>  |
+| public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数 |
+| public void Bind(LinkCallback callback = null) | 连接（绑定）社交帐号  |
 | public void DeleteAccount(LinkCallback callback= null) | 删除社交帐号（慎用） |
 | public void RestoreFromSNS(LinkStateCallback callback = null) | 从社交平台恢复社交帐号 |
 | public void QueryConnectState(LinkStateCallback callback = null) | 查询连接（绑定）状态 |
@@ -72,7 +73,7 @@ if (GUI.Button (new Rect (0, height, itemwidth, itemHeight), "setLinkAuthToken")
 | public void SetLinkAuthToken(string linkAuthToken) | 设置用户当前的linkAuthToken |
 
 
-* Link绑定结果结构体 <font color=blue>IMLinkStateResult</font>
+* Link绑定社交帐号和恢复社交帐号结果结构体 <font color=blue>IMLinkStateResult</font>
 > 该结构体继承自IMResult
 
 | 变量 | 说明 |
