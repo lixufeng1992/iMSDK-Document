@@ -7,7 +7,7 @@
 | :-- |:-- |:--|
 | Tencent.iMSDK | IMSDKApi.Link | Link 扩展功能，包括用户社交帐号管理等功能 |
 
-<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMKakao（GameObject）上，开发者不要主动销毁该对象！</font>
+<font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMLink（GameObject）上，开发者不要主动销毁该对象！</font>
 
 
 ## 模块使用说明
