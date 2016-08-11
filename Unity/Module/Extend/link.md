@@ -40,6 +40,8 @@ void OnState(IMLinkStateResult result) {
 }
 ...
 
+//int itemwidth = Screen.width;
+//int itemHeight = Screen.height/20;
 if (GUI.Button (new Rect(0,height,itemwidth,itemHeight), "bind sns")) {
     IMSDKApi.Link.Bind(OnLink);
 }
