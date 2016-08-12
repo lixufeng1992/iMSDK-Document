@@ -148,5 +148,5 @@
     * [8.5 渠道简称列表](Help/shortchannel.md)
     * [8.6 支付PF字段填写规则](Help/paypf.md)
     * [8.7 常用工具](Help/tools.md)
-        *[8.7.1 Android APK 证书指纹](Help/Tool/apksign.md)
+        * [8.7.1 Android APK 证书指纹](Help/Tool/apksign.md)
 
