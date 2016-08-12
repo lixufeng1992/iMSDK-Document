@@ -3,5 +3,5 @@
 1. Android APK 文件证书指纹查看
 
     ```shell
-    
+    keytool -list -printcert -jarfile APP.apk
     ```
