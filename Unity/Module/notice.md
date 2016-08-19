@@ -89,7 +89,7 @@ void TestLoadNotice() {
 | public string AppId|AppID|   
 | public string OpenIdt|用户openId|   
 |public string NoticeUrl|公告跳转链接|    
-|public int NoticeScene|公告展示的场景，管理端后台配置|    
+|public int NoticeScene|公告展示的场景，管理端后台配置：</br> 1 普通公告(登录前弹窗)</br>2 强制更新(登录前弹窗)</br>3 非强制更新(登录前弹窗)</br>4 普通公告(登录后弹窗)</br>|    
 |public int NoticeStartTime|公告有效期开始时间|   
 |public int NoticeEndTime|公告有效期结束时间|    
 |public int NoticeUpdateTime |公告更新时间|    
