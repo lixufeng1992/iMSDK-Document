@@ -4,6 +4,6 @@
   <key>GDN</key>
   <dict>
       <key>conversionid</key>
-      <string>924017916(用业务conversionid替换)</string>
+      <string>924017916(业务到google adword官网申请conversionid并替换)</string>
   </dict>
 ```
