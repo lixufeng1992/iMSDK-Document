@@ -1,3 +1,4 @@
+
 ##Android工程配置     
 ###1 在Assets/Plugins/Android 目录下找到AndroidManifest.xml文件，添加
 ```
@@ -13,6 +14,8 @@
         <action android:name="com.android.vending.INSTALL_REFERRER" />
     </intent-filter>
 </receiver>
+
+//ConversionId 配置（Application 节点里）
 <meta-data android:name="GoogleAdwords_ConversionId" android:value="\ {your_conversionId}" />
 		
 
