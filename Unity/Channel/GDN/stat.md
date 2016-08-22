@@ -1,7 +1,7 @@
 ## GDN 功能说明
 
 
-### 统计支持接口列表
+###1. 统计支持接口列表
 
 | 序号 | 方法名 | 方法说明 | 是否支持 | 备注 |
 | :--: | :--: |:-------: | :-----: | :--: |
@@ -19,11 +19,29 @@
 ||public void SetAutoExceptionReport(bool enable = false)	|设定异常自动上报开关| x | - | 
 ||public void SetAutoCrashReport(bool enable = false)|	设定异常退出上报开关| x | - |
 
-###注意      
+###2. 注意      
 `ReportEvent(string eventName, Dictionary< string, string> paramDict, bool realtime =  false)`通过eventName来区分转化跟踪与再营销：  
 
 |eventName|功能|    
 |:--|:--|
 | Conversiontracking|转化跟踪|   
 |Remarketing|再营销|    
+###3.reportEvent demo:     
 
+```
+//转化跟踪 param需要到google adwords官网申请
+Dictionary<string, string> param = new Dictionary<string, string>();
+param["Label"] = "aaaa";
+param["Value"] = "bbbbb";
+param["Repeatable"] = "bbbbb";
+IMSDKApi.Stat.ReportEvent("Conversiontracking", param,true);
+			
+//再营销
+Dictionary<string, string> param = new Dictionary<string, string>();
+param["action_type"]= "page_view";
+param["product_category"]="shoes";
+param["value"]="15.99";
+param["product_id"]="222";
+IMSDKApi.Stat.ReportEvent("Remarketing", param,true);
+			
+```
