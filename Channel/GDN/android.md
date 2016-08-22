@@ -1,11 +1,9 @@
 ##Android工程配置     
 ###1 在Assets/Plugins/Android 目录下找到AndroidManifest.xml文件，添加
 ```
-// 权限（Application 节点外）
-
-	
-	<uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+// 权限（Application 节点外）	
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	
 	<application>
 		<receiver 
