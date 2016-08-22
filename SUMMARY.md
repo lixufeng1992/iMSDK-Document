@@ -72,7 +72,7 @@
 
     * [4.5.3 Bugly 功能说明](Unity/Channel/bugly.md)
 
-      * 4.5.3.1 Bugly 统计功能说明
+      * 4.5.3.1 Bugly 统计功能说明(Unity/Channel/Bugly/stat.md)
 
     * [4.5.4 kakao功能说明](Unity/Channel/kakao.md)
 
