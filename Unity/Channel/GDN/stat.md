@@ -45,3 +45,6 @@ param["product_id"]="222";
 IMSDKApi.Stat.ReportEvent("Remarketing", param,true);
 			
 ```
+###4 注意
+* Android
+* 
