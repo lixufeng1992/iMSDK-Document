@@ -47,4 +47,6 @@ IMSDKApi.Stat.ReportEvent("Remarketing", param,true);
 ```
 ###4 注意
 * Android
-* 
+ 游戏需在自己的主Activity中调用下面方法：
+ + 1. onCreate中调用 ： ExtendGDNManager.initialize(context)， 如ExtendGDNManager.initialize(getApplicationContext());
+ + 2. onResume()中调用ExtendGDNManager.enableAutomatedUsageReporting();。
