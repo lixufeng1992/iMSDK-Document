@@ -1,10 +1,25 @@
 ##Android工程配置     
-###1 在Assets/Plugins/Android 目录下找到AndroidManifest.xml文件
-到IMSDKAppSetting.bundle/Contents/Resources/app.plist文件，增加或修改如下配置：
+###1 在Assets/Plugins/Android 目录下找到AndroidManifest.xml文件，添加
 ```
-  <key>GDN</key>
-  <dict>
-      <key>conversionid</key>
-      <string>924017916(业务到google adword官网申请conversionid并替换)</string>
-  </dict>
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.tencent.imsdk.gdn.stat">
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+	<application>
+		<receiver 
+			android:name="com.google.ads.conversiontracking.InstallReceiver"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+
+		<meta-data android:name="GoogleAdwords_ConversionId" android:value="\ {your_conversionId}" />
+		
+	</application>
+
+</manifest>
 ```
