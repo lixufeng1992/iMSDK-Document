@@ -33,7 +33,7 @@
 Dictionary<string, string> param = new Dictionary<string, string>();
 param["Label"] = "aaaa";
 param["Value"] = "bbbbb";
-param["Repeatable"] = "bbbbb";
+param["Repeatable"] = "true";// true or false
 IMSDKApi.Stat.ReportEvent("Conversiontracking", param,true);
 			
 //再营销
