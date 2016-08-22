@@ -1,9 +1,8 @@
 ##Android工程配置     
 ###1 在Assets/Plugins/Android 目录下找到AndroidManifest.xml文件，添加
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.tencent.imsdk.gdn.stat">
+// 权限（Application 节点外）
+
 	
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -20,6 +19,4 @@
 		<meta-data android:name="GoogleAdwords_ConversionId" android:value="\ {your_conversionId}" />
 		
 	</application>
-
-</manifest>
 ```
