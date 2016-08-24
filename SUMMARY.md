@@ -47,6 +47,7 @@
             * [4.4.13.11 SQW\(37玩\)功能扩展](Unity/Module/Extend/sqw.md)
             * [4.4.13.12 Tapjoy功能扩展](Unity/Module/Extend/tapjoy.md)
             * [4.4.13.13 Toy功能扩展](Unity/Module/Extend/toy.md)
+
     * [4.5 渠道功能说明](Unity/Channel/README.md)
         * [4.5.1 Facebook 功能说明](Unity/Channel/facebook.md)
             * [4.5.1.1 Facebook 登录功能说明](Unity/Channel/Facebook/login.md)
@@ -54,7 +55,7 @@
         * [4.5.2 AppsFlyer 功能说明](Unity/Channel/appsflyer.md)
             * [4.5.2.1 AppsFlyer 统计功能说明](Unity/Channel/AppsFlyer/stat.md)
         * [4.5.3 Bugly 功能说明](Unity/Channel/bugly.md)
-            * 4.5.3.1 Bugly 统计功能说明
+            * [4.5.3.1 Bugly 统计功能说明](Unity/Channel/Bugly/stat.md)
         * [4.5.4 kakao功能说明](Unity/Channel/kakao.md)
             * [4.5.4.1 Kakao 登录功能说明](Unity/Channel/Kakao/login.md)
             * [4.5.4.2 Kakao 好友功能说明](Unity/Channel/Kakao/friend.md)
