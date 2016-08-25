@@ -1,4 +1,4 @@
-## 4.4.13.5 FLKK（飞流&Kakao）功能扩展
+：## 4.4.13.5 FLKK（飞流&Kakao）功能扩展
 
 1、新增接口 ShowMessageBlockDialog
 
@@ -16,3 +16,7 @@
 ### 飞流九龙战更新：
 
 | 更新点 | 更新内容 | 所属模块 |
+|:-----: | :------: | :------: |
+|ShowMessageBlockDialog |新增ShowMessageBlockDialog 接口 | flkk extend |
+|SendMultiChat|修改sendMultiChat</br>回调中retMsg字段会返回kakao code 和msg，格式如备注| flkk extend |
+|GetGameUserInfo | 回调结构中增加MsgBlocked 字段，意义备注2 | flkk extend |
