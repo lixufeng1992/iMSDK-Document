@@ -1,4 +1,4 @@
-# **通过Openid获取第3方渠道UID**
+## 7.4 通过Openid获取第3方渠道UID
 
 测试服接口url：[http:\/\/srvapi-beta.itop.qq.com\/v1.0\/user\/getChannelId](http://srvapi-beta.itop.qq.com/v1.0/user/getChannelId)
 
@@ -13,8 +13,8 @@
 Host配置：
 
 ```
-      10.197.93.56 srvapi-beta.itop.qq.com（内网）
-      203.205.147.224 srvapi-beta.itop.qq.com（外网） 
+10.197.93.56 srvapi-beta.itop.qq.com（内网）
+203.205.147.224 srvapi-beta.itop.qq.com（外网） 
 
 ```
 

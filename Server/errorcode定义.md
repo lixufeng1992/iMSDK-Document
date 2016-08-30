@@ -1,4 +1,4 @@
-iMSDK Server 错误码定义
+## 7.2 iMSDK Server 错误码定义
 
 1 =&gt; "success", \/\/成功
 
