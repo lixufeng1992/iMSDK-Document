@@ -1,8 +1,14 @@
 ### 6.9 Link设置
 
-#### Link 平台信息    
-    
-Link提供以游客为中心的账号服务，可将游客账户绑定到Facebook、Google、Twitter社交账号，绑定游客的社交账号可用来恢复被绑定游客。
+### 平台配置
 
-接入Link平台的业务配置信息由Link方提供。
+1. [Garena平台、后台配置](Link/developer.md)
+
+### 工程配置
+
+根据不同的编译平台，Garena的配置部分有：
+
+1. [Android 工程配置](Link/android.md)
+2. [iOS 工程配置](Link/ios.md)
+3. [Unity 工程配置](Link/unity.md)
 

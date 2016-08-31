@@ -18,16 +18,16 @@ Kakao的工程配置需要，官方文档地址为：[https://gamecenter.kakao.c
 
  ```xml
  <application android:name="com.tencent.imsdk.unity.kakao.GlobalApplication"
- android:theme="@android:style/Theme.NoTitleBar"
- android:icon="@drawable/app_icon"
- android:label="@string/app_name"
- android:debuggable="true">
+         android:theme="@android:style/Theme.NoTitleBar"
+         android:icon="@drawable/app_icon"
+         android:label="@string/app_name"
+         android:debuggable="true">
  ```
 * Native App ID 配置，在 AndroidManifest.xml 的 Application 节点下，添加如下配置
 
  ```xml
  <meta-data android:name="com.kakao.sdk.AppKey"
- android:value="217ac19097ef33c997bxxxxxxxxxxxxx" />
+         android:value="217ac19097ef33c997bxxxxxxxxxxxxx" />
  ```
 
  其中，217ac19097ef33c997bxxxxxxxxxxxxx 需要替换成游戏自己的 native app id
@@ -36,22 +36,22 @@ Kakao的工程配置需要，官方文档地址为：[https://gamecenter.kakao.c
 
  ```xml
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
- <category android:name="android.intent.category.DEFAULT" />
- <category android:name="android.intent.category.BROWSABLE" />
- <data android:scheme="kakao217ac19097ef33c997bxxxxxxxxxxxxx" />
+     <action android:name="android.intent.action.VIEW" />
+     <category android:name="android.intent.category.DEFAULT" />
+     <category android:name="android.intent.category.BROWSABLE" />
+     <data android:scheme="kakao217ac19097ef33c997bxxxxxxxxxxxxx" />
  </intent-filter>
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
- <category android:name="android.intent.category.DEFAULT" />
- <category android:name="android.intent.category.BROWSABLE" />
- <data android:scheme="kakao217ac19097ef33c997bxxxxxxxxxxxxx" android:host="kakaolink" />
+     <action android:name="android.intent.action.VIEW" />
+     <category android:name="android.intent.category.DEFAULT" />
+     <category android:name="android.intent.category.BROWSABLE" />
+     <data android:scheme="kakao217ac19097ef33c997bxxxxxxxxxxxxx" android:host="kakaolink" />
  </intent-filter>
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
- <category android:name="android.intent.category.DEFAULT" />
- <category android:name="android.intent.category.BROWSABLE" />
- <data android:scheme="kakao217ac19097ef33c997bxxxxxxxxxxxxx" android:host="kakaostory" />
+     <action android:name="android.intent.action.VIEW" />
+     <category android:name="android.intent.category.DEFAULT" />
+     <category android:name="android.intent.category.BROWSABLE" />
+     <data android:scheme="kakao217ac19097ef33c997bxxxxxxxxxxxxx" android:host="kakaostory" />
  </intent-filter>
  ```
 
@@ -63,3 +63,13 @@ Kakao的工程配置需要，官方文档地址为：[https://gamecenter.kakao.c
  <category android:name="android.intent.category.LAUNCHER"/>
  <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
  ```
+
+### 登录功能配置
+
+1. 增加ProxyActivity配置
+
+    ```xml
+    <activity android:name="com.tencent.imsdk.kakao.login.KakaoProxyActivity"
+        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    ```

@@ -32,268 +32,269 @@
  ```
  <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
- package="com.tencent.imsdk.toy.login"
- android:versionCode="1"
- android:versionName="1.0" >
+     package="com.tencent.imsdk.toy.login"
+     android:versionCode="1"
+     android:versionName="1.0" >
 
  <uses-sdk
- android:minSdkVersion="8"
- android:targetSdkVersion="21" />
+     android:minSdkVersion="8"
+     android:targetSdkVersion="21" />
 
  <application
- android:allowBackup="true"
- android:icon="@drawable/ic_launcher"
- android:label="@string/app_name"
+     android:allowBackup="true"
+     android:icon="@drawable/ic_launcher"
+     android:label="@string/app_name"
  >
  <activity android:name="com.tencent.imsdk.toy.login.ToyLoginProxyActivity"
- android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
- android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+     android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+     android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
  <meta-data
- android:name="NPAServiceID"
- android:value="NPA_1151" />
+     android:name="NPAServiceID"
+     android:value="NPA_1151" />
 
  <meta-data android:name="com.facebook.sdk.ApplicationId"
  android:value="\ 423362744481374" />
 
  <meta-data android:name="TwitterConsumerKey" android:value="IUREkFCuKCnnE97WRAnSOVpDi" />
- <meta-data android:name="TwitterConsumerSecret" android:value="La104NxpSHgs98qq66qxSMMBPg51QAaX4FOGJMr4dJUfQXOjx8" />
+ <meta-data 
+    android:name="TwitterConsumerSecret"    android:value="La104NxpSHgs98qq66qxSMMBPg51QAaX4FOGJMr4dJUfQXOjx8" />
  <meta-data android:name="TwitterCallbackURL" android:value="http://www.qq.com" />
 
  <meta-data
- android:name="com.google.android.gms.version"
- android:value="@integer/google_play_services_version" />
+     android:name="com.google.android.gms.version"
+     android:value="@integer/google_play_services_version" />
 
  <activity
- android:name="com.nexon.android.ui.NPLoginActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
- android:windowSoftInputMode="adjustResize" >
+     android:name="com.nexon.android.ui.NPLoginActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
+     android:windowSoftInputMode="adjustResize" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.auth.NXToyLoginSelectActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
- android:windowSoftInputMode="adjustResize" >
+     android:name="kr.co.nexon.toy.android.ui.auth.NXToyLoginSelectActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
+     android:windowSoftInputMode="adjustResize" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.auth.NXToyTermsActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.auth.NXToyTermsActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.auth.NXToyTermViewActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.auth.NXToyTermViewActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="com.nexon.android.ui.NXJoinUserAuthWebActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
+     android:name="com.nexon.android.ui.NXJoinUserAuthWebActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="com.nexon.android.ui.NXJoinWebActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
+     android:name="com.nexon.android.ui.NXJoinWebActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="com.nexon.android.ui.NXJoinSelectActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="com.nexon.android.ui.NXJoinSelectActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="com.nexon.android.ui.NXUserAuthWebActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="com.nexon.android.ui.NXUserAuthWebActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.etc.NXToyShareActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.etc.NXToyShareActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.banner.NXToyFullBannerActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.banner.NXToyFullBannerActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="com.nexon.android.ui.NXSearchIDPWActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
+     android:name="com.nexon.android.ui.NXSearchIDPWActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="com.nexon.android.ui.NPGetNexonSNActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.NoTitleBar.Fullscreen"
- android:windowSoftInputMode="adjustResize" >
+     android:name="com.nexon.android.ui.NPGetNexonSNActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.NoTitleBar.Fullscreen"
+     android:windowSoftInputMode="adjustResize" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.banner.NXToyEndingBannerActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.banner.NXToyEndingBannerActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.board.NXToyNoticeActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.board.NXToyNoticeActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.board.NXToyFAQActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.board.NXToyFAQActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.board.NXToyCSActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.board.NXToyCSActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.board.NXToyForumActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.board.NXToyForumActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.etc.NXToyCouponActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
- android:windowSoftInputMode="adjustResize" >
+     android:name="kr.co.nexon.toy.android.ui.etc.NXToyCouponActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
+     android:windowSoftInputMode="adjustResize" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyCustomerServiceActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
- android:windowSoftInputMode="adjustResize" >
+     android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyCustomerServiceActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
+     android:windowSoftInputMode="adjustResize" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyHelpCenterActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyHelpCenterActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.board.NXToyWebActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.board.NXToyWebActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
 
  <activity
- android:name="com.facebook.FacebookActivity"
- android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
- android:label="@string/app_name"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar" />
+     android:name="com.facebook.FacebookActivity"
+     android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+     android:label="@string/app_name"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar" />
 
  <!-- start Email Authentication related -->
  <activity
- android:name="kr.co.nexon.android.sns.ui.NPEmailLoginCheckActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
- android:windowSoftInputMode="adjustResize" >
+     android:name="kr.co.nexon.android.sns.ui.NPEmailLoginCheckActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
+     android:windowSoftInputMode="adjustResize" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.android.sns.ui.NPEmailLoginActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
- android:windowSoftInputMode="adjustResize" >
+     android:name="kr.co.nexon.android.sns.ui.NPEmailLoginActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
+     android:windowSoftInputMode="adjustResize" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.android.sns.ui.NPEmailSignUpActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
- android:windowSoftInputMode="adjustResize" >
+     android:name="kr.co.nexon.android.sns.ui.NPEmailSignUpActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
+     android:windowSoftInputMode="adjustResize" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.android.sns.ui.NPEmailResetPasswordActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
- android:windowSoftInputMode="adjustResize" >
+     android:name="kr.co.nexon.android.sns.ui.NPEmailResetPasswordActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen"
+     android:windowSoftInputMode="adjustResize" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.android.sns.ui.NPEmailResetPasswordSuccessActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.android.sns.ui.NPEmailResetPasswordSuccessActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.android.sns.ui.NXEmailWebActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.android.sns.ui.NXEmailWebActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
@@ -305,35 +306,35 @@
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyPlateActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyPlateActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyGameInfoActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyGameInfoActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyTermsListActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyTermsListActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
  <activity
- android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyUserInfoActivity"
- android:configChanges="orientation|keyboardHidden|screenSize"
- android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
+     android:name="kr.co.nexon.toy.android.ui.baseplate.NXToyUserInfoActivity"
+     android:configChanges="orientation|keyboardHidden|screenSize"
+     android:theme="@style/ToyTheme.Translucent.NoTitleBar.Fullscreen" >
  <intent-filter>
- <action android:name="android.intent.action.VIEW" />
+     <action android:name="android.intent.action.VIEW" />
  </intent-filter>
  </activity>
 
@@ -475,6 +476,7 @@ void TestFriendCallback(IMFriendResult result) {
 
 void TestInvite() {
  IMFriendContent content = new IMFriendContent();
+ content.user = "subID1,subID2,subID3,subID4,subID5,...";
  content.Title = "this is title";
  content.Content = "this is content";
  content.Link = "http://ieg.qq.com";

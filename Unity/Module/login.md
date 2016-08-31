@@ -295,6 +295,7 @@ IMSDKApi.Login.StrictLogin(OnStrictLogin);
 部分渠道支持状态上报功能（类似QQ在线状态），可以通过上报修改玩家的状态
 
 调用逻辑：
+
 1. 设定上报渠道
 
   ```cs
