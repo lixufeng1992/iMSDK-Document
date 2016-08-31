@@ -32,11 +32,11 @@
 ## 代码示例
 ```cs
 /*
-*
-*mStoveLoginType.put(0, "STV_GU");
- mStoveLoginType.put(1, "STV");
- mStoveLoginType.put(2, "STV_FB");
- mStoveLoginType.put(9, "STV_GP");
+*Stove返回4种登录渠道
+* STV_GU ： Stove游客
+* STV : Stove
+* STV_FB ：Stove Facebook
+* STV_GP : Stove Google+
 */
 void Start() {
      IMSDKApi.Login.Initialize ();
