@@ -19,3 +19,30 @@
 + IMSDKPushStove.framework
 
 ###系统库依赖
++ libxml2.2.tbd
++ libz.tbd
++ libsqlite3.0.tbd
++ libresolv.tbd
++ libiconv.tbd
++ CoreLocation.framework
++ CoreTelephony.framework
++ AdSupport.framework
++ Foundation.framework
++ StoreKit.framework
++ AudioToolbox.framework
++ AVFoundation.framework
++ MobileCoreServices.framework
++ AddressBook.framework
++ ImageIO.framework
++ SystemConfiguration.framework
++ CoreData.framework
++ CFNetwork.framework
++ CoreText.framework
++ MediaPlayer.framework
++ CoreMotion.framework
+
+###info.plist文件配置
+
+1. 新增**FacebookAppID**，并填入目标Facebook app id
+2. 新增**GooglePlusClientID**配置项，并填入目标Google app id
+3.
