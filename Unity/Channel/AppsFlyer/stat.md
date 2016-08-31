@@ -17,22 +17,3 @@
 | 9 | public void reportAutoExceptionReport() | 登出当前渠道 | x | - |
 
 
-### AppsFlyer统计配置说明
-
- #### Android 端配置说明
- ``` xml
-<!-- AppsFlyer 安装receiver -->
-<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
-<intent-filter>
-    <action android:name="com.android.vending.INSTALL_REFERRER" />
-</intent-filter>
-</receiver>
-<!-- Appsflyer配置，需要配置在官网上获取的DEVKEY --> 
- <meta-data
-    android:name="DEVKEY_APPSFLYER"
-    android:value="your_devkey" />
-<!--AppsFlyer can track Google Advertising ID to improve tracking, 假如项目需要，需要添加以下配置，详细参考Android AppsFlyer说明文档3.4节 -->
-<meta-data 
-    android:name="com.google.android.gms.version"
-    android:value="@integer/google_play_services_version" />
- ```

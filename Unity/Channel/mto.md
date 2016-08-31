@@ -9,5 +9,6 @@
 | [Friend](MTO/friend.md) | 关系链 | - |    
 | [Help](MTO/help.md) | 帮助系统 | - |
 | [Stat](MTO/stat.md) | 统计 | - |
+| [Pay](MTO/pay.md) | 支付 | - |
 | [Extend](MTO/extend.md) | 扩展 | - |
 
