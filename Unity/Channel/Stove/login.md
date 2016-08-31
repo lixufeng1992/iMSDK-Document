@@ -27,39 +27,30 @@
 
 ## 工程配置
 
-//
+ [Stove Android工程配置](../Channel/Stove/android.md)
 
 ## 代码示例
 
 
 ```cs
 void Start() {
- IMSDKApi.Login.Initialize ();
- IMSDKApi.Login.SetChannel("Garena");
-
- /*
- *Garena有4子渠道，
- *GRN_BT:Garena-Beetalk渠道
- *GRN_GU:Garena-Guest渠道
- *GRN_FB:Garena-Facebook渠道
- *GRN_Gas:Garena-本身渠道
- */
- IMSDKApi.Login.SetType("GRN_BT");
+     IMSDKApi.Login.Initialize ();
+     IMSDKApi.Login.SetChannel("Stove");
 }
 
  void TestLoginCallback(IMLoginResult result) {
- if(result.RetCode == 1) {
- Debug.Log("login ok, user open id is " + result.OpenId);
- } else {
- Debug.Log("login error : " + result.ErrorMsg);
- }
+     if(result.RetCode == 1) {
+         Debug.Log("login ok, user open id is " + result.OpenId);
+         } else {
+         Debug.Log("login error : " + result.ErrorMsg);
+         }
  }
 
  void TestLogin() {
- List<string> permissionList = new List<string>();
- permissionList.Add("email");
+     List<string> permissionList = new List<string>();
+     permissionList.Add("email");
 
- IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
+     IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
  }
  ```
 
