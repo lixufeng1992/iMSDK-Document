@@ -31,6 +31,8 @@
 
 ## 代码示例
 ```cs
+
+
 /*
 *Stove返回4种登录渠道
 * STV_GU ： Stove游客
@@ -61,7 +63,7 @@ void Start() {
 
  以下为Android代码，非Unity代码，Android侧特别注意：由于Garena需要调用生命周期，所以提供下面方法
  - 方法1：
- 游戏继承iMSDK提供的Activity:com.tencent.imsdk.unity.garena.UnityPlayerNativeActivity
+ 游戏继承iMSDK提供的Activity:com.tencent.imsdk.unity.stove.UnityPlayerNativeActivity
  - 方法2：
  业务在自己的主Activity中调用
 
@@ -69,34 +71,37 @@ void Start() {
  ```java
  public class YourMainActivity extends Activity{
 
- @Override
- protected void onCreate(Bundle savedInstanceState) {
- ...
-     IMSDKExtendGarena.initialize(this);
- ...
- }
+ 	@Override
+	protected void onDestroy() {
+		mUnityPlayer.quit();
+		super.onDestroy();
+		UStoveHelper.onDestroy();
+	}
 
- @Override
- protected void onDestroy() {
-     IMSDKExtendGarena.onDestroy();
-     super.onDestroy();
- }
+	@Override
+	protected void onStart() {
+		super.onStart();
+		UStoveHelper.onStart();
+	}
 
- @Override
- protected void onPause() {
-     super.onPause();
-     IMSDKExtendGarena.onPause();
- }
+	@Override
+	protected void onStop() {
+		super.onStop();
+		UStoveHelper.onStop();
+	}
 
- @Override
- protected void onResume() {
-     super.onResume();
-     IMSDKExtendGarena.onResume();
- }
+	@Override
+	protected void onPause() {
+		super.onPause();
+		mUnityPlayer.pause();
+		UStoveHelper.onPause();
+	}
 
- @Override
- protected void onActivityResult(int requestCode, int resultCode, Intent data) {
- IMSDKExtendGarena.onActivityResult(requestCode, resultCode, data);
- }
+	@Override
+	protected void onResume() {
+		super.onResume();
+		mUnityPlayer.resume();
+		UStoveHelper.onResume();
+	}
 ```
 
