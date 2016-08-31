@@ -49,6 +49,7 @@ IMSDKApi.IMStove
 *  初始化&获取配置信息结构体  <font color=blue>IMStoveConfigResult ：  IMResult </font>    
 
 *  【注意：初始化 与  获取配置信息 返回的结构体相同】    
+    
 | :-- | :-- |
 | 继承 IMResult | |
 | public string GameIp| 错误信息 |
