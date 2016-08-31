@@ -179,8 +179,6 @@ IMSDKApi.IMStove
             IMStove.Instance.SetPushActive (true, PrintResult);
             IMStove.Instance.GetPushInfo (PrintPushResult);
          }
-
-
 ```
 
 
