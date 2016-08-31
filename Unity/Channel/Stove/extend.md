@@ -78,41 +78,21 @@ IMSDKApi.IMStove
 
 | 类型 | 说明 |
 | :-- | :-- |
-| public delegate void IMStoveLaunchUICallBack(IMStoveLaunchUIResultresult) | 展示弹窗回调函数|
+| public delegate void IMStoveLaunchUICallBack(IMStoveLaunchUIResult result) | 展示弹窗回调函数|
 
 ###设置推送开关结构体    
 
-* 展示弹窗结构体 <font color=blue>IMStoveLaunchUIResult ：IMResult </font>
+* 展示弹窗结构体 <font color=blue>IMStovePushResult：IMResult </font>
 
 | 变量 | 说明 |
 | :-- | :-- |
-| public string memType | User authentication type |
-| public string npsn | User identification value in NPA |
-| public string subID | Identification value used in the relevant authentication method |
-| public string pictureUrl | Profile image |
-| public string name | Nickname |
-| public string memID | |
-| public string age_range_max | |
-| public string age_range_min | |
-| public string email | |
-| public string gender | |
-| public string birthDay | |
-| public string firstName | |
-| public string middleName | |
-| public string lastName | |
+| public bool IsActive| 推送开启或关闭 |
 
-###IMToyFriend:Toy关系链信息结构体及回调代理函数
-| 变量 | 说明 |
-| :-- | :-- |
-| public int hasNext | 下一页 |
-| public IMToyUserInfo friends | 登录账号中已玩该游戏的好友 |
-| public IMToyUserInfo invites | 登录账号中未玩该游戏的好友 |
-
-* 获取关系链回调代理函数 <font color=blue>GetFriendsCallback</font>
+* 回调代理函数 <font color=blue>IMStovePushBack</font>
 
 | 类型 | 说明 |
 | :-- | :-- |
-| public delegate void GetFriendsCallback(IMToyFriend result) | 获取关系链回调函数，返回关系链结构体 |
+| public delegate void IMStovePushBack(IMStovePushResult result) |  设置推送  |
 
 
 * UToy方法类 <font color=blue>IMUToy</font>
