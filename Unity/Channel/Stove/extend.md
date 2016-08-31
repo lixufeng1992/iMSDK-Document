@@ -166,8 +166,13 @@ IMSDKApi.IMStove
          IMSDKApi.Stove.Initialize(PrintLoginCallCallback);
        }
 
-IMStove.Instance.LaunchUI (IMStove.LAUNCHUI_VALUE_EVENT, PrintLaunchUIResult);
-IMStove.Instance.getConfigInfo (PrintConfigResult);
+        void Test() {
+            IMStove.Instance.LaunchUI(IMStove.LAUNCHUI_VALUE_EVENT, PrintLaunchUIResult);
+            IMStove.Instance.getConfigInfo (PrintConfigResult);
+            IMStove.Instance.SetPushActive (true, PrintResult);
+            IMStove.Instance.GetPushInfo (PrintPushResult);
+         }
+
 
 ```
 
