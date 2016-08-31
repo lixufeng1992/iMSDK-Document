@@ -110,55 +110,19 @@ IMSDKApi.IMStove
 ```cs
     public void PrintResult(IMResult result){
         IMLog.Log("print result " + result.IMSDKRetCode);
-        //输出，打印到屏幕上
-        mResultDisplay = "AuthCallback:"
-        + "\n ret code : " + result.IMSDKRetCode
-        + "\n ret msg : " + result.IMSDKRetMsg
-        + "\n third code : " + result.ThirdRetCode
-        + "\n third msg : " + result.ThirdRetMsg;
 	}
 
     public void PrintLoginCallCallback(IMStoveConfigResult result)
     {
         IMLog.Log("print result " + result.IMSDKRetCode);
-        //输出，打印到屏幕上
-        mResultDisplay = "AuthCallback:"
-        + "\n ret code : " + result.IMSDKRetCode
-        + "\n ret msg : " + result.IMSDKRetMsg
-        + "\n third code : " + result.ThirdRetCode
-        + "\n third msg : " + result.ThirdRetMsg
-        + "\n gameip :" + result.GameIp
-        + "\n gameport" + result.GamePort;
     }
 
 	public void PrintConfigResult(IMStoveConfigResult result){
         IMLog.Log("print result " + result.IMSDKRetCode);
-        //输出，打印到屏幕上
-        mResultDisplay = "AuthCallback:"
-        + "\n ret code : " + result.IMSDKRetCode
-        + "\n ret msg : " + result.IMSDKRetMsg
-        + "\n third code : " + result.ThirdRetCode
-        + "\n third msg : " + result.ThirdRetMsg
-        + "\n gameip :" + result.GameIp
-        + "\n gameport" + result.GamePort;
 	}
 
 	public void PrintLaunchUIResult(IMStoveLaunchUIResult result){
         IMLog.Log("print result " + result.IMSDKRetCode);
-        //输出，打印到屏幕上
-        mResultDisplay = "AuthCallback:"
-        + "\n ret code : " + result.IMSDKRetCode
-        + "\n ret msg : " + result.IMSDKRetMsg
-        + "\n third code : " + result.ThirdRetCode
-        + "\n third msg : " + result.ThirdRetMsg
-        + "\n uiNum :" + result.UiNum
-        + "\n uiNum :" + result.UiNum
-        + "\n portrait :" + result.Portrait
-        + "\n accessToken :" + result.AccessToken
-        + "\n memberId :" + result.MemberId
-        + "\n nickName :" + result.NickName
-        + "\n memberNo :" + result.MemberNo
-        + "\n accountType :" + result.AccountType;
 	}
 
         void Start() {
