@@ -50,3 +50,6 @@
     + Facebook, fb408057129368811 :  fb + FacebookAppID 
     + Google,  Google+ REVERSED_CLIENT_IDvalue 
     + 添加项目bundleid
+
+###KeyChain配置
+1. 新增entitlements文件，文件中新增 **Keychain Access Groups** 数组，并填入 $(AppIdentifierPrefix)com.stove.globaldata 
