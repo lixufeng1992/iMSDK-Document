@@ -7,7 +7,8 @@ Stove是韩国的一款集成平台，比较侧重于游戏侧，除提供 Stove
 接入Stove功能的业务配置信息由Stove方配置再提供给业务方。    
      
 STOVE 控制台：    
-     * Sandbox: http://sandbox-console.playstove.com/login.html
+     * Sandbox: http://sandbox-console.playstove.com/login.html    
+
      * Live: http://console.playstove.com/login.html
        
 Stove 文档路径：    
