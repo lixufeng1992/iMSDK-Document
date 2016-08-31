@@ -95,26 +95,15 @@ IMSDKApi.IMStove
 | public delegate void IMStovePushBack(IMStovePushResult result) |  设置推送  |
 
 
-* UToy方法类 <font color=blue>IMUToy</font>
+* IMStove方法类 <font color=blue> IMStove </font>
 
 | 函数名 | 函数说明 |
 | :-- | :-- |
-| public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数 |
-| public void ShowBanner(int groupCode, ShowBannerCallback callback = null) | 展示Banner |
-| public void ShowEndingBanner(ShowEndingBannerCallback callback = null) | 展示应用退出时的Banner |
-| public void ShowTermsOfAgree(ShowTermsOfAgreeCallback callback = null) | 展示用户协议 |
-| public void ShowNotice(ShowNoticeCallback callback = null) | 展示公告 |
-| public void ShowSettlementFund(string itemName, string itemPrice, ShowSettlementFundCallback callback = null) | 展示资金支付法规 |
-| public void ShowPlate(int group, IMParamsa param, ShowPlateActionPerformedCallback callback = null) | 展示Plate |
-|public void GetFriends(int snsType, int nextPage, string filterType, GetFriendsCallback callback = null) | 获取关系链 |
-| public void ShowFAQ() | 展示FAQ |
-| public void ShowForumWithId(int forumId) | 展示论坛 |
-| public String GetLocal() | 获取当前地理位置 |
-| public void SetLocal(String local) | 设置当前地理位置 |
-| public String GetCountry() | 获取当前所处国家 |
-| public void SetCountry(String country) | 设置当前所处国家 |
-| public void ShowDataBackup(string title = "", ShowDataBackupCallback callback = null) | 游客账号数据备份 |
-| public void ShowDataRestore(string title = "", ShowDataRestoreCallback callback = null) | 游客账号数据迁移 |
+| public void Initialize (IMStoveConfigCallback callback) | 初始化方法，在调用其他函数之前必须调用该函数 |
+| public void LaunchUI (int uiType, IMStoveLaunchUICallBack callback, int noticeParam = 0) | 展示弹窗|
+| public void getConfigInfo (IMStoveConfigCallback callback) | 获取配置信息 |
+| public void SetPushActive (bool isActive, IMStoveCallBack callback) | 设置推送开关 |
+| public void GetPushInfo (IMStovePushBack callback) | 获取推送开关 |
 
 ## 代码示例
 
