@@ -16,3 +16,4 @@
 | [Toy配置](toy.md) |
 |[VK配置](vk.md)|   
 | [GDN配置](gdn.md)|
+| [Stove配置](stove.md)|
