@@ -27,7 +27,7 @@
 
 ## 工程配置
 
- [Stove Android工程配置](Channel/Stove/android.md)
+ [Stove Android工程配置](../../../Channel/Stove/android.md)
 
 ## 代码示例
 ```cs
