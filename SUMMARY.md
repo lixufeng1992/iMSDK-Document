@@ -136,7 +136,7 @@
         * [6.9.2 Android 配置](Channel/Link/android.md)
         * [6.9.3 iOS 配置](Channel/Link/ios.md)
     * [6.10 Stove设置](Channel/Stove.md)
-        * [6.10.1 Stove平台配置](Channel/Stove/developers.md)
+        * [6.10.1 Stove平台配置](Channel/Stove/developer.md)
         * [6.10.2 Android 配置](Channel/Stove/android.md)
         * [6.10.3 iOS 配置](Channel/Stove/ios.md)
 * [7. iMSDK后台](Server/README.md)
