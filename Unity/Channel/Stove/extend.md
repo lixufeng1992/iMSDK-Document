@@ -108,11 +108,15 @@ IMSDKApi.IMStove
 ## 代码示例
 
 ```cs
+/**
+*Stove初始化为异步方法，调用登录接口前请务必确定已完成初始化
+*/
     public void PrintResult(IMResult result){
         IMLog.Log("print result " + result.IMSDKRetCode);
 	}
 
     public void PrintInitCallCallback(IMStoveConfigResult result){
+            //建议游戏在此监听回调，当返回成功，才可调用登录接口
            IMLog.Log("print result " + result.IMSDKRetCode);
     }
 
