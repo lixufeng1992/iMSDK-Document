@@ -14,3 +14,4 @@
 | [Efun](efun.md) |
 | [Toy](toy.md) |    
 |[GDN](gdn.md)|
+| [Stove](stove.md)|
