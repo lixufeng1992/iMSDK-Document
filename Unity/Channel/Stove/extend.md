@@ -55,11 +55,11 @@ IMSDKApi.IMStove
 | public string GameIp| 游戏IP地址 |
 | public int GamePort| 端口 |
 
-* 关闭Notice回调代理函数 <font color=blue>ShowNoticeCallback</font>
+* 回调代理函数 <font color=blue> IMStoveConfigCallback </font>
 
 | 类型 | 说明 |
 | :-- | :-- |
-| public delegate void ShowNoticeCallback(IMToyNoticeCloseResult result) | 获取展示Notice回调函数，返回关闭Notice结构体 |
+| public delegate void IMStoveConfigCallback(IMStoveConfigResult result) | 初始化&获取配置信息，返回结构体 |
 
 ###展示Banner结构体及回调代理函数
 * 展示Banner结构体 <font color=blue>IMToyBannerResult</font>
