@@ -166,38 +166,8 @@ IMSDKApi.IMStove
          IMSDKApi.Stove.Initialize(PrintLoginCallCallback);
        }
 
-IMSDKApi.UToy.ShowBanner(1, this.OnShowBannerCallback);
-IMSDKApi.UToy.ShowEndingBanner(this.OnShowEndingBannerCallback);
-IMSDKApi.UToy.ShowTermsOfAgree(this.OnShowTermsOfAgreeCallback);
-IMSDKApi.UToy.ShowNotice(this.OnShowNoticeCallback);
-IMSDKApi.UToy.ShowSettlementFund("zuan1000", "jinbi40000", this.OnShowSettlementFundCallback);
+IMStove.Instance.LaunchUI (IMStove.LAUNCHUI_VALUE_EVENT, PrintLaunchUIResult);
 
-/*
-*Show Plate & ShowHelpCenter & ShowCustomerService
-*/
-IMParamsa paramsa = new IMParamsa();
-paramsa["GameID"] = "5";
-paramsa["ChracterName"] = "name";
-paramsa.questionInfos.Add("GameVersion");
-paramsa.questionInfos.Add("CHRACTERID");
-IMSDKApi.UToy.ShowPlate(0, paramsa, this.OnShowPlateActionPerformedCallback);
-IMSDKApi.UToy.ShowHelpCenter(paramsa);
-IMSDKApi.UToy.ShowCustomerService(paramsa);
-
-/*
-*获取关系链
-*/
-IMSDKApi.UToy.GetFriends(0, 1, "invites", this.OnGetFriendsCallback);
-IMSDKApi.UToy.ShowFAQ();
-IMSDKApi.UToy.ShowForumWithId(1);
-IMSDKApi.UToy.SetLocal("zh_CN");//ko_KR en_US ja_JP zh_TW zh_CN de_DE pt_PT pt_BR es_ES ru_RU
-IMSDKApi.UToy.SetCountry("CN");//US CN CA JP KR TW DE IT RU BR FR ES
-
-/*
-*游客账号备份及迁移
-*/
-IMSDKApi.UToy.ShowDataBackup();
-IMSDKApi.UToy.ShowDataRestore();
 
 ```
 
