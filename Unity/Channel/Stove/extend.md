@@ -38,8 +38,12 @@ IMSDKApi.IMStove
 | 变量 | 说明 |
 | :-- | :-- |
 | public int RetCode | 返回码，1 为成功，其他为失败 |
-| public string GameIp| 错误信息 |
-| public int GamePort| 当前场景名称 |
+| public string ErrorMsg| 错误信息 |
+| public int IMSDKRetCode| iMSDK返回码 ，1 为成功，其他为失败  |
+| public int IMSDKRetMsg|  iMSDK 返回信息 |
+| public int ThirdRetCode| 第三方返回码 |
+| public int ThirdRetMsg| 第三方返回信息|
+| public int RetExtraJson| 扩展信息 |
 
 * 关闭Notice回调代理函数 <font color=blue>ShowNoticeCallback</font>
 
