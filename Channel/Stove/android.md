@@ -1,8 +1,8 @@
-## 6.4.1 Stove(Android) 工程配置
+## 6.10.1 Stove(Android) 工程配置
 
 ### Android工程通用配置
 
-* Toy在AndroidManifest.xml中配置如下
+* Stove在AndroidManifest.xml中配置如下
  ```xml
  <!-- Stove_1.11.0 start -->
  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Check the network status -->
