@@ -112,9 +112,8 @@ IMSDKApi.IMStove
         IMLog.Log("print result " + result.IMSDKRetCode);
 	}
 
-    public void PrintLoginCallCallback(IMStoveConfigResult result)
-    {
-        IMLog.Log("print result " + result.IMSDKRetCode);
+    public void PrintLoginCallCallback(IMStoveConfigResult result){
+           IMLog.Log("print result " + result.IMSDKRetCode);
     }
 
 	public void PrintConfigResult(IMStoveConfigResult result){
@@ -125,23 +124,18 @@ IMSDKApi.IMStove
         IMLog.Log("print result " + result.IMSDKRetCode);
 	}
 
-        void Start() {
+    void Start() {
          IMLog.setLevel (IMLog.Level.Log);
          IMSDKApi.Stove.Initialize(PrintLoginCallCallback);
        }
 
-        void Test() {
-            /*
-            *展示弹窗
-            */
-            IMStove.Instance.LaunchUI(IMStove.LAUNCHUI_VALUE_EVENT, PrintLaunchUIResult);
-
-           /*
-             *获取配置信息，注意虽然 获取配置信息 与 初始化返回结构体一致，但需传不同代理实例用以区分不同返回
-             */
-            IMStove.Instance.getConfigInfo (PrintConfigResult);
-            IMStove.Instance.SetPushActive (true, PrintResult);
-            IMStove.Instance.GetPushInfo (PrintPushResult);
+    void Test() {
+         //展示弹窗
+         IMStove.Instance.LaunchUI(IMStove.LAUNCHUI_VALUE_EVENT, PrintLaunchUIResult);
+          //获取配置信息，注意虽然 获取配置信息 与 初始化返回结构体一致，但需传不同代理实例用以区分不同返回
+          IMStove.Instance.getConfigInfo (PrintConfigResult);
+          IMStove.Instance.SetPushActive (true, PrintResult);
+          IMStove.Instance.GetPushInfo (PrintPushResult);
          }
 ```
 
