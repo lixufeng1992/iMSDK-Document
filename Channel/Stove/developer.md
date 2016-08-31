@@ -10,5 +10,5 @@ STOVE 控制台：
      * Sandbox: http://sandbox-console.playstove.com/login.html
      * Live: http://console.playstove.com/login.html
        
-Stove 文档路径：
-     * http://doc.playstove.com/
+Stove 文档路径：    
+    * http://doc.playstove.com/
