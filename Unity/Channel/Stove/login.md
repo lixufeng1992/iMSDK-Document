@@ -47,9 +47,9 @@ void Start() {
 
  void TestLoginCallback(IMLoginResult result) {
      if(result.RetCode == 1) {
-         Debug.Log("login ok, user open id is " + result.OpenId);
+             Debug.Log("login ok, user open id is " + result.OpenId);
          } else {
-         Debug.Log("login error : " + result.ErrorMsg);
+             Debug.Log("login error : " + result.ErrorMsg);
          }
  }
 
