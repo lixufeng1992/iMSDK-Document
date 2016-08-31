@@ -32,16 +32,31 @@ IMSDKApi.IMStove
 > 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
 
 ## 参考
-###初始化&获取配置信息结构体及回调代理函数
-*  初始化&获取配置信息结构体  <font color=blue>IMStoveConfigResult</font>    
-
-*  【初始化 与  获取配置信息 返回的结构体相同】    
+###iMSDK基础返回结构体
+* iMSDK基础返回结构体  <font color=blue>IMResult</font>
 
 | 变量 | 说明 |
 | :-- | :-- |
 | public int RetCode | 返回码，1 为成功，其他为失败 |
-| public string ErrorMsg | 错误信息 |
-| public string screenName | 当前场景名称 |
+| public string GameIp| 错误信息 |
+| public int GamePort| 当前场景名称 |
+
+* 关闭Notice回调代理函数 <font color=blue>ShowNoticeCallback</font>
+
+| 类型 | 说明 |
+| :-- | :-- |
+| public delegate void ShowNoticeCallback(IMToyNoticeCloseResult result) | 获取展示Notice回调函数，返回关闭Notice结构体 |
+
+###初始化&获取配置信息结构体及回调代理函数
+*  初始化&获取配置信息结构体  <font color=blue>IMStoveConfigResult</font>    
+
+*  【注意：初始化 与  获取配置信息 返回的结构体相同】    
+
+| 变量 | 说明 |
+| :-- | :-- |
+| public int RetCode | 返回码，1 为成功，其他为失败 |
+| public string GameIp| 错误信息 |
+| public int GamePort| 当前场景名称 |
 
 * 关闭Notice回调代理函数 <font color=blue>ShowNoticeCallback</font>
 
