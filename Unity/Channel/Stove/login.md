@@ -67,26 +67,26 @@ void Start() {
  @Override
  protected void onCreate(Bundle savedInstanceState) {
  ...
- IMSDKExtendGarena.initialize(this);
+     IMSDKExtendGarena.initialize(this);
  ...
  }
 
  @Override
  protected void onDestroy() {
- IMSDKExtendGarena.onDestroy();
- super.onDestroy();
+     IMSDKExtendGarena.onDestroy();
+     super.onDestroy();
  }
 
  @Override
  protected void onPause() {
- super.onPause();
- IMSDKExtendGarena.onPause();
+     super.onPause();
+     IMSDKExtendGarena.onPause();
  }
 
  @Override
  protected void onResume() {
- super.onResume();
- IMSDKExtendGarena.onResume();
+     super.onResume();
+     IMSDKExtendGarena.onResume();
  }
 
  @Override
