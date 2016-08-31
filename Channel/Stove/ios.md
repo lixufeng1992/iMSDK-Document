@@ -53,3 +53,4 @@
 
 ###KeyChain配置
 1. 新增entitlements文件，文件中新增 **Keychain Access Groups** 数组，并填入 $(AppIdentifierPrefix)com.stove.globaldata 
+2. 在Code Signing Entitlements 中正确填入步骤1中新增的 .entitlements 文件
