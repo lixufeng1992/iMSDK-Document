@@ -1,4 +1,4 @@
-# Toy扩展(ToyExtend)
+# Stove扩展(StoveExtend)
 
 ## 命名空间
 
