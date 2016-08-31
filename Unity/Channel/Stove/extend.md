@@ -112,7 +112,7 @@ IMSDKApi.IMStove
         IMLog.Log("print result " + result.IMSDKRetCode);
 	}
 
-    public void PrintLoginCallCallback(IMStoveConfigResult result){
+    public void PrintInitCallCallback(IMStoveConfigResult result){
            IMLog.Log("print result " + result.IMSDKRetCode);
     }
 
@@ -126,7 +126,7 @@ IMSDKApi.IMStove
 
     void Start() {
          IMLog.setLevel (IMLog.Level.Log);
-         IMSDKApi.Stove.Initialize(PrintLoginCallCallback);
+         IMSDKApi.Stove.Initialize(PrintInitCallCallback);
        }
 
     void Test() {
