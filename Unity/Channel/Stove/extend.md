@@ -46,7 +46,7 @@ IMSDKApi.IMStove
 | public int RetExtraJson| 扩展信息 |
 
 ###初始化&获取配置信息结构体及回调代理函数
-*  初始化&获取配置信息结构体  <font color=blue>IMStoveConfigResult ：  IMResult </font>    
+*  初始化&获取配置信息结构体  <font color=blue>IMStoveConfigResult ：IMResult </font>    
 
 *  【注意：初始化 与  获取配置信息 返回的结构体相同】     
    
@@ -62,21 +62,28 @@ IMSDKApi.IMStove
 | public delegate void IMStoveConfigCallback(IMStoveConfigResult result) | 初始化&获取配置信息，返回结构体 |
 
 ###展示Banner结构体及回调代理函数
-* 展示Banner结构体 <font color=blue>IMToyBannerResult</font>
+* 展示弹窗结构体 <font color=blue>IMStoveLaunchUIResult ：IMResult </font>
 
 | 变量 | 说明 |
 | :-- | :-- |
-| public int RetCode | 返回码，1 为成功，其他为失败 |
-| public string ErrorMsg | 错误信息 |
-| public string state | 展示Notice事件状态, 1001:展示notice失败 1002：关闭notice 1003:点击Notice 1004:退出Notice|
+| public int UiNum| 弹窗类型 |
+| public string Portrait| 头像url |
+| public string AccessToken| stove token |
+| public string MemberId| stove memberId |
+| public string NickName| stove nickName |
+| public string MemberNo| stove memberNo |
+| public string AccountType| stove accountType |
 
-* 展示Banner回调代理函数 <font color=blue>ShowBannerCallback</font>
+* 回调代理函数 <font color=blue>IMStoveLaunchUICallBack</font>
 
 | 类型 | 说明 |
 | :-- | :-- |
-| public delegate void ShowBannerCallback(IMToyBannerResult result) | 展示Banner回调函数，返回浏览器状态结构体 |
+| public delegate void IMStoveLaunchUICallBack(IMStoveLaunchUIResultresult) | 展示弹窗回调函数|
 
-###IMToyUserInfo:Toy玩家信息结构体
+###设置推送开关结构体    
+
+* 展示弹窗结构体 <font color=blue>IMStoveLaunchUIResult ：IMResult </font>
+
 | 变量 | 说明 |
 | :-- | :-- |
 | public string memType | User authentication type |
