@@ -63,3 +63,13 @@ Kakao的工程配置需要，官方文档地址为：[https://gamecenter.kakao.c
  <category android:name="android.intent.category.LAUNCHER"/>
  <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
  ```
+
+### 登录功能配置
+
+1. 增加ProxyActivity配置
+
+    ```xml
+    <activity android:name="com.tencent.imsdk.kakao.login.KakaoProxyActivity"
+        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    ```
