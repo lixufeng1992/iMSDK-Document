@@ -167,7 +167,7 @@ IMSDKApi.IMStove
        }
 
 IMStove.Instance.LaunchUI (IMStove.LAUNCHUI_VALUE_EVENT, PrintLaunchUIResult);
-
+IMStove.Instance.getConfigInfo (PrintConfigResult);
 
 ```
 
