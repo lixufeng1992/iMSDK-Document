@@ -45,20 +45,13 @@ IMSDKApi.IMStove
 | public int ThirdRetMsg| 第三方返回信息|
 | public int RetExtraJson| 扩展信息 |
 
-* 关闭Notice回调代理函数 <font color=blue>ShowNoticeCallback</font>
-
-| 类型 | 说明 |
-| :-- | :-- |
-| public delegate void ShowNoticeCallback(IMToyNoticeCloseResult result) | 获取展示Notice回调函数，返回关闭Notice结构体 |
-
 ###初始化&获取配置信息结构体及回调代理函数
-*  初始化&获取配置信息结构体  <font color=blue>IMStoveConfigResult</font>    
+*  初始化&获取配置信息结构体  <font color=blue>IMStoveConfigResult ：  IMResult </font>    
 
 *  【注意：初始化 与  获取配置信息 返回的结构体相同】    
-
 | 变量 | 说明 |
 | :-- | :-- |
-| public int RetCode | 返回码，1 为成功，其他为失败 |
+| 继承 IMResult | |
 | public string GameIp| 错误信息 |
 | public int GamePort| 当前场景名称 |
 
