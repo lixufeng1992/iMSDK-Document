@@ -52,9 +52,8 @@ IMSDKApi.IMStove
    
 | 变量 | 说明 | 
 | :-- | :-- |
-| 继承 IMResult | |
-| public string GameIp| 错误信息 |
-| public int GamePort| 当前场景名称 |
+| public string GameIp| 游戏IP地址 |
+| public int GamePort| 端口 |
 
 * 关闭Notice回调代理函数 <font color=blue>ShowNoticeCallback</font>
 
