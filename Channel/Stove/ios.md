@@ -17,3 +17,5 @@
 + IMSDKExtendStove.framework
 + IMSDKLoginStove.framework
 + IMSDKPushStove.framework
+
+###系统库依赖
