@@ -45,4 +45,8 @@
 
 1. 新增**FacebookAppID**，并填入目标Facebook app id
 2. 新增**GooglePlusClientID**配置项，并填入目标Google app id
-3.
+3.  URL Schemes 添加
+  
+    + Facebook, fb408057129368811 :  fb + FacebookAppID 
+    + Google,  Google+ REVERSED_CLIENT_IDvalue 
+    + 添加项目bundleid
