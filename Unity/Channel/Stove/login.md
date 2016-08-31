@@ -30,9 +30,14 @@
  [Stove Android工程配置](../Channel/Stove/android.md)
 
 ## 代码示例
-
-
 ```cs
+/*
+*
+*mStoveLoginType.put(0, "STV_GU");
+ mStoveLoginType.put(1, "STV");
+ mStoveLoginType.put(2, "STV_FB");
+ mStoveLoginType.put(9, "STV_GP");
+*/
 void Start() {
      IMSDKApi.Login.Initialize ();
      IMSDKApi.Login.SetChannel("Stove");
