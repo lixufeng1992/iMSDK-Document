@@ -85,6 +85,7 @@ if(isSetup) {
 | public bool Initialize() | 初始化方法，在调用其他函数之前必须调用该函数 |
 | public bool SetChannel(string channel) | 设定游戏服务渠道，GooglePlay或GameCenter可以不用调用 |
 | public void Setup(GameCallback callback=null) | 初始化环境，必须成功后再调用其他函数 |
+| public void SignOut(GameCallback callback=null) | 【Android】退出登录，须重新调用Setup后才能是用其他功能 |
 | public void CheckGMSInstall(GameCallback callback) | 【Android】检查Google服务是否安装 |
 | public bool Available() | 【Android】检查Google服务是否可用 |
 | public void UnlockAchieve(string achieve, GameCallback callback =null) | 解锁单步成就，achieve为成就ID |
