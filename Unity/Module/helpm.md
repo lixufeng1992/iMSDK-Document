@@ -8,7 +8,7 @@
 > 该类自动绑定在Unity的Tencent.iMSDK.IMHelp（GameObject）上，开发者不要主动销毁该对象！    
 
 ###2.快速入门        
-+ 1.[配置](./Channel/help.md)
++ 1.[配置](../Channel/help.md)
 + 2.代码示例
 ```
    IMSDKApi.Help.Initialize ();
