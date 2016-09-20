@@ -16,7 +16,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-
     <activity
         android:name="com.tencent.imsdk.android.help.imsdk.base.IMSDKHelpActivity"
         android:configChanges="locale"
