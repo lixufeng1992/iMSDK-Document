@@ -9,3 +9,5 @@
 <key>IMSDKServerHelp</key>
 	<string>http://hk-sdkapi-beta.itop.qq.com</string>
 ```
+
+###2.Android配置
