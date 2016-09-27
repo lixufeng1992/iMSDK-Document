@@ -249,7 +249,7 @@
 		<meta-data android:name="com.tencent.imsdk.mto.GameVersion" android:value="your gameVersion" />	
 
 
-    <!-- Add for VNG-SEA-SDK-Release(0923) -->
+    <!-- Add for VNG-SEA-SDK-Release(0921) -->
     <activity         
         android:name="com.android.m6.guestlogin.M6_CustomFBActivity"                                
         android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"         
