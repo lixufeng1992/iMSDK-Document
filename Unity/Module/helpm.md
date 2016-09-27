@@ -75,4 +75,15 @@
 |thirdRetCode||
 |thirdRetMsg||   
 
-	
+##附：语言   
+zh  中文    
+en  英文      
+nl  荷兰       
+fr  法语    
+de  德语  
+it  意大利语      
+pt  葡萄牙语   
+ru  俄语    
+es  西班牙语       
+tr  土耳其     
+vi  越南语   
