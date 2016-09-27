@@ -246,7 +246,16 @@
             android:value="your_APPSFLYER_KEY" />			
 
 		
-		<meta-data android:name="com.tencent.imsdk.mto.GameVersion" android:value="your gameVersion" />			
+		<meta-data android:name="com.tencent.imsdk.mto.GameVersion" android:value="your gameVersion" />	
+
+
+<!-- Add for VNG-SEA-SDK-Release(0923) -->
+
+
+
+
+
+		
 
     </application>
 
