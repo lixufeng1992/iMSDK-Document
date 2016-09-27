@@ -249,7 +249,10 @@
 		<meta-data android:name="com.tencent.imsdk.mto.GameVersion" android:value="your gameVersion" />	
 
 
-<!-- Add for VNG-SEA-SDK-Release(0923) -->
+    <!-- Add for VNG-SEA-SDK-Release(0923) -->
+    <activity         android:name="com.android.m6.guestlogin.M6_CustomFBActivity"         android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"         android:screenOrientation="landscape"         android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >     </activity>      <provider          android:authorities="com.facebook.app.FacebookContentProvider1035456593228820"         android:name="com.facebook.FacebookContentProvider"         android:exported="true"/>     <activity         android:name="vn.com.vng.fbsocial.FBActivityHandling"         android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"         android:screenOrientation="landscape"         android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >     </activity>
+
+     <activity         android:name="vn.zing.pay.zmpsdk.view.PaymentGatewayActivity"         android:launchMode="singleTask"         android:theme="@android:style/Theme.DeviceDefault.Light" >         <intent-filter>             <action android:name="android.intent.action.VIEW" />             <category android:name="android.intent.category.DEFAULT" />             <category android:name="android.intent.category.BROWSABLE" />             <data                 android:host="payment-cancel"                 android:scheme="paymentsdk-15" />             <data                 android:host="payment-complete"                 android:scheme="paymentsdk-15" />          </intent-filter>     </activity>     <activity         android:name="vn.zing.pay.zmpsdk.view.PaymentChannelActivity"         android:theme="@android:style/Theme.DeviceDefault.Light"         android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >     </activity>     <service        android:name="vn.zing.pay.zmpsdk.business.inappbilling.TGoogleIABRetryVerifyReceiptService"         android:exported="false" />
 
 
 
