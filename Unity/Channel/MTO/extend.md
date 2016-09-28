@@ -36,6 +36,12 @@
 ##### 备注:要调用showPlatform和hidePlatform， 需在调用登录Initialize（）后再次调用Extend模块的Initialize（）
 
 ```
+  LoginFB(MTOLoginFBCallback callback = null)
+    /**
+    *登录FB，刷新FB Token
+    */
+
+    
 
 ```
 
