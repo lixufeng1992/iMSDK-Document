@@ -1,6 +1,6 @@
 ## 4.4.5 支付模块2.0(Pay2.0)
 
-### 基础信息
+### 一、基础信息
 
 |命名空间 |调用入口 |说明|
 | :-- |:-- |:--|
@@ -9,7 +9,7 @@
 
 <font color=red>该类自动绑定在Unity的Tencent.iMSDK.IMPayIAP与Tencent.iMSDK.IMPayOversea（GameObject）上，开发者不要主动销毁该对象！</font>
 
-### 模块使用说明
+### 二、模块使用说明
 
 该模块主要是用于玩家购买（货币、道具、月点卡），获取营销活动信息，获取商品信息。
 
@@ -30,14 +30,12 @@
 * 会话ID（Seesion ID），米大师用该字段判断支付类型，以确认支付流程，在iMSDK环境中，一般使用hy_gameid模式
 * 会话类型（Session Type），与Session ID成对出现，米大师用该字段判断具体的会话判断逻辑。在iMSDK环境中国，取值可以为“st_overseas”（海外版）、“st_dummy”中的一种，为“st_overseas”时，米大师会到iMSDK后天校验用户登录态；为“st_dummy”时，米大师不会校验登录态。
 
-### 快速入门
+### 三、快速入门
 1. [完成特定渠道配置](../../Channel/midas.md)  
 2. 支付模块区分为  
-  Midas支付【适用除iOS官方支付外的所有第三方支付】  
-  及  
-  iOS-IAP支付【iOS官方支付】2种模式.
-
-  * [米大师支付](pay2.0-midas.md)
-  * [iOS-IAP支付](pay2.0-iap.md)
+  * Midas支付【适用除iOS官方支付外的所有第三方支付】    
+    * [米大师支付](pay2.0-midas.md) 
+  * iOS-IAP支付【iOS官方支付】         
+    * [iOS-IAP支付](pay2.0-iap.md)
 
 
