@@ -10,6 +10,8 @@ IAP支付。由米大师直接调用iOS Store应用内付费（简称IAP, In app
 2. Xcode工程的Capability选项中添加KeychainSharing的支付专用 Group，Group ID 为 com.tencent.wsj.keystoregroup;
 
 ###注意事项
+1. 环境变量开发联调阶段用test（初始化接口中environment参数），发布前切换成release，且发布前必须保证游戏 后台服务器也接入的是米大师后台的 release 环境，发布前一定要检查。
+
 
 ###外发渠道支付
 + 外发渠道支付。米大师通过第三方合作方支付系统，完成支付流程。
