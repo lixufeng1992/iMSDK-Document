@@ -23,7 +23,14 @@ IAP支付。由米大师直接调用iOS Store应用内付费（简称IAP, In app
 1. 支付流程
 ![](/assets/Images/Pay/IAP_1.png)
 
-2. 补发货流程
+2.补发货流程。
+
+在 IAP 支付成功后，由于现网环境的复杂性等原因，有一定可能造成发货失败 的，本 SDK 采用 iOS IAP 的机制，按照没有被标记为发货的票据，来进行补发 货。
+
+补发货发生在 App 第一次调用 registerPay 的时候，其内部实现为在 registerPay 时，内部初始化 IAP 的 SKPaymentQueue，由 SKPaymentQueue 内部的实现机制去 检查本地是否有仍没有发货成功的票据，从而推送到 SDK 上，发起补发货流程。
+![](/assets/Images/Pay/IAP_2.png)
+
+
 
 ###外发渠道支付
 + 外发渠道支付。米大师通过第三方合作方支付系统，完成支付流程。
