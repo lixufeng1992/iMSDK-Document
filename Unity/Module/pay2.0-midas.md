@@ -49,19 +49,19 @@
     *初始化：设置支付环境、支付预处理等
     */
     void Start() {
-        IMSDKApi.Pay.Initialize("");//模块功能初始化
-        IMSDKApi.Pay.SetChannel("MidasGoogle");//设置渠道
-        IMSDKApi.Pay.SetEnv("test");//设置沙箱环境
-        IMSDKApi.Pay.EnableDebugLog(true);//设置开启日志
-        IMSDKApi.Pay.SetIDC("local");//设置IDC
-        IMSDKApi.Pay.Prepare(CreatePrepareContent());//支付预处理
+        IMSDKApi.PayOversea.Initialize("");//模块功能初始化
+        IMSDKApi.PayOversea.SetChannel("MidasGoogle");//设置渠道
+        IMSDKApi.PayOversea.SetEnv("test");//设置沙箱环境
+        IMSDKApi.PayOversea.EnableDebugLog(true);//设置开启日志
+        IMSDKApi.PayOversea.SetIDC("local");//设置IDC
+        IMSDKApi.PayOversea.Prepare(CreatePrepareContent());//支付预处理
     }
     
     /*
     *支付
     */
     void TestPay(){
-        IMSDKApi.Pay.Pay(GetMidasPayContent(),MidasPayCallback);//支付
+        IMSDKApi.PayOversea.Pay(GetMidasPayContent(),MidasPayCallback);//支付
     }
 ```
 
