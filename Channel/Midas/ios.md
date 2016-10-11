@@ -9,6 +9,7 @@ IAP支付。由米大师直接调用iOS Store应用内付费（简称IAP, In app
 1. 分别把米大师SDK**MidasIAPSDK.framework**和资源bundle**MidasIAPSDKRescources.bundle**引用到目前target中。![IAP支付](../../assets/Images/Midas/iap.png)
 2. Xcode工程的Capability选项中添加KeychainSharing的支付专用 Group，Group ID 为 com.tencent.wsj.keystoregroup;
 
+###注意事项
 
 ###外发渠道支付
 + 外发渠道支付。米大师通过第三方合作方支付系统，完成支付流程。
