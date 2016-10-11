@@ -189,8 +189,10 @@
 | public delegate void PayCallback(IMPayResult result) |IAP支付回调函数，返回支付结果结构体 |      
 |public delegate void IAPGetMPCallback(IMPayIAPMPResult result)|IAP拉取营销活动|    
 |public delegate void GetProductInfoCallback(string result)|IAP获取商品列表|      
-	
- 方法名 | 方法说明 |
+
+* IAP接口说明
+
+|方法名 | 方法说明 |
 | :-- | :-- | 
 |public bool Initialize(IMPayIAPInfo info)| IAP支付初始化|    
 |public string GetPf(string openId="1000000", string registerChannel="2001", string setupChannel="2011", string appCode="AppCode") |IAP支付获取pf|  
