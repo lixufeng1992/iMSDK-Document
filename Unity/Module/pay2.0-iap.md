@@ -101,84 +101,81 @@
 |类型|说明|
 |:--|:--|    
 |public bool EnableLog = false|是否打开midas日志|     
-|public string Local|IDC|    
-|public string OfferId|offer ID|    
+|public string Local|支付服务器片区。"local"，中国内地；"hongkong"，香港；"canada"，加拿大|    
+|public string OfferId|业务在Midas平台注册的业务id|    
 |public string OpenId|iMSDK openID|   
-|public string OpenKey| |    
-|public string SessionId| |    
-|public string SessionType| |    
-|	public string Pf||   
-|public string PfKey| |    
-|public string Environment||    
-|	public string Custom| |
+|public string OpenKey|用户账户token，校验登录态则填对登录返回的guid_token，否则不传空就行，建议传"OpenKey"
+ |    
+|public string SessionId|用户账户类型，这里固定为"hy_gameid" |    
+|public string SessionType|session类型，校验登录态则填"st_overseas"，否则填"st_dummy" |    
+|public string Pf|平台来源，pf格式：平台字段(IEG_iTOP)-注册渠道-系统平台-安装渠道-登录渠道-GameID-OpenID-业务标识 <br />eg: IEG_iTOP-2001-iap-2011-FB-11-1000043-XD |   
+|public string PfKey|支付密钥串，这里固定为"pfkey" |    
+|public string Environment|支付环境，沙箱环境填"test"，现网正式环境一定改成"release"|    
+|	public string Custom|额外参数 |
 
 * IAP支付信息 <font color=blue>IMPayIAPContent</font>     
 
 |类型|说明|   
 |:--|:--|      
-|public string OpenKey||    
-|public string SessionId||   
-|public string SessionType||   
-|public string ZoneId||   
-|public string Pf||    
-|public string PfKey||   
-|public string ProductId||    
-|public int ProductType||    
-|public string PayItem||   
-|public bool IsDepositGameCoin||   
-|public string VarItem||   
-|public string OfferId||    
+|public string OpenKey|用户账户token，校验登录态则填对登录返回的guid_token，否则不传空就行，建议传"OpenKey"     |    
+|public string SessionId|用户账户类型，这里固定为"hy_gameid"|   
+|public string SessionType|session类型，校验登录态则填"st_overseas"，否则填"st_dummy"|   
+|public string ZoneId|账户分区ID。应用如果没有分区，传zoneid=1；若游戏为支持角色，zoneId需要传分区ID_角色ID|   
+|public string Pf|平台来源，pf格式：平台字段(IEG_iTOP)-注册渠道-系统平台-安装渠道-登录渠道-GameID-OpenID-业务标识 <br />eg: IEG_iTOP-2001-iap-2011-FB-11-1000043-XD|    
+|public string PfKey|支付密钥串，这里固定为"pfkey"|   
+|public string ProductId|苹果的物品id，在Midas管理端配置 |    
+|public int ProductType|苹果物品的类型。0，消费类产品，比如游戏币购买；1，非消费类产品；2，包月+自动续费；3，免费；4，包月+非自动续费|    
+|public string PayItem|支付信息 <br />  1.如果应用使用道具购买类支付模式，该参数由应用方按照“物品ID*单价（单位“角”）*数量”定义 <br /> 2.如果应用使用包月类支付模式，传开通包月的月数（QQ会员这类） <br />3.如果游戏币支付模式，传充值游戏币的个数 <br />4.如果应用使用月卡类支付模式，传开通月卡天数|   
+|public bool IsDepositGameCoin|是否是托管的游戏币类型|   
+|public string VarItem|业务的扩展字段|   
+|public string OfferId|业务在Midas平台注册的业务id|    
 |public string Custom||  
 
 * IAP支付结果结构体 <font color=blue>IMPayIAPResult</font>
 
 | 类型 | 说明 |    
 | :-- | :-- |    
-| public int imsdkRetcode | 错误码 |    
-| public string imsdkRetMsg | 错误信息 |     
-| public int thirdRetcode | 第三方错误码 |    
-| public string thirdRetMsg | 第三方错误信息 |   
-| public int RetBillNo | |    
-|	public int NetErrorStep||   
-|	public string OpenId||  
-|public string OpenKey||   
-|	public string SessionId||    
-|public string SessionType ||   
-|public string PayItem||   
-|public string ProductId||   
-|public string Pf||   
-|public string PfKey||   
-|	public bool IsDepositGameCoin||   
-|public int ProductType||  
-|public string ZoneId||   
-|public string VarItem| |   
-|public string BillNo|  |   
-|public string TransactionId||   
-|public bool IsReprovide||   
+| public int Retcode | 错误码 |    
+| public string RetMsg | 错误信息 |     
+| public int RetBillNo | 下单成功的订单号|    
+|	public int NetErrorStep|网络错误状态码|   
+|	public string OpenId|iMSDK openID|  
+|public string OpenKey|用户账户token，校验登录态则填对登录返回的guid_token，否则不传空就行，建议传"OpenKey" |   
+|	public string SessionId|用户账户类型，这里固定为"hy_gameid"|    
+|public string SessionType |session类型，校验登录态则填"st_overseas"，否则填"st_dummy"|   
+|public string PayItem|支付信息 <br />  1.如果应用使用道具购买类支付模式，该参数由应用方按照“物品ID*单价（单位“角”）*数量”定义 <br /> 2.如果应用使用包月类支付模式，传开通包月的月数（QQ会员这类） <br />3.如果游戏币支付模式，传充值游戏币的个数 <br />4.如果应用使用月卡类支付模式，传开通月卡天数|   
+|public string ProductId|苹果的物品id，在Midas管理端配置|   
+|public string Pf|平台来源，pf格式：平台字段(IEG_iTOP)-注册渠道-系统平台-安装渠道-登录渠道-GameID-OpenID-业务标识 <br />eg: IEG_iTOP-2001-iap-2011-FB-11-1000043-XD|   
+|public string PfKey|支付密钥串，这里固定为"pfkey"|   
+|	public bool IsDepositGameCoin|是否是托管的游戏币类型|   
+|public int ProductType|苹果物品的类型。0，消费类产品，比如游戏币购买；1，非消费类产品；2，包月+自动续费；3，免费；4，包月+非自动续费|  
+|public string ZoneId|账户分区ID。应用如果没有分区，传zoneid=1；若游戏为支持角色，zoneId需要传分区ID_角色ID|   
+|public string VarItem|业务的扩展字段|   
+|public string BillNo|订单号|   
+|public string TransactionId|票据编号|   
+|public bool IsReprovide|是否补发货|   
 
 * IAP支付获取MP结果结构体 <font color=blue>IMPayIAPMPResult</font>
 
 | 类型 | 说明 |    
 | :-- | :-- |    
-| public int imsdkRetcode | 错误码 |    
-| public string imsdkRetMsg | 错误信息 |     
-| public int thirdRetcode | 第三方错误码 |    
-| public string thirdRetMsg | 第三方错误信息 |     
-|	public string OpenId||   
-|public string OpenKey||   
-|	public string SessionId||   
-|public string SessionType||  
-|public string PayItem||   
-|public string ProductId||   
-|public string Pf||   
-|public string PfKey||    
-|public bool IsDepositGameCoin||   
-|public int ProductType||    
-|	public string ZoneId||    
-|public string VarItem||   
-|public string BillNo||   
-|public string TransactionId||    
-|public bool IsReprovide||   
+| public int Retcode | 错误码 |    
+| public string RetMsg | 错误信息 |      
+|	public string OpenId|iMSDK openID|   
+|public string OpenKey|用户账户token，校验登录态则填对登录返回的guid_token，否则不传空就行，建议传"OpenKey"|   
+|	public string SessionId|用户账户类型，这里固定为"hy_gameid"|   
+|public string SessionType|session类型，校验登录态则填"st_overseas"，否则填"st_dummy“|  
+|public string PayItem|支付信息 <br />  1.如果应用使用道具购买类支付模式，该参数由应用方按照“物品ID*单价（单位“角”）*数量”定义 <br /> 2.如果应用使用包月类支付模式，传开通包月的月数（QQ会员这类） <br />3.如果游戏币支付模式，传充值游戏币的个数 <br />4.如果应用使用月卡类支付模式，传开通月卡天数|   
+|public string ProductId|苹果的物品id，在Midas管理端配置|   
+|public string Pf|平台来源，pf格式：平台字段(IEG_iTOP)-注册渠道-系统平台-安装渠道-登录渠道-GameID-OpenID-业务标识 <br />eg: IEG_iTOP-2001-iap-2011-FB-11-1000043-XD|   
+|public string PfKey|支付密钥串，这里固定为"pfkey"|    
+|public bool IsDepositGameCoin|是否是托管的游戏币类型|   
+|public int ProductType|苹果物品的类型。0，消费类产品，比如游戏币购买；1，非消费类产品；2，包月+自动续费；3，免费；4，包月+非自动续费|    
+|	public string ZoneId|账户分区ID。应用如果没有分区，传zoneid=1；若游戏为支持角色，zoneId需要传分区ID_角色ID|    
+|public string VarItem|业务的扩展字段|   
+|public string BillNo|订单号|   
+|public string TransactionId|票据编号|    
+|public bool IsReprovide|是否补发货|   
 |public string GoodsInfo||    
 		
 
