@@ -12,5 +12,6 @@
 * Google 常见错误码
 
     * [https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult](https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult)
+    *  [https://developers.google.com/android/reference/com/google/android/gms/games/GamesActivityResultCodes](https://developers.google.com/android/reference/com/google/android/gms/games/GamesActivityResultCodes)
 
 * GameCenter 常见错误码
