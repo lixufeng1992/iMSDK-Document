@@ -153,6 +153,7 @@
     * [8.1 常见错误码与错误说明](Help/commonerrno.md)
         * [8.1.1 客户端常见错误码](Help/ErrorCode/sdk.md)
         * [8.1.2 iMSDK SERVER端常见错误码](Help/imsdk-server端返回.md)
+        * [8.1.2 iMSDK SERVER端常见错误码](Help/ErrorCode/server.md)
         * [8.1.3 Openid什么情况下会变？](Help/openid什么情况下会变？.md)
         * [8.1.4 isFirstLogin字段含义?](Help/isfirstlogin字段含义.md)
     * [8.2 Android入口Activity问题](Help/androidmainactivity.md)
