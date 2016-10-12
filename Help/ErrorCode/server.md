@@ -1,13 +1,12 @@
 ## iMSDK SERVER端常见错误码
 
-| | |
-| :-- | :-- |
+| 错误码 | 返回信息 | 错误说明 |
+| :-- | :-- | :-- |
 | 5 | 'need google authcode' | 需要google提供授权 |
 | 4 | 'the same openid!' | 相同的openid无需恢复 |
 | 3 | 'restore this sns account!' | 恢复这个社交渠道，请调用restore接口 |
 | 2 | 'connect this sns channel!' | 挂载这个社交渠道，请调用reconnect接口 |
 | 1 | "success" | 成功 |
-|  |
 | -1 | "failure" | 失败 |
 | -101 | "ChannelHashId query guid is failure!" | ChannelHashId2Guid失败 |
 | -102 | "Guid query ChannelHashId failure" | Guid2ChannelHashId失败 |
