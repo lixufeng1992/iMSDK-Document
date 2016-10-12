@@ -49,7 +49,6 @@
             * [4.4.13.13 Toy功能扩展](Unity/Module/Extend/toy.md)
             * [4.4.13.14 Stove功能扩展](Unity/Module/Extend/stove.md)
             * [4.4.13.15 MTO功能扩展](Unity/Module/Extend/mto.md)
-
     * [4.5 渠道功能说明](Unity/Channel/README.md)
         * [4.5.1 Facebook 功能说明](Unity/Channel/facebook.md)
             * [4.5.1.1 Facebook 登录功能说明](Unity/Channel/Facebook/login.md)
@@ -152,7 +151,6 @@
 * [8. FAQs](Help/README.md)
     * [8.1 常见错误码与错误说明](Help/commonerrno.md)
         * [8.1.1 客户端常见错误码](Help/ErrorCode/sdk.md)
-        * [8.1.2 iMSDK SERVER端常见错误码](Help/imsdk-server端返回.md)
         * [8.1.2 iMSDK SERVER端常见错误码](Help/ErrorCode/server.md)
         * [8.1.3 Openid什么情况下会变？](Help/openid什么情况下会变？.md)
         * [8.1.4 isFirstLogin字段含义?](Help/isfirstlogin字段含义.md)
