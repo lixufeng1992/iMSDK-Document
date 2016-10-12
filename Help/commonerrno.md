@@ -9,6 +9,8 @@
 
 ### 常见渠道错误码
 
-* Google
+* Google 常见错误码
 
-    
+    * [https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult](https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult)
+
+* GameCenter 常见错误码
