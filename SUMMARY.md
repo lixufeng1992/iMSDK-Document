@@ -24,6 +24,7 @@
         * [4.4.2 分享模块\(Share\)](Unity/Module/share.md)
         * [4.4.3 好友模块\(Friend\)](Unity/Module/friend.md)
         * [4.4.4 支付模块\(Pay\)](Unity/Module/pay.md)
+        * [4.4.4 支付模块2.0\(Pay2.0\)](Unity/Module/pay2.0.md)
         * [4.4.5 推送模块\(Push\)](Unity/Module/push.md)
         * [4.4.6 统计模块\(Stat\)](Unity/Module/stat.md)
         * [4.4.7 游戏服务\(Game\)](Unity/Module/game.md)
