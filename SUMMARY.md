@@ -151,6 +151,7 @@
     * [获取用户信息接口](Server/获取用户信息.md)
 * [8. FAQs](Help/README.md)
     * [8.1 常见错误码与错误说明](Help/commonerrno.md)
+        * [8.1.1 客户端常见错误码](Help/ErrorCode/sdk.md)
         * [8.1.1 iMSDK SERVER端常见错误码](Help/imsdk-server端返回.md)
         * [8.1.2 Openid什么情况下会变？](Help/openid什么情况下会变？.md)
         * [8.1.3 isFirstLogin字段含义?](Help/isfirstlogin字段含义.md)
