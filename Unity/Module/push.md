@@ -44,7 +44,7 @@ void Start() {
 | public void SetDelTagCallback(PushCallback callback) | 设定删除标签回调 |
 | public void SetNotifyRecvCallback(PushNotifyCallback callback) | 设定接收推送消息回调 |
 | public void SetNotifyClickCallback(PushNotifyCallback callback) | 设定点击推送消息回调 |
-| public void SetNotifyShowCallback(PushNotifyCallback callback) | 设定推送消息显示回调 |
+| public void SetNotifyShowCallback(PushNotifyCallback callback) | 设定推送消息显示回调 |     
 
 
 ### 代码示例
@@ -81,7 +81,29 @@ void Start() {
      //获取保存在本地的上一次登录时间
      IMSDKApi.Push.DelTag("上一次登录时间");
  }
- ```
+ ```  
+ 
+### <font color=red> iOS推送注意事项 </font>   
++ 需要在App生命周期内进行如下调用   
 
+```
+- (void)application:(UIApplication *)application
+    didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+  [[IMSDKApplicationDelegate sharedInstance] application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+}
 
+// 如果deviceToken获取不到会进入此事件
+- (void)application:(UIApplication *)application
+    didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+  [[IMSDKApplicationDelegate sharedInstance] application:application
+        didFailToRegisterForRemoteNotificationsWithError:error];
+}
+
+- (void)application:(UIApplication *)application
+    didReceiveRemoteNotification:(NSDictionary *)userInfo {
+  [[IMSDKApplicationDelegate sharedInstance] application:application
+                            didReceiveRemoteNotification:userInfo];
+}
+
+```
 
