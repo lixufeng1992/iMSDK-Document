@@ -45,7 +45,26 @@ void Start() {
 | public void SetNotifyRecvCallback(PushNotifyCallback callback) | 设定接收推送消息回调 |
 | public void SetNotifyClickCallback(PushNotifyCallback callback) | 设定点击推送消息回调 |
 | public void SetNotifyShowCallback(PushNotifyCallback callback) | 设定推送消息显示回调 |     
+| public void AddLocalNotification(IMLocalMessage message, Dictionary<string, string> userinfo = null) |本地推送，Android不支持扩展userinfo|
+| public void ClearLocalNotifications() |清空本地通知|
 
+* 本地消息体 <font color=blue>IMLocalMessage</font>
+
+| 类型 | 说明 | 备注 |
+| :--------------------------- | :---------------------------------------- | :------------------------- |
+| public string Content | 消息内容 | Android，IOS共用，必须填 |
+| public long FireTime | 弹出消息Unix时间戳 | Android，IOS共用，必须填 |
+| public string Title | 消息标题 | Android，必须填 |
+| public int Type | 消息类型，默认是1 | Android，选填 |
+| public int ActionType | 通知动作类型，默认是1 | Android，选填 |
+| public string ActionContent | 对应动作类型的具体内容，<br>比如ActionType为1是，这个可以填Activity将要打开的Activity的字符串，如果不填默认是本省 | Android，选填，配合ActionType使用 |
+| public bool IsRinging | 通知来的时候是否响铃，默认是响铃 | Android，选填 |
+| public string RingRaw | 可以配置响铃的铃声地址 | Android，选填 |
+| public bool IsVibrate | 通知来的时候是否震动，默认是震动 | Android，选填 |
+| public int Light | 打开呼吸灯，默认1 是打开 | Android，选填 |
+| public string IconRes | 设置应用内图标文件名（xg.png）或者下载图标的url地址,例如:xg或者图片url | Android，选填 |
+| public int BuilderId | 设置消息样式，默认为0或不设置。详见自定义本地通知样式章节说明 | Android，选填 |
+| public int StyleId | 设置Web端设置是否覆盖编号build_id的通知样式，默认1，0否，1是 | Android，选填 |
 
 ### 代码示例
 1. 使用opendId进行注册，这样可以对单个openId进行推送
