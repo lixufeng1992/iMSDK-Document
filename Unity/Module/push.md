@@ -108,7 +108,7 @@ void Start() {
      IMLocalMessage message = new IMLocalMessage (); 
      message.Title = "Local Notification"; 
      message.Content = "Local Notification Content"; 
-
+     message.FireTime = 5 * 1000;// 5秒后弹出
      IMSDKApi.Push.AddLocalNotification (message); 
 ``` 
  
