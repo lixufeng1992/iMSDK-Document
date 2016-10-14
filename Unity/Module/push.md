@@ -47,6 +47,7 @@ void Start() {
 | public void SetNotifyShowCallback(PushNotifyCallback callback) | 设定推送消息显示回调 |     
 | public void AddLocalNotification(IMLocalMessage message, Dictionary<string, string> userinfo = null) |本地推送，Android不支持扩展userinfo|
 | public void ClearLocalNotifications() |清空本地通知|
+| public void DeleteLocalNotifications(string key) |IOS特有，删除特定的本地通知|
 
 * 本地消息体 <font color=blue>IMLocalMessage</font>
 
