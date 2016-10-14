@@ -56,7 +56,7 @@ void Start() {
 | public string Content | 消息内容 | Android，IOS共用，必须填 |
 | public long FireTime | 弹出消息Unix时间戳 | Android，IOS共用，必须填 |
 | public string Title | 消息标题 | Android，必须填 |
-| public int Type | 消息类型，默认是1 | Android，选填 |
+| public int Type | 消息类型，默认是1. （1:通知，0:消息） | Android，选填 |
 | public int ActionType | 通知动作类型，默认是1。<br>  1: 打开activity或app本身 <br>  2: 打开浏览器 <br>  3: 打开Intent <br>  4: 通过包名打开应用   | Android，选填 |
 | public string ActionContent | 对应动作类型的具体内容，<br>比如ActionType为1是，这个可以填Activity将要打开的Activity的字符串，如果不填默认是本省 | Android，选填，配合ActionType使用 |
 | public bool IsRinging | 通知来的时候是否响铃，默认是响铃 | Android，选填 |
