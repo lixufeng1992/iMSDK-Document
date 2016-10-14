@@ -106,6 +106,7 @@ void Start() {
 3. 增加本地推送
 
 ```
+     DateTime Jan1st1970 = new DateTime (1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);         
      IMLocalMessage message = new IMLocalMessage (); 
      message.Title = "Local Notification"; 
      message.Content = "Local Notification Content"; 
