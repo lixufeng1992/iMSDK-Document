@@ -100,7 +100,17 @@ void Start() {
      //获取保存在本地的上一次登录时间
      IMSDKApi.Push.DelTag("上一次登录时间");
  }
- ```  
+ ``` 
+
+3. 增加本地推送
+
+```
+     IMLocalMessage message = new IMLocalMessage (); 
+     message.Title = "Local Notification"; 
+     message.Content = "Local Notification Content"; 
+
+     IMSDKApi.Push.AddLocalNotification (message); 
+``` 
  
 ### <font color=red> iOS推送注意事项 </font>   
 + 需要在App生命周期内进行如下调用   
