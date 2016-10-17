@@ -21,21 +21,21 @@
      android:value="test" /><!-- production -->
  <meta-data
      android:name="com.tencent.imsdk.garena.APP_SDK_KEY"
-     android:value="49c1b7af60b1f5557005d101f1f8aa6e0a185c286ee630612ecc2c54c7ac7b27" />
+     android:value="{your_garena_app_sdk_key}" />
  <meta-data
      android:name="com.garena.sdk.applicationId"
-     android:value="100050" />
+     android:value="{your_garena_sdk_applicationId}" />
  <meta-data
      android:name="com.garena.sdk.ApplicationSourceId"
      android:value="2" />
  <!-- application id must be filled to use garena service. many APIs depend on this id, please contact garena mobile game team to get this id -->
  <meta-data
      android:name="com.garena.sdk.applicationId"
-     android:value="100050" />
+     android:value="{your_garena_sdk_applicationId}" />
  <!-- same as application id. need to specify for push notification service to work -->
  <meta-data
      android:name="com.garena.sdk.push.applicationId"
-     android:value="100050" />
+     android:value="{your_garena_sdk_applicationId}" />
  <meta-data
      android:name="com.beetalklib.ganalytics.report_url"
      android:value="http://122.11.128.69:2205" />
