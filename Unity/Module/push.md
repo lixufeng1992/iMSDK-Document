@@ -27,7 +27,7 @@ void Start() {
 |版本信息|版本说明|备注|
 |:--|:--|:--|
 |(1)Xg_sdk_vgcm_vip_1.0_20161009_2020.jar <br>  (2) Xg4GCM-vgcm_vip_1.0_20161009_2020.jar| 可以通过配置开启合并UI或者独立通知|只通过GCM推送消息|
-|(1)Xg_sdk_vgcm_vip_inbox_1.0_20161009_2019.jar <br> (2) Xg4GCM-vgcm_vip_inbox_1.0_20161009_2019.jar|只有独立通知|只通过GCM推送消息，<br>上Google推荐位要求去掉的独立通知代码|
+|(1)Xg_sdk_vgcm_vip_inbox_1.0_20161009_2019.jar <br> (2) Xg4GCM-vgcm_vip_inbox_1.0_20161009_2019.jar|只有UI合并的通知|只通过GCM推送消息，<br>上Google推荐位要求去掉的独立通知代码|
 
 ### 参考
 
