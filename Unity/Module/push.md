@@ -73,15 +73,13 @@ void Start() {
 | public string IconRes | 设置应用内图标文件名（xg.png）或者下载图标的url地址,例如:xg或者图片url | Android，选填 |
 | public int BuilderId | 设置消息样式，默认为0或不设置。详见自定义本地通知样式章节说明 | Android，选填 |
 | public int Style | 设置Web端设置是否覆盖编号build_id的通知样式，默认1，0否，1是 | Android，选填 |
-| public int RepeatType | | Android，选填 |
-| public int Badge | 设置Web端设置是否覆盖编号build_id的通知样式，默认1，0否，1是 | Android，选填 
-| public int AlertAction | 设置Web端设置是否覆盖编号build_id的通知样式，默认1，0否，1是 | Android，选填 |
+| public int RepeatType | 推送重复发送周期。 1-分钟，2-小时，3-天，4-星期，5-月，6-年，默认是0代表不重复。| iOS，选填 |
+| public int Badge | 设置App的角标，如果为-1，则不改变。 | iOS，选填 
+| public int AlertAction | 设置提醒的按钮文字 / 锁屏时界面底部的闪光文字（滑动来...），默认为“查看”或者“启动”。 | iOS，选填 |
 
 
 ### 代码示例
 1. 使用opendId进行注册，这样可以对单个openId进行推送
-
-推送重复发送周期。 1-分钟，2-小时，3-天，4-星期，5-月，6-年，默认是0代表不重复。
 
  ```
  void Start() {
@@ -128,7 +126,7 @@ void Start() {
 ``` 
  
 ### <font color=red> iOS推送注意事项 </font>   
-+ 需要在App生命周期内进行如下调用   
++ 需要在AppDelegate.m文件中，重载以下函数
 
 ```
 - (void)application:(UIApplication *)application
@@ -150,4 +148,12 @@ void Start() {
 }
 
 ```
+
++ App在前台运行时，苹果的推送默认不弹窗。可在以下函数中收到回调
+
+```
+- (void)application:(UIApplication*)application didReceiveLocalNotification:(UILocalNotification*)notification
+```
+
++ 受iOS系统限定，应用内本地推送最多存储64个。
 
