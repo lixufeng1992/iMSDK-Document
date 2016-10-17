@@ -72,7 +72,7 @@ void Start() {
 | public int Light | 打开呼吸灯，默认1 是打开（1:打开，0:关闭） | Android，选填 |
 | public string IconRes | 设置应用内图标文件名（xg.png）或者下载图标的url地址,例如:xg或者图片url | Android，选填 |
 | public int BuilderId | 设置消息样式，默认为0或不设置。详见自定义本地通知样式章节说明 | Android，选填 |
-| public int RepeatTypt | 设置Web端设置是否覆盖编号build_id的通知样式，默认1，0否，1是 | Android，选填 |
+| public int RepeatType | 设置Web端设置是否覆盖编号build_id的通知样式，默认1，0否，1是 | Android，选填 |
 | public int StyleId | 设置Web端设置是否覆盖编号build_id的通知样式，默认1，0否，1是 | Android，选填 |
 | public int StyleId | 设置Web端设置是否覆盖编号build_id的通知样式，默认1，0否，1是 | Android，选填 |
 
