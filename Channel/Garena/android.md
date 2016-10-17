@@ -2,8 +2,8 @@
 
 #### Android工程通用配置
 
-*  Garena在AndroidManifest.xml中配置如下
-
+* 权限，权限分成两部分：可选权限和必选权限
+  *
  ```xml
  <uses-permission android:name="android.permission.INTERNET" />
  <uses-permission android:name="com.android.vending.BILLING" />
