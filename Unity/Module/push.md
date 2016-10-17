@@ -12,7 +12,7 @@
 2.  代码实例，下面的代码块是最基本调用代码
 
 ```
-void Start() {
+void Start() 
     //初始化
     IMSDKApi.Push.Initialize ();
     //设置需要使用推送渠道，比如“XG”就是使用信鸽推送
