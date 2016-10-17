@@ -6,6 +6,8 @@
 
 返回：如返回参数表
 
+传参方式：get
+
 规范：游戏配置必须打开iAllowQueryChannelIdByOpenid开关
 
 返回：如返回参数表
