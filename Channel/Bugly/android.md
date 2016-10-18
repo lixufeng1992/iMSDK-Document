@@ -23,7 +23,11 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
 ``` xml
     <!-- 2.x.x 配置 -->
     <!-- 权限配置 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />    <uses-permission android:name="android.permission.INTERNET" />    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />        
+    <uses-permission android:name="android.permission.INTERNET" />    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />    
+    <uses-permission android:name="android.permission.READ_LOGS" />
 
     <!-- meta-data配置 -->
     <!-- BUGLY_APPID 值改成游戏自己的ID -->
