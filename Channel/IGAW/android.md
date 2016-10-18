@@ -36,6 +36,8 @@
 
     <!-- app key and hash key -->
     <!-- get from igaworks website -->
-    <meta-data android:name="igaworks_app_key" android:value="your app key" />
-    <meta-data android:name="igaworks_hash_key" android:value="your hash key" />
+    <meta-data android:name="igaworks_app_key" android:value="{your app key}" />
+    <meta-data android:name="igaworks_hash_key" android:value="{your hash key}" />
     ```
+    > 请讲
+
