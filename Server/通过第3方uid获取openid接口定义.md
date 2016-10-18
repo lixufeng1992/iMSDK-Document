@@ -4,6 +4,8 @@
 
 入参数：如输入参数表
 
+传参方式：get
+
 返回：如返回参数表
 
 规范：游戏配置必须打开iAllowQueryOpenidByChannelId开关
