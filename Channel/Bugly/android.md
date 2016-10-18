@@ -12,6 +12,11 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <!-- meta-data配置 -->
+    <!-- 之前的bugly版本：bugly_1.2.9 -->
+    <meta-data
+         android:name="APPID_BUGLY"
+         android:value="bugly900003637" />
+
 
 
 
