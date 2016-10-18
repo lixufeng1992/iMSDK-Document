@@ -26,7 +26,19 @@
 
     请在主工程AndroidManifest.xml文件中Application节点里添加如下Activity配置
 ```xml
+<meta-data android:name="com.aiming.link.LinkUrlBase" android:value="{your linkUrlBase}" />
+<meta-data android:name="com.aiming.link.LinkAccessToken" android:value="{your linkAccessToken}" />
+<meta-data android:name="com.aiming.link.TwitterKey" android:value="{your linkTwitterKey}" />
+<meta-data android:name="com.aiming.link.TwitterSecret" android:value="@string/link_twitter_secret" />
+<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="\ {your facebookApplicationId}" />
+<meta-data android:name="com.facebook.sdk.ApplicationName" android:value="{your facebookApplicationName}" />
+<meta-data android:name="com.google.android.gms.games.APP_ID" android:value="\ {your gms appID}" />
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" /> 
+<!-- 以上配置具体的值请联系Link方进行获取 -->
 
+<!-- com.aiming.link.DeleteAuthToken请通过 string.xml文件配置进行读取 -->
+<meta-data android:name="com.aiming.link.DeleteAuthToken" android:value = "@string/link_delete_auth_token"/> <!-- true of false-->
+<meta-data android:name="com.aiming.link.debuglevel" android:value = "@string/link_debuglevel"/> <!-- true of false-->
 ```
 
 
