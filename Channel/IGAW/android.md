@@ -41,3 +41,5 @@
     ```
     > 请将{your app key} 和 {your hash key}改成游戏自己的值，该值从[IGAW官网](http://www.igaworks.com/)获得
 
+* Receiver和Service配置
+
