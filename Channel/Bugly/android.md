@@ -5,7 +5,7 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
 
 
 ```xml
- #### Android 端配置说明
+<!-- 权限配置 -->
 
 
 
