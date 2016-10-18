@@ -13,6 +13,11 @@ Beacon接入和配置参考
 
 
 <!-- meta-data 配置 -->
+<meta-data
+    android:name="APPKEY_DENGTA"
+    android:value="0I40061SZ81FIQ8L" />
+
+
 
 
 ```
