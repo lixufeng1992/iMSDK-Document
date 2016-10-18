@@ -27,4 +27,4 @@
     <meta-data android:name="PARTYTRACK_APP_ID" android:value="{your appId}" />
     <meta-data android:name="PARTYTRACK_APP_KEY" android:value="{your appKey}" />
 ```
-> 请将{your appId}和{your appKey}值改成游戏自己的值，该值从PartyTrack官网获得
+> 请将{your appId}和{your appKey}值改成游戏自己的值，该值从[PartyTrack官网](https://partytrack.it/)获得
