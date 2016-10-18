@@ -73,7 +73,7 @@
 
 在授权时，建议先调用一次获取授权结果。如果已经有相关数据，就不必调用 Auth 接口
 
-![登录流程](01_login_flow.png)
+![登录流程](../Images/4_7_unity_auth_login_flow.png)
 
 示例代码：
 
@@ -128,7 +128,7 @@ void YOUR_AUTH_FUNCTION(bool refresh = false) {
 
 #### 关联流程
 
-![关联流程](02_auto_connect.png)
+![关联流程](../Images/4_7_unity_auto_connect.png)
 
 示例代码：
 
@@ -261,7 +261,7 @@ IMSDKApi.Auth.GetConnectInfo(delegate(IMAuthResult authResult) {
 
 > 例如：游戏在 Android 上用 Google Play Games 作为主账号，在 iOS 上以 GameCenter 作为主账号，这个时候如果从 Android 迁移到 iOS 设备，那么就需要用到迁移码，但是 Android 设备直接是不能使用迁移码的，直接切换 Google Play Games 账号或者 GameCenter 账号，就可以进行账号切换
 
-![账户迁移流程](03_migrate_flow.png)
+![账户迁移流程](../Images/4_7_unity_migrate_flow.png)
 
 
 迁移流程分成如下步骤:
