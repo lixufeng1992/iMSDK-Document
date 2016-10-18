@@ -11,7 +11,7 @@
 
 
 <!-- meta-data 配置  application 节点内-->
-<!-- 请配置
+<!-- 请配置如下值 -->
 
 <meta-data android:name="com.aiming.link.LinkUrlBase" android:value="{your linkUrlBase}" />
 <meta-data android:name="com.aiming.link.LinkAccessToken" android:value="{your linkAccessToken}" />
