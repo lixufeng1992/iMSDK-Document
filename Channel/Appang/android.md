@@ -17,4 +17,4 @@
 ```xml
 <meta-data android:name="APPANG_AD_KEY" android:value="your key value" />
 ```
-> 上述值请到Appang官网申请
+> 上述APPANG_AD_KEY值请到Appang官网申请
