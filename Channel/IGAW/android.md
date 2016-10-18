@@ -27,3 +27,5 @@
     > 请将MY_PACKAGE_NAME改成游戏包名
 
 * meta-data配置
+
+    请在工程主AndroidManifest.xml文件中Application节点内加入以下配置
