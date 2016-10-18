@@ -30,6 +30,11 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
         <meta-data
             android:name="BUGLY_APPID"
             android:value="900003637" />
+    <!-- BUGLY_ENABLE_DEBUG ,建议测试设成true， 发布设成false -->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+
         <!-- 配置APP版本号 -->
         <meta-data
             android:name="BUGLY_APP_VERSION"
@@ -39,9 +44,7 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
             android:name="BUGLY_APP_CHANNEL"
             android:value="IMSDK" />
         <!-- 配置Bugly调试模式（true或者false）-->
-        <meta-data
-            android:name="BUGLY_ENABLE_DEBUG"
-            android:value="true" />
+        
 
     
 
