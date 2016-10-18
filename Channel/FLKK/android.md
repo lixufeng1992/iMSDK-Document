@@ -28,3 +28,7 @@
       android:label="@string/app_name" 
       android:debuggable="true">
 ```
+
+* Activity配置
+
+    请在主工程AndroidManifest.xml文件中Application节点里添加如下Activity配置
