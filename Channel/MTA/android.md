@@ -12,6 +12,12 @@ MTA接入和配置参考[http://developer.qq.com/wiki/mta/MTA%E5%9F%BA%E7%A1%80%
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 <!-- meta-data 配置 -->
+<!-- MTA配置，包括在官网上获取的APPKEY和安装渠道 -->
+<meta-data
+    android:name="TA_APPKEY"
+    android:value="AA4Z1K9BZN39" />
+
+
 
 ```
 
