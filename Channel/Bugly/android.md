@@ -19,3 +19,9 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
 
 
 ```
+
+注：2.x.x版本配置有变
+``` xml
+    <!-- 2.x.x 配置 -->
+
+```
