@@ -58,4 +58,9 @@
 > 如果游戏接入Apollo，游戏入口Activity需改成Apollo对应的Activity
 
 * meta-data配置
+```xml
+```
+
+
+
 
