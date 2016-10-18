@@ -63,6 +63,7 @@
 ```xml
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 <!--kakao settings-->
+<!-- 以下值请联系飞流方进行获取 -->
     <meta-data android:name="com.kakao.sdk.AppKey" android:value="{you AppKey}" />
     <meta-data android:name="FL_PARTNER_KEY" android:value="{your FL_PARTNER_KEY}" />
     <meta-data android:name="FLGAMESDK_APP_ID" android:value="{your FLGAMESDK_APP_ID}" />
