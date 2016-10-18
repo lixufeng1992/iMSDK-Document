@@ -25,3 +25,4 @@
     <uses-permission android:name="MY_PACKAGE_NAME.permission.C2D_MESSAGE"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     ```
+    > 请将MY_PACKAGE_NAME改成游戏包名
