@@ -257,7 +257,7 @@ IMSDKApi.Auth.GetConnectInfo(delegate(IMAuthResult authResult) {
 账号迁移存在前置条件：
 
 * 需要先绑定渠道，这个是必要条件，Android 为 Google Play Games 账号，iOS 为 GameCenter
-* 并且迁移码只可以用于 Android 和 iOS 之间，比如在 Android A 设备获取迁移码之后，在 Android B 设备使用该迁移码，后台会返回提示：`the same platform!`
+* 迁移码只能用于 Android 和 iOS 之间，比如在 Android A 设备获取迁移码，在 Android B 设备使用该迁移码，那么后台会返回错误提示：`the same platform!`
 
 > 例如：游戏在 Android 上用 Google Play Games 作为主账号，在 iOS 上以 GameCenter 作为主账号，这个时候如果从 Android 迁移到 iOS 设备，那么就需要用到迁移码，但是 Android 设备直接是不能使用迁移码的，直接切换 Google Play Games 账号或者 GameCenter 账号，就可以进行账号切换
 
