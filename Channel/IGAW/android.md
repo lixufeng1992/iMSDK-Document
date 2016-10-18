@@ -45,6 +45,25 @@
 
     请在工程主AndroidManifest.xml文件中Application节点内加入以下配置
     ```xml
-
+    <receiver 
+        android:name="com.igaworks.liveops.pushservice.LiveOpsGCMBroadcastReceiver"
+        android:permission="com.google.android.c2dm.permission.SEND" >
+    	    <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="MY_PACKAGE_NAME" />
+    	    </intent-filter>
+    </receiver>
+    <!-- IGAWorks Push Service -->
+    <service 
+    android:enabled="true" 
+    android:name="com.igaworks.liveops.pushservice.GCMIntentService" />
+    <!-- Client Push App Receiver -->
+    <receiver 
+        android:name="com.igaworks.liveops.pushservice.LiveOpsReceiver"
+        android:permission="MY_PACKAGE_NAME.permission.C2D_MESSAGE">
+        <intent-filter>
+            <action android:name="com.igaworks.liveops.pushservice.CLIENT_PUSH_RECEIVE"/>
+        </intent-filter>
+    </receiver>
     ```
 
