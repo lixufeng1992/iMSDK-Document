@@ -32,3 +32,34 @@
 * Activity配置
 
     请在主工程AndroidManifest.xml文件中Application节点里添加如下Activity配置
+
+```xml
+<activity 
+    android:name="com.tencent.imsdk.unity.flkk.UnityPlayerNativeActivity" 
+    android:label="@string/app_name">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+    </intent-filter>
+</activity>
+
+
+
+ <activity android:name="com.feiliu.gameplatform.popwindow.FLSdkActivity" > </activity>
+
+ <activity android:name="com.feiliu.gameplatform.popwindow.FLUserAgreementActivity" > </activity>
+
+ <activity
+
+ android:name="com.feiliu.gameplatform.FLGooglePlayActivity"
+
+ android:background="#e0000000"
+
+ android:theme="@android:style/Theme.Translucent" >
+
+ </activity>
+
+ <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+```
+
