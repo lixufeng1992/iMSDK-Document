@@ -58,6 +58,8 @@
 > 如果游戏接入Apollo，游戏入口Activity需改成Apollo对应的Activity
 
 * meta-data配置
+    
+    请在工程主AndroidManifest.xml文件中Application节点添加如下meta-data配置
 ```xml
 
 
