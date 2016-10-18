@@ -1,8 +1,8 @@
 ## 6.9.2 Android 配置
 
 * 权限配置
-请在主工程AndroidManifest.xml文件中添加如下权限配置
 
+    请在主工程AndroidManifest.xml文件中添加如下权限配置
 ```xml
 <!-- permission application 节点外-->
 <!-- Link 权限-->
@@ -15,6 +15,14 @@
 * Activity节点配置
 
     请在主工程AndroidManifest.xml文件中Application节点里添加如下Activity配置
+```xml
+<activity
+    android:name="com.facebook.FacebookActivity"
+    android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+    android:label="@string/app_name"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+```
+
 
 ```xml
 <!-- meta-data 配置  application 节点内-->
