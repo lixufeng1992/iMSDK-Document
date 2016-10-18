@@ -26,3 +26,5 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     ```
     > 请将MY_PACKAGE_NAME改成游戏包名
+
+* meta-data配置
