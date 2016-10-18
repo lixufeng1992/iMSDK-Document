@@ -53,19 +53,19 @@
   | **函数名**                                  | **函数说明**                                 |
   | ---------------------------------------- | ---------------------------------------- |
   | public void Initialize ()                | 初始化方法，在调用其他函数之前需要调用该函数                   |
-  | public void Auth (IMSDKCallback<IMAuthResult> callback) | 设备授权，相当于游客登录                             |
+  | public void Auth (<br>IMSDKCallback<IMAuthResult> callback<br>) | 设备授权，相当于游客登录                             |
   | public IMAuthResult GetAuthResult()      | 获取本地缓存的授权信息                              |
-  | public void Connect (string channel,IMSDKCallback<IMConnectResult> callback,List<string> permissionList = null,object extra = null) | 渠道关联。相当于把渠道绑定到设备上，并且通过渠道关联可以进行设备之间的数据迁移。channel是需要关联的渠道。关联之后会返回的主要结果：（1）成功 （2）need to reconnect operation （3）need to restore operation |
-  | public void Reconnect (IMSDKCallback<IMSDKResult> callback,String confirmCode = null,object extra = null) | 重新关联，在渠道关联(Connect)之后调用，成功重联之后本地openid不变。比如将Facebook关联到设备B的操作之后返回提示需要重新关联，那么调用重新关联，服务器会断开Facebook与设备A的关联，将Facebook关联到设备B |
-  | public void Restore (IMSDKCallback<IMAuthResult> callback, String confirmCode = null,object extra = null) | 恢复数据，在渠道关联(Connect)之后调用，成功恢复之后本地openid会变成之前关联设备的openid。比如将Google关联到设备B的操作之后返回提示需要恢复数据，那么调用恢复数据，服务器会将Google关联的设备A的数据覆盖到设备B |
-  | public void GetConnectInfo (IMSDKCallback<IMAuthResult> callback) | 获取关联的渠道信息，返回的结果包含以下信息：渠道的openid，用户名，头像等  |
-  | public void GetMigrateCode (IMSDKCallback<IMMigrateResult> callback) | 获取迁移码。                                   |
-  | public void Migrate (IMSDKCallback<IMAuthResult> callback, string migrateCode = null) | 设备间的迁移。                                  |
-  | public void GetMigrateInfo (IMSDKCallback<IMMigrateResult> callback, string migrateCode = null) | 获取将要迁移的信息。在获取迁移码之后通过迁移信息进行确认迁移的操作是否继续进行，游戏可以用这些信息提示用户是否做渠道迁移 |
-  | public void Disconnect (string channel, IMSDKCallback<IMSDKResult> callback) | 断开（channel）渠道的关联                         |
-  | public void DeleteDeviceAccount (IMSDKCallback<IMSDKResult> callback) | 删除设备信息，服务器的openid不会删除，只是断开设备信息跟openid的关联。所以重新授权会生成新的openid（可以通过强关联恢复数据） |
-  | public void DeleteAllAccount (IMSDKCallback<IMSDKResult> callback) | 删除跟当前openid相关的所有信息 ，断开设备跟openid的关联以及openid上所有的关联渠道的信息（不可恢复） |
-  | public void Recover(string channel, IMSDKCallback<IMAuthResult> callback, List<string> permissionList = null, object extra = null) | 无账号的恢复数据，区别Restore的地方就是不需要先进行Connect操作   |
+  | public void Connect (<br>string channel,<br>IMSDKCallback<IMConnectResult> callback,<br>List<string> permissionList = null,<br>object extra = null<br>) | 渠道关联。<br>相当于把渠道绑定到设备上，并且通过渠道关联可以进行设备之间的数据迁移。channel是需要关联的渠道。关联之后会返回的主要结果：<br>（1）成功 <br>（2）need to reconnect operation <br>（3）need to restore operation |
+  | public void Reconnect (<br>IMSDKCallback<IMSDKResult> callback,<br>String confirmCode = null,<br>object extra = null<br>) | 重新关联，在渠道关联(Connect)之后调用，成功重联之后本地openid不变。<br>比如将Facebook关联到设备B的操作之后返回提示需要重新关联，那么调用重新关联，服务器会断开Facebook与设备A的关联，将Facebook关联到设备B |
+  | public void Restore (<br>IMSDKCallback<IMAuthResult> callback, <br>String confirmCode = null,<br>object extra = null<br>) | 恢复数据，在渠道关联(Connect)之后调用，成功恢复之后本地openid会变成之前关联设备的openid。<br>比如将Google关联到设备B的操作之后返回提示需要恢复数据，那么调用恢复数据，服务器会将Google关联的设备A的数据覆盖到设备B |
+  | public void GetConnectInfo (<br>IMSDKCallback<IMAuthResult> callback<br>) | 获取关联的渠道信息，返回的结果包含以下信息：渠道的openid，用户名，头像等  |
+  | public void GetMigrateCode (<br>IMSDKCallback<IMMigrateResult> callback<br>) | 获取迁移码。                                   |
+  | public void Migrate (<br>IMSDKCallback<IMAuthResult> callback, <br>string migrateCode = null<br>) | 设备间的迁移。                                  |
+  | public void GetMigrateInfo (<br>IMSDKCallback<IMMigrateResult> callback, <br>string migrateCode = null<br>) | 获取将要迁移的信息。<br>在获取迁移码之后通过迁移信息进行确认迁移的操作是否继续进行，游戏可以用这些信息提示用户是否做渠道迁移 |
+  | public void Disconnect (<br>string channel, <br>IMSDKCallback<IMSDKResult> callback<br>) | 断开（channel）渠道的关联                         |
+  | public void DeleteDeviceAccount (<br>IMSDKCallback<IMSDKResult> callback<br>) | 删除设备信息，服务器的openid不会删除，只是断开设备信息跟openid的关联。<br>所以重新授权会生成新的openid（可以通过强关联恢复数据） |
+  | public void DeleteAllAccount (<br>IMSDKCallback<IMSDKResult> callback<br>) | 删除跟当前openid相关的所有信息 ，断开设备跟openid的关联以及openid上所有的关联渠道的信息（不可恢复） |
+  | public void Recover(<br>string channel, <br>IMSDKCallback<IMAuthResult> callback, <br>List<string> permissionList = null, <br>object extra = null<br>) | 无账号的恢复数据，区别Restore的地方就是不需要先进行Connect操作   |
 
 ### 详细使用指导
 
