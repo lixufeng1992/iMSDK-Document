@@ -13,9 +13,16 @@ MTA接入和配置参考[http://developer.qq.com/wiki/mta/MTA%E5%9F%BA%E7%A1%80%
 
 <!-- meta-data 配置 -->
 <!-- MTA配置，包括在官网上获取的APPKEY和安装渠道 -->
+<!-- 请从官网获取APPKEY -->
 <meta-data
     android:name="TA_APPKEY"
     android:value="AA4Z1K9BZN39" />
+
+<!-- 请将value改为app发布的市场名称，如在GooglePlay就写GooglePlay< -->
+<meta-data
+    android:name="InstallChannel"
+    android:value="GooglePlay" />
+
 
 
 
