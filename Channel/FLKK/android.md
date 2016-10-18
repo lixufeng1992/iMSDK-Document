@@ -61,8 +61,13 @@
     
     请在工程主AndroidManifest.xml文件中Application节点添加如下meta-data配置
 ```xml
-
-
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+<!--kakao settings-->
+    <meta-data android:name="com.kakao.sdk.AppKey" android:value="{you AppKey}" />
+    <meta-data android:name="FL_PARTNER_KEY" android:value="19F5B29C-6A3D-3804-8AA2-250DC5D288D8" />
+    <meta-data android:name="FLGAMESDK_APP_ID" android:value="200026" />
+    <meta-data android:name="FLGAMESDK_COMPANY_ID" android:value="200001" />
+    <meta-data android:name="FLGAMESDK_COOP_ID" android:value="400001" />
 ```
 
 
