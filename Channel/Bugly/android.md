@@ -5,6 +5,7 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
 
 
 ```xml
+    <!-- 1.x.x配置 -->
     <!-- 权限配置 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -15,9 +16,6 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
     <meta-data
          android:name="APPID_BUGLY"
          android:value="\ 900003637" />
-
-
-
 
 
 ```
