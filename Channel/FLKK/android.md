@@ -22,9 +22,9 @@
     FLKK渠道需要抢占入口Application， 请在工程主AndroidManifest中，找到Application节点，并将name属性值改为如下：
 
 ```
-<application
-    android:name="com.tencent.imsdk.unity.flkk.IMSDKFLKKApplication"
-    android:theme="@android:style/Theme.NoTitleBar" android:icon="@drawable/app_icon"                 
-    android:label="@string/app_name" 
-    android:debuggable="true">
+  <application
+      android:name="com.tencent.imsdk.unity.flkk.IMSDKFLKKApplication"
+      android:theme="@android:style/Theme.NoTitleBar" android:icon="@drawable/app_icon"                 
+      android:label="@string/app_name" 
+      android:debuggable="true">
 ```
