@@ -1,9 +1,6 @@
 ## 6.9.2 Android 配置
 
 * 权限配置
-
-
-
 ```xml
 <!-- permission application 节点外-->
 <!-- Link 权限-->
@@ -13,6 +10,7 @@
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
 ```
 
+```xml
 <!-- meta-data 配置  application 节点内-->
 <!-- 请配置如下meta-data 配置 -->
 
