@@ -8,3 +8,12 @@
 ```
 
 * Receiver配置管理
+```
+    <receiver 
+        android:name="it.partytrack.sdk.ReferrerReceiver"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="com.android.vending.INSTALL_REFERRER" />
+        </intent-filter>
+    </receiver>
+```
