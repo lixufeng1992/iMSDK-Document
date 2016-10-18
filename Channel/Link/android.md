@@ -22,6 +22,12 @@
     android:label="@string/app_name"
     android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 ```
+* meta-data配置
+
+    请在主工程AndroidManifest.xml文件中Application节点里添加如下Activity配置
+```xml
+
+```
 
 
 ```xml
