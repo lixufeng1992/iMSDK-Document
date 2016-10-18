@@ -65,8 +65,8 @@
 <!--kakao settings-->
     <meta-data android:name="com.kakao.sdk.AppKey" android:value="{you AppKey}" />
     <meta-data android:name="FL_PARTNER_KEY" android:value="{your FL_PARTNER_KEY}" />
-    <meta-data android:name="FLGAMESDK_APP_ID" android:value="200026" />
-    <meta-data android:name="FLGAMESDK_COMPANY_ID" android:value="200001" />
+    <meta-data android:name="FLGAMESDK_APP_ID" android:value="{your FLGAMESDK_APP_ID}" />
+    <meta-data android:name="FLGAMESDK_COMPANY_ID" android:value="{your FLGAMESDK_COMPANY_ID}" />
     <meta-data android:name="FLGAMESDK_COOP_ID" android:value="400001" />
 ```
 
