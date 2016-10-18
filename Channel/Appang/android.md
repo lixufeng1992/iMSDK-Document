@@ -10,3 +10,5 @@
 <uses-permission android:name="android.permission.READ_PHONE_STATE"/> 
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
+
+* meta-data配置
