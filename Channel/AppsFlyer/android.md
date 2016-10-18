@@ -85,5 +85,11 @@
 ```
 * 1.8.0版本后，增加卸载追踪功能，并更新依赖的AppsFlyer版本
 * 1.9.0版本， 需在游戏主activity，onCreate()中调用ExtendAppsFlyer.onCreate(Context context)
+* 2.0.0版本后，需在onCreate()中调用
+```code
+    IMSDKStat.initialize(this);    
+    if(IMSDKStat.initChannel("AppsFlyer", new String[]    {IStat.STAT_EVENT_INITIALIZE})){ IMLogger.d("init AppsFlyer OK");};
+```
+
  
  
