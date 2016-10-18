@@ -66,4 +66,5 @@
         </intent-filter>
     </receiver>
     ```
+     > 请将MY_PACKAGE_NAME改成游戏包名
 
