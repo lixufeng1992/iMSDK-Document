@@ -11,6 +11,8 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
+    <!-- meta-data配置 -->
+
 
 
 ```
