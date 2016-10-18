@@ -22,6 +22,7 @@
 <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="\ {your gms appID}" />
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" /> 
 
+<!-- com.aiming.link.DeleteAuthToken请通过 string.xml文件配置进行读取 -->
 <meta-data android:name="com.aiming.link.DeleteAuthToken" android:value = "@string/link_delete_auth_token"/> <!-- true of false-->
 <meta-data android:name="com.aiming.link.debuglevel" android:value = "@string/link_debuglevel"/> <!-- true of false-->
 
