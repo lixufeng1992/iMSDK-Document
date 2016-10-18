@@ -25,24 +25,24 @@
 
    ```csharp
    void Start() {
-     IMSDKApi.Auth.Initialize ();
+       IMSDKApi.Auth.Initialize ();
    }
 
    // 第一步，一般在游戏开始时，进行开始授权动作，相当于游客登录
    public void StartAuth(){
-     IMSDKApi.Auth.Auth ((IMAuthResult result)=>{
+       IMSDKApi.Auth.Auth ((IMAuthResult result)=>{
        //TODO 处理授权的回调
-     });
+       });
    }
 
    // 第二步，在合适的时机，提示用户进行关联操作，比如关联Google Play
    public void StartConnect(){
-     IMSDKApi.Auth.Connect ("Google", (IMConnectResult result)=>{
-           // TODO 根据关联返回的result.ThirdRetCode处理下一步的动作，
+       IMSDKApi.Auth.Connect ("Google", (IMConnectResult result)=>{
+        // TODO 根据关联返回的result.ThirdRetCode处理下一步的动作，
        	// 返回码为 1: 关联成功
        	// 返回码为 2: 需要进行重新关联，即 IMSDKApi.Auth.Reconnect
        	// 返回码为 3: 需要进行恢复动作，即 IMSDKApi.Auth.Restore
-     });
+        });
    }
    ```
 
