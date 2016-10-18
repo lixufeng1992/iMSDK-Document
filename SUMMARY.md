@@ -54,10 +54,11 @@
         * [4.5.1 Facebook 功能说明](Unity/Channel/facebook.md)
             * [4.5.1.1 Facebook 登录功能说明](Unity/Channel/Facebook/login.md)
             * [4.5.1.2 Facebook 分享功能说明](Unity/Channel/Facebook/share.md)
+            * [4.5.1.3 Facebook 统计功能说明](Unity/Channel/Facebook/stat.md)
         * [4.5.2 AppsFlyer 功能说明](Unity/Channel/appsflyer.md)
             * [4.5.2.1 AppsFlyer 统计功能说明](Unity/Channel/AppsFlyer/stat.md)
         * [4.5.3 Bugly 功能说明](Unity/Channel/bugly.md)
-            * 4.5.3.1 Bugly 统计功能说明
+            * [4.5.3.1 Bugly 统计功能说明](Unity/Channel/Bugly/stat.md)
         * [4.5.4 kakao功能说明](Unity/Channel/kakao.md)
             * [4.5.4.1 Kakao 登录功能说明](Unity/Channel/Kakao/login.md)
             * [4.5.4.2 Kakao 好友功能说明](Unity/Channel/Kakao/friend.md)
