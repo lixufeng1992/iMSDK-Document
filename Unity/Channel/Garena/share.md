@@ -3,7 +3,7 @@
 ## 分享功能支持列表
 
 | 序号 | 功能 | 是否支持 | 备注 |
-| :--- | :--- | :--- | :--- |
+| --- | --- | --- | --- |
 | 1 | 分享文本-后台 | x | 需要publish\_actions权限 |
 | 2 | 分享文本-对话框 | √ | - |
 | 3 | 分享链接-后台 | x | 需要publish\_actions权限 |
@@ -14,7 +14,7 @@
 ## 字段填写规则
 
 | 分享类型 | 标题（Title） | 内容（Content） | 链接（Link） | 图片（ImagePath） | 缩略图（ThumbPath） | 扩展字段（ExtraJson） |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| --- | --- | --- | --- | --- | --- | --- |
 | 文本（后台） | - | √ | - | - | - | - |
 | 文本（对话框） | x | x | x | x | x | - |
 | 链接（后台） | √ | √ | √ | √（网络链接） | - | 接收消息好友列表 |
@@ -26,11 +26,11 @@
 
 * 接收消息好友列表
 
- 以JSON格式字符串传值，如：
+  以JSON格式字符串传值，如：
 
- ```json
- {"friends":["123","234"]}
- ```
+  ```json
+  {"friends":["123","234"]}
+  ```
 
 
 ## 工程配置
@@ -62,21 +62,21 @@
  android:value="test" /><!-- production -->
  <meta-data
  android:name="com.tencent.imsdk.garena.APP_SDK_KEY"
- android:value="49c1b7af60b1f5557005d101f1f8aa6e0a185c286ee630612ecc2c54c7ac7b27" />
+ android:value="{your_garena_app_sdk_key}" />
  <meta-data
  android:name="com.garena.sdk.applicationId"
- android:value="100050" />
+ android:value="{your_garena_sdk_applicationId}" />
  <meta-data
  android:name="com.garena.sdk.ApplicationSourceId"
  android:value="2" />
  <!-- application id must be filled to use garena service. many APIs depend on this id, please contact garena mobile game team to get this id -->
  <meta-data
  android:name="com.garena.sdk.applicationId"
- android:value="100050" />
+ android:value="{your_garena_sdk_applicationId} />
  <!-- same as application id. need to specify for push notification service to work -->
  <meta-data
  android:name="com.garena.sdk.push.applicationId"
- android:value="100050" />
+ android:value="{your_garena_sdk_applicationId}" />
  <meta-data
  android:name="com.beetalklib.ganalytics.report_url"
  android:value="http://122.11.128.69:2205" />
@@ -106,7 +106,7 @@
 
  <provider
  android:name="com.facebook.FacebookContentProvider"
- android:authorities="com.facebook.app.FacebookContentProvider940076299433432"
+ android:authorities="com.facebook.app.FacebookContentProvider{your_facebook_id}"
  android:exported="true" />
  <!-- Facebook Login end -->
 
