@@ -43,23 +43,19 @@
         <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
     </intent-filter>
 </activity>
-
-
-
- <activity android:name="com.feiliu.gameplatform.popwindow.FLSdkActivity" > </activity>
-
- <activity android:name="com.feiliu.gameplatform.popwindow.FLUserAgreementActivity" > </activity>
-
- <activity
-
- android:name="com.feiliu.gameplatform.FLGooglePlayActivity"
-
- android:background="#e0000000"
-
- android:theme="@android:style/Theme.Translucent" >
-
- </activity>
-
- <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+<activity 
+    android:name="com.feiliu.gameplatform.popwindow.FLSdkActivity" > 
+</activity>
+<activity 
+    android:name="com.feiliu.gameplatform.popwindow.FLUserAgreementActivity" > 
+</activity>
+<activity
+    android:name="com.feiliu.gameplatform.FLGooglePlayActivity"
+    android:background="#e0000000"
+    android:theme="@android:style/Theme.Translucent" >
+</activity> 
 ```
+> 如果游戏接入Apollo，游戏入口Activity需改成Apollo对应的Activity
+
+* meta-data配置
 
