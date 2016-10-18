@@ -11,8 +11,10 @@
 
 
 <!-- meta-data 配置  application 节点内-->
-<meta-data android:name="com.aiming.link.LinkUrlBase" android:value="@string/link_url_base" />
-<meta-data android:name="com.aiming.link.LinkAccessToken" android:value="@string/link_access_token" />
+<!-- 请配置
+
+<meta-data android:name="com.aiming.link.LinkUrlBase" android:value="{your linkUrlBase}" />
+<meta-data android:name="com.aiming.link.LinkAccessToken" android:value="{your linkAccessToken}" />
 <meta-data android:name="com.aiming.link.TwitterKey" android:value="@string/link_twitter_key" />
 <meta-data android:name="com.aiming.link.TwitterSecret" android:value="@string/link_twitter_secret" />
 <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/link_facebook_app_id" />
