@@ -1,7 +1,8 @@
 ###　Android 工程配置
 
-####　权限配置
-请在工程中添加如下权限
+* 权限配置
+    
+    请在工程中AndroidManifest中添加如下权限
 ``` xml
  <uses-permission android:name="android.permission.INTERNET" />
  <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -16,3 +17,4 @@
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
+* Application
