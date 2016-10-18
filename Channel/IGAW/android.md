@@ -30,4 +30,12 @@
 
     请在工程主AndroidManifest.xml文件中Application节点内加入以下配置
     ```xml
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <!-- app key and hash key -->
+    <!-- get from igaworks website -->
+    <meta-data android:name="igaworks_app_key" android:value="your app key" />
+    <meta-data android:name="igaworks_hash_key" android:value="your hash key" />
     ```
