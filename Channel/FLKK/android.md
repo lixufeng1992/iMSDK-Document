@@ -2,7 +2,7 @@
 
 * 权限配置
     
-    请在工程中AndroidManifest中添加如下权限
+    请在工程中主AndroidManifest中添加如下权限
 ``` xml
  <uses-permission android:name="android.permission.INTERNET" />
  <uses-permission android:name="android.permission.WAKE_LOCK" />
