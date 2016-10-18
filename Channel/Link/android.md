@@ -15,9 +15,9 @@
 
 <meta-data android:name="com.aiming.link.LinkUrlBase" android:value="{your linkUrlBase}" />
 <meta-data android:name="com.aiming.link.LinkAccessToken" android:value="{your linkAccessToken}" />
-<meta-data android:name="com.aiming.link.TwitterKey" android:value="@string/link_twitter_key" />
+<meta-data android:name="com.aiming.link.TwitterKey" android:value="{your linkTwitterKey}" />
 <meta-data android:name="com.aiming.link.TwitterSecret" android:value="@string/link_twitter_secret" />
-<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/link_facebook_app_id" />
+<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="\ {your facebookApplicationId}" />
 <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/app_name" />
 <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/link_google_app_id" />
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" /> 
