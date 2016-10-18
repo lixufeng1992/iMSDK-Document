@@ -19,3 +19,11 @@
 ```
 
 *meta-data配置管理
+```
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        <!-- appId and appKey value, for example: PARTYTRACK_APP_ID : 6960, PARTYTRACK_APP_KEY : 79d3114eb96d3d847e4a3707e6ea802c -->
+    <meta-data android:name="PARTYTRACK_APP_ID" android:value="{your appId}" />
+    <meta-data android:name="PARTYTRACK_APP_KEY" android:value="{your appKey}" />
+```
