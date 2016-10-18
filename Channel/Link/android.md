@@ -10,6 +10,8 @@
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
 ```
 
+* Activity节点配置
+
 ```xml
 <!-- meta-data 配置  application 节点内-->
 <!-- 请配置如下meta-data 配置 -->
