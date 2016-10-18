@@ -17,3 +17,5 @@
         </intent-filter>
     </receiver>
 ```
+
+*meta-data配置管理
