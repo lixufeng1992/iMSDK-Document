@@ -1,5 +1,6 @@
 ## 6.9.2 Android 配置
 
+* 权限配置
 
 ```xml
 <!-- permission application 节点外-->
@@ -8,7 +9,7 @@
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
-
+```
 
 <!-- meta-data 配置  application 节点内-->
 <!-- 请配置如下meta-data 配置 -->
