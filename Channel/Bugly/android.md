@@ -35,6 +35,7 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
             android:name="BUGLY_ENABLE_DEBUG"
             android:value="true" />
 
+    <!-- 可选配置 -->
         <!-- 配置APP版本号 -->
         <meta-data
             android:name="BUGLY_APP_VERSION"
