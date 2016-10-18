@@ -12,4 +12,4 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     ```
 
-    + 推送需要的权限
+    + 推送额外需要的权限
