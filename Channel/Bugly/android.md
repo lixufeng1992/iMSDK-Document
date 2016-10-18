@@ -17,6 +17,8 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
          android:name="APPID_BUGLY"
          android:value="bugly900003637" />
 
+    <!-- 后面的bugly版本：2.2.2版本， 不需要 />
+
 
 
 
