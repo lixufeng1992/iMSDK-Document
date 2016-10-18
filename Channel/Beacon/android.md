@@ -17,8 +17,4 @@ Beacon接入和配置参考
 <meta-data
     android:name="APPKEY_DENGTA"
     android:value="{your appkey}" />
-
-
-
-
 ```
