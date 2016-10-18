@@ -268,9 +268,9 @@ IMSDKApi.Auth.GetConnectInfo(delegate(IMAuthResult authResult) {
 
 1. 根据**关联返回的结果**，确认是否可以进行迁移，迁移规则如下：
 
-   * Android 设备只关联了 Google Play Games 账号，不可以在 Android 之间进行迁移，需要使用 Restore 进行恢复。
-   * iOS 设备只关联了 GameCenter 账号，不可以在 Android 之间进行迁移，需要使用 Restore 进行恢复。
-   * 如果 Android 设备上有关联 GameCenter 账号，说明已经迁移过，所以不可以进行迁移
+   * Android 设备只是关联了 Google Play 账号的情况下，不可以在 Android 之间进行迁移，需要使用 Restore 进行恢复。
+   * iOS 设备只是关联了 Game Center 账号的情况下，不可以在 iOS 之间进行迁移，需要使用 Restore 进行恢复。
+   * 如果 Android 设备上有关联 Game Center 账号，说明已经迁移过，所以不可以进行迁移
 
 2. 设备获取迁移码，确认当前手机账号可以迁移之后，可以调用获取迁移码接口获取迁移信息
 
