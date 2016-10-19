@@ -2,7 +2,7 @@
 
 * 权限和Feature配置
 
-    请在工程主AndroidManifest.xml文件中加入
+    请在工程主AndroidManifest.xml文件中加入如下配置
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
