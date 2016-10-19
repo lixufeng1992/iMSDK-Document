@@ -33,6 +33,8 @@
 ```
 
 * meta-data和Activity配置
+
+    请在
 ```xml
     <application
         android:name="com.android.m6.guestlogin.MTOApplication"
