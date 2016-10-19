@@ -10,7 +10,7 @@
      <key>isDebugMode</key>
      <true/>
      <key>loginKey</key>
-     <string>49c1b7af60b1f5557005d101f1f8aa6e0a185c286ee630612ecc2c54c7ac7b27</string>
+     <string>YOUR_LOGIN_KEY</string>
  </dict>
  ```
  
@@ -31,7 +31,7 @@
 		 <string>facebook</string>
 		 <key>CFBundleURLSchemes</key>
 		 <array>
-			 <string>fb423362744481374</string>
+			 <string>YOUR_FACEBOOK_APPID</string>
 		 </array>
 	 </dict>
 	 <dict>
@@ -41,18 +41,20 @@
 		 <string>gop</string>
 		 <key>CFBundleURLSchemes</key>
 		 <array>
-			 <string>gop100050</string>
+			 <string>YOUR_GOPAppID</string>
 		 </array>
 	 </dict>
  </array>
  <key>FacebookAppID</key>
- <string>423362744481374</string>
+ <string>YOUR_FACEBOOK_APPID</string>
+ <key>FacebookDisplayName</key>
+ <string>YOUR_FACEBOOK_DISPLAYNAME</string>
  <key>GOPAppID</key>
- <string>100050</string>
+ <string>YOUR_GOPAppID</string>
  <key>LSApplicationQueriesSchemes</key>
  <array>
 	 <string>beetalk</string>
-	  <string>garenagc</string>
+	 <string>garenagc</string>
 	 <string>fb</string>
 	 <string>fbapi</string>
 	 <string>fbapi20130214</string>
@@ -64,7 +66,7 @@
 	 <string>fbauth</string>
 	 <string>fbauth2</string>
 	 <string>fb-messenger-api20140430</string>
-     <string>gop100050</string>
+     <string>YOUR_GOPAppID</string>
  </array>
  <key>NSAppTransportSecurity</key>
  <dict>
@@ -73,5 +75,7 @@
  </dict>
  ```
 
-   - FacebookAppID，由Garena侧提供的`Facebook App ID`。
-   - GOPAppID，由Garena侧提供的`Garena App ID`。
+	- FacebookAppID，由Garena侧提供的`Facebook App ID`。
+	- FacebookDisplayName，由Garena侧提供的`Facebook display name`。
+	- GOPAppID，由Garena侧提供的`Garena App ID`。
+
