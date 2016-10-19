@@ -1,6 +1,6 @@
 ## AppsFlyer设置
-### Efun 平台后台配置
-1. [ Appsflyer 平台、后台配置](AppsFlyer/developer.md)
+### AppsFlyer 平台后台配置
+1. [ AppsFlyer 平台、后台配置](AppsFlyer/developer.md)
 
 ### 前端工程配置
 
