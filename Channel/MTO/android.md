@@ -34,6 +34,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 ```
 
+```xml
     <application
         android:name="com.android.m6.guestlogin.MTOApplication"
         android:allowBackup="true"
