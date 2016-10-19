@@ -70,7 +70,7 @@
   			android:screenOrientation="portrait"
   			android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
 		```
-	- BeeTalk 支付 Activity 配置（请注意：iMSDK并未集成Garena支付功能，添加此额外配置项是为保证GarenaSDK正常运行）
+	- BeeTalk 支付 Activity 配置（请注意：iMSDK并未集成Garena支付功能，添加此配置项是为保证GarenaSDK正常运行）
 		
 		```xml
 		<activity android:name="com.garena.pay.android.GGPayActivity"
@@ -81,7 +81,7 @@
   			android:theme="@style/Theme.Transparent" />
 		```
 	
-	- BeeTalk 统计上报地址，该配置项由 Garena 提供（请注意：iMSDK并未集成Garena上报功能，添加此额外配置项是为保证GarenaSDK正常运行）
+	- BeeTalk 统计上报地址，该配置项由 Garena 提供（请注意：iMSDK并未集成Garena上报功能，添加此配置项是为保证GarenaSDK正常运行）
 
 		```xml
 		<meta-data android:name="com.beetalklib.ganalytics.report_url" android:value="http://xxx.xxx.xxx.xxx:xxxx" />
@@ -126,7 +126,7 @@
 			
 			> 其中，[Facebook App ID] 需要替换成应用的 Facebook ID
 		
-	- Garena 推送配置（请注意：iMSDK并未集成Garena推送功能，添加此额外配置项是为保证GarenaSDK正常运行）
+	- Garena 推送配置（请注意：iMSDK并未集成Garena推送功能，添加此配置项是为保证GarenaSDK正常运行）
 	
 		* Receiver 配置
 
