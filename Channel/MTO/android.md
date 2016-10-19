@@ -282,15 +282,13 @@
         android:name="vn.zing.pay.zmpsdk.business.inappbilling.TGoogleIABRetryVerifyReceiptService"         
         android:exported="false" />
 
-
-
-
-
-		
-
     </application>
 
 </manifest>
 
 
 ```
+
+ +1 请讲上述YOUR_PACKAGE 改成游戏自己的包名
+
+
