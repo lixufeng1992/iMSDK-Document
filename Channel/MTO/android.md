@@ -2,6 +2,8 @@
 
 * 权限和Feature配置
 
+    请在工程主AndroidManifest.xml文件中加入
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
