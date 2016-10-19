@@ -291,6 +291,6 @@
 
  + 1、请讲上述YOUR_PACKAGE 改成游戏自己的包名
  + 2、请上述meta-data配置中yourXXX值改成游戏自己的值，该值联系MTO方进行获取
- + 3、
+ + 3、请讲provider设置中+FacebookId 改成游戏自己的FacebookId
 
 
