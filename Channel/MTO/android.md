@@ -1,8 +1,6 @@
 ## MTO Android 工程配置  
 
-* 权限和Feature配置
-
-    请在工程主AndroidManifest.xml文件中加入如下配置
+请在工程主AndroidManifest.xml文件中加入如下配置
 
 ```xml
     <permission
@@ -30,12 +28,6 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="com.zing.zalo.permission.ACCESS_THIRD_PARTY_APP_AUTHORIZATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-```
-
-* meta-data和Activity配置
-
-    请在
-```xml
     <application
         android:name="com.android.m6.guestlogin.MTOApplication"
         android:allowBackup="true"
