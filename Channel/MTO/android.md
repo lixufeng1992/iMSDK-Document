@@ -20,20 +20,19 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />    
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="com.android.vending.BILLING" />
-
     <uses-feature
         android:name="android.hardware.camera"
         required="false" />
     <uses-feature
         android:name="android.hardware.camera.autofocus"
         required="false" />
-
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="com.zing.zalo.permission.ACCESS_THIRD_PARTY_APP_AUTHORIZATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 ```
 
+* meta-data和Activity配置
 ```xml
     <application
         android:name="com.android.m6.guestlogin.MTOApplication"
@@ -42,7 +41,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 		
-		<!-- vng gameid define, can not empty & must right value -->
+	<!-- vng gameid define, can not empty & must right value -->
         <meta-data
             android:name="appID"
             android:value="your_appID" />
