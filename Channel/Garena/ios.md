@@ -75,6 +75,7 @@
  </dict>
  ```
 
-- FacebookAppID，由Garena侧提供的`Facebook App ID`。
-- GOPAppID，由Garena侧提供的`Garena App ID`。
+	- FacebookAppID，由Garena侧提供的`Facebook App ID`。
+	- FacebookDisplayName，由Garena侧提供的`Facebook display name`。
+	- GOPAppID，由Garena侧提供的`Garena App ID`。
 
