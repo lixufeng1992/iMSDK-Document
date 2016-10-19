@@ -32,7 +32,7 @@
 
 -108 =&gt; "no params ChannelId", \/\/没有传入ChannelId
 
--109 =&gt; "no params Guid", \/\/没有传入Guid
+-109 =&gt; "no params Guid", \/\/没有传入Guid 
 
 -110 =&gt; "Guid is un Avali", \/\/guid无效
 
