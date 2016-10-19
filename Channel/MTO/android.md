@@ -4,16 +4,7 @@
 
     请在工程主AndroidManifest.xml文件中加入如下配置
 
-```
-<?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tencent.imsdk"
-    android:versionCode="1"
-    android:versionName="1" >
-    <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="23" />
+```xml
     <permission
         android:name="YOUR_PACKAGE.C2D_MESSAGE"
         android:protectionLevel="signature" />
@@ -41,6 +32,7 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="com.zing.zalo.permission.ACCESS_THIRD_PARTY_APP_AUTHORIZATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+```
 
     <application
         android:name="com.android.m6.guestlogin.MTOApplication"
