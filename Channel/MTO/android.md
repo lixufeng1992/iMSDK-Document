@@ -247,7 +247,7 @@
         android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >     
     </activity>      
     <provider          
-        android:authorities="com.facebook.app.FacebookContentProvider1035456593228820"                         
+        android:authorities="com.facebook.app.FacebookContentProvider+FacebookId"                         
         android:name="com.facebook.FacebookContentProvider"         
         android:exported="true"/>     
     <activity         
@@ -291,5 +291,6 @@
 
  + 1、请讲上述YOUR_PACKAGE 改成游戏自己的包名
  + 2、请上述meta-data配置中yourXXX值改成游戏自己的值，该值联系MTO方进行获取
+ + 3、
 
 
