@@ -1,5 +1,7 @@
 ## MTO Android 工程配置  
 
+* 权限和Feature配置
+
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
