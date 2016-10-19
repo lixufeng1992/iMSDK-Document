@@ -46,13 +46,15 @@
 	 </dict>
  </array>
  <key>FacebookAppID</key>
- <string>423362744481374</string>
+ <string>YOUR_FACEBOOK_APPID</string>
+ <key>FacebookDisplayName</key>
+ <string>YOUR_FACEBOOK_DISPLAYNAME</string>
  <key>GOPAppID</key>
- <string>100050</string>
+ <string>YOUR_GOPAppID</string>
  <key>LSApplicationQueriesSchemes</key>
  <array>
 	 <string>beetalk</string>
-	  <string>garenagc</string>
+	 <string>garenagc</string>
 	 <string>fb</string>
 	 <string>fbapi</string>
 	 <string>fbapi20130214</string>
@@ -73,6 +75,6 @@
  </dict>
  ```
 
-   - FacebookAppID，由Garena侧提供的`Facebook App ID`。
-   - GOPAppID，由Garena侧提供的`Garena App ID`。
+- FacebookAppID，由Garena侧提供的`Facebook App ID`。
+- GOPAppID，由Garena侧提供的`Garena App ID`。
 
