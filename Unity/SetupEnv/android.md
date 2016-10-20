@@ -14,6 +14,17 @@ iMSDK插件包在提供的时候，已经提供了测试环境下的HTTPS证书�
 
 如需要获取证书证书，请点击[HTTPS证书说明](../../Help/httpscertfile.md)查看具体方法
 
+### 相关配置文件
+
+Unity中的文件路径为：
+
+```sh
+Assets/Plugins/Android/assets/IMSDK/IMSDKPFMap.json //iMSDK 支付PF配置文件
+Assets/Plugins/Android/assets/IMSDK/IMSDKRetMsg.json //iMSDK 错误码信息配置文件
+Assets/Plugins/Android/assets/IMSDK/IMSDKRetMsg_zh.json //iMSDK 错误码信息（中文）配置文件
+Assets/Plugins/Android/assets/IMSDK/pay.json //iMSDK 支付初始化渠道配置文件
+Assets/Plugins/Android/assets/IMSDK/stat.json //iMSDK 统计上报初始化渠道配置文件
+```
 
 ### 配置基础信息
 
