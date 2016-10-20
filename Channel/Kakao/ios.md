@@ -60,12 +60,12 @@
 	其中kakao{app_key}必须改为APP在kakao平台申请的appkey
 	
 	
-	###参考链接
-	[官网配置](https://gamecenter.kakao.com/docs/documents/281)
+###参考链接
+[官网配置](https://gamecenter.kakao.com/docs/documents/281)
 	
 	
-	###错误码
-	####HTTP请求
+###错误码
+####HTTP请求
 | Code	| 状态 |
 | :-- | :-- |
 | 200 | API 调用成功。Response Body会根据各个API 有区别 |
@@ -75,7 +75,7 @@
 | 500 |	内部服务器错误 |
 | 503 | 维护中 |
 
-	####通用错误码
+####通用错误码
 | Code | Enum | 状态 |	Http status code |
 | :-- | :-- | :-- | :-- |
 | -1 | KOServerErrorUnknown | 服务器处理过程中发生错误 (internal error)	| 400 |
@@ -87,7 +87,7 @@
 | -401 | KOServerErrorInvalidAccessToken |Appkey/token 错误时。例如，不存在appkey（重新生成后，不使用的历史appkey的情况）或与 agent信息不一直的appkey类型的情况。 (后续处理: 确认appkey的值和类型。用refresh token更新token后重试) | 401 |
 | -9798	| 无 |维护中	| 503|
 
-	####登录错误码
+####登录错误码
 	
 | Code	| Enum	| 状态	| Http status code |
 | :-- | :-- | :-- | :-- |
@@ -96,7 +96,7 @@
 | -103	| 对于调用不存在的kakao账号 |	400	|
 | -402	| KOServerErrorInsufficientScope	对于访问该 API的资源，未得到用户同意时。	|  403  |
 
-	####维护用户信息与其他
+####维护用户信息与其他
 | Code	| Enum	 | 状态	| Http status code |
 | :-- | :-- | :-- | :-- |
 | -201 | KOServerErrorInvalidUserPropertyKey | 调用管理API时，参数结构不合理时	| 400 |
