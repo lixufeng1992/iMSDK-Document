@@ -52,6 +52,15 @@ iMSDK插件包在提供的时候，已经提供了测试环境下的HTTPS证书�
 
     将value值修改为对应的iMSDK服务器地址，不需要添加 “ https:// ”头
 
+  * 代理Activity配置
+
+    ```xml
+    <activity
+        android:name="com.tencent.imsdk.IMProxyActivity"
+        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    ```
+
   * 日志级别配置
 
     在AndroidManifest.xml中找到配置项：
