@@ -27,3 +27,5 @@
     android:value="bugly900003637" /> 
 <!-- Bugly配置结束 -->
  ```
+
+#### iOS端配置说明
