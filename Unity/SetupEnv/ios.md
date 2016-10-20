@@ -40,7 +40,7 @@ Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSD
   ```
 * 增加代码调用
 
-  1. 处理应用启动 
+  1. 应用启动 
 
     在UnityAppController.mm文件AppDelegate中，找到如下方法
 
