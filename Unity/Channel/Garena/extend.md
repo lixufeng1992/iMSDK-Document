@@ -66,6 +66,12 @@ public void PrintResult(IMResult result){
 void Start() {
  IMGarena.Instance.Initialize();//init
  string yourMShopLink = IMGarena.Instance.GetMShopLink ("TW",1,1,true);// get mshop link
+ 
+ /**
+ *region: 请传"TW", 这个参数表示国家, TW, VN, TH, ID, SG, MY, PH, 会根据这个值跳转到不同的国家的mshop
+ *serverId:  玩家选的区 (服) ;
+ *roleId: 服务器中每个角色的ID;
+ */
  IMGarena.Instance.OpenMShop ("TW",1,1,PrintResult);//open mshop
 }
 ```
