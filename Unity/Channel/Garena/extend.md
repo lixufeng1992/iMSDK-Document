@@ -1,6 +1,4 @@
-# Garena扩展模块
-
-# Stove扩展(StoveExtend)
+# Garena扩展（GarenaExtend）
 
 ## 命名空间
 
