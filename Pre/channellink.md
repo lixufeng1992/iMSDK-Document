@@ -12,4 +12,4 @@
 | Kakao |  [https://gamecenter.kakao.com/](https://gamecenter.kakao.com/) | |
 | Appsflyer | [https://www.appsflyer.com](https://www.appsflyer.com) | 与腾讯公司有合作 |
 | EFun | 联系Efun | |
-| Midas(米大师支付) | 请联系米大师产品联系人jolinyang|
+| Midas(米大师支付) | 请联系米大师产品联系人jolinyang| |
