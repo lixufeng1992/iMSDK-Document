@@ -37,7 +37,7 @@
   及  
   iOS-IAP支付【iOS官方支付】2种模式.
 
-  * [米大师支付](pay-midas.md)
-  * [iOS-IAP支付](pay-iap.md)
+  * [米大师支付](paymidas.md)
+  * [iOS-IAP支付](payiap.md)
 
 
