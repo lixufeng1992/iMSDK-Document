@@ -19,30 +19,8 @@ Tencent.iMSDK
 + 配置与Login一样
 
 ####3.2 Android 使用说明
- + 	参考Login，作如下修改
- + 	（1）删除如下权限    
-   ```
-		<uses-permission android:name="android.permission.GET_TASKS" />
-   ```
-	
-	（2）删除如下配置：     
-    ```
-		
-        <service android:name="com.efun.push.client.service.EfunPushService" >
-        </service>
++ 配置参考[Efun](/Channel/Efun/android.md)，作如下修改
 
-        <receiver android:name="com.efun.push.client.receiver.EfunPushReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name="com.efun.push.client.Dispatcher" />
-                <action android:name="com.efun.delete.notification.action" />
-            </intent-filter>
-        </receiver>
-      ```
-
-	（3）修改原sdk中所有Activity中的android:screenOrientation属性：
-		将android:screenOrientation="landscape" 改为 android:screenOrientation="sensorLandscape"
   
 ###4. API参考
 
