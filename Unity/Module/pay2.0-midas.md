@@ -11,7 +11,6 @@
     */  
     IMPayMidasPrepareContent CreatePrepareContent(){
       IMPayMidasPrepareContent prepareContent = new IMPayMidasPrepareContent();
-      prepareContent.AppId = "1450005285";
       prepareContent.OfferId = "1450005285";
       prepareContent.OpenId = openId;
       prepareContent.OpenKey = accessToken;
@@ -67,43 +66,17 @@
     void TestPay(){
         IMSDKApi.PayOversea.Pay(GetPayMidasContent(),PayMidasCallback);//支付
     }
-```
-
-####二、高级功能：获取谷歌兑换码、获取营销活动、获取商品信息
-1. 代码实例   
- 
-```cs
-   void Start() {
-        ...
-        //见快速入门 初始化：设置支付环境、支付预处理等
-        ...
-    }
     
     /*
-    *prepare：支付预处理重载方法,Android特有,增加支持返回google兑换码功能
-    */
-    void TestPrepareForGoogle(){
-       IMSDKApi.PayOversea.Prepare(prepareContent,PayMidasUpdateCallback);
-    }
-    
-    /*
-    *GetMP:获取营销活动
-    */
-    void TestGetMP(){
-       IMSDKApi.PayOversea.GetMP(GetMidasAndroidPayContent(), MidasPayCallback);
-    }
-    
-   /*
-    *GetProducts:获取商品信息(从Midas后台获取)
+    *GetProducts:获取商品或营销活动信息(从Midas后台获取)
     */
     void TestGetProducts(){
-       List<IMMidasPayContent> list = new List<IMMidasPayContent>();
-       list.Add(GetMidasAndroidPayContent());
-       IMSDKApi.PayOversea.GetProducts(list, MidasProdctCallback);
+       IMPayMidasContent paycontent  = GetPayMidasContent();
+       IMSDKApi.PayOversea.GetProducts(paycontent, MidasProdctCallback);
     }
     
     /*
-    *GetProducts:获取商品信息重载方法(从Google后台获取),Android特有
+    *GetProducts:获取商品或营销活动信息(从Google后台获取),【Android特有】
     */
     void TestGetProductsFromGoogleSrv(){
        List<IMMidasProductContent> list = new List<IMMidasProductContent>();
@@ -112,75 +85,74 @@
        ...
       IMSDKApi.PayOversea.GetProducts(list, MidasProdctCallback);
     }
-    
 ```
-####三、 支付流程说明
+
+
+####二、 支付流程说明
 
 * 米大师支付分为初始化（Initialize）、设置支付渠道（SetChannel）、设置支付环境（SetEnv）、设置支付区域（SetIDC）、支付准备（Prepare）、支付（Pay）这几个步骤
 
-  1. 初始化，在支付流程中，必须先调用出售化接口才能调用其他函数，包括支付和设置支付渠道
+-----
+  1.初始化，在支付流程中，必须先调用初始化接口才能调用其他函数，包括支付和设置支付渠道
   
     ```cs
     IMSDKApi.PayOversea.Initailize( YOUR_GOOGLE_PUBLIC_KEY );
-    ```
-		
-	设置支付渠道，米大师支付流程中，支付渠道都是“Midas”开头的字符串
+    ```    
+    
+-----		
+  2.设置支付渠道，米大师支付流程中，支付渠道都是“Midas”开头的字符串
 
     ```cs
     IMSDKApi.PayOversea.SetChannel( YOUR_PAY_CHANNEL );
-    ```
-  2. 【可选】打开支付日志，测试时建议打开日志，便于定位问题，测试完成后可以关闭
+    ```      
+    
+-----
+  3.【可选】打开支付日志，测试时建议打开日志，便于定位问题，测试完成后可以关闭
 
     ```cs
     IMSDKApi.PayOversea.EnableDebugLog( YOUR_CHOICE );
-    ```
-
-  3. 设置支付环境，支付环境一般为测试（“test”）或者正式环境（“release”）
+    ```       
+    
+-----
+  4.设置支付环境，支付环境一般为测试（“test”）或者正式环境（“release”）
 
     ```cs
     IMSDKApi.PayOversea.SetEnv( YOUR_PAY_ENVIRONMENT ); 
-    ```
+    ```    
     
-  4. 设置支付服务器区域，一般根据自己游戏需要，选择合适的支付区域
+-----    
+  5.设置支付服务器区域，一般根据自己游戏需要，选择合适的支付区域
 
     ```cs
     IMSDKApi.PayOversea.SetIDC( YOUR_PAY_AREA );
-    ```
+    ```    
     
-  5. 支付准备，该步骤一般在登录操作完成后进行
+-----    
+
+  6.支付准备，该步骤一般在登录操作完成后进行
 
     ```cs
     IMSDKApi.PayOversea.Prepare( YOUR_PREPARE_CONTENT );
-    ```
+    ```     
     
-  6. 支付，只有完成上述步骤后，才能调用支付方法
+-----    
+
+  7.支付，只有完成上述步骤后，才能调用支付方法
     
     ```cs
     IMSDKApi.PayOversea.Pay( YOUR_PAY_CONTENT, YOUR_PAY_CALLBACK );
-    ```
+    ```      
     
-* 获取商品列表，包括两种方式：从米大师获取商品列表信息；从支付平台获取商品列表信息
-  
-  ```cs
-  IMSDKApi.PayOversea.GetProducts( YOUR_PRODUCT_LIST, YOUR_PRODUCT_CALLBACK );
-  ```		
-  返回信息为JSON字符串，需要游戏自行解析
-	
-* 获取营销活动信息
-
-  ```cs
-  IMSDKApi.PayOversea.GetMP( YOUR_PAY_CONTENT, YOUR_MP_CALLBACK );
-  ```
+-----      
   
   
-####四、支付信息参考
+####三、支付信息参考
 
 * 支付prepare信息结构体 <font color=blue>IMPayMidasPrepareContent</font>
 
-| 变量 | 说明 |
-| :-- | :-- |
-| public string AppId | 【Android】支付应用ID，从米大师获取 |    
-|public string offerId|【iOS】支付应用ID,从米大师获取|    
+| 变量 | 说明 |    
+| :-- | :-- |             
+| public string OfferId|【重要】支付应用ID,从米大师获取|    
 | public string OpenId | 用户 OpenID，取值为登录（Login）模块返回的 OpenID |
 | public string OpenKey | 用户校验凭证，取值为登录（Login）模块返回的 GuidToken |
 | public string SessionId | 米大师会话ID，取值为“hy_gameid” |
@@ -188,11 +160,11 @@
 | public string Pf | 米大师支付流水，可以通过GetPF方法获取 |
 | public string PfKey | 使用iMSDK支付时，取值为“pfKey” |
 | public string ZoneId | 米大师的大区ID，该ID需要在米大师管理端进行配置 |
-| public string Env <sup> * </sup> | 【iOS】【可选】米大师支付环境，取值为“test”（测试）、“release”（正式）中的一种 |
-| public string Local <sup> * </sup> | 【iOS】【可选】米大师支付区域，该值需要根据游戏的发布地区确认，如：“hongkong”（香港） |
-| public string SessionChannel <sup> * </sup> | 【iOS】登录渠道，与登录模块中的渠道ID定义保持一致，如：1（Facebook）、2（GameCenter）、3（Google Play & Plus）、4（Wechat）、5（iMSDK Guest）等等 |   
-
-<font color=green><sup> * </sup>说明：Env和Local为iOS专有字段，如果iOS环境下已经调用了SetEnv和SetIDC方法，这两个字段可以不填</font>
+| public string Env | 【iOS】【重要】米大师支付环境，取值为“test”（测试）、“release”（正式）中的一种 |
+| public string Local | 【iOS】【重要】米大师支付区域，该值需要根据游戏的发布地区确认，如：“hongkong”（香港） |
+| public string SessionChannel  | 【iOS】登录渠道，与登录模块中的渠道ID定义保持一致，如：1（Facebook）、2（GameCenter）、3（Google Play & Plus）、4（Wechat）、5（iMSDK Guest）等等 |   
+ 
+><font color=green>说明：Env和Local为iOS专有字段，如果iOS环境下已经调用了SetEnv方法，这个字段可以不填</font>
 
 
 * 支付信息结构体 <font color=blue>IMPayMidasContent</font>
@@ -235,7 +207,7 @@
 | :-- | :-- |
 | public string ProductId | 米大师商品ID，用于标识一件商品，在米大师管理端进行配置获取 |
 
-####五、支付结果类参考
+####四、支付结果类参考
 * 一般支付结果结构体 <font color=blue>IMPayMidasResult</font>
 
 | 类型 | 说明 |
@@ -270,7 +242,7 @@
 | public string ErrorMsg | 错误信息 |     
 |public string infor|结果信息|
 
-####六、支付接口参考     
+####五、支付接口参考     
 * 支付回调 <font color=blue>PayCallback</font>
 
 | 类型 | 说明 |
@@ -289,11 +261,12 @@
 | 4.|public void Pay(IMPayMidasContent content, MidasPayCallback callback=null) | 支付 |
 | 5.|public void Prepare(IMPayMidasPrepareContent content) | 支付预处理 |
 | 6.|public void Prepare(IMPayMidasPrepareContent content, MidasPayUpdateCallback callback) |  <font color=red>【Android特有】支付预处理，该接口增加返回Google兑换码功能 </font>|
-| 7.|public void GetProducts(IMPayMidasContent content, MidasProductCallback callback=null)   | 获取商品信息，从midas后台获取 |
-| 8.|public void GetProducts(List\< IMPayMidasProductContent \> productList, MidasProductCallback callback=null)  | <font color=red>【Android特有】获取商品信息，从Google后台获取</font> |    
+| 7.|public void GetProducts(IMPayMidasContent content, MidasProductCallback callback=null)   | 获取商品信息，从midas后台获取，返回信息列表在 `RespString` 参考 `IMPayMidasProductResult` , `IMPayMidasResult` |
+| 8.|public void GetProducts(List\< IMPayMidasProductContent \> productList, MidasProductCallback callback=null)  | <font color=red>【Android特有】获取商品信息，从Google后台获取,返回信息列表在 `RespString` 参考 `IMPayMidasProductResult` , `IMPayMidasResult`</font> |    
 | 9.|public bool SetEnv(string env) | 设置支付环境 |
 | 10.|public bool EnableDebugLog(bool enable) | 打开Midas调试日志 |
-| 11.|public void SetIDC(string idc="hk") | <font color=red>【Android特有】， 新版米大师Google钱包支付设定IDC，需要根据游戏上线位置选择合适的IDC</font> |
-| 12.|public bool SetScreenType(bool isLandscaple) | <font color=red>【Android特有】， 设置支付屏幕方向，true则为横屏，否则为竖屏</font> |
+| 11.|public void SetIDC(string idc="hk") | <font color=red>【Android特有】， 新版米大师Google钱包支付设定IDC，需要根据游戏上线位置选择合适的IDC，iOS的IDC设置参考`IMPayMidasPrepareContent` 成员 `Local` </font> |
+| 12.|public bool SetScreenType(bool isLandscaple) | <font color=red>【Android特有】， 设置支付屏幕方向，true则为横屏，否则为竖屏</font> |     
+>SetIDC方法只支持Android平台，iOS的IDC的设置是在`IMPayMidasPrepareContent`类的成员`Local`来标识
 
 
