@@ -19,7 +19,7 @@ Tencent.iMSDK
 + 配置与Login一样
 
 ####3.2 Android 使用说明
-	配置参考[Efun](../../../Channel/Efun/android.md)，作如下修改
++ 配置参考[Efun](/Channel/Efun/android.md)，作如下修改
 
   
 ###4. API参考
