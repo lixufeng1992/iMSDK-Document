@@ -53,7 +53,8 @@ IMSDKApi.IMGarena
 | 函数名 | 函数说明 |
 | :-- | :-- |
 | public void Initialize () | 初始化方法，在调用其他函数之前必须调用该函数 |
-| public void OpenMShop (String region, int roleId, int serverId, IMGarenaMShopClosedCallBack callback) | 打开MShop|
+| public void OpenMShop (String region, int roleId, int serverId, IMGarenaMShopClosedCallBack callback) | 打开MShop, region: 请传"TW", 这个参数表示国家, TW, VN, TH, ID, SG, MY, PH, 会根据这个值跳转到不同的国家的mshop, 每个国家的mshop URL是不一样的;serverId:  玩家选的区 (服) 不同，对应的app_server_id也是不一样的，目前AOA只有一个区，ID为11，这个需要游戏传正确的值过来;roleId: 服务器中每个角色的ID; 
+|
 | public string GetMShopLink(string region, int roleId, int serverId, bool embedded) | 获取MShop链接信息 |
 
 
