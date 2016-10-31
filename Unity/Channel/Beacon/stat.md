@@ -19,7 +19,7 @@
 ### Beacon 统计配置说明
 
 + [Android 配置参考](../../../Channel/Beacon/android.md) 
-+ [iOS 配置参考]()
++ [iOS 配置参考](../../../Channel/Beacon/android.md)
 
 
 
