@@ -21,4 +21,4 @@
 
 + [Android 端配置说明](../../../Channel/Bugly/android.md)
 
-+ [iOS端配置说明](../../../Channel/Bugly/android.md)
++ [iOS端配置说明](../../../Channel/Bugly/ios.md)
