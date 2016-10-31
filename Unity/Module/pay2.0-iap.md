@@ -2,7 +2,7 @@
 
 ### 4.4.5.1 iOS-IAP支付
 
-####快速入门
+####一、快速入门
 1. 代码实例
 
 ```cs
@@ -94,7 +94,7 @@
 ```
 
   
-#### 支付信息类参考
+#### 二、支付信息类参考
 
 * IAP支付初始化信息 <font color=blue>IMPayIAPInfo</font>    
 
@@ -131,7 +131,7 @@
 |public string OfferId|业务在Midas平台注册的业务id|    
 |public string Custom||  
 
-#### 支付结果类参考
+#### 三、支付结果类参考
 * IAP支付结果结构体 <font color=blue>IMPayIAPResult</font>
 
 | 类型 | 说明 |    
@@ -179,7 +179,7 @@
 |public bool IsReprovide|是否补发货|   
 |public string GoodsInfo||    
 		
-#### 支付接口参考
+#### 四、支付接口参考
 * 支付回调 
 
 | 类型 | 说明 |
