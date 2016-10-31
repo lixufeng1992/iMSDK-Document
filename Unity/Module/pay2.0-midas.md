@@ -1,31 +1,32 @@
 
 ### 4.4.5.1 米大师支付
 
-####快速入门
+####一、快速入门
 1. [完成特定渠道配置](../../Channel/midas.md)   
 2. 代码实例
 
 ```cs
     /*
-    *构造支付预处理结构体：IMPayPrepareContent
+    *构造支付预处理结构体：IMPayMidasPrepareContent
     */  
-    IMPayPrepareContent CreatePrepareContent(){
-      IMPayPrepareContent prepareContent = new IMPayPrepareContent();
+    IMPayMidasPrepareContent CreatePrepareContent(){
+      IMPayMidasPrepareContent prepareContent = new IMPayMidasPrepareContent();
       prepareContent.AppId = "1450005285";
+      prepareContent.OfferId = "1450005285";
       prepareContent.OpenId = openId;
       prepareContent.OpenKey = accessToken;
-      prepareContent.SessionId = "hy_gameid"; // usually "hy_gameid"
-      prepareContent.SessionType = "st_overseas"; // check imsdk login status
-      prepareContent.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");
+      prepareContent.SessionId = "hy_gameid"; 
+      prepareContent.SessionType = "st_overseas"; 
+      prepareContent.Pf = "IEG_iTOP-2001-iap-2011-Zalo-1011-1000065-XD";
       prepareContent.PfKey = "pfKey";
       prepareContent.ZoneId = "1";
   }
    
    /*
-    *构造支付结构体：IMMidasPayContent
+    *构造支付结构体：IMPayMidasContent
     */ 
-   IMMidasPayContent GetMidasPayContent(){
-          IMMidasPayContent content = new IMMidasPayContent ();
+   IMPayMidasContent GetPayMidasContent(){
+          IMPayMidasContent content = new IMPayMidasContent ();
           content.OfferId = "1450005285";
           content.OpenId = openId;
           content.OpenKey = accessToken;
@@ -33,7 +34,7 @@
           //content.SessionType = "st_overseas"; // check imsdk login status
           content.SessionType = "st_dummy"; // do NOT check imsdk login status
           content.ZoneId = "1";
-          content.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");
+          content.Pf = "IEG_iTOP-2001-iap-2011-Zalo-1011-1000065-XD";
           content.PfKey = "pfKey";
           content.ProductId = "midas_product_1";
           content.ResId = "unipay_abroad_iconload";
@@ -49,7 +50,10 @@
     *初始化：设置支付环境、支付预处理等
     */
     void Start() {
-        IMSDKApi.PayOversea.Initialize("");//模块功能初始化
+    	List<string> channels = new List<string>();
+	channels.Add("MidasGoogle");
+        IMSDKApi.PayOversea.Initialize(channels);//模块功能初始化
+	
         IMSDKApi.PayOversea.SetChannel("MidasGoogle");//设置渠道
         IMSDKApi.PayOversea.SetEnv("test");//设置沙箱环境
         IMSDKApi.PayOversea.EnableDebugLog(true);//设置开启日志
@@ -61,11 +65,11 @@
     *支付
     */
     void TestPay(){
-        IMSDKApi.PayOversea.Pay(GetMidasPayContent(),MidasPayCallback);//支付
+        IMSDKApi.PayOversea.Pay(GetPayMidasContent(),PayMidasCallback);//支付
     }
 ```
 
-####高级功能：获取谷歌兑换码、获取营销活动、获取商品信息
+####二、高级功能：获取谷歌兑换码、获取营销活动、获取商品信息
 1. 代码实例   
  
 ```cs
@@ -79,7 +83,7 @@
     *prepare：支付预处理重载方法,Android特有,增加支持返回google兑换码功能
     */
     void TestPrepareForGoogle(){
-       IMSDKApi.PayOversea.Prepare(prepareContent,MidasPayUpdateCallback);
+       IMSDKApi.PayOversea.Prepare(prepareContent,PayMidasUpdateCallback);
     }
     
     /*
@@ -110,7 +114,7 @@
     }
     
 ```
-#### 支付流程说明
+####三、 支付流程说明
 
 * 米大师支付分为初始化（Initialize）、设置支付渠道（SetChannel）、设置支付环境（SetEnv）、设置支付区域（SetIDC）、支付准备（Prepare）、支付（Pay）这几个步骤
 
@@ -169,13 +173,13 @@
   ```
   
   
- #### 参考
+ ####四、支付信息参考
 
-* 支付准备信息结构体 <font color=blue>IMPayPrepareContent</font>
+* 支付prepare信息结构体 <font color=blue>IMPayMidasPrepareContent</font>
 
 | 变量 | 说明 |
 | :-- | :-- |
-| public string AppId | 支付应用ID，又称为OfferId，从米大师获取 |
+| public string AppId | 【Android】支付应用ID，又称为OfferId，从米大师获取 |
 | public string OpenId | 用户 OpenID，取值为登录（Login）模块返回的 OpenID |
 | public string OpenKey | 用户校验凭证，取值为登录（Login）模块返回的 GuidToken |
 | public string SessionId | 米大师会话ID，取值为“hy_gameid” |
@@ -185,16 +189,16 @@
 | public string ZoneId | 米大师的大区ID，该ID需要在米大师管理端进行配置 |
 | public string Env <sup> * </sup> | 【iOS】【可选】米大师支付环境，取值为“test”（测试）、“release”（正式）中的一种 |
 | public string Local <sup> * </sup> | 【iOS】【可选】米大师支付区域，该值需要根据游戏的发布地区确认，如：“hongkong”（香港） |
-| public string SessionChannel <sup> * </sup> | 【iOS】登录渠道，与登录模块中的渠道ID定义保持一致，如：1（Facebook）、2（GameCenter）、3（Google Play & Plus）、4（Wechat）、5（iMSDK Guest）等等 |
+| public string SessionChannel <sup> * </sup> | 【iOS】登录渠道，与登录模块中的渠道ID定义保持一致，如：1（Facebook）、2（GameCenter）、3（Google Play & Plus）、4（Wechat）、5（iMSDK Guest）等等 |   
 
 <font color=green><sup> * </sup>说明：Env和Local为iOS专有字段，如果iOS环境下已经调用了SetEnv和SetIDC方法，这两个字段可以不填</font>
 
 
-* 支付信息结构体 <font color=blue>IMMidasPayContent</font>
+* 支付信息结构体 <font color=blue>IMPayMidasContent</font>
 
 | 变量 | 说明 |
 | :-- | :-- |
-| public string OfferId | 支付应用ID，又称为AppId，从米大师获取 |
+| public string OfferId | 支付应用ID，从米大师获取 |
 | public string OpenId | 用户 OpenID，取值为登录（Login）模块返回的 OpenID |
 | public string OpenKey | 用户校验凭证，取值为登录（Login）模块返回的 GuidToken |
 | public string SessionId | 米大师会话ID，取值为“hy_gameid” |
@@ -224,12 +228,13 @@
 | public string reqType | 【iOS】 |
 | public string serviceCode | 【iOS】|
 
-* 获取商品信息结构体 <font color=blue>IMMidasProductContent</font>
+* 获取商品信息结构体 <font color=blue>IMPayMidasProductContent</font>【only for android google pay】
 
 | 变量 | 说明 |
 | :-- | :-- |
 | public string ProductId | 米大师商品ID，用于标识一件商品，在米大师管理端进行配置获取 |
 
+####五、支付结果类参考
 * 一般支付结果结构体 <font color=blue>IMPayResult</font>
 
 | 类型 | 说明 |
@@ -247,7 +252,7 @@
 | public int ExtendInfo2 | |
 | public int ExtendInfo3 | - |
 
-
+####六、支付接口参考
 * 支付回调 <font color=blue>PayCallback</font>
 
 | 类型 | 说明 |
