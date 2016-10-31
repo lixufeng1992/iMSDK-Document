@@ -94,7 +94,7 @@
 ```
 
   
-#### 参考
+#### 支付信息类参考
 
 * IAP支付初始化信息 <font color=blue>IMPayIAPInfo</font>    
 
@@ -131,6 +131,7 @@
 |public string OfferId|业务在Midas平台注册的业务id|    
 |public string Custom||  
 
+#### 支付结果类参考
 * IAP支付结果结构体 <font color=blue>IMPayIAPResult</font>
 
 | 类型 | 说明 |    
@@ -178,7 +179,7 @@
 |public bool IsReprovide|是否补发货|   
 |public string GoodsInfo||    
 		
-
+#### 支付接口参考
 * 支付回调 
 
 | 类型 | 说明 |
@@ -194,7 +195,7 @@
 |public bool Initialize(IMPayIAPInfo info)| IAP支付初始化|    
 |public string GetPf(string openId="1000000", string registerChannel="2001", string setupChannel="2011", string appCode="AppCode") |IAP支付获取pf|  
 |public void Pay(IMPayIAPContent content)|IAP支付|  
-|	public void GetProducts(List<string>productIds)|IAP获取商品信息|    
+|	public void GetProducts(List\<string\>productIds)|IAP获取商品信息|    
 |public void GetMP (IMPayIAPContent content,IAPGetMPCallback callback = null)|IAP拉取营销活动|   
 |public void SetRegisterCallback(PayCallback callback)|设置注册回调|  
 |	public void SetOrderCallback(PayCallback callback)| 设置定单回调|   
