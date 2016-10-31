@@ -6,7 +6,7 @@
 | :--- |
 | [Facebook配置](facebook.md) |
 | [Google配置](google.md) |
-| [Wechat]
+| [WeChat](wechat.md) |
 | [Expansion 配置](expansion.md) |
 | [Midas 配置](midas.md) |
 | [信鸽 配置](xg.md) |
