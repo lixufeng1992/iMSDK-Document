@@ -37,8 +37,8 @@
 | :--- | :--- | :--- |
 | [Android](../Android/README.md) | Java | - |
 | [iOS](iOS/README.md) | C++\(C98、C11\) | - |
-| [Unity](Unity/README.md) | C\# | 只支持Android、iOS手机平台 |
-| [C++引擎](Cpp/README.md) | C++ | 只支持Android、iOS手机平台 |
+| [Unity](../Unity/README.md) | C\# | 只支持Android、iOS手机平台 |
+| [C++引擎](../Cpp/README.md) | C++ | 只支持Android、iOS手机平台 |
 
 > **需要注意的是，iMSDK并不是全平台支持，目前只支持Android、iOS两大移动平台**
 
