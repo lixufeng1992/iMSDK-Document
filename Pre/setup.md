@@ -48,7 +48,7 @@
 
 | 功能 | 支持平台 | 介绍 |
 | :--- | :--- | :--- |
-| 登录 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 提供授权信息，为游戏登录提供支持 |
+| 登录 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](../Unity/README.md), [C++](../Cpp/README.md) | 提供授权信息，为游戏登录提供支持 |
 | 分享 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 提供统一的第三方登录渠道分享，如：分享微信朋友圈 |
 | 好友 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 邀请好友，获取好友列表及向好友发送消息等功能 |
 | 支付 | [Android](../Android/README.md), [iOS](../iOS/README.md), [Unity](./Unity/README.md), [C++](../Cpp/README.md) | 集成米大师（Midas）海外支付，包括Google Pay、IAP和第三方支付 |
