@@ -173,7 +173,7 @@
   ```
   
   
- ####四、支付信息参考
+####四、支付信息参考
 
 * 支付prepare信息结构体 <font color=blue>IMPayMidasPrepareContent</font>
 
@@ -245,38 +245,55 @@
 | public int InnerCode | |
 | public int RetBillNo | |
 | public int RealSaveNum | |
-| public int PayChannel |支付渠道，只有支付成功时才返回相应的支付渠道<br>PAYCHANEL_UNKOWN       = -1;</br><br>PAYCHANEL_GOOGLE_WALLET    = 100;</br><br>PAYCHANEL_BOKU   = 101;</br><br>PAYCHANEL_MOL_PIN  = 102;</br><br>
-PAYCHANEL_MOL_EASYPAY    = 103;</br><br>PAYCHANEL_MOL_WALLET       = 104;</br><br>PAYCHANEL_PAYMENTWALL        = 105;</br><br>PAYCHANEL_MYCARD           = 106;</br><br>PAYCHANEL_ZALO             =107; </br>|
+| public int PayChannel |支付渠道，只有支付成功时才返回相应的支付渠道<br>PAYCHANEL_UNKOWN       = -1;</br><br>PAYCHANEL_GOOGLE_WALLET    = 100;</br><br>PAYCHANEL_BOKU   = 101;</br><br>PAYCHANEL_MOL_PIN  = 102;</br><br>PAYCHANEL_MOL_EASYPAY    = 103;</br><br>PAYCHANEL_MOL_WALLET       = 104;</br><br>PAYCHANEL_PAYMENTWALL        = 105;</br><br>PAYCHANEL_MYCARD           = 106;</br><br>PAYCHANEL_ZALO             =107; </br>|
 | public int PayState |支付状态,<br>PAYSTATE_PAYUNKOWN     = -1;</br><br>//支付成功</br><br>PAYSTATE_PAYSUCC       = 0;</br><br>//用户取消</br><br>PAYSTATE_PAYCANCEL     = 1;</br><br>//支付出错</br><br>PAYSTATE_PAYERROR      = 2;</br> |
-| public int ProvideState |发货状态,<br>//发货异常，无法知道是否发货成功： PAYPROVIDESTATE_UNKOWN = -1;</br><br>//发货成功
-PAYPROVIDESTATE_SUCC   = 0; </br>|
+| public int ProvideState |发货状态：<br>PAYPROVIDESTATE_UNKOWN = -1//发货异常，无法知道是否发货成功；</br><br>PAYPROVIDESTATE_SUCC = 0//发货成功 </br>|
 | public string ExtendInfo | |     
 | public string RespString | 获取商品与营销活动列表信息，Json格式| 
 | public string PayReserve1 |-|
 | public string PayReserve2 |- |
-| public string PayReserve3 | - |
+| public string PayReserve3 | - |    
+
+* 拉取商品或营销活动列表结果<font color=blue>IMPayMidasProductResult</font>   
+
+| 类型 | 说明 |
+| :-- | :-- |    
+| public int RetCode | 登录状态码，1 为成功，其他为失败 |
+| public string ErrorMsg | 错误信息 |     
+|public List\<IMPayMidasResult\>productList|商品列表|
+
+* Prepare时返回Google兑换码结果    
+
+| 类型 | 说明 |
+| :-- | :-- |    
+| public int RetCode | 登录状态码，1 为成功，其他为失败 |
+| public string ErrorMsg | 错误信息 |     
+|public string infor|结果信息|
 
 ####六、支付接口参考     
 * 支付回调 <font color=blue>PayCallback</font>
 
 | 类型 | 说明 |
 | :-- | :-- |
-| public delegate void PayCallback(IMPayResult result) | 登录回调函数，返回支付结果结构体 |
+| public delegate void MidasPayCallback(IMPayMidasResult result) | 支付结果回调，返回支付结果结构体 |     
+|public delegate void MidasProductCallback(IMPayMidasProductResult result)|获取商品或营销活动列表结果回调|    
+|public delegate void MidasPayUpdateCallbalk(IMPayMidasUpdateRresult)| 【Android】prepare时从google后台获取兑换码|
 
 * 支付接口说明
-|序号 | 方法名 | 方法说明 |
-| :-- | :-- | :-- |
-| 1.|public bool Initialize(List\< string \> payChannels, string googlePublicKey = "")|【Android】 初始化|
-| 3.|public bool SetEnv(string env) | 设置支付环境 |
-| 4.|public bool EnableDebugLog(bool enable) | 打开Midas调试日志 |
-| 5.|public void SetIDC(string idc="hk") | <font color=red>【Android特有】， 新版米大师Google钱包支付设定IDC，需要根据游戏上线位置选择合适的IDC</font> |
-| 6.|public bool SetScreenType(bool isLandscaple) | <font color=red>【Android特有】， 设置支付屏幕方向，true则为横屏，否则为竖屏</font> |
-| 7.|public bool SetChannel(string channel) | 设置支付渠道 |
-| 8.|public string GetChannel() | 获取支付渠道 |
-| 9.|public void Pay(IMPayMidasContent content, MidasPayCallback callback=null) | 支付 |
-| 11.|public void Prepare(IMPayMidasPrepareContent content) | 支付预处理 |
-| 12.|public void Prepare(IMPayMidasPrepareContent content, MidasPayUpdateCallback callback) |  <font color=red>【Android特有】支付预处理，该接口增加返回Google兑换码功能 </font>|
-| 14.|public void GetProducts(IMPayMidasContent content, MidasProductCallback callback=null)   | 获取商品信息，从midas后台获取 |
-| 15.|public void GetProducts(List\< IMPayMidasProductContent \> productList, MidasProductCallback callback=null)  | <font color=red>【Android特有】获取商品信息，从Google后台获取</font> |
+
+|序号 | 方法名 | 方法说明 |        
+| :-- | :-- | :-- |        
+| 1.|public bool Initialize(List\< string \> payChannels, string googlePublicKey = "")|【Android】 初始化|   
+| 2.|public bool SetChannel(string channel) | 设置支付渠道 |
+| 3.|public string GetChannel() | 获取支付渠道 |
+| 4.|public void Pay(IMPayMidasContent content, MidasPayCallback callback=null) | 支付 |
+| 5.|public void Prepare(IMPayMidasPrepareContent content) | 支付预处理 |
+| 6.|public void Prepare(IMPayMidasPrepareContent content, MidasPayUpdateCallback callback) |  <font color=red>【Android特有】支付预处理，该接口增加返回Google兑换码功能 </font>|
+| 7.|public void GetProducts(IMPayMidasContent content, MidasProductCallback callback=null)   | 获取商品信息，从midas后台获取 |
+| 8.|public void GetProducts(List\< IMPayMidasProductContent \> productList, MidasProductCallback callback=null)  | <font color=red>【Android特有】获取商品信息，从Google后台获取</font> |    
+| 9.|public bool SetEnv(string env) | 设置支付环境 |
+| 10.|public bool EnableDebugLog(bool enable) | 打开Midas调试日志 |
+| 11.|public void SetIDC(string idc="hk") | <font color=red>【Android特有】， 新版米大师Google钱包支付设定IDC，需要根据游戏上线位置选择合适的IDC</font> |
+| 12.|public bool SetScreenType(bool isLandscaple) | <font color=red>【Android特有】， 设置支付屏幕方向，true则为横屏，否则为竖屏</font> |
 
 
