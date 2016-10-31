@@ -7,6 +7,7 @@
 | [Facebook配置](facebook.md) |
 | [Google配置](google.md) |
 | [WeChat配置](wechat.md) |
+| [Kakao配置]
 | [Expansion 配置](expansion.md) |
 | [Midas 配置](midas.md) |
 | [信鸽 配置](xg.md) |
