@@ -15,8 +15,8 @@
 1. 代码实例
 
 ```cs
-	private IMToolDeviceInfo deviceInfoObj;
-	private string deviceInfoStr;
+    private IMToolDeviceInfo deviceInfoObj;
+    private string deviceInfoStr;
     private string public string packageChannelId;
     
     
