@@ -253,7 +253,7 @@
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
 // GetPhoneName() <--> android.permission.BLUETOOTH
 <uses-permission android:name="android.permission.BLUETOOTH"/> 
-// GetMac()
+// GetMac() <-->
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
 
