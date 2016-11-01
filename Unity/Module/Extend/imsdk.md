@@ -245,8 +245,9 @@
 ### 配置说明
 
 #### Android配置说明
+
 ```
-// GetGuestId(),GetIMEI(),GetOperators() -- android.permission.READ_PHONE_STATE
+// GetGuestId(),GetIMEI(),GetOperators() <--> android.permission.READ_PHONE_STATE
 <uses-permission android:name="android.permission.READ_PHONE_STATE"/> 
 // GetApn() -- android.permission.ACCESS_NETWORK_STATE
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
@@ -255,6 +256,7 @@
 // GetMac()
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
+
 
 
 
