@@ -92,58 +92,50 @@
 
 * 米大师支付分为初始化（Initialize）、设置支付渠道（SetChannel）、设置支付环境（SetEnv）、设置支付区域（SetIDC）、支付准备（Prepare）、支付（Pay）这几个步骤
 
------
   1.初始化，在支付流程中，必须先调用初始化接口才能调用其他函数，包括支付和设置支付渠道
   
     ```cs
     IMSDKApi.PayOversea.Initailize( YOUR_GOOGLE_PUBLIC_KEY );
     ```    
-    
------		
+	
   2.设置支付渠道，米大师支付流程中，支付渠道都是“Midas”开头的字符串
 
     ```cs
     IMSDKApi.PayOversea.SetChannel( YOUR_PAY_CHANNEL );
     ```      
-    
------
+
   3.【可选】打开支付日志，测试时建议打开日志，便于定位问题，测试完成后可以关闭
 
     ```cs
     IMSDKApi.PayOversea.EnableDebugLog( YOUR_CHOICE );
     ```       
-    
------
+
   4.设置支付环境，支付环境一般为测试（“test”）或者正式环境（“release”）
 
     ```cs
     IMSDKApi.PayOversea.SetEnv( YOUR_PAY_ENVIRONMENT ); 
     ```    
-    
------    
+
   5.设置支付服务器区域，一般根据自己游戏需要，选择合适的支付区域
 
     ```cs
     IMSDKApi.PayOversea.SetIDC( YOUR_PAY_AREA );
     ```    
-    
------    
+  
 
   6.支付准备，该步骤一般在登录操作完成后进行
 
     ```cs
     IMSDKApi.PayOversea.Prepare( YOUR_PREPARE_CONTENT );
     ```     
-    
------    
+  
 
   7.支付，只有完成上述步骤后，才能调用支付方法
     
     ```cs
     IMSDKApi.PayOversea.Pay( YOUR_PAY_CONTENT, YOUR_PAY_CALLBACK );
     ```      
-    
------      
+   
   
   
 ####三、支付信息参考
@@ -232,7 +224,7 @@
 | :-- | :-- |    
 | public int RetCode | 登录状态码，1 为成功，其他为失败 |
 | public string ErrorMsg | 错误信息 |     
-|public List\<IMPayMidasResult\>productList|商品列表|
+|public List &lt; IMPayMidasResult &gt; productList|商品列表|
 
 * Prepare时返回Google兑换码结果    
 
@@ -255,14 +247,14 @@
 
 |序号 | 方法名 | 方法说明 |        
 | :-- | :-- | :-- |        
-| 1.|public bool Initialize(List\< string \> payChannels, string googlePublicKey = "")|【Android】 初始化|   
+| 1.|public bool Initialize(List &lt; string &gt; payChannels, string googlePublicKey = "")|【Android】 初始化|   
 | 2.|public bool SetChannel(string channel) | 设置支付渠道 |
 | 3.|public string GetChannel() | 获取支付渠道 |
 | 4.|public void Pay(IMPayMidasContent content, MidasPayCallback callback=null) | 支付 |
 | 5.|public void Prepare(IMPayMidasPrepareContent content) | 支付预处理 |
 | 6.|public void Prepare(IMPayMidasPrepareContent content, MidasPayUpdateCallback callback) |  <font color=red>【Android特有】支付预处理，该接口增加返回Google兑换码功能 </font>|
 | 7.|public void GetProducts(IMPayMidasContent content, MidasProductCallback callback=null)   | 获取商品信息，从midas后台获取，返回信息列表在 `RespString` 参考 `IMPayMidasProductResult` , `IMPayMidasResult` |
-| 8.|public void GetProducts(List\< IMPayMidasProductContent \> productList, MidasProductCallback callback=null)  | <font color=red>【Android特有】获取商品信息，从Google后台获取,返回信息列表在 `RespString` 参考 `IMPayMidasProductResult` , `IMPayMidasResult`</font> |    
+| 8.|public void GetProducts(List &lt; IMPayMidasProductContent &gt; productList, MidasProductCallback callback=null)  | <font color=red>【Android特有】获取商品信息，从Google后台获取,返回信息列表在 `RespString` 参考 `IMPayMidasProductResult` , `IMPayMidasResult`</font> |    
 | 9.|public bool SetEnv(string env) | 设置支付环境 |
 | 10.|public bool EnableDebugLog(bool enable) | 打开Midas调试日志 |
 | 11.|public void SetIDC(string idc="hk") | <font color=red>【Android特有】， 新版米大师Google钱包支付设定IDC，需要根据游戏上线位置选择合适的IDC，iOS的IDC设置参考`IMPayMidasPrepareContent` 成员 `Local` </font> |
