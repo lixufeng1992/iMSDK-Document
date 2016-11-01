@@ -52,4 +52,4 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
         <!-- 配置Bugly调试模式（true或者false）-->
 
 ```
-> READ_PHONE_STATE用于读取设备的IMEI号，
+> READ_PHONE_STATE用于读取设备的IMEI号
