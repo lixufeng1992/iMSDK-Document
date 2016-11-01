@@ -11,7 +11,6 @@
     */  
     IMPayMidasPrepareContent CreatePrepareContent(){
       IMPayMidasPrepareContent prepareContent = new IMPayMidasPrepareContent();
-      prepareContent.AppId = "1450005285";
       prepareContent.OfferId = "1450005285";
       prepareContent.OpenId = openId;
       prepareContent.OpenKey = accessToken;
@@ -177,10 +176,9 @@
 
 * 支付prepare信息结构体 <font color=blue>IMPayMidasPrepareContent</font>
 
-| 变量 | 说明 |
-| :-- | :-- |
-| public string AppId | 【Android】支付应用ID，从米大师获取 |    
-|public string offerId|【iOS】支付应用ID,从米大师获取|    
+| 变量 | 说明 |    
+| :-- | :-- |             
+| public string OfferId|【重要】支付应用ID,从米大师获取|    
 | public string OpenId | 用户 OpenID，取值为登录（Login）模块返回的 OpenID |
 | public string OpenKey | 用户校验凭证，取值为登录（Login）模块返回的 GuidToken |
 | public string SessionId | 米大师会话ID，取值为“hy_gameid” |
@@ -188,11 +186,11 @@
 | public string Pf | 米大师支付流水，可以通过GetPF方法获取 |
 | public string PfKey | 使用iMSDK支付时，取值为“pfKey” |
 | public string ZoneId | 米大师的大区ID，该ID需要在米大师管理端进行配置 |
-| public string Env <sup> * </sup> | 【iOS】【可选】米大师支付环境，取值为“test”（测试）、“release”（正式）中的一种 |
-| public string Local <sup> * </sup> | 【iOS】【可选】米大师支付区域，该值需要根据游戏的发布地区确认，如：“hongkong”（香港） |
-| public string SessionChannel <sup> * </sup> | 【iOS】登录渠道，与登录模块中的渠道ID定义保持一致，如：1（Facebook）、2（GameCenter）、3（Google Play & Plus）、4（Wechat）、5（iMSDK Guest）等等 |   
-
-<font color=green><sup> * </sup>说明：Env和Local为iOS专有字段，如果iOS环境下已经调用了SetEnv和SetIDC方法，这两个字段可以不填</font>
+| public string Env | 【iOS】【可选】米大师支付环境，取值为“test”（测试）、“release”（正式）中的一种 |
+| public string Local | 【iOS】【可选】米大师支付区域，该值需要根据游戏的发布地区确认，如：“hongkong”（香港） |
+| public string SessionChannel  | 【iOS】登录渠道，与登录模块中的渠道ID定义保持一致，如：1（Facebook）、2（GameCenter）、3（Google Play & Plus）、4（Wechat）、5（iMSDK Guest）等等 |   
+ 
+><font color=green>说明：Env和Local为iOS专有字段，如果iOS环境下已经调用了SetEnv和SetIDC方法，这两个字段可以不填</font>
 
 
 * 支付信息结构体 <font color=blue>IMPayMidasContent</font>
