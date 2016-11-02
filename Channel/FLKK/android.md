@@ -17,7 +17,7 @@
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
-* 入口Application配置
+* 入口Application配置<span id="Application"></span>
     
     FLKK渠道需要抢占入口Application， 请在工程主AndroidManifest中，找到Application节点，并将name属性值改为如下：
 
@@ -70,6 +70,10 @@
     <meta-data android:name="FLGAMESDK_COMPANY_ID" android:value="{your FLGAMESDK_COMPANY_ID}" />
     <meta-data android:name="FLGAMESDK_COOP_ID" android:value="{your FLGAMESDK_COOP_ID}" />
 ```
+
+###＃ 注意点：
+＋ 1 游戏需配置Application，参考
+
 
 
 
