@@ -17,7 +17,7 @@
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
-* 入口Application配置<span id="Application"></span>
+* 入口Application配置
     
     FLKK渠道需要抢占入口Application， 请在工程主AndroidManifest中，找到Application节点，并将name属性值改为如下：
 
