@@ -1,7 +1,7 @@
 ### MTA统计配置说明
 
 #### Android 端配置说明
-MTA接入和配置参考[http://developer.qq.com/wiki/mta/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.html](http://developer.qq.com/wiki/mta/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.html)
+[MTA接入和配置参考](http://developer.qq.com/wiki/mta/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.html)
 
 ```xml
 <!-- 权限配置 -->
