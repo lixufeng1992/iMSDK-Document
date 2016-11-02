@@ -147,7 +147,7 @@
         * [渠道设置](Channel/工程设置.md)
         * [功能说明](Channel/功能说明.md)
     * Appsflyer
-        * 渠道设置
+        * [渠道设置](Channel/渠道设置.md)
         * 功能说明
     * [Beacon（灯塔）](Channel/beacon（灯塔）.md)
         * 渠道设置
