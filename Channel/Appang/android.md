@@ -11,7 +11,7 @@
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
 
-* 请砸<Application /> 节点中添加如下 meta-data配置
+* 请在 ```<Application />``` 节点中添加如下 meta-data配置
 
     请在工程主AndroidManifest.xml文件中Application节点内添加如下meta-data配置
 ```xml
