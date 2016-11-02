@@ -1,7 +1,7 @@
 ### AppsFlyer统计配置说明
 
  #### Android 端配置说明
-＋ iMSDK appsflyer 统计插件版本1.6.0 和 1.6.1版本请用如下配置
+ * iMSDK appsflyer 统计插件版本1.6.0 和 1.6.1版本请用如下配置
  ``` xml 
  <!-- version 1.6.0 and 1.6.1 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -35,9 +35,12 @@
 	<meta-data android:name="GCM_PROJECT_NUM" android:value="your_gcm_project_num"/>
  ```
  
- 
-
  -----------------
+
+* iMSDK appsflyer 统计插件版本1.8.0 及以上版本请用如下配置
+> 1.8.0及以上版本以来新的appsflyer三方包（4.5.0），增加卸载追踪功能
+
+
  ``` xml 
  <!-- version 1.8.0 and upper add uninstall function -->
  <!-- version 1.8.0 and upper -->
