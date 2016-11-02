@@ -143,6 +143,8 @@
         * [6.10.1 Stove平台配置](Channel/Stove/developer.md)
         * [6.10.2 Android 配置](Channel/Stove/android.md)
         * [6.10.3 iOS 配置](Channel/Stove/ios.md)
+    * MTA渠道
+    * Appsflyer渠道
 * [7. iMSDK后台](Server/README.md)
     * [登录态判定接口定义](Server/登录态判定接口定义.md)
     * [errorcode定义](Server/errorcode定义.md)
