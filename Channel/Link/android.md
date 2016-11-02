@@ -41,5 +41,6 @@
     <meta-data android:name="com.aiming.link.debuglevel" android:value = "@string/link_debuglevel"/> <!-- true of false-->
 ```
 > com.aiming.link.DeleteAuthToken 标记用户删除App再重新安装，是否删除以前的LinkAuthToken，重新获取新的LinkAuthToken， 具体为下：设置为 true， 在App第一次启动时，会自动删除以前老的LinkAuthToken，获取新的LinkAuthToken，设置为false或者不设置，则会继承之前的LinkAuthToken。
+> com.aiming.link.debuglevel用于设置是否打开LinkSDK的日志，设置为true，则打开LinkSDK的日志，设置为false，则关闭LinkSDK的日志。
 
 
