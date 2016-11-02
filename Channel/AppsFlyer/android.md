@@ -94,6 +94,7 @@
     IMSDKStat.initialize(this);    
     if(IMSDKStat.initChannel("AppsFlyer", new String[]    {IStat.STAT_EVENT_INITIALIZE})){ IMLogger.d("init AppsFlyer OK");};
 ```
+* your_devkey 需替换成游戏自己的AppsFlyer Key，该值需到[AppsFlyer官网](https://www.appsflyer.com/)申请
 
  
  
