@@ -144,12 +144,20 @@
         * [6.10.2 Android 配置](Channel/Stove/android.md)
         * [6.10.3 iOS 配置](Channel/Stove/ios.md)
     * [MTA](Channel/mta.md)
-        * [工程设置](Channel/工程设置.md)
+        * [渠道设置](Channel/工程设置.md)
         * [功能说明](Channel/功能说明.md)
     * Appsflyer
-    * Beacon（灯塔）
+        * 渠道设置
+        * 功能说明
+    * [Beacon（灯塔）](Channel/beacon（灯塔）.md)
+        * 渠道设置
+        * 功能说明
     * XG（信鸽）
+        * 渠道设置
+        * 功能说明
     * GameCenter
+        * 渠道设置
+        * 功能说明
 * [7. iMSDK后台](Server/README.md)
     * [登录态判定接口定义](Server/登录态判定接口定义.md)
     * [errorcode定义](Server/errorcode定义.md)
