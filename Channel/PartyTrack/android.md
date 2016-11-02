@@ -18,7 +18,7 @@
     </receiver>
 ```
 
-*meta-data配置管理
+* meta-data配置管理
 ```
     <meta-data
         android:name="com.google.android.gms.version"
