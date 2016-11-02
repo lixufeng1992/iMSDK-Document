@@ -34,7 +34,7 @@
     请在主工程AndroidManifest.xml文件中Application节点里添加如下Activity配置
 
 ```xml
-<activity 
+ <activity 
     android:name="com.tencent.imsdk.unity.flkk.UnityPlayerNativeActivity" 
     android:label="@string/app_name">
     <intent-filter>
@@ -42,18 +42,18 @@
         <category android:name="android.intent.category.LAUNCHER" />
         <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
     </intent-filter>
-</activity>
-<activity 
+ </activity>
+ <activity 
     android:name="com.feiliu.gameplatform.popwindow.FLSdkActivity" > 
-</activity>
-<activity 
+ </activity>
+ <activity 
     android:name="com.feiliu.gameplatform.popwindow.FLUserAgreementActivity" > 
-</activity>
-<activity
+ </activity>
+ <activity
     android:name="com.feiliu.gameplatform.FLGooglePlayActivity"
     android:background="#e0000000"
     android:theme="@android:style/Theme.Translucent" >
-</activity> 
+ </activity> 
 ```
 > 如果游戏接入Apollo，游戏入口Activity需改成Apollo对应的Activity
 
