@@ -18,3 +18,5 @@ Beacon接入和配置参考
     android:name="APPKEY_DENGTA"
     android:value="{your appkey}" />
 ```
+
+> android.permission.READ_PHONE_STATE 用于获取设备IMEI

@@ -3,6 +3,8 @@
 
 Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.com/docs/)
 
+* iMSDK Bugly 统计插件版本为1.x.x，请使用如下配置
+ 
 ```xml
     <!-- 1.x.x配置 -->
     <!-- 权限配置 -->
@@ -19,7 +21,10 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
 
 ```
 
-注：2.x.x版本配置有变
+* iMSDK Bugly 统计插件版本为2.x.x，请使用如下配置
+> 注：2.x.x版本配置有变,参考如下
+
+
 ``` xml
     <!-- 2.x.x 配置 -->
     <!-- 权限配置 -->
