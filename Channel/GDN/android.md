@@ -19,4 +19,4 @@
 <meta-data android:name="GoogleAdwords_ConversionId" android:value="\ {your_conversionId}" />
 ```
 
-> 
+> 将 your_conversionId 值修改成游戏自己的值，该值获取[参考](developer.md)
