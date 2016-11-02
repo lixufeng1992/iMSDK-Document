@@ -72,7 +72,7 @@
 ```
 
 ###＃ 注意点：
-＋ 1 游戏需配置Application，参考
+＋ 1 游戏需配置Application，[参考](#Application)
 
 
 
