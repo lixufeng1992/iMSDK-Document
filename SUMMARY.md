@@ -103,15 +103,15 @@
     * [5.2 配置开发环境](Cpp/setupenv.md)
     * [5.3 快速集成指南](Cpp/quickstart.md)
 * [6. 渠道平台指引](Channel/README.md)
-    * [6.1 Facebook设置](Channel/facebook.md)
+    * [6.1 Facebook](Channel/facebook.md)
         * [6.1.1 Facebook 开发者中心配置](Channel/Facebook/developers.md)
         * [6.1.2 Android 工程配置](Channel/Facebook/android.md)
         * [6.1.3 iOS 工程配置](Channel/Facebook/ios.md)
-    * [6.2 Google平台设置](Channel/google.md)
+    * [6.2 Google](Channel/google.md)
         * [6.2.1 Google 开发者中心配置](Channel/Google/developers.md)
         * [6.2.2 Android 工程配置](Channel/Google/android.md)
         * [6.2.3 iOS 工程配置](Channel/Google/ios.md)
-    * [6.3 WeChat设置](Channel/wechat.md)
+    * [6.3 WeChat](Channel/wechat.md)
         * [6.3.1 WeChat 开放平台配置](Channel/WeChat/developers.md)
         * [6.3.2 Android 配置](Channel/WeChat/android.md)
         * [6.3.3 iOS 配置](Channel/WeChat/ios.md)
@@ -119,7 +119,7 @@
         * [6.4.1 Midas 开发者中心配置](Channel/Midas/developer.md)
         * [6.4.2 Android 工程配置](Channel/Midas/android.md)
         * [6.4.3 iOS 工程配置](Channel/Midas/ios.md)
-    * [6.5 Garena设置](Channel/garena.md)
+    * [6.5 Garena](Channel/garena.md)
         * [6.5.1 Garena 开发者中心配置](Channel/Garena/developer.md)
         * [6.5.2 Android 配置](Channel/Garena/android.md)
         * [6.5.3 iOS 配置](Channel/Garena/ios.md)
@@ -143,8 +143,13 @@
         * [6.10.1 Stove平台配置](Channel/Stove/developer.md)
         * [6.10.2 Android 配置](Channel/Stove/android.md)
         * [6.10.3 iOS 配置](Channel/Stove/ios.md)
-    * MTA渠道
-    * Appsflyer渠道
+    * [MTA](Channel/mta.md)
+        * [工程设置](Channel/工程设置.md)
+        * [功能说明](Channel/功能说明.md)
+    * Appsflyer
+    * Beacon（灯塔）
+    * XG（信鸽）
+    * GameCenter
 * [7. iMSDK后台](Server/README.md)
     * [登录态判定接口定义](Server/登录态判定接口定义.md)
     * [errorcode定义](Server/errorcode定义.md)
