@@ -102,7 +102,7 @@
     * [5.1 下载及使用](Cpp/download.md)
     * [5.2 配置开发环境](Cpp/setupenv.md)
     * [5.3 快速集成指南](Cpp/quickstart.md)
-* [6. 渠道平台设置](Channel/README.md)
+* [6. 渠道平台指引](Channel/README.md)
     * [6.1 Facebook设置](Channel/facebook.md)
         * [6.1.1 Facebook 开发者中心配置](Channel/Facebook/developers.md)
         * [6.1.2 Android 工程配置](Channel/Facebook/android.md)
