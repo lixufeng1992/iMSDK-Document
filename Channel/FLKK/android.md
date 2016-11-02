@@ -74,6 +74,7 @@
 ###＃ 注意点：
 * 1 游戏需配置Application，参考```入口Application配置```
 * 2 游戏需配置入口Activity， 参考```Activity配置```
+* 3 meta-data 配置中的值，游戏需改成自己的值，该值又运营方飞流提供
 
 
 
