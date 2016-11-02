@@ -15,6 +15,7 @@
 
     请在工程主AndroidManifest.xml文件中Application节点内添加如下meta-data配置
 ```xml
+<!--for example : 12a34b56xxxxxxxxxxxxxxxxxxxxxxxx -->
 <meta-data android:name="APPANG_AD_KEY" android:value="your key value" />
 ```
     > 上述APPANG_AD_KEY值请到[Appang官网](http://www.appang.kr/home/)申请 或运营方提供
