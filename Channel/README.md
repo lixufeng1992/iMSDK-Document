@@ -20,6 +20,7 @@
 | [AppsFlyer配置](appsflyer.md)|
 | [Bugly配置](bugly.md)|
 | [MTA配置](mta.md)|
+| [Beacon配置](beacon.md)|
 
 
 
