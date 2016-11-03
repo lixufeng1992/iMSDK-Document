@@ -8,3 +8,4 @@
 | [PlusLogin](Google/pluslogin.md) | GooglePlay 登录模块 ｜ － ｜
 | [Share](Google/share.md) | 分享 | - |
 | [Friend](Google/friend.md) | 关系链 | - |
+| [Game](Google/game.md) | 游戏 | -- |
