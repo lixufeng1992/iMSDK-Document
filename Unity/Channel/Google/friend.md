@@ -23,6 +23,6 @@
 
 ### 工程配置
 
-### Android工程配置
+#### Android工程配置
 
 按[Google工程通用配置](../../../Channel/Google/android.md)进行配置即可
