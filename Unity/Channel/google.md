@@ -8,4 +8,3 @@
 | [PlusLogin](Google/pluslogin.md) | GooglePlay 登录模块 ｜ － ｜
 | [Share](Google/share.md) | 分享 | - |
 | [Friend](Google/friend.md) | 关系链 | - |
-| [Stat](Google/stat.md) | 统计，主要是广告统计 | - |
