@@ -18,5 +18,8 @@
 | [GDN配置](gdn.md)|
 | [Stove配置](stove.md)|
 | [AppsFlyer配置](appsflyer.md)|
+| [Bugly配置](bugly.md)|
+| [MTA配置](mta.md)|
+
 
 
