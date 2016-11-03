@@ -2,7 +2,7 @@
 
 ### 背景简介
 
-​	以设备（即游客）为中心的账号体系，这样可以不影响游戏的进度，根据设备唯一码，到iMSDK后台生成对应的openid，弱化登录流程。然后，游戏通过提示关联到指定渠道的方式，把所有的渠道（比如Google Play，Game Center） 都关联到设备上，这样就可以通过第三方渠道进行数据迁移。
+​	以设备（即游客）为中心的账号体系，这样可以不影响游戏的进度，根据设备唯一码，到 iMSDK 后台生成对应的 openid，弱化登录流程。然后，游戏通过提示关联到指定渠道的方式，把所有的渠道（比如 Google Play，Game Center） 都关联到设备上，这样就可以通过第三方渠道进行数据迁移。
 
 ​	这种关联到游客的方式，由于关联之后的功能不同，可以分为 `强关联` 以及 `弱关联` 两种模式：
 
@@ -15,11 +15,11 @@
    | 强关联  |     是     |  可以  |        是        |
    | 弱关联  |     是     | 不可以  |        否        |
 
-> 强弱关联是由后台配置的，所以游戏方可以配置Facebook为强关联，这样就可以进行Android与IOS的账号迁移。但是，像Google Play跟Game Centre这种平台独占的，后台默认设为强关联的模式。
+> 强弱关联是由后台配置的，所以游戏方可以配置 Facebook 为强关联，这样就可以进行 Android 与 IOS 的账号迁移。但是，像 Google Play 跟 Game Centre这种平台独占的，后台默认设为强关联的模式。
 
 ### 快速入门
 
-1. [完成特定的渠道配置](http://docs.itop.qq.com/reference/Channel/)，比如需要关联到Facebook就选择配置Facebook
+1. [完成特定的渠道配置](http://docs.itop.qq.com/reference/Channel/)，比如需要关联到 Facebook 就选择配置 Facebook
 
 2. 代码实例
 
@@ -58,7 +58,7 @@
   | public void Connect (<br>string channel,<br>IMSDKCallback<IMConnectResult> callback,<br>List<string> permissionList = null,<br>object extra = null<br>) | 渠道关联。<br>相当于把渠道绑定到设备上，并且通过渠道关联可以进行设备之间的数据迁移。channel是需要关联的渠道。关联之后会返回的主要结果：<br>（1）成功 <br>（2）need to reconnect operation <br>（3）need to restore operation |
   | public void Reconnect (<br>IMSDKCallback<IMSDKResult> callback,<br>String confirmCode = null,<br>object extra = null<br>) | 重新关联，在渠道关联(Connect)之后调用，成功重联之后本地openid不变。<br>比如将Facebook关联到设备B的操作之后返回提示需要重新关联，那么调用重新关联，服务器会断开Facebook与设备A的关联，将Facebook关联到设备B |
   | public void Restore (<br>IMSDKCallback<IMAuthResult> callback, <br>String confirmCode = null,<br>object extra = null<br>) | 恢复数据，在渠道关联(Connect)之后调用，成功恢复之后本地openid会变成之前关联设备的openid。<br>比如将Google关联到设备B的操作之后返回提示需要恢复数据，那么调用恢复数据，服务器会将Google关联的设备A的数据覆盖到设备B |
-  | public void GetConnectInfo (<br>IMSDKCallback<IMAuthResult> callback<br>) | 获取关联的渠道信息，返回的结果包含以下信息：渠道的openid，用户名，头像等  |
+  | public void GetConnectInfo (<br>IMSDKCallback<IMAuthResult> callback<br>) | 获取关联的渠道信息，返回的结果包含以下信息：渠道的openid，用户名，头像等。**Warning :`为了减轻后台压力，请求后的数据会缓存本地，有效期为一天`** |
   | public void GetMigrateCode (<br>IMSDKCallback<IMMigrateResult> callback<br>) | 获取迁移码。                                   |
   | public void Migrate (<br>IMSDKCallback<IMAuthResult> callback, <br>string migrateCode = null<br>) | 设备间的迁移。                                  |
   | public void GetMigrateInfo (<br>IMSDKCallback<IMMigrateResult> callback, <br>string migrateCode = null<br>) | 获取将要迁移的信息。<br>在获取迁移码之后通过迁移信息进行确认迁移的操作是否继续进行，游戏可以用这些信息提示用户是否做渠道迁移 |
@@ -124,7 +124,7 @@ void YOUR_AUTH_FUNCTION(bool refresh = false) {
 
 ### 关联与自动关联
 
-在设备授权完成后获取登录态，玩家就可以开始玩游戏了。但是我们建议在授权完成后，让后绑定到其他账户上以避免丢失
+在设备授权完成后获取登录态，玩家就可以开始玩游戏了。但是我们建议在授权完成后，然后绑定到其他账户上以避免丢失
 
 #### 关联流程
 
@@ -257,7 +257,7 @@ IMSDKApi.Auth.GetConnectInfo(delegate(IMAuthResult authResult) {
 账号迁移存在前置条件：
 
 * 需要先绑定渠道，这个是必要条件，Android 为 Google Play Games 账号，iOS 为 GameCenter
-* 并且迁移码只可以用于Android和iOS之间，比如在Android A设备获取迁移码之后，在Android B设备使用该迁移码，后台会返回提示：
+* 迁移码只能用于 Android 和 iOS 之间，比如在 Android A 设备获取迁移码，在 Android B 设备使用该迁移码，那么后台会返回错误提示：`the same platform!`
 
 > 例如：游戏在 Android 上用 Google Play Games 作为主账号，在 iOS 上以 GameCenter 作为主账号，这个时候如果从 Android 迁移到 iOS 设备，那么就需要用到迁移码，但是 Android 设备直接是不能使用迁移码的，直接切换 Google Play Games 账号或者 GameCenter 账号，就可以进行账号切换
 
@@ -268,9 +268,9 @@ IMSDKApi.Auth.GetConnectInfo(delegate(IMAuthResult authResult) {
 
 1. 根据**关联返回的结果**，确认是否可以进行迁移，迁移规则如下：
 
-   * Android设备只关联了 Google Play Games 账号，不可以在Android之间进行迁移，需要使用Restore进行恢复。
-   * iOS设备只关联了 GameCenter 账号，不可以在Android之间进行迁移，需要使用Restore进行恢复。
-   * 如果Android设备上有关联 GameCenter 账号，说明已经迁移过，所以不可以进行迁移
+   * Android 设备只是关联了 Google Play 账号的情况下，不可以在 Android 之间进行迁移，需要使用 Restore 进行恢复。
+   * iOS 设备只是关联了 Game Center 账号的情况下，不可以在 iOS 之间进行迁移，需要使用 Restore 进行恢复。
+   * 如果 Android 设备上有关联 Game Center 账号，说明已经迁移过，所以不可以进行迁移
 
 2. 设备获取迁移码，确认当前手机账号可以迁移之后，可以调用获取迁移码接口获取迁移信息
 

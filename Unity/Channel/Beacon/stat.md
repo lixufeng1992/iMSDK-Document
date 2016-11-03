@@ -18,13 +18,8 @@
 
 ### Beacon 统计配置说明
 
-#### Android 端配置说明
++ [Android 配置参考](../../../Channel/Beacon/android.md) 
++ [iOS 配置参考](../../../Channel/Beacon/ios.md)
 
-```xml
-<!-- DENGTA配置，官网上获取的APPKEY --> 
-<meta-data
-    android:name="APPKEY_DENGTA"
-    android:value="0I40061SZ81FIQ8L" />
-<!-- DENGTA配置结束 -->
-```
+
 

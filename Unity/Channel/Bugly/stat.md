@@ -19,11 +19,6 @@
 
 ### Bugly统计配置说明
 
- #### Android 端配置说明
- ``` xml
- <!-- Bugly配置，配置官网上获取的APPID，注意：需要在APPID之前添加字符串：“bugly”--> 
-<meta-data
-    android:name="APPID_BUGLY"
-    android:value="bugly900003637" /> 
-<!-- Bugly配置结束 -->
- ```
++ [Android 端配置说明](../../../Channel/Bugly/android.md)
+
++ [iOS端配置说明](../../../Channel/Bugly/ios.md)

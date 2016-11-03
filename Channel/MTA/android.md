@@ -1,7 +1,7 @@
 ### MTA统计配置说明
 
 #### Android 端配置说明
-MTA接入和配置参考[http://developer.qq.com/wiki/mta/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.html](http://developer.qq.com/wiki/mta/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.html)
+[MTA接入和配置参考](http://developer.qq.com/wiki/mta/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D/MTA%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D.html)
 
 ```xml
 <!-- 权限配置 -->
@@ -23,3 +23,5 @@ MTA接入和配置参考[http://developer.qq.com/wiki/mta/MTA%E5%9F%BA%E7%A1%80%
     android:value="GooglePlay" />
 ```
 
+
+>  android.permission.READ_PHONE_STATE  用于获取用户手机的IMEI，用来唯一的标识用户。(运行在平板上的应用会读取mac地址作为用户的唯一标识)

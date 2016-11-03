@@ -1,6 +1,7 @@
 ### AppsFlyer统计配置说明
 
  #### Android 端配置说明
+ * iMSDK appsflyer 统计插件版本1.6.0 和 1.6.1版本请用如下配置
  ``` xml 
  <!-- version 1.6.0 and 1.6.1 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -34,9 +35,12 @@
 	<meta-data android:name="GCM_PROJECT_NUM" android:value="your_gcm_project_num"/>
  ```
  
- 
-
  -----------------
+
+* iMSDK appsflyer 统计插件版本1.8.0 及以上版本请用如下配置
+> 1.8.0及以上版本以来新的appsflyer三方包（4.5.0），增加卸载追踪功能
+
+
  ``` xml 
  <!-- version 1.8.0 and upper add uninstall function -->
  <!-- version 1.8.0 and upper -->
@@ -90,6 +94,8 @@
     IMSDKStat.initialize(this);    
     if(IMSDKStat.initChannel("AppsFlyer", new String[]    {IStat.STAT_EVENT_INITIALIZE})){ IMLogger.d("init AppsFlyer OK");};
 ```
+* your_devkey 需替换成游戏自己的AppsFlyer Key，该值需到[AppsFlyer官网](https://www.appsflyer.com/)申请
+* your_gcm_project_num需替换成游戏自己的Google GCM Project NUM，该值申请参考[GoogleGCMProjectNUM 获取](https://support.appsflyer.com/hc/en-us/articles/208004986)
 
  
  
