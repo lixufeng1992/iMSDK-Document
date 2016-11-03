@@ -33,7 +33,7 @@
 
 ### Android工程配置
 
-* 完成通用配置
+* 完成[通用配置](../../../Channel/Google/android.md)
   
   配置网络权限和GMS版本配置
   
