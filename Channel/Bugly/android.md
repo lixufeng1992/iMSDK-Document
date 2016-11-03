@@ -56,4 +56,4 @@ Bugly 所需的配置，请参考[https://bugly.qq.com/docs/](https://bugly.qq.c
             android:value="IMSDK" />
 
 ```
-> READ_PHONE_STATE用于读取设备的IMEI号
+> READ_PHONE_STATE用于读取设备的IMEI号，可选权限，可以删掉
