@@ -20,8 +20,8 @@
 | public void SetNotifyRecvCallback(PushNotifyCallback callback) | 设定接收推送消息回调 | √ | |
 | public void SetNotifyClickCallback(PushNotifyCallback callback) | 设定点击推送消息回调 | √ | |
 | public void SetNotifyShowCallback(PushNotifyCallback callback) | 设定推送消息显示回调 | √ | |
-| public void AddLocalNotification(IMLocalMessage message, Dictionary<string, string> userinfo = null) |本地推送，Android不支持扩展userinfo| iOS支持，Android不支持 |  |
-| public void ClearLocalNotifications() |清空本地通知| iOS支持，Android不支持 | |
-| public void DeleteLocalNotifications(string key) |IOS特有，删除特定的本地通知| iOS支持，Android不支持 | |
+| public void AddLocalNotification(IMLocalMessage message, Dictionary<string, string> userinfo = null) |本地推送，Android不支持扩展userinfo| iOS支持，Android不支持 | Android XG_GCM渠道支持 |
+| public void ClearLocalNotifications() |清空本地通知| iOS支持，Android不支持 | Android XG_GCM渠道支持 |
+| public void DeleteLocalNotifications(string key) |IOS特有，删除特定的本地通知| iOS支持，Android不支持 | Android XG_GCM渠道支持 |
 
 
