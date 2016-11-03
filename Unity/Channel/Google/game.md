@@ -1,6 +1,6 @@
-# Google Play游戏服务模块
+## Google Play游戏服务模块
 
-## 支持接口列表
+### 支持接口列表
 
 | 序号 | 方法名 | 方法说明 | 是否支持 | 备注 |
 | :--: | -- |:-------: | :-----: | -- |
@@ -19,7 +19,7 @@
 | 13 | public void ShowLeaderBoard(string board, GameCallback callback) | 【Android】显示排行榜 | √ | - |
 
 
-## Google登录说明
+### Google登录说明
 
 一般情况下，只有使用先登录（连接）到Google Play服务
 
@@ -50,7 +50,7 @@ void AchieveSomething() {
 
 如果登录模块使用了GooglePlay，那么无需调用Setup也可以上报成就
 
-## 上报成就账号说明
+### 上报成就账号说明
 
 上报成就的账号是连接GooglePlay服务的账号，我们并不提供自动与当前登录账号绑定，可以通过如下例子说明：
 
@@ -65,9 +65,9 @@ void AchieveSomething() {
 
 所以，在使用非GooglePlay登录的时候依然使用GooglePlay游戏服务，逻辑上是有问题的
 
-## 工程配置
+### 工程配置
 
-### Android工程配置
+#### Android工程配置
 
 * 完成[通用配置](../../../Channel/Google/android.md)
   
