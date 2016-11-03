@@ -5,6 +5,7 @@
 | 渠道 |
 | :--- |
 | [Facebook配置](facebook.md) |
+| [WeChat配置](wechat.md)|
 | [Google配置](google.md) |
 | [Expansion 配置](expansion.md) |
 | [Midas 配置](midas.md) |
@@ -21,6 +22,7 @@
 | [Bugly配置](bugly.md)|
 | [MTA配置](mta.md)|
 | [Beacon配置](beacon.md)|
+
 
 
 
