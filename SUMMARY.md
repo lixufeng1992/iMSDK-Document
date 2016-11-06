@@ -83,7 +83,7 @@
       * [6.2.1.2 Android 工程配置](Channel/Google/android.md)
       * [6.2.1.3 iOS 工程配置](Channel/Google/ios.md)
 
-    * [6.2.2 Google功能说明](Channel/README.md)
+    * [6.2.2 Google功能说明](Unity/Channel/google.md)
       * [6.2.2.1 GooglePlay 登录功能说明](Unity/Channel/Google/playlogin.md)            
       * [6.2.2.2 GooglePlus 登录功能说明](Unity/Channel/Google/pluslogin.md)            
       * [6.2.2.3 Google 分享功能说明](Unity/Channel/Google/share.md)  
