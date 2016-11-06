@@ -140,7 +140,7 @@
       * [6.8.1.1  Toy 登录功能说明](Unity/Channel/Toy/login.md)
       * [6.8.1.2  Toy 好友功能说明](Unity/Channel/Toy/friend.md)
       * [6.8.1.3  Toy 分享功能说明](Unity/Channel/Toy/share.md)
-      * [6.8.1.4  Toy 帮助功能说明](Unity/Channel/Toy/helper.md)
+      * [6.8.1.4  Toy 帮助功能说明](Unity/Channel/Toy/help.md)
       * [6.8.1.5  Toy 扩展功能说明](Unity/Channel/Toy/extend.md)
   * [6.9 Link平台指引](Channel/README.md)
     * [6.9.1 Link 渠道设置](Channel/link.md)
