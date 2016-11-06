@@ -81,7 +81,6 @@
       * [6.2.2.3 Google 分享功能说明](Unity/Channel/Google/share.md)  
       * [6.2.2.4 Google 好友功能说明](Unity/Channel/Google/friend.md)            
       * [6.2.2.5 Google 游戏功能说明](Unity/Channel/Google/game.md)
-      * [6.2.2.6 Google 分包功能说明](Unity/Channel/Google/expansion.md)
   * [6.3 WeChat 平台指引](Channel/README.md)
     * [6.3.1 WeChat 渠道设置](Channel/wechat.md)
       * [6.3.1.1 WeChat 开放平台配置](Channel/WeChat/developers.md)
