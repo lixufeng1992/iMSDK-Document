@@ -98,7 +98,7 @@
       * [6.3.1.2 Android 配置](Channel/WeChat/android.md)
       * [6.3.1.3 iOS 配置](Channel/WeChat/ios.md) 
 
-    * [6.3.2 WeChat功能说明]()
+    * [6.3.2 WeChat功能说明](Unity/Channel/wechat.md)
       * [6.3.2.1 WeChat 登录功能说明](Unity/Channel/WeChat/login.md)            
       * [6.3.2.2 WeChat 好友功能说明](Unity/Channel/WeChat/friend.md)            
       * [6.3.2.3 WeChat 分享功能说明](Unity/Channel/WeChat/share.md)  
