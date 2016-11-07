@@ -1,16 +1,18 @@
-## 6.1 Facebook设置
+## 6.1 Facebook平台指引
 
 
-### 平台配置
+### 渠道配置
 
 业务需要自己申请相应的App并完成相应的配置信息
 
 1. [Facebook 平台配置](Facebook/developers.md)
+2. [Android 工程配置](Facebook/android.md)
+3. [iOS 工程配置](Facebook/ios.md)
 
-### 工程配置
-根据不同的编译平台，需要的Facebook配置包括：
+### 功能说明
+Facebook目前支持登录、分享、统计等功能，可根据实际需要查看各功能说明
 
-1. [Android 工程配置](Facebook/android.md)
-2. [iOS 工程配置](Facebook/ios.md)
-3. [Unity 工程配置](Facebook/unity.md)
-4. [C++ 工程配置](Facebook/cpp.md) 
+1. [Facebook 登录功能说明](Facebook/login.md)
+2. [Facebook 分享功能说明](Facebook/share.md)
+3. [Facebook 统计功能说明](Facebook/stat.md)     
+

@@ -1,4 +1,4 @@
-## 6.1.3 iOS 工程配置
+## iOS 工程配置
 
 Facebook所需要的配置在官方文档都有详细说明，请参考：[https://developers.facebook.com/docs/ios/getting-started/](https://developers.facebook.com/docs/ios/getting-started/)
 
@@ -101,3 +101,4 @@ Facebook所需要的配置在官方文档都有详细说明，请参考：[https
     <string>fbshareextension</string>
   </array>
   ```
+
