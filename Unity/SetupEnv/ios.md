@@ -40,15 +40,15 @@ Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSD
   ```
 * 增加代码调用
 
-  1. 应用启动 
+**应用启动**
 
-    在UnityAppController.mm文件AppDelegate中，找到如下方法
+在UnityAppController.mm文件AppDelegate中，找到如下方法
 
     ```mm
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions
     ```
 
-    添加如下代码调用
+添加如下代码调用
 
     ```mm
     [[IMSDKApplicationDelegate sharedInstance] application:application
@@ -56,9 +56,22 @@ Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSD
                                             withGameSecret:@"YOUR_GAME_SECRET"];
     ```
 
-    > YOUR_GAME_SECRET 为游戏访问iMSDK服务器秘钥串，需要换成真实的秘钥串，可以跟iMSDK后台获取，请[联系我们](../../Pre/contact.md)确认该值
+> YOUR_GAME_SECRET 为游戏访问iMSDK服务器秘钥串，需要换成真实的秘钥串，可以跟iMSDK后台获取，请[联系我们](../../Pre/contact.md)确认该值
+    
+**应用间跳转处理**
 
-  2. 应用间跳转处理
++ iOS9以及以上的编译环境中
+	
+在UnityAppController.mm文件AppDelegate中，添加如下代码调用
+
+```mm
+- (BOOL)application:(UIApplication *)app openURL:(nonnull NSURL *)url options:(nonnull NSDictionary*)options {
+    return [[IMSDKApplicationDelegate sharedInstance] application:app
+                                                          openURL:url
+                                                         options:options];}
+```
+	
++ iOS9以下编译环境
 
     在UnityAppController.mm文件AppDelegate中，找到如下方法
 
@@ -76,6 +89,7 @@ Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSD
                                                                 annotation:annotation];
 }
     ```
+
   
 #### 基础信息配置
 
@@ -136,3 +150,4 @@ iOS工程配置主要是修改添加的IMSDKAppSetting.bundle资源文件目录�
  
  1. [完成渠道配置](../Channel/README.md)
  2. [快速集成](../quickstart.md)
+
