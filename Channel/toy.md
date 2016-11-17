@@ -1,4 +1,4 @@
-## 6.7 Toy设置
+## 6.8.1 Toy设置
 
 
 ### Toy平台后台配置
@@ -12,3 +12,5 @@
 2. [iOS 工程配置](Toy/ios.md)
 3. [Unity 工程配置](Toy/unity.md)
 4. [C++ 工程配置](Toy/cpp.md)
+
+

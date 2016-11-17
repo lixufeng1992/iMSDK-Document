@@ -1,16 +1,10 @@
-## 6.3 WeChat平台设置
+## WeChat 功能说明
 
+### 支持功能列表
 
-### 平台配置
+| 模块 | 功能说明 | 备注 |
+| :-- | :------- | :--- |
+| [Login](WeChat/login.md) | 登录模块 | - |
+| [Share](WeChat/share.md) | 分享 | - |
+| [Friend](WeChat/friend.md) | 关系链 | - |
 
-业务需要自己申请相应的App并完成相应的配置信息
-
-1. [WeChat平台配置](developers.md)
-
-### 工程配置
-根据不同的编译平台，需要的Facebook配置包括部分：
-
-1. [Android 工程配置](android.md)
-2. [iOS 工程配置](ios.md)
-3. [Unity 工程配置](unity.md)
-4. [C++ 工程配置](cpp.md) 

@@ -1,4 +1,4 @@
-# 6.4.1 Garena(Android) 工程配置
+# Garena(Android) 工程配置
 
 ## Android工程通用配置
 
@@ -214,3 +214,5 @@
 				</intent-filter>
 			</receiver>
 			```
+
+

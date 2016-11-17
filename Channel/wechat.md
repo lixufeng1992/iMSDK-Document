@@ -1,4 +1,4 @@
-# 6.3 WeChat设置
+# WeChat设置
 
 ### 平台配置
 
@@ -12,3 +12,4 @@
 1. [Android 工程配置](WeChat/android.md)
 2. [iOS 工程配置](WeChat/ios.md)
 3. [Unity 工程配置](WeChat/unity.md)
+
