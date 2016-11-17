@@ -1,4 +1,4 @@
-# 6.4.1 Garena(Android) 工程配置
+# Garena(Android) 工程配置
 
 ## Android工程通用配置
 
@@ -38,7 +38,7 @@
     	> APP SDK KEY为字符串;<br>
     	> ApplicationSourceId 为渠道 ID，需要根据发布渠道进行区分：2 为 Google 发布渠道，2000 为 Garena 发布渠道 
 
-	- 环境配置，分为正式环境("test")和测试环境("production")
+	- 环境配置，分为测试环境("test",测试环境时将自动开启Garena日志)和正式环境("production"，正式环境时将自动关闭Garena日志)
 		
 		```xml
 		<meta-data android:name="com.tencent.imsdk.garena.Environment" android:value="test" >
@@ -214,3 +214,5 @@
 				</intent-filter>
 			</receiver>
 			```
+
+

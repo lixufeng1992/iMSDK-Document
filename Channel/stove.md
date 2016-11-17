@@ -1,4 +1,4 @@
-## 6.10 Stove设置
+## Stove设置
 
 
 ### 平台配置
@@ -12,3 +12,5 @@
 1. [Android 工程配置]( Stove/android.md)
 2. [iOS 工程配置]( Stove/ios.md)
 3. [Unity 工程配置]( Stove/unity.md)
+
+

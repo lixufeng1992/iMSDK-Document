@@ -1,4 +1,4 @@
-### iOS 配置
+### Garena iOS 配置
 
 * iMSDK配置
 

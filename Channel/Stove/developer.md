@@ -1,4 +1,4 @@
-### 6.10.1 Stove 开发者中心配置
+### Stove 开发者中心配置
 
 #### Stove平台信息
 
@@ -15,3 +15,4 @@ STOVE 控制台:
 Stove 文档路径：    
     
      * http://doc.playstove.com/
+

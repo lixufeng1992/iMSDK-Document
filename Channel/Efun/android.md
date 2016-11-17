@@ -1,4 +1,4 @@
-## 6.4.1 Efun(Android) 工程配置
+## Efun(Android) 工程配置
 
 ### Android工程通用配置
 
@@ -292,3 +292,4 @@
 
  <meta-data android:name="com.tencent.imsdk.efun.GameCode" android:value="twqmcs" />
  ```
+

@@ -1,4 +1,4 @@
-## 6.10.3 Stove(iOS) 工程配置
+## Stove(iOS) 工程配置
 
 ###将下列framework加入目标工程
 + Bolts.framework
@@ -58,3 +58,4 @@
 
 ###测试参数
 bundile id ： com.stove.cfm.ios.qa
+

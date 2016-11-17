@@ -1,4 +1,4 @@
-## 6.8.1 Kakao 开发者中心配置
+## Kakao 开发者中心配置
 
 目前，Kakao平台需要业务侧与之Kakao进行相关配置，并未提供开放配置信息，请各个业务自行解决Kakao平台配置
 
@@ -19,3 +19,5 @@
  ![Kakao message template](../../assets/Images/Kakao/kakao_message_template.jpg)
 
  *<font color=red>注意：消息模板需要区分类别，普通的feed和邀请invite不能混用<font>*
+
+

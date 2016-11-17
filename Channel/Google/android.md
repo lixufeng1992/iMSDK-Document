@@ -1,4 +1,4 @@
-## 6.2.2 Android工程配置
+## Android工程配置
 
 ### Android工程通用配置
 
