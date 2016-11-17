@@ -19,7 +19,8 @@
 
 ### MTA统计配置说明
 
- #### Android 端配置说明
+#### Android 端配置说明
+ 
  ``` xml
 <!-- MTA配置，包括在官网上获取的APPKEY和安装渠道 -->
 <meta-data
@@ -31,3 +32,4 @@
     android:value="GooglePlay" />
 <!-- MTA配置结束 -->
  ```
+
