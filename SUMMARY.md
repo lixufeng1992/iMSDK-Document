@@ -245,6 +245,7 @@
  * [7.4 通过openid获取第3方uid接口定义](Server/openid2uid.md)
  * [7.5 各个平台变量名对应关系表](Server/vars.md)
  * [7.6 获取用户信息接口](Server/user.md)
+ * [7.6 拉取好友关系链接口](Server/relationship.md)
 
 * [8. FAQs](Help/README.md)
   * [8.1 常见错误码与错误说明](Help/commonerrno.md)
