@@ -1,4 +1,4 @@
-## GameSrv登录态判定接口定义
+## 7.1 GameSrv登录态判定接口定义
 
 测试服接口url：[http:\/\/srvapi-beta.itop.qq.com\/v1.0\/user\/islogin](http://srvapi-beta.itop.qq.com/v1.0/user/islogin)
 
