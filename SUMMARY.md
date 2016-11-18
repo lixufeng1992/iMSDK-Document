@@ -239,7 +239,6 @@
       * [6.20.2.1  Bugly 统计功能说明](Channel/MTA/stat.md)
 
 * [7. iMSDK后台](Server/README.md)
-
   * [7.1 登录态判定接口定义](Server/login.md)
   * [7.2 errorcode定义](Server/errorcode.md)
   * [7.3 通过第3方uid获取Openid接口定义](Server/uid2openid.md)
