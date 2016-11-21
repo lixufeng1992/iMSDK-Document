@@ -25,8 +25,8 @@
     */ 
    IMMidasPayContent GetMidasPayContent(){
           IMMidasPayContent content = new IMMidasPayContent ();
-          content.OfferId = "1450005285";////支付应用ID，又称为AppId，从米大师获取
-          content.OpenId = openId;////用户 OpenID，取值为登录（Login）模块返回的 OpenID
+          content.OfferId = "1450005285";//支付应用ID，又称为AppId，从米大师获取
+          content.OpenId = openId;//用户 OpenID，取值为登录（Login）模块返回的 OpenID
           content.OpenKey = accessToken;//用户校验凭证，取值为登录（Login）模块返回的 GuidToken
           content.SessionId = "hy_gameid"; // usually "hy_gameid"
           //content.SessionType = "st_overseas"; // check imsdk login status
