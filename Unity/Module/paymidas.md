@@ -13,8 +13,8 @@
       prepareContent.AppId = "1450005285";//支付应用ID，又称为AppId，从米大师获取
       prepareContent.OpenId = openId;//用户 OpenID，取值为登录（Login）模块返回的 OpenID
       prepareContent.OpenKey = accessToken;//	用户校验凭证，取值为登录（Login）模块返回的 GuidToken
-      prepareContent.SessionId = "hy_gameid"; // usually "hy_gameid"
-      prepareContent.SessionType = "st_overseas"; // check imsdk login status
+      prepareContent.SessionId = "hy_gameid"; // 登陆态票据类型，默认固定为 "hy_gameid"
+      prepareContent.SessionType = "st_overseas"; // 登陆态票据类型，"st_overseas"表示支付时需校验登录态,"st_dummy"表示不校验登录态
       prepareContent.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");//米大师支付流水，可以通过GetPF方法获取
       prepareContent.PfKey = "pfKey";//使用iMSDK支付时，固定取值为“pfKey”
       prepareContent.ZoneId = "1";//游戏服务器大区id,游戏不分大区则默认zoneId ="1"，在米大师管理端进行配置获取
@@ -28,9 +28,8 @@
           content.OfferId = "1450005285";//支付应用ID，又称为AppId，从米大师获取
           content.OpenId = openId;//用户 OpenID，取值为登录（Login）模块返回的 OpenID
           content.OpenKey = accessToken;//用户校验凭证，取值为登录（Login）模块返回的 GuidToken
-          content.SessionId = "hy_gameid"; // usually "hy_gameid"
-          //content.SessionType = "st_overseas"; // check imsdk login status
-          content.SessionType = "st_dummy"; // do NOT check imsdk login status
+          content.SessionId = "hy_gameid"; // 登陆态票据类型，默认固定为 "hy_gameid"
+          content.SessionType = "st_dummy"; // 登陆态票据类型，"st_overseas"表示支付时需校验登录态,"st_dummy"表示不校验登录态
           content.ZoneId = "1";//游戏服务器大区id,游戏不分大区则默认zoneId ="1"，在米大师管理端进行配置获取
           content.Pf = IMSDKApi.Pay.GetPf (openId, "2001", "2011", "IMSDK");//米大师支付流水，可以通过GetPF方法获取
           content.PfKey = "pfKey";//使用iMSDK支付时，固定取值为“pfKey”
