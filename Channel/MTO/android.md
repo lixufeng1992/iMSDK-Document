@@ -1,15 +1,8 @@
 ## MTO Android 工程配置  
 
-```
-<?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tencent.imsdk"
-    android:versionCode="1"
-    android:versionName="1" >
-    <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="23" />
+请在工程主AndroidManifest.xml文件中加入如下配置
+
+```xml
     <permission
         android:name="YOUR_PACKAGE.C2D_MESSAGE"
         android:protectionLevel="signature" />
@@ -25,19 +18,16 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />    
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="com.android.vending.BILLING" />
-
     <uses-feature
         android:name="android.hardware.camera"
         required="false" />
     <uses-feature
         android:name="android.hardware.camera.autofocus"
         required="false" />
-
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="com.zing.zalo.permission.ACCESS_THIRD_PARTY_APP_AUTHORIZATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:name="com.android.m6.guestlogin.MTOApplication"
         android:allowBackup="true"
@@ -45,7 +35,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 		
-		<!-- vng gameid define, can not empty & must right value -->
+	<!-- vng gameid define, can not empty & must right value -->
         <meta-data
             android:name="appID"
             android:value="your_appID" />
@@ -246,7 +236,51 @@
             android:value="your_APPSFLYER_KEY" />			
 
 		
-		<meta-data android:name="com.tencent.imsdk.mto.GameVersion" android:value="your gameVersion" />			
+		<meta-data android:name="com.tencent.imsdk.mto.GameVersion" android:value="your gameVersion" />	
+
+
+    <!-- Add for VNG-SEA-SDK-Release(0921) -->
+    <activity         
+        android:name="com.android.m6.guestlogin.M6_CustomFBActivity"                                
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"         
+        android:screenOrientation="landscape"         
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >     
+    </activity>      
+    <provider          
+        android:authorities="com.facebook.app.FacebookContentProvider+FacebookId"                         
+        android:name="com.facebook.FacebookContentProvider"         
+        android:exported="true"/>     
+    <activity         
+        android:name="vn.com.vng.fbsocial.FBActivityHandling"                         
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"        
+         android:screenOrientation="landscape"         
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >    
+     </activity>
+
+    <activity         
+        android:name="vn.zing.pay.zmpsdk.view.PaymentGatewayActivity"         
+        android:launchMode="singleTask"         
+        android:theme="@android:style/Theme.DeviceDefault.Light" >         
+        <intent-filter>             
+            <action android:name="android.intent.action.VIEW" />             
+            <category android:name="android.intent.category.DEFAULT" />             
+            <category android:name="android.intent.category.BROWSABLE" />             
+            <data                
+                 android:host="payment-cancel"                 
+                 android:scheme="paymentsdk-15" />             
+            <data                 
+                android:host="payment-complete"                
+                 android:scheme="paymentsdk-15" />          
+        </intent-filter>     
+    </activity>     
+    <activity         
+        android:name="vn.zing.pay.zmpsdk.view.PaymentChannelActivity"         
+        android:theme="@android:style/Theme.DeviceDefault.Light"         
+        android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >     
+    </activity>     
+    <service        
+        android:name="vn.zing.pay.zmpsdk.business.inappbilling.TGoogleIABRetryVerifyReceiptService"         
+        android:exported="false" />
 
     </application>
 
@@ -254,3 +288,9 @@
 
 
 ```
+
+ + 1、请讲上述YOUR_PACKAGE 改成游戏自己的包名
+ + 2、请上述meta-data配置中yourXXX值改成游戏自己的值，该值联系MTO方进行获取
+ + 3、请讲provider设置中+FacebookId 改成游戏自己的FacebookId
+
+

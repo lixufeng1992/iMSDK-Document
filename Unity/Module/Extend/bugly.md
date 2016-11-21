@@ -36,3 +36,5 @@
 ```
 
 #### Android 配置说明
+
+   [Android端配置参考](../../../Channel/Bugly/android.md)

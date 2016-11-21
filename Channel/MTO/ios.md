@@ -1,5 +1,7 @@
-##6.8.3 MTO iOS 工程配置    
+##MTO iOS 工程配置    
+
 ###1.[MTO Facebook配置参考Facebook配置](../Facebook/ios.md) 
+
 ###2.MTO Google plus 配置  
 * 添加GoogleService-Info.plist，并根据业务修改相应配置项
 * 添加google与bundle ID的URL Scheme   
@@ -65,3 +67,4 @@ Security.framework
 SystemConfiguration.framework    
 libz.tbd    
 libc++.tbd    
+

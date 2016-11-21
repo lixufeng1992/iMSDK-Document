@@ -2,18 +2,27 @@
 
 目前，iMSDK 提供了众多的平台SDK支持，游戏开发者需要在各大平台申请及配置相关信息
 
-| 渠道 |
-| :--- |
-| [Facebook配置](facebook.md) |
-| [Google配置](google.md) |
-| [Expansion 配置](expansion.md) |
-| [Midas 配置](midas.md) |
-| [信鸽 配置](xg.md) |
-| [信鸽GCM 配置](xg_gcm.md) |
-| [MTO配置](mto.md) |
-| [Garena配置](garena.md) |
-| [Efun配置](efun.md) |
-| [Toy配置](toy.md) |
-| [VK配置](vk.md)|   
-| [GDN配置](gdn.md)|
-| [Stove配置](stove.md)|
+| 渠道 | 渠道配置 | 渠道功能说明 |
+| :--- | :-- | :-- |
+| Facebook | [Facebook配置](facebook.md) | [Facebook功能](../Unity/Channel/facebook.md) |
+| Google | [Google配置](google.md) |[Google功能](../Unity/Channel/google.md) |
+| WeChat | [WeChat配置](wechat.md)|[WeChat功能](../Unity/Channel/wechat.md) |
+| GameCenter | [GameCenter配置](gamecenter.md)|[GameCenter功能](../Unity/Channel/gamecenter.md) |
+| Midas |[Midas 配置](midas.md) |[Midas功能](../Unity/Channel/midas.md) |
+| XG |[信鸽 配置](xg.md) |[XG功能](../Unity/Channel/xg.md) |
+| XG_GCM | [信鸽GCM 配置](xg_gcm.md) |[信鸽GCM功能](../Unity/Channel/xg_gcm.md) |
+| MTO |[MTO配置](mto.md) |[MTO功能](../Unity/Channel/mto.md) |
+| Garena | [Garena配置](garena.md) |[Garena功能](../Unity/Channel/garena.md) |
+| Efun |[Efun配置](efun.md) |[Efun功能](../Unity/Channel/efun.md) |
+| Toy | [Toy配置](toy.md) |[Toy功能](../Unity/Channel/toy.md) |
+| VK | [VK配置](vk.md)|   [VK功能](../Unity/Channel/vk.md) |
+| GDN | [GDN配置](gdn.md)|[GDN功能](../Unity/Channel/gdn.md) |
+| Stove | [Stove配置](stove.md)|[Stove功能](../Unity/Channel/stove.md) |
+| AppsFlyer | [AppsFlyer配置](appsflyer.md)|[AppsFlyer功能](../Unity/Channel/appsflyer.md) |
+| Bugly |[Bugly配置](bugly.md)|[Bugly功能](../Unity/Channel/bugly.md) |
+| MTA |[MTA配置](mta.md)|[MTA功能](../Unity/Channel/mta.md) |
+| Beacon |[Beacon配置](beacon.md)|[Beacon功能](../Unity/Channel/beacon.md) |
+
+
+
+

@@ -1,4 +1,4 @@
-## 6.1.1 Facebook 开发者中心配置
+## Facebook 开发者中心配置
 
 1. 注册Facebook账号
 

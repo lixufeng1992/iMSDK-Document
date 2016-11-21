@@ -9,5 +9,4 @@
 + 点击save and continue    
 + 在页面底部Set up your tracking method,然后再点击 put tracking code into the app，在对话框里就可看到ACTConversionReporter xxxx的代码，其中就包括conversionid与label等       
 
-###3.配置iMSDK后台
-请到iMSDK管理段进行后台配置，联系人RTX：hirryli
+

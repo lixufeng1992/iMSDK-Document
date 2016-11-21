@@ -1,4 +1,4 @@
-### 6.3.2 Android 配置
+### Android 配置
 
 
 * 权限配置，在AndroidManifest.xml中新增权限
@@ -29,3 +29,4 @@
  ```
 
  需要将value值修改为业务自己的App ID
+

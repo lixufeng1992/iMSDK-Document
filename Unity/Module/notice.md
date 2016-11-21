@@ -50,9 +50,9 @@ void TestLoadNotice() {
 |  public bool Initialize(string channel) |  指定某渠道进行初始化 |        
 |public bool SetChannel(string channel)|channel为渠道名，传入“imsdk”表示为IMSDK的公告| 
 | public string GetChannel() | 获取渠道  |   
-| public void LoadNoticeData(string version, string language, int region, int partition, bool isUseCache,int noticeType=1, string extraJson=null, NoticeLoadCallback callback = null)|version    app版本<br>language   需要的语言环境**（见附：语言）**<br> region     地区**(见附：region)**<br>partition  游戏大区<br>isUseCache 如果有图片是否使用本地缓存图片<br>noticeType: 公告类型<li> 1 : 登录前公告</li><li> 2 : 登录后公告</li><li> 3 : 标题公告</li><li> 4 : 底部标题公告</li><li> 5 : 用户协议</li><li> 6 : 更新信息</li><br>extraJson  扩展字段<br> NoticeLoadCallback回调函数|      
-|public void LoadNoticeData(string noticeId, int loadDataType = 1, string scene = null,int noticeType =1, string extraJson = null, NoticeLoadCallback callback = null)|加载公告:<br>noticeId:指定需要获取的notice ID(可选,如不指定将按loadDataType自动获取)<br> loadDataType: 1:从第三方渠道获取数据 2:从deepLink获取数据 3：预留：从imsdk自研平台获取数据（返回的是IMNoticeInfo）4...<br>scene:指定的场景<br>noticeType: 公告类型<li> 1 : 登录前公告</li><li> 2 : 登录后公告</li><li> 3 : 标题公告</li><li> 4 : 底部标题公告</li><li> 5 : 用户协议</li><li> 6 : 更新信息</li>extraJson:附加参数   | 
-| public void ShowNotice(string noticeId, int noticeType = 1, string scene = null, string extraJson = null, NoticeShowCallback callback = null) | 展示公告:<br> noticeType: 公告类型<li> 1 : 登录前公告</li><li> 2 : 登录后公告</li><li> 3 : 标题公告</li><li> 4 : 底部标题公告</li><li> 5 : 用户协议</li><li> 6 : 更新信息</li><br>noticeId: 在后台配置的notice ID<br>scene:指定场景<br>extraJson:附加参数 |    
+| public void LoadNoticeData(string version, string language, int region, int partition, bool isUseCache,int noticeType=1, string extraJson=null, NoticeLoadCallback callback = null)|version    app版本<br>language   需要的语言环境**（见附：语言）**<br> region     地区**(见附：region)**<br>partition  游戏大区<br>isUseCache 如果有图片是否使用本地缓存图片<br>noticeType: 公告类型<li> 1 : 登录前公告</li><li> 2 : 登录后公告</li><li> 3 : 标题公告</li><li> 4 : 底部标题公告</li><li> 5 : 用户协议</li><li> 6 : 更新信息</li><br>extraJson  扩展字段："{\"key1\":\"value1\",\"key2\":\"value2\"}"<br> NoticeLoadCallback回调函数|      
+|public void LoadNoticeData(string noticeId, int loadDataType = 1, string scene = null,int noticeType =1, string extraJson = null, NoticeLoadCallback callback = null)|加载公告:<br>noticeId:指定需要获取的notice ID(可选,如不指定将按loadDataType自动获取)<br> loadDataType: 1:从第三方渠道获取数据 2:从deepLink获取数据 3：预留：从imsdk自研平台获取数据（返回的是IMNoticeInfo）4...<br>scene:指定的场景<br>noticeType: 公告类型<li> 1 : 登录前公告</li><li> 2 : 登录后公告</li><li> 3 : 标题公告</li><li> 4 : 底部标题公告</li><li> 5 : 用户协议</li><li> 6 : 更新信息</li>extraJson:附加参数:"{\"key1\":\"value1\",\"key2\":\"value2\"}"   | 
+| public void ShowNotice(string noticeId, int noticeType = 1, string scene = null, string extraJson = null, NoticeShowCallback callback = null) | 展示公告:<br> noticeType: 公告类型<li> 1 : 登录前公告</li><li> 2 : 登录后公告</li><li> 3 : 标题公告</li><li> 4 : 底部标题公告</li><li> 5 : 用户协议</li><li> 6 : 更新信息</li><br>noticeId: 在后台配置的notice ID<br>scene:指定场景<br>extraJson:附加参数:"{\"key1\":\"value1\",\"key2\":\"value2\"}" |    
 |public void SetUserTargetingData(IMUserTargetingData targetingData, string extraJson = null)|设置用户唯一标识码及标签|    
 |public void UpdateUserTargetingDataToSvr(string extraJson = null)|将SetUserTargetingData的数据同步至服务器|     
 |1public void CloseNotice(string noticeId = "", int closeType = 1, string extraJson = null)|关闭公告：<br> noticeId:指定需要关闭的notice ID(可选,如不指定将按closeType值关闭)<br>closeType:1：关闭最上端弹窗 2：关闭所有弹窗，包括等待中的弹窗|   
@@ -87,7 +87,7 @@ void TestLoadNotice() {
 | :-- | :-- |  
 |public int NoticeId|公告Id|   
 | public string AppId|AppID|   
-| public string OpenIdt|用户openId|   
+| public string OpenId|用户openId|   
 |public string NoticeUrl|公告跳转链接|    
 |public int NoticeScene|公告展示的场景，管理端后台配置：</br> 1 普通公告(登录前弹窗)</br>2 强制更新(登录前弹窗)</br>3 非强制更新(登录前弹窗)</br>4 普通公告(登录后弹窗)</br>|    
 |public int NoticeStartTime|公告有效期开始时间|   

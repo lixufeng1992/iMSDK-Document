@@ -8,4 +8,15 @@
 | [WeChat](wechat.md) |
 | [VK](vk.md) |
 | [Viber](viber.md) |
-| [Midas](viber.md) |
+| [Midas](midas.md) |
+| [MTO](mto.md) |
+| [Garena](garena.md) |
+| [Efun](efun.md) |
+| [Toy](toy.md) |    
+| [GDN](gdn.md)|
+| [Stove](stove.md)|
+| [AppsFlyer](appsflyer.md)|
+| [Google](google.md)|
+| [Link](link.md)|
+| [FLKK](flkk.md)|
+

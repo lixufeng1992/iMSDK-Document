@@ -1,5 +1,6 @@
-##6.7.3 Toy iOS工程配置
-###1.Xcode配置   
+#Toy iOS工程配置
+
+##1.Xcode配置   
 + 在工程中 Project > Build Settings > Linking > Other Linker Flags添加'-ObjC'
 + iOS9配置
   ![img](../../assets/Images/Toy/nohttps.png)
@@ -27,3 +28,5 @@ libz.tbd
 Accounts.framework     
 CoreTelephony.framework     
 Social.framework     
+
+
