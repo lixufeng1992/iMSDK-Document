@@ -11,14 +11,14 @@
     */  
     IMPayMidasPrepareContent CreatePrepareContent(){
       IMPayMidasPrepareContent prepareContent = new IMPayMidasPrepareContent();
-      prepareContent.OfferId = "1450005285";
-      prepareContent.OpenId = openId;
-      prepareContent.OpenKey = accessToken;
-      prepareContent.SessionId = "hy_gameid"; 
-      prepareContent.SessionType = "st_overseas"; 
-      prepareContent.Pf = "IEG_iTOP-2001-iap-2011-Zalo-1011-1000065-XD";
-      prepareContent.PfKey = "pfKey";
-      prepareContent.ZoneId = "1";
+      prepareContent.OfferId = "1450005285";//支付应用ID，又称为AppId，从米大师获取
+      prepareContent.OpenId = openId;//用户 OpenID，取值为登录（Login）模块返回的 OpenID
+      prepareContent.OpenKey = accessToken;//用户校验凭证，取值为登录（Login）模块返回的 GuidToken
+      prepareContent.SessionId = "hy_gameid"; // 登陆态票据类型，默认固定为 "hy_gameid"
+      prepareContent.SessionType = "st_overseas"; //登陆态票据类型，"st_overseas"表示支付时需校验登录态,"st_dummy"表示不校验登录态
+      prepareContent.Pf = "IEG_iTOP-2001-iap-2011-Zalo-1011-1000065-XD";//米大师支付流水，可以通过GetPF方法获取
+      prepareContent.PfKey = "pfKey";//使用iMSDK支付时，固定取值为“pfKey”
+      prepareContent.ZoneId = "1";//游戏服务器大区id,游戏不分大区则默认zoneId ="1"，在米大师管理端进行配置获取
   }
    
    /*
@@ -26,22 +26,21 @@
     */ 
    IMPayMidasContent GetPayMidasContent(){
           IMPayMidasContent content = new IMPayMidasContent ();
-          content.OfferId = "1450005285";
-          content.OpenId = openId;
-          content.OpenKey = accessToken;
-          content.SessionId = "hy_gameid"; // usually "hy_gameid"
-          //content.SessionType = "st_overseas"; // check imsdk login status
-          content.SessionType = "st_dummy"; // do NOT check imsdk login status
-          content.ZoneId = "1";
-          content.Pf = "IEG_iTOP-2001-iap-2011-Zalo-1011-1000065-XD";
-          content.PfKey = "pfKey";
-          content.ProductId = "midas_product_1";
-          content.ResId = "unipay_abroad_iconload";
-          content.Country = "US";
-          content.CurrencyType = "USD";
+          content.OfferId = "1450005285";//支付应用ID，又称为AppId，从米大师获取
+          content.OpenId = openId;//用户 OpenID，取值为登录（Login）模块返回的 OpenID
+          content.OpenKey = accessToken;//用户校验凭证，取值为登录（Login）模块返回的 GuidToken
+          content.SessionId = "hy_gameid"; // 登陆态票据类型，默认固定为 "hy_gameid"
+          content.SessionType = "st_overseas"; // 登陆态票据类型，"st_overseas"表示支付时需校验登录态,"st_dummy"表示不校验登录态
+          content.ZoneId = "1";//游戏服务器大区id,游戏不分大区则默认zoneId ="1"，在米大师管理端进行配置获取
+          content.Pf = "IEG_iTOP-2001-iap-2011-Zalo-1011-1000065-XD";//米大师支付流水，可以通过GetPF方法获取
+          content.PfKey = "pfKey";//使用iMSDK支付时，固定取值为“pfKey”
+          content.ProductId = "midas_product_1";//米大师商品ID，用于标识一件商品，在米大师管理端进行配置获取，请注意与BuyGameOrGoodsOrMonth配合使用
+          content.ResId = "unipay_abroad_iconload";//【Android特有】购买货币图标文件资源，需要放在米大师工程目录的 res/drawable-??/. 目录下。如果图片文件名称为 unipay_abroad_iconload.png， 则这里填写“unipay_abroad_iconload”
+          content.Country = "US";//投放国家的国家编码，如：“CN”、“HK”、“US”等,在米大师管理端进行配置获取
+          content.CurrencyType = "USD";//投放国家货币类型简称，如： “CNY”（人民币）、“HKD”（港币）、“USD”（美金）等,在米大师管理端进行配置获取
           content.BuyGameOrGoodsOrMonth = "Goods";//Game:钻石 Goods:道具 Month:月卡
-          //支付渠道,设置为"all"则支持所有支付渠道，即打开midas商城页
-          content.payChannel = "all";
+          //支付渠道,设置为"all"则支持所有支付渠道，即打开midas商城页//【Android特有】,选择购买类型，Game:购买钻石 Goods:购买道具 Month:购买月卡，请注意与ProductId配合使用，购买类型不同，ProductId也会不同
+          content.payChannel = "all";//设置支付渠道,一般无需设置，表现为拉起SetChannel时指定的支付渠道界面，特殊的当设置为"all"时则表示支持所有支付渠道，表现为拉起midas商城界面，midas商城包含所有已注册支付渠道。
           return content;
    }
    
