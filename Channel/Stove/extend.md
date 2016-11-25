@@ -94,6 +94,19 @@ IMSDKApi.IMStove
 | :-- | :-- |
 | public delegate void IMStovePushBack(IMStovePushResult result) |  设置推送  |
 
+###设置监听LaunchUI中的点击登出、删除游戏角色、退出游戏、删除游戏账号结构体   
+
+* 展示弹窗结构体 <font color=blue>IMStoveLaunchActionResult：IMResult </font>
+
+| 变量 | 说明 |
+| :-- | :-- |
+| public int Type| 回调类型, |
+
+* 回调代理函数 <font color=blue>IMStovePushBack</font>
+
+| 类型 | 说明 |
+| :-- | :-- |
+| public delegate void IMStovePushBack(IMStovePushResult result) |  设置推送  |
 
 * IMStove方法类 <font color=blue> IMStove </font>
 
@@ -104,6 +117,9 @@ IMSDKApi.IMStove
 | public void getConfigInfo (IMStoveConfigCallback callback) | 获取配置信息 |
 | public void SetPushActive (bool isActive, IMStoveCallBack callback) | 设置推送开关 |
 | public void GetPushInfo (IMStovePushBack callback) | 获取推送开关 |
+| public void PrepareLogin(IMStovePrepareLoginCallBack callback) | 预登录 |
+| public void SetLaunchActionCallBack(IMStoveLaunchActionCallBack callback) | 设置监听LaunchUI中的点击登出、删除游戏角色、退出游戏、删除游戏账号回调 |
+| public void SetWorldID(string worldID) | 设置大区 |
 
 ## 代码示例
 
@@ -170,6 +186,24 @@ public void PrintLaunchActionResult(IMStoveLaunchActionResult result)
            //todo
         }
     }
+}
+
+/**
+*EXITPOPUP 可测试 退出游戏 回调
+*/
+
+public void TestLauchUI_EXITPOPUP_ActionCallback(){
+    TestGetCallbackFromLaunchUI();
+    IMStove.Instance.LaunchUI(7, PrintLaunchUIResult);
+    
+}
+
+/**
+*SETTING 可测试 登出、删除游戏角色、删除Stove账号 回调
+*/
+public void TestLauchUI_SETTING_ActionCallback(){
+    TestGetCallbackFromLaunchUI();
+    IMStove.Instance.LaunchUI(4, PrintLaunchUIResult);
 }
 ```
 
