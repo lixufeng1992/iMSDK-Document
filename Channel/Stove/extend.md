@@ -109,9 +109,6 @@ IMSDKApi.IMStove
 
 ```cs
 /**
-*Stove初始化为异步方法，调用登录接口前请务必确定已完成初始化
-*/
-/**
   *Stove初始化为异步方法，调用登录接口前请务必确定已完成初始化
 */
 public void PrintResult(IMResult result)
