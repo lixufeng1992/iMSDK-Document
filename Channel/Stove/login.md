@@ -54,7 +54,7 @@ void Start() {
  }
 
 /**
-*支持多大区后请参考以下代码
+*支持多大区后登录流程请参考以下代码
 */
  void TestLoginForSupportWorldId(){
  	IMStove.Instance.PrepareLogin(PrintPrepareLoginResult);//先预登录，登录Stove社交账号
