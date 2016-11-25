@@ -65,13 +65,14 @@ public void PrintPrepareLoginResult(IMResult result)
     IMLog.Log("print result " + result.IMSDKRetCode);
 	if(result.IMSDKRetCode == 1){//如预登陆成功
 	   IMStove.Instance.SetWorldID("your_world_id");//设置玩家选择的大区
-           TestLogin();//开始登录
+       TestLogin();//开始登录
 	}else{
 	   todo;//提示登录失败
 	}
 }
     
 void TestLogin() {
+
      List<string> permissionList = new List<string>();
      permissionList.Add("email");
      IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
