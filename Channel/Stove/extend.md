@@ -141,6 +141,27 @@ IMSDKApi.IMStove
           IMStove.Instance.SetPushActive (true, PrintResult);
           IMStove.Instance.GetPushInfo (PrintPushResult);
          }
+	 
+    public void TestGetCallbackFromLaunchUI(){
+      		IMStove.Instance.SetLaunchActionCallBack(PrintLaunchActionResult);
+     }
+     
+     public void PrintLaunchActionResult(IMStoveLaunchActionResult result)
+    {
+        IMLog.Log("print result " + result.IMSDKRetCode);
+	if(result.IMSDKRetCode == 1){//成功
+	    if(result.type == 2){//IMStove.LAUNCHUI_ACTION_LOGOUT LaunchUI-设置界面中点击 登出 回调
+	    	//todo
+	    }esle if(result.type == 3){//IMStove.LAUNCHUI_ACTION_DEL_CHARACTER LaunchUI-设置界面中点击 删除游戏角色 回调
+	    	//todo
+	    }esle if(result.type == 7){//IMStove.LAUNCHUI_ACTION_EXIT_GAME LaunchUI-EXITPOPUP界面中点击 退出游戏 回调
+	    	//todo
+	    }esle if(result.type == 17){//IMStove.LAUNCHUI_ACTION_DEL_ACCOUNT LaunchUI-设置界面中点击 删除游戏账号 回调
+	    	//todo
+	    }
+	    
+	}
+    }
 ```
 
 
