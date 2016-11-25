@@ -53,12 +53,34 @@ void Start() {
          }
  }
 
+/**
+*支持多大区后请参考以下代码
+*/
+ void TestLoginForSupportWorldId(){
+ 	IMStove.Instance.PrepareLogin(PrintPrepareLoginResult);//先预登录，登录Stove社交账号
+ }
+ 
+  public void PrintPrepareLoginResult(IMResult result)
+    {
+        IMLog.Log("print result " + result.IMSDKRetCode);
+	if(result.IMSDKRetCode == 1){//如预登陆成功
+	   IMStove.Instance.SetWorldID("your_world_id");//设置玩家选择的大区
+           TestLogin();//开始登录
+	}else{
+	   todo;//提示登录失败
+	}
+    }
+    
  void TestLogin() {
      List<string> permissionList = new List<string>();
      permissionList.Add("email");
 
      IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
  }
+ 
+
+    
+
  ```
 
  以下为Android代码，非Unity代码，Android侧特别注意：由于Stove需要调用生命周期，所以提供下面方法
