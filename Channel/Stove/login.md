@@ -72,7 +72,6 @@ public void PrintPrepareLoginResult(IMResult result)
 }
     
 void TestLogin() {
-
      List<string> permissionList = new List<string>();
      permissionList.Add("email");
      IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
