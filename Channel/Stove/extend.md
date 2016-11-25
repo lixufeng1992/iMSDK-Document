@@ -142,8 +142,11 @@ IMSDKApi.IMStove
           IMStove.Instance.GetPushInfo (PrintPushResult);
          }
 	 
+    /**
+    *演示从LaunchUI中获取 点击登出、删除游戏角色、退出游戏、删除游戏账号 回调
+    */
     public void TestGetCallbackFromLaunchUI(){
-      		IMStove.Instance.SetLaunchActionCallBack(PrintLaunchActionResult);
+      	IMStove.Instance.SetLaunchActionCallBack(PrintLaunchActionResult);
      }
      
      public void PrintLaunchActionResult(IMStoveLaunchActionResult result)
