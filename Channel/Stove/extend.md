@@ -111,60 +111,69 @@ IMSDKApi.IMStove
 /**
 *Stove初始化为异步方法，调用登录接口前请务必确定已完成初始化
 */
-    public void PrintResult(IMResult result){
-        IMLog.Log("print result " + result.IMSDKRetCode);
-	}
+/**
+  *Stove初始化为异步方法，调用登录接口前请务必确定已完成初始化
+*/
+public void PrintResult(IMResult result)
+{
+    IMLog.Log("print result " + result.IMSDKRetCode);
+}
 
-    public void PrintInitCallCallback(IMStoveConfigResult result){
-            //建议游戏在此监听回调，当返回成功，才可调用登录接口
-           IMLog.Log("print result " + result.IMSDKRetCode);
-    }
+public void PrintInitCallCallback(IMStoveConfigResult result)
+{
+    //建议游戏在此监听回调，当返回成功，才可调用登录接口
+   IMLog.Log("print result " + result.IMSDKRetCode);
+}
 
-	public void PrintConfigResult(IMStoveConfigResult result){
-        IMLog.Log("print result " + result.IMSDKRetCode);
-	}
+public void PrintConfigResult(IMStoveConfigResult result)
+{
+   IMLog.Log("print result " + result.IMSDKRetCode);
+}
 
-	public void PrintLaunchUIResult(IMStoveLaunchUIResult result){
-        IMLog.Log("print result " + result.IMSDKRetCode);
-	}
+public void PrintLaunchUIResult(IMStoveLaunchUIResult result)
+{
+   IMLog.Log("print result " + result.IMSDKRetCode);
+}
 
-    void Start() {
-         IMLog.setLevel (IMLog.Level.Log);
-         IMSDKApi.Stove.Initialize(PrintInitCallCallback);
-       }
+void Start()
+{
+   IMLog.setLevel(IMLog.Level.Log);
+   IMSDKApi.Stove.Initialize(PrintInitCallCallback);
+}
 
-    void Test() {
-         //展示弹窗
-         IMStove.Instance.LaunchUI(IMStove.LAUNCHUI_VALUE_EVENT, PrintLaunchUIResult);
-          //获取配置信息，注意虽然 获取配置信息 与 初始化返回结构体一致，但需传不同代理实例用以区分不同返回
-          IMStove.Instance.getConfigInfo (PrintConfigResult);
-          IMStove.Instance.SetPushActive (true, PrintResult);
-          IMStove.Instance.GetPushInfo (PrintPushResult);
-         }
+void Test()
+{
+    //展示弹窗
+    IMStove.Instance.LaunchUI(IMStove.LAUNCHUI_VALUE_EVENT, PrintLaunchUIResult);
+    //获取配置信息，注意虽然 获取配置信息 与 初始化返回结构体一致，但需传不同代理实例用以区分不同返回
+    IMStove.Instance.getConfigInfo(PrintConfigResult);
+    IMStove.Instance.SetPushActive(true, PrintResult);
+    IMStove.Instance.GetPushInfo(PrintPushResult);
+}
 	 
-    /**
-    *演示从LaunchUI中获取 点击登出、删除游戏角色、退出游戏、删除游戏账号 回调
-    */
-    public void TestGetCallbackFromLaunchUI(){
-      	IMStove.Instance.SetLaunchActionCallBack(PrintLaunchActionResult);
-     }
-     
-     public void PrintLaunchActionResult(IMStoveLaunchActionResult result)
-    {
-        IMLog.Log("print result " + result.IMSDKRetCode);
-	if(result.IMSDKRetCode == 1){//成功
-	    if(result.type == 2){//IMStove.LAUNCHUI_ACTION_LOGOUT LaunchUI-设置界面中点击 登出 回调
-	    	//todo
-	    }esle if(result.type == 3){//IMStove.LAUNCHUI_ACTION_DEL_CHARACTER LaunchUI-设置界面中点击 删除游戏角色 回调
-	    	//todo
-	    }esle if(result.type == 7){//IMStove.LAUNCHUI_ACTION_EXIT_GAME LaunchUI-EXITPOPUP界面中点击 退出游戏 回调
-	    	//todo
-	    }esle if(result.type == 17){//IMStove.LAUNCHUI_ACTION_DEL_ACCOUNT LaunchUI-设置界面中点击 删除游戏账号 回调
-	    	//todo
-	    }
-	    
-	}
+/**
+  *演示从LaunchUI中获取 点击登出、删除游戏角色、退出游戏、删除游戏账号 回调
+  */
+public void TestGetCallbackFromLaunchUI()
+{
+    IMStove.Instance.SetLaunchActionCallBack(PrintLaunchActionResult);
+}
+
+public void PrintLaunchActionResult(IMStoveLaunchActionResult result)
+{
+    IMLog.Log("print result " + result.IMSDKRetCode);
+    if(result.IMSDKRetCode == 1){//成功
+        if(result.type == 2){//IMStove.LAUNCHUI_ACTION_LOGOUT LaunchUI-设置界面中点击 登出 回调
+           //todo
+        }esle if(result.type == 3){//IMStove.LAUNCHUI_ACTION_DEL_CHARACTER LaunchUI-设置界面中点击 删除游戏角色 回调
+           //todo
+        }esle if(result.type == 7){//IMStove.LAUNCHUI_ACTION_EXIT_GAME LaunchUI-EXITPOPUP界面中点击 退出游戏 回调
+           //todo
+        }esle if(result.type == 17){//IMStove.LAUNCHUI_ACTION_DEL_ACCOUNT LaunchUI-设置界面中点击 删除游戏账号 回调
+           //todo
+        }
     }
+}
 ```
 
 
