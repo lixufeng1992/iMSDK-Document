@@ -191,7 +191,6 @@ public void PrintLaunchActionResult(IMStoveLaunchActionResult result)
 /**
 *EXITPOPUP 可测试 退出游戏 回调
 */
-
 public void TestLauchUI_EXITPOPUP_ActionCallback(){
     TestGetCallbackFromLaunchUI();
     IMStove.Instance.LaunchUI(7, PrintLaunchUIResult);
