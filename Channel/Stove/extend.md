@@ -100,13 +100,24 @@ IMSDKApi.IMStove
 
 | 变量 | 说明 |
 | :-- | :-- |
-| public int Type| 回调类型, |
+| public int Type| 回调类型 |
+| LAUNCHUI_ACTION_LOGOUT| 2 |
+| LAUNCHUI_ACTION_DEL_CHARACTER| 3 |
+| LAUNCHUI_ACTION_EXIT_GAME| 7 |
+| LAUNCHUI_ACTION_DEL_ACCOUNT| 17 |
 
-* 回调代理函数 <font color=blue>IMStovePushBack</font>
+* 回调代理函数 <font color=blue>IMStoveLaunchActionCallBack</font>
 
 | 类型 | 说明 |
 | :-- | :-- |
-| public delegate void IMStovePushBack(IMStovePushResult result) |  设置推送  |
+| public delegate void IMStoveLaunchActionCallBack(IMStoveLaunchActionResult result); |  设置监听LaunchUI中事件回调  |
+
+###设置监听预登陆回调  
+* 回调代理函数 <font color=blue>IMStovePrepareLoginCallBack</font>
+
+| 类型 | 说明 |
+| :-- | :-- |
+| public delegate void IMStovePrepareLoginCallBack(IMResult result); |  设置监听预登录回调  |
 
 * IMStove方法类 <font color=blue> IMStove </font>
 
