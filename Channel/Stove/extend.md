@@ -101,6 +101,9 @@ IMSDKApi.IMStove
 | 变量 | 说明 |
 | :-- | :-- |
 | public int Type| 回调类型 |
+
+| Type定义 | 取值 |
+| :-- | :-- |
 | LAUNCHUI_ACTION_LOGOUT| 2 |
 | LAUNCHUI_ACTION_DEL_CHARACTER| 3 |
 | LAUNCHUI_ACTION_EXIT_GAME| 7 |
