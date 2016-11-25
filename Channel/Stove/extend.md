@@ -135,7 +135,7 @@ public void PrintLaunchUIResult(IMStoveLaunchUIResult result)
 void Start()
 {
    IMLog.setLevel(IMLog.Level.Log);
-   IMSDKApi.Stove.Initialize(PrintInitCallCallback);
+   IMStove.Instance.Initialize(PrintInitCallCallback);
 }
 
 void Test()
