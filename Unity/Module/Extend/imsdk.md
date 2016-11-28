@@ -15,8 +15,8 @@
 1. 代码实例
 
 ```cs
-	private IMToolDeviceInfo deviceInfoObj;
-	private string deviceInfoStr;
+    private IMToolDeviceInfo deviceInfoObj;
+    private string deviceInfoStr;
     private string public string packageChannelId;
     
     
@@ -245,16 +245,19 @@
 ### 配置说明
 
 #### Android配置说明
+
 ```
-// GetGuestId(),GetIMEI(),GetOperators() -- android.permission.READ_PHONE_STATE
+// GetGuestId(),GetIMEI(),GetOperators() <--> android.permission.READ_PHONE_STATE
 <uses-permission android:name="android.permission.READ_PHONE_STATE"/> 
-// GetApn() -- android.permission.ACCESS_NETWORK_STATE
+// GetApn() <--> android.permission.ACCESS_NETWORK_STATE
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
-// GetPhoneName() -- android.permission.BLUETOOTH
+// GetPhoneName() <--> android.permission.BLUETOOTH
 <uses-permission android:name="android.permission.BLUETOOTH"/> 
-// GetMac()
+// GetMac() <--> android.permission.ACCESS_WIFI_STATE
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
+> android.permission.READ_PHONE_STATE 用于接口 GetGuestId(),GetIMEI(),GetOperators()
+
 
 
 

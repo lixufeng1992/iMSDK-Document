@@ -1,4 +1,4 @@
-##6.6.3 Efun iOS工程配置
+##Efun iOS工程配置
 
 ###1. Xcode工程配置
 Xcode->Project->Edit Project Settings，打开你的工程配置,在工程配置中找到Linking部分，修改 Other Linker Flags 添加以下参数： -lsqlite3.0 –ObjC

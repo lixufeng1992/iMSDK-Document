@@ -1,4 +1,4 @@
-## 6.10.2 Stove(Android) 工程配置
+## Stove(Android) 工程配置
 
 ### Android工程通用配置
 
@@ -92,3 +92,4 @@
  <!-- Stove_1.11.0 end -->
  </application>
  ```
+

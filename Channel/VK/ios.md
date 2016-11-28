@@ -1,8 +1,7 @@
-##6.9.3 VK iOS工程配置
+##VK iOS工程配置
+
 ###1、添加 URL schems
 + 如果要通过VK app进行授权的话需要进行URL Scheme设置 vk+APP_ID (e.g. vk1234567).
-
-
 
 ###2、 iOS 9配置
 
@@ -38,3 +37,5 @@
     <string>vkauthorize</string>
 </array>
 ```  
+
+

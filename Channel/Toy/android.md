@@ -1,4 +1,4 @@
-## 6.4.1 Toy(Android) 工程配置
+## Toy(Android) 工程配置
 
 ### Android工程通用配置
 
@@ -389,3 +389,4 @@
  <uses-permission android:name="android.permission.GET_TASKS" />
  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
  ```
+

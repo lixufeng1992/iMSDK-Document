@@ -35,9 +35,8 @@
 2. 支付模块区分为  
   Midas支付【适用除iOS官方支付外的所有第三方支付】  
   及  
-  iOS-IAP支付【iOS官方支付】2种模式.
+  iOS-IAP支付【iOS官方支付】2种模式.    
+  
+  * [米大师支付](paymidas.md)
 
-  * [米大师支付](pay-midas.md)
-  * [iOS-IAP支付](pay-iap.md)
-
-
+  * [iOS-IAP支付](payiap.md)
