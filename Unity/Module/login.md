@@ -38,6 +38,22 @@ void TestLogin() {
     // 调动登陆方法
     IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
 }
+
+void OnLogout(IMResult result)
+{
+    testInfo = "logout ok:"
+        + "\n ret code : " + result.RetCode
+        + "\n ret msg : " + result.ErrorMsg
+        + "\n ret IMSDKRetCode : " + result.IMSDKRetCode
+        + "\n ret IMSDKRetMsg : " + result.IMSDKRetMsg
+        + "\n ret ThirdRetCode : " + result.ThirdRetCode
+        + "\n ret ThirdRetMsg : " + result.ThirdRetMsg;                  
+}
+                
+void TestLogout() {
+    // 登出,设置LogoutCallback可获登出回调,可以为空，默认为空
+    IMSDKApi.Login.Logout(OnLogout);
+}
 ```
 
 ### 参考
@@ -99,6 +115,15 @@ void TestLogin() {
 | 类型 | 说明 |
 | :-- | :-- |
 | public delegate void BindInfoCallback(IMBindInfoResult result) | 查询绑定信息，返回用户登录结果列表 |
+
+
+* 登出返回结构体 <font color=blue>IMResult</font>
+
+* 登出代理函数 <font color=blue>LogoutCallback</font>
+
+| 类型 | 说明 |
+| :-- | :-- |
+| public delegate void LogoutCallback(IMResult result) | 返回登出结果 |
 
 * 登录方法类 <font color=blue>IMLogin</font>
 
