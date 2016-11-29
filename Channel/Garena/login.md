@@ -224,12 +224,12 @@ void Start() {
  ```
  > Garena 子渠道列表
  
- | 子渠道 | 缩写 |
- | :--: | :--: |
- |Facebook | GRN_FB |
- |Gas | GRN_Gas |
- |BeeTalk | GRN_BT |
- |Guest | GRN_GU |
+| 子渠道 | 缩写 |
+|  :--  |  :--  |
+|Facebook | GRN_FB |
+|Gas | GRN_Gas |
+|BeeTalk | GRN_BT |
+|Guest | GRN_GU |
  
  
  以下为Android代码，非Unity代码，Android侧特别注意：由于Garena需要调用生命周期，所以提供下面方法
