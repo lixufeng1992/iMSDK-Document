@@ -223,6 +223,7 @@ void Start() {
  }
  ```
  > Garena 子渠道列表
+ 
  | 子渠道 | 缩写 |
  | :--: | :--: |
  |Facebook | GRN_FB |
