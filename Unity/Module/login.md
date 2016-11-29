@@ -140,7 +140,7 @@ void TestLogout() {
 | public bool IsLogin() | 判断用户是否已经登录 |
 | public void AutoLogin(LoginCallback callback = null) | 自动登录，如果玩家之前已经登录过，就调用上一次的登录结果 |
 | public IMLoginResult GetLoginResult() | 获取当前登录返回数据 |
-| public void Logout() | 登出当前渠道 |
+| public void Logout(LogoutCallback callback = null) | 登出当前渠道 |
 | public void Bind(string channel, LoginCallback callback = null) | 绑定到其他渠道账号<br> <font color=orange>注意：不能绑定到游客（Guest）账户</font> |
 | public void GetBindInfo(BindInfoCallback callback=null) | 获取用户绑定渠道资料 |
 | public void SetPlayingReportChannel(string channel) | 设定状态上报渠道 |
