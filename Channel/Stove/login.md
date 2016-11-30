@@ -25,6 +25,12 @@
 | 19 | public bool IsChannelSupportApi() | 应用API版本是否可用 | × | - |
 | 20 | <font color=red>public void Bind(string channel, LoginCallback callback = null,string subChannel = "",string extrasJsonString = "") </font>| 绑定到第三方子渠道 | √ | |
 
+> 注意：Stove登入是依赖于Stove扩展模块的，具体登入流程（参考代码示例部分）：
+   1. IMSDKAPi.Stove.PrepareLogin(callback);
+   2. IMSDKAPi.Stove.SetWorldID(worldID);
+   3. IMSDKApi.Login.Login(callback, permissionList, true);   
+  
+  
 ## 工程配置
 
  [Stove Android工程配置](../../../Channel/Stove/android.md)
