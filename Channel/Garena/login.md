@@ -273,4 +273,4 @@ void Start() {
  }
 ```
 
-> 注意：Garena Login插件依赖与Garena Extend 插件，调用Garena Login之前，需要先调用一下Garena Extend插件的初始化：IMSDKApi.Garena.Initialize()
+> 注意：Garena Login插件依赖于Garena Extend 插件，调用Garena Login之前，需要先调用一下Garena Extend插件的初始化：IMSDKApi.Garena.Initialize()
