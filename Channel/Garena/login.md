@@ -188,6 +188,14 @@
 
 </manifest>
 ```
+> 1.11.2 版本增加配置：
+```
+<meta-data android:name="com.tencent.imsdk.garena.loginTitle" android:value="user login”/>
+```
+之前写死在代码中，现在通过配置管理，不添加此配置则以之前写死的默认值。
+
+
+
 
 ## 代码示例
 
