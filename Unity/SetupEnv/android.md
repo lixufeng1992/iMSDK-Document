@@ -1,6 +1,6 @@
 ## 4.2.1 Android 环境配置
 
-### HTTPS证书文件
+### 内置 HTTPS 证书文件
 
 Unity中的文件路径为：
 
