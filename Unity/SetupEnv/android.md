@@ -2,7 +2,7 @@
 
 ### 内置 HTTPS 证书文件
 
-内置证书用于 Android 1.11.0 以下版本，或者服务器没有有效的 HTTPS 证书时使用
+**内置证书用于 Android 1.11.0 以下版本，或者服务器没有有效的 HTTPS 证书时使用**
 
 Unity中的文件路径为：
 
@@ -103,3 +103,4 @@ Assets/Plugins/Android/assets/IMSDK/stat.json //iMSDK 统计上报初始化渠�
 
 1. [完成渠道配置](../../Channel/README.md)
 2. [快速集成](../quickstart.md)
+···
