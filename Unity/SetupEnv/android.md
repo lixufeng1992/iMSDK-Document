@@ -58,7 +58,7 @@ Assets/Plugins/Android/assets/IMSDK/stat.json //iMSDK 统计上报初始化渠�
     在AndroidManifest.xml中找到配置项：
 
     ```xml
-    <meta-data android:name="com.tencent.imsdk.SdkServer" android:value="sdkapi-beta.itop.qq.com"/>
+    <meta-data android:name="com.tencent.imsdk.SdkServer" android:value="hk-sdkapi-beta.itop.qq.com"/>
     ```
 
     将value值修改为对应的iMSDK服务器地址，不需要添加 “ https:// ”头
