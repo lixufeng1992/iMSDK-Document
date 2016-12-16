@@ -2,6 +2,8 @@
 
 ### 内置 HTTPS 证书文件
 
+内置证书用于 Android 1.11.0 以下版本，或者服务器没有有效的 HTTPS 证书时使用
+
 Unity中的文件路径为：
 
 ```sh
@@ -10,7 +12,7 @@ Assets/Plugins/Android/assets/iMSDKServer.cer
 
 ![HTTPS证书位置](../Images/4_2_unity_setupenv_cer.jpg)
   
-iMSDK插件包在提供的时候，已经提供了测试环境下的HTTPS证书文件。
+iMSDK 插件包在提供的时候，已经提供了测试环境下的HTTPS证书文件。
 
 如需要获取证书证书，请点击[HTTPS证书说明](../../Help/httpscertfile.md)查看具体方法
 
