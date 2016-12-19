@@ -89,6 +89,7 @@ Unity编译导出Xcode工程后，需要在工程中添加必要的代码，iMSD
 
 ###概述
 iMSDK（iOS）配置文件保存于**IMSDKAppSetting.bundle->Contents->Resources**中，如下图
+
   ![iMSD(iOS)配置详解](../Images/4_2_unity_setupenv_xcode_config.png)
 
 + app.plist ， 包括iMSDK服务配置（域名、游戏ID、调试级别等）以及各大第三方渠道配置。
