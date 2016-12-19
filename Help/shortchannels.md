@@ -7,7 +7,7 @@
 | 3 | Google | GG | | |
 | 4 | WeChat | WX | | |
 | 5 | Guest | GU | | |
-| 6 | Zalo | ZL |ZL  ZM  ZGU | Zalo内部Zalo渠道  Zalo内部Zing渠道  Zalo内部游客渠道 |
+| 6 | Zalo | ZL |ZL  ZM  ZGU | Zalo内部Zalo渠道 Zalo内部Zing渠道  Zalo内部游客渠道 |
 | 7 | 37Ｗeb | 37W | | |
 | 8 | SQW  GM | SQW  GM | | 37wan  G妹 |
 | 9 | Link | LK | | |
