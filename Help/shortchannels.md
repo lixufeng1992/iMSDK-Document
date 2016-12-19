@@ -1,4 +1,5 @@
-## 8.5 社交渠道一览表
+#
+# 8.5 社交渠道一览表
 | 渠道id | 渠道名称 | 渠道简称 | 子渠道简称 | 备注 |
 | :-- | :-- | :-- | :-- |:-- |
 | 1 | Facebook | FB | | |
@@ -6,16 +7,16 @@
 | 3 | Google | GG | | |
 | 4 | WeChat | WX | | |
 | 5 | Guest | GU | | |
-| 6 | Zalo | ZL |ZL <br /> ZM <br /> ZGU | Zalo内部Zalo渠道 <br /> Zalo内部Zing渠道 <br /> Zalo内部游客渠道 |
+| 6 | Zalo | ZL |ZL  ZM  ZGU | Zalo内部Zalo渠道  Zalo内部Zing渠道  Zalo内部游客渠道 |
 | 7 | 37Ｗeb | 37W | | |
-| 8 | SQW <br /> GM | SQW <br /> GM | | 37wan <br /> G妹 |
+| 8 | SQW  GM | SQW  GM | | 37wan  G妹 |
 | 9 | Link | LK | | |
 | 10 | Viber | VB | | |
 | 11 | OasGames | OAS | | |
 | 12 | FLKK | FLKK | | 飞流（封装了KaKao渠道） |
-| 13 | Garena | GRN | GRN_Gas <br /> GRN_BT <br /> GRN_GU | Garena内部Gas渠道 <br /> Garena内部BeeTalk渠道 <br /> Garena内部游客渠道 |
+| 13 | Garena | GRN | GRN_Gas  GRN_BT  GRN_GU | Garena内部Gas渠道  Garena内部BeeTalk渠道  Garena内部游客渠道 |
 | 14 | VK | VK | | |
-| 15 | Toy | Toy | Toy_GU <br /> Toy_FB <br /> Toy_TW <br /> Toy_EM <br /> Toy_GO <br /> Toy_DE | Toy内部游客渠道 <br /> Toy内部Facebook渠道 <br /> Toy内部Twitter渠道 <br /> Toy内部Email渠道 <br /> Toy内部Google Plus渠道 <br /> Toy默认登录渠道 |
+| 15 | Toy | Toy | Toy_GU  Toy_FB  Toy_TW  Toy_EM  Toy_GO  Toy_DE | Toy内部游客渠道  Toy内部Facebook渠道  Toy内部Twitter渠道  Toy内部Email渠道  Toy内部Google Plus渠道  Toy默认登录渠道 |
 | 16 | Efun | Efun | | |
 | 17 | KAKAO | KK | | |
 | 18 | MTO | | | |
