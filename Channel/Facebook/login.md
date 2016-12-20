@@ -22,7 +22,7 @@
 | 16 | public void ActivatePlayingReport(string extraJson="") | 上报状态 | × | |
 | 17 | public void DeactivatePlayingReport() | 关闭状态上报 | × | |
 | 18 | public bool IsChannelAppInstalled() | 是否安装渠道应用 | × | Facebook 登录可以不需要 App |
-| 19 | public bool IsChannelSupportApi() | 应用API版本是否可用 | × | - |
+| 19 | public bool IsChannelSupportApi() | 应用API版本是否可用 | × | Facebook 登录可以不需要 App |
 
 ### 登录权限说明
 
