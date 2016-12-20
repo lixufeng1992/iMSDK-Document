@@ -39,7 +39,7 @@
  
     ```xml
     <meta-data android:name="com.google.android.gms.version"
-    android:value="@integer/google_play_services_version" />
+    	android:value="@integer/google_play_services_version" />
     ```
     > google_play_services_version 一般可以在 Google GMS 工程中的 xml 中可以找到
 
