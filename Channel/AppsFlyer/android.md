@@ -1,6 +1,6 @@
-### AppsFlyer统计配置说明
+### 6.18.2 AppsFlyer工程配置
 
- #### Android 端配置说明
+* 权限配置
  
  
  * iMSDK appsflyer 统计插件版本1.6.0 和 1.6.1版本请用如下配置
