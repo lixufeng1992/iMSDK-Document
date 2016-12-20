@@ -1,18 +1,22 @@
 ### 6.18.2 AppsFlyer工程配置
 
-* 权限配置
+
+* 权限配置，在AndroidManifest.xml中增加如下权限
+
+```xml
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<permission android:name=".permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name=".permission.C2D_MESSAGE" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	```
  
  
  * iMSDK appsflyer 统计插件版本1.6.0 和 1.6.1版本请用如下配置
  ``` xml 
  <!-- version 1.6.0 and 1.6.1 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	
-	<uses-permission android:name="android.permission.WAKE_LOCK" />
-    <permission android:name=".permission.C2D_MESSAGE"
-        android:protectionLevel="signature" />
-    <uses-permission android:name=".permission.C2D_MESSAGE" />
-	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />	
+
 	<application>
 		<!-- AppsFlyer 安装receiver -->
 	<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
