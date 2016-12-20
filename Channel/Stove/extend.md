@@ -134,7 +134,7 @@ IMSDKApi.IMStove
 | public void PrepareLogin(IMStovePrepareLoginCallBack callback) | 预登录 |
 | public void SetLaunchActionCallBack(IMStoveLaunchActionCallBack callback) | 设置监听LaunchUI中的点击登出、删除游戏角色、退出游戏、删除游戏账号回调 |
 | public void SetWorldID(string worldID) | 设置大区 |
-
+| public void PermissionCheck(IMStovePermissionCheckCallBack callback) |（仅支持Android）申请、检查权限 |
 ## 代码示例
 
 ```cs
@@ -218,6 +218,25 @@ public void TestLauchUI_SETTING_ActionCallback(){
     TestGetCallbackFromLaunchUI();
     IMStove.Instance.LaunchUI(4, PrintLaunchUIResult);
 }
+
+/**
+*申请、检查权限（仅支持Android）
+*请注意，该功能需与Android Native代码配合使用，如下"Permission Check in Android Native Part"
+*/
+public void TestPermissionCheck(){
+    IMStove.Instance.PermissionCheck(PrintResult);
+}
+
+ =======================================Permission Check in Android Native Part Start=================================================
+/**
+*请注意，该功能需在主Activity中重写Activity onRequestPermissionsResult方法并调用IMSDKExtendStove.onRequestPermissionsResult
+*/
+ public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults)
+  {
+    super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    IMSDKExtendStove.onRequestPermissionsResult(requestCode, permissions, grantResults);
+  }
+ =======================================Permission Check in Android Native Part end=================================================
 ```
 
 
