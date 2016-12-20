@@ -148,7 +148,10 @@ public void PrintResult(IMResult result)
 
 public void PrintInitCallCallback(IMStoveConfigResult result)
 {
-    //建议游戏在此监听回调，当返回成功，才可调用登录接口
+   //申请权限建议在初始化完成之后，登录之前调用
+   TestPermissionCheck();
+   
+   //建议游戏当申请权限成功后，再调用登录接口
    IMLog.Log("print result " + result.IMSDKRetCode);
 }
 
@@ -166,7 +169,6 @@ void Start()
 {
    IMLog.setLevel(IMLog.Level.Log);
    IMStove.Instance.Initialize(PrintInitCallCallback);
-   TestPermissionCheck();//申请权限建议在初始化完成之后，登录之前调用
 }
 
 void Test()
