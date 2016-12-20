@@ -22,31 +22,31 @@
  	```xml
  	<meta-data android:name="GCM_PROJECT_NUM" android:value="your_gcm_project_num"/>
  	```
- * iMSDK appsflyer 统计插件版本1.6.0 和 1.6.1版本请用如下配置
- ``` xml 
- <!-- version 1.6.0 and 1.6.1 -->
+ 
+ * Google GCM 服务版本配置
+ 
+  ```xml
+	<meta-data android:name="com.google.android.gms.version"
+		android:value="@integer/google_play_services_version" />
+  ```
+ 	> google_play_services_version 一般可以在 Google GMS 工程中的 xml 中可以找到
+ 
+ * Receiver 配置，在 Application 节点下，添加相应的配置。注意：需要尽量将 Appsflyer 的 Receiver 放到前面，以提高 Appsflyer 数据的准确性
+ 
+   ``` xml 
 
-	<application>
-		<!-- AppsFlyer 安装receiver -->
-	<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
-	<intent-filter>
-        <action android:name="com.android.vending.INSTALL_REFERRER" />
-    </intent-filter>
-	</receiver>	
-	<receiver
-		android:name="com.google.android.gms.gcm.GcmReceiver"
-		android:exported="true">
-		<intent-filter>
-			<action android:name="com.google.android.c2dm.intent.RECEIVE" />
-		</intent-filter>
-	</receiver>
-	<!-- Appsflyer配置，需要配置在官网上获取的DEVKEY --> 
+   <receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
+       <intent-filter>
+           <action android:name="com.android.vending.INSTALL_REFERRER"/>
+       </intent-filter>
+   </receiver>
+   <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true">
+       <intent-filter>
+           <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+       </intent-filter>
+   </receiver>	
 	
-	<!--AppsFlyer can track Google Advertising ID to improve tracking, 假如项目需要，需要添加以下配置，详细参考Android AppsFlyer说明文档3.4节 -->
-	<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    <!-- GCM Project NUM -->			
-	
- ```
+ 	```
  
  -----------------
 
