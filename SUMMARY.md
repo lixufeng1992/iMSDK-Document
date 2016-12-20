@@ -61,7 +61,7 @@
             * [Facebook 开发者中心配置](Channel/Facebook/developers.md)
             * [Facebook Android 工程配置](Channel/Facebook/android.md)
             * [Facebook iOS 工程配置](Channel/Facebook/ios.md)
-        * [6.1.2 Facebook 功能说明](Channel/functions.md)
+        * [6.1.2 Facebook 功能说明](Channel/modules.md)
             * [Facebook 登录功能说明](Channel/Facebook/login.md)
             * [Facebook 分享功能说明](Channel/Facebook/share.md)
             * [Facebook 统计功能说明](Channel/Facebook/stat.md)
