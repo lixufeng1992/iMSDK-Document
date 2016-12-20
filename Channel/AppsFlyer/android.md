@@ -1,6 +1,8 @@
 ### AppsFlyer统计配置说明
 
  #### Android 端配置说明
+ 
+ 
  * iMSDK appsflyer 统计插件版本1.6.0 和 1.6.1版本请用如下配置
  ``` xml 
  <!-- version 1.6.0 and 1.6.1 -->
