@@ -46,8 +46,8 @@
 * Appsflyer 4.5 以上版本（对应 IMSDK 1.8 版本及以上），需要添加 Google GMS 配置以支持 卸载跟踪
      
      * Google GCM 推送 ID 信息配置
- 
- 	```xml
+     	
+	```xml
  	<meta-data android:name="GCM_PROJECT_NUM" android:value="your_gcm_project_num"/>
  	```
  
