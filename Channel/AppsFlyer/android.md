@@ -3,7 +3,7 @@
 
 * 权限配置，在AndroidManifest.xml中增加如下权限
 
-```xml
+	```xml
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
