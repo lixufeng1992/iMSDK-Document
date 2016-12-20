@@ -12,7 +12,16 @@
 	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 	```
  
+ * AppsFlyer 信息配置
  
+ 	```xml
+	<meta-data android:name="DEVKEY_APPSFLYER" android:value="your_devkey" />
+ 	```
+ * Google GCM 推送 ID 信息配置
+ 
+ 	```xml
+ 	<meta-data android:name="GCM_PROJECT_NUM" android:value="your_gcm_project_num"/>
+ 	```
  * iMSDK appsflyer 统计插件版本1.6.0 和 1.6.1版本请用如下配置
  ``` xml 
  <!-- version 1.6.0 and 1.6.1 -->
@@ -32,13 +41,11 @@
 		</intent-filter>
 	</receiver>
 	<!-- Appsflyer配置，需要配置在官网上获取的DEVKEY --> 
-	<meta-data
-            android:name="DEVKEY_APPSFLYER"
-            android:value="your_devkey" />
+	
 	<!--AppsFlyer can track Google Advertising ID to improve tracking, 假如项目需要，需要添加以下配置，详细参考Android AppsFlyer说明文档3.4节 -->
 	<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <!-- GCM Project NUM -->			
-	<meta-data android:name="GCM_PROJECT_NUM" android:value="your_gcm_project_num"/>
+	
  ```
  
  -----------------
