@@ -130,5 +130,12 @@ void TestLogin() {
 		mUnityPlayer.resume();
 		UStoveHelper.onResume();
 	}
+	
+	@Override
+	protected void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults)
+	{
+	    	super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+	    	UStoveHelper.onRequestPermissionsResult(requestCode, permissions, grantResults);
+	}
 ```
 
