@@ -233,7 +233,7 @@ public void TestPermissionCheck(){
 
  =======================================Permission Check in Android Native Part Start=================================================
 /**
-*请注意，该功能需在主Activity中重写Activity onRequestPermissionsResult方法并调用IMSDKExtendStove.onRequestPermissionsResult
+*请注意，PermissionCheck功能需在主Activity中重写Activity onRequestPermissionsResult方法并调用IMSDKExtendStove.onRequestPermissionsResult
 */
  public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults)
   {
