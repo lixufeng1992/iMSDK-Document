@@ -57,7 +57,7 @@
     * [5.3 快速集成指南](Cpp/quickstart.md)
 * [6. 渠道平台指引](Channel/README.md)
     * [6.1 Facebook 指引](Channel/facebook.md)
-        * [6.1.1Facebook 渠道设置](Channel/settings.md)
+        * [6.1.1 Facebook 渠道设置](Channel/settings.md)
             * [Facebook 开发者中心配置](Channel/Facebook/developers.md)
             * [Facebook Android 工程配置](Channel/Facebook/android.md)
             * [Facebook iOS 工程配置](Channel/Facebook/ios.md)
