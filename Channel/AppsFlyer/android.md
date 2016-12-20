@@ -49,6 +49,7 @@
     android:value="@integer/google_play_services_version" />
     ```
     > google_play_services_version 一般可以在 Google GMS 工程中的 xml 中可以找到
+    
 
 * 1.8.0版本后，增加卸载追踪功能，并更新依赖的AppsFlyer版本
 * 1.9.0版本， 需在游戏主activity，onCreate()中调用ExtendAppsFlyer.onCreate(Context context)
