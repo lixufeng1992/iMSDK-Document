@@ -19,7 +19,7 @@
 	<meta-data android:name="DEVKEY_APPSFLYER" android:value="your_devkey" />
     ```
  
- * Receiver 配置，在 Application 节点下，添加相应的配置。注意：需要尽量将 Appsflyer 的 Receiver 放到前面，以提高 Appsflyer 数据的准确性
+* Receiver 配置，在 Application 节点下，添加相应的配置。注意：需要尽量将 Appsflyer 的 Receiver 放到前面，以提高 Appsflyer 数据的准确性
  
    ``` xml 
 
@@ -35,7 +35,7 @@
    </receiver>	
 	
  	```
- * Google GCM 服务版本配置
+* Google GCM 服务版本配置
  
     ```xml
     <meta-data android:name="com.google.android.gms.version"
@@ -43,7 +43,7 @@
     ```
     > google_play_services_version 一般可以在 Google GMS 工程中的 xml 中可以找到
 
- * Appsflyer 4.5 以上版本（对应 IMSDK 1.8 版本及以上），需要添加 Google GMS 配置以支持 卸载跟踪
+* Appsflyer 4.5 以上版本（对应 IMSDK 1.8 版本及以上），需要添加 Google GMS 配置以支持 卸载跟踪
      
      * Google GCM 推送 ID 信息配置
  
