@@ -4,7 +4,6 @@
 
   ```
   <integer name="com_vk_sdk_AppId">{your_vk_appid}</integer>
-
   ```
 
 ###2、在 AndroidManifest中添加Activity声明：
