@@ -21,7 +21,8 @@
 | AppsFlyer | [AppsFlyer配置](appsflyer.md)|[AppsFlyer功能](../Channel/Appsflyer/appsflyer_module.md) |
 | Bugly |[Bugly配置](bugly.md)|[Bugly功能](../Channel/Bugly/bugly_module.md) |
 | MTA |[MTA配置](mta.md)|[MTA功能](../Channel/MTA/mta_module.md) |
-| Beacon |[Beacon配置](beacon.md)|[Beacon功能](../Channel/Beacon/beacon_module.md) |
+| Beacon |[Beacon配置](beacon.md)|[Beacon功能](../Channel/Beacon/beacon_module.md) |     
+|VNG|[VNG配置](vng.md)|[VNG功能](../Channel/VNG/vng_module.md) |
 
 
 
