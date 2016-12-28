@@ -1,6 +1,6 @@
 ## VNG 帮助系统说明
 
-### Help支持接口列表
+###一、 Help支持接口列表
 
 |序号|方法名|方法说明|是否支持|备注|
 |:--|:--|:--|:--|:--|     
@@ -27,7 +27,7 @@
 |21|public void ShowFAQ(string extraJson = "",HelpCallback callback = null)|显示FAQ|x|-|     
 |22|public void ShowCustomerService(string extraJson = "",HelpCallback callback = null)|显示用户中心|x|-|   
 
-###关于VNG ShowHelpCenter参数具体说明
+###二、关于VNG ShowHelpCenter参数具体说明
 * extrajson格式：
 
   ```json
@@ -37,7 +37,7 @@
   }
   ```
   
-###SET接口说明
+###三、SET接口说明
 如果呼出帮助中心，需要传入roleName， level， serverId等值，需要在调showHelpCenter接口前，调用对应的set接口。
 ```
 SetLevel(string level);
