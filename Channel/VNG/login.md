@@ -12,9 +12,9 @@
 | 5 | public void SetType(string type) | 复杂渠道设置登录类型 | × |  |       
 | 6 | public void Login( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 一般登录 | √ |  |      
 | 7 | public void StrictLogin( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 严格登录 | √ |  |       
-| 8 | public void QuickLogin(LoginCallback callback = null) | 快速登录 | √ |  |       
+| 8 | public void QuickLogin(LoginCallback callback = null) | 快速登录 |  × |  |       
 | 9 | public bool IsLogin() | 判断用户是否已经登录 | √ |  |      
-| 10 | public void AutoLogin(LoginCallback callback = null) | 自动登录 | √ |  |      
+| 10 | public void AutoLogin(LoginCallback callback = null) | 自动登录 |  × |  |      
 | 11 | public IMLoginResult GetLoginResult() | 获取当前登录返回数据 | √ |  |        
 | 12 | public void Logout() | 登出当前渠道 | √ |  |      
 | 13 | public void Bind(string channel, LoginCallback callback = null) | 绑定到其他渠道账号 | × |  |      
