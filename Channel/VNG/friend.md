@@ -1,4 +1,4 @@
-##VNG 好友说明
+##VNG & VNGSEA 好友说明
 
 ###Friend接口支持情况     
 
