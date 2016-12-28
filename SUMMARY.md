@@ -233,9 +233,9 @@
             * [6.20.1.3 iOS 工程配置](Channel/MTA/ios.md)
         * [6.20.2 MTA 功能说明](Channel/MTA/mta_module.md)
             * [6.20.2.1  Bugly 统计功能说明](Channel/MTA/stat.md)
-            
-   * [6.21 VNG & VNGSEA 平台指引](Channel/README.md)    
-        * [6.21.1 VNG & VNGSEA  渠道设置](Channel/VNG/vng_settings.md)   
+        
+    * [6.21 VNG & VNGSEA 平台指引](Channel/README.md)       
+        *  [6.21.1 VNG & VNGSEA  渠道设置](Channel/VNG/vng_settings.md)   
             * [6.21.1.1 VNG & VNGSEA  开发者中心配置](Channel/VNG/developers.md)   
             * [6.21.1.2 Android 工程配置](Channel/VNG/android.md)  
             * [6.21.1.3 iOS 工程配置](Channel/VNG/ios.md)   
