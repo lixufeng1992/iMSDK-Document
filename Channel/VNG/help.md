@@ -9,7 +9,7 @@
 |3|public void GetNewMessageCount(FeedbackCallback callback)|获取最新反馈|×| - |      
 |4|public void SetLanguage(string language)|设置语言|√|-|     
 |5|public void ShowHelpCenter(string channel = "IMSDK")|显示帮助中心|×|-|     
-|6|public void SetChannel(string channel = "IMSDK")|设置渠道|√| 设置为'VNG'|      
+|6|public void SetChannel(string channel = "IMSDK")|设置渠道|√|  越南:   VNG     ,   <br> 泰国:VNGSEA|      
 |7|public string GetLanguage()|获取语言|√|-|      
 |8| public void SetZone(string zone)|设置大区|√|-|       
 |9|public string GetZone()|获取大区|√|-|       
