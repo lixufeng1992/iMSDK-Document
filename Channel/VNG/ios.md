@@ -1,8 +1,8 @@
 ##VNG iOS 工程配置   
 
-###1.[VNG Facebook配置参考Facebook配置](../Facebook/ios.md) 
+###一、[VNG Facebook配置参考Facebook配置](../Facebook/ios.md) 
 
-###2.Xcode配置   
+###二、 Xcode配置   
 * 在 Build Settings =》Other linker Flags中添加 -ObjC；
 * 在 info中, 做如下修改:   
   * 关闭 Bitcode (Xcode7 only)     
@@ -21,7 +21,7 @@
   ```
 * BundleId,需要跟VNG确认。(iMSDK 测试为: vn.gs5.cfm)
 
-###3. IMSDKAppSetting.bundle配置
+###三、 IMSDKAppSetting.bundle配置
 + app.plist 添加VNG配置信息，具体信息需要跟VNG确认
 
 ```
@@ -49,7 +49,7 @@
 		<string>1812423796061342251</string>
 	</dict>
 ```
-###4.添加系统库
+###四、添加系统库
 
 ```
 AddressBook.framework   
