@@ -4,5 +4,5 @@
 
 | 模块 | 功能说明 | 备注 |
 | :-- | :------- | :--- |
-| [Login](Stove/login.md) | 登录模块 | - |
-| [Extend](Stove/extend.md) | 扩展模块 | - |
+| [Login](login.md) | 登录模块 | - |
+| [Extend](extend.md) | 扩展模块 | - |
