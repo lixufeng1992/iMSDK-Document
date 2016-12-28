@@ -1,4 +1,4 @@
-## VNG 帮助系统说明
+## VNG & VNGSEA帮助系统说明
 
 ###一、 Help支持接口列表
 
@@ -27,7 +27,7 @@
 |21|public void ShowFAQ(string extraJson = "",HelpCallback callback = null)|显示FAQ|x|-|     
 |22|public void ShowCustomerService(string extraJson = "",HelpCallback callback = null)|显示用户中心|x|-|   
 
-###二、关于VNG ShowHelpCenter参数具体说明
+###二、关于VNG & VNGSEA ShowHelpCenter参数具体说明
 * extrajson格式：
 
   ```json
