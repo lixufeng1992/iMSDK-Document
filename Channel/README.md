@@ -4,7 +4,7 @@
 
 | 渠道 | 渠道配置 | 渠道功能说明 |
 | :--- | :-- | :-- |
-| Facebook | [Facebook配置](facebook.md) | [Facebook功能](../Channel/Facebook/facebook.md) |
+| Facebook | [Facebook配置](facebook.md) | [Facebook功能](Facebook/facebook.md) |
 | Google | [Google配置](google.md) |[Google功能](../Channel/Google/google.md) |
 | WeChat | [WeChat配置](wechat.md)|[WeChat功能](../Channel/Wechat/wechat.md) |
 | GameCenter | [GameCenter配置](gamecenter.md)|[GameCenter功能](../Channel//Gamecenter/gamecenter.md) |
