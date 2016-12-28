@@ -1,6 +1,6 @@
-##VNG iOS 工程配置   
+##VNG & VNGSEA iOS 工程配置   
 
-###一、[VNG Facebook配置参考Facebook配置](../Facebook/ios.md) 
+###一、[VNG & VNGSEA Facebook配置参考Facebook配置](../Facebook/ios.md) 
 
 ###二、 Xcode配置   
 * 在 Build Settings =》Other linker Flags中添加 -ObjC；
