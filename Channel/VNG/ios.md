@@ -22,7 +22,8 @@
 * BundleId,需要跟VNG确认。(iMSDK 测试为: vn.gs5.cfm)
 
 ###3. IMSDKAppSetting.bundle配置
-+ app.plist VNG配置信息，需要跟VNG确认
++ app.plist 添加VNG配置信息，具体信息需要跟VNG确认
+
 ```
 <key>VNG</key>
 	<dict>
@@ -49,6 +50,8 @@
 	</dict>
 ```
 ###4.添加系统库
+
+```
 AddressBook.framework   
 AdSupport.framework   
 CoreLocation.framework   
@@ -63,6 +66,7 @@ CoreMotion.framework
 Security.framework     
 SystemConfiguration.framework    
 libz.tbd    
-libc++.tbd    
+libc++.tbd  
+```
 
 
