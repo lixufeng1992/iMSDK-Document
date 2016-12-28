@@ -6,7 +6,7 @@
 |序号|方法名|方法说明|是否支持| 备注|
 |:--|:--|:--|:--|:--|
 |1| public bool Initialize() | 初始化方法，在调用其他函数之前需要调用该函数 | √||    
-| 2|public bool SetChannel(string channel) | 设置推送渠道，如：XG（信鸽） |√||     
+| 2|public bool SetChannel(string channel) | 设置推送渠道，如：VNG |√||     
 | 3|public string GetChannel() | 获取当前设定渠道 |√||      
 | 4|public void Register(string account = "") | 注册 |√||        
 | 5|public void SetRegisterCallback(PushCallback callback) | 设定注册回调函数 |√||        
