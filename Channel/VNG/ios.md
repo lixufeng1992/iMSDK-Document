@@ -1,6 +1,6 @@
-##MTO iOS 工程配置    
+##VNG iOS 工程配置   
 
-###1.[MTO Facebook配置参考Facebook配置](../Facebook/ios.md) 
+###1.[VNG Facebook配置参考Facebook配置](../Facebook/ios.md) 
 
 ###2.Xcode配置   
 * 在 Build Settings =》Other linker Flags中添加 -ObjC；
