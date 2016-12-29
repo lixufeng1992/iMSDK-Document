@@ -1,5 +1,5 @@
 
-## VNG Android 工程配置  
+## VNG Android 工程配置(VNGSEA配置与VNG类似，请参考下方“VNGSEA Android”)
 
 请在工程主AndroidManifest.xml文件中加入如下配置
 
