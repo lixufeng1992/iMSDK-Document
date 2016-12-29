@@ -3,7 +3,7 @@
 ### 登录支持接口列表
 
 | 序号 | 方法名 | 方法说明 | 是否支持 | 备注 |
-| :--: | -- |:-------: | :-----: | :--: |
+| :--: | :--: |:-------: | :-----: | :--: |
 | 1 | public bool Initialize() | 初始化方法 | √ | - |
 | 2 | public bool Initialize(string channel) | 初始化，并制定登录渠道 |√ | |
 | 3 | public bool SetChannel(string channel) | 设置登录渠道| √ | |
