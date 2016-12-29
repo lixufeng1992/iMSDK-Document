@@ -4,7 +4,7 @@
 请在工程主AndroidManifest.xml文件中加入如下配置
 
 ```xml
-    <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
   <permission android:name="{your_packagename}.C2D_MESSAGE" android:protectionLevel="signature"/>
   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
   <uses-permission android:name="{your_packagename}.permission.C2D_MESSAGE"/>
@@ -311,7 +311,7 @@
 
 ```xml
   <!--VNG Permission start-->
-	<permission
+    <permission
         android:name="{your_packagename}.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
