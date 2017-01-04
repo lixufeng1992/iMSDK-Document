@@ -22,7 +22,8 @@
 + AdSupport.framework
 + iAd.framework
 
-> [Adjust说明文档](https://github.com/adjust/ios_sdk#sdk-integrate)
+> [Adjust说明文档](https://github.com/adjust/ios_sdk#sdk-integrate)    
+
 > [Adjust currencry code](https://docs.adjust.com/en/event-tracking/supported-currencies/)
 
 
