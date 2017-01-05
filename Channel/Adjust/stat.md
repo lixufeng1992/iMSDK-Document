@@ -17,3 +17,7 @@
 |  9   | public void reportAutoExceptionReport()  |   登出当前渠道   |  x   |    -     |
 
 
+> 注意：iOS成功日志：     
+        安装跟踪成功日志： installed tracked       
+        事件跟踪成功日志：event tracked        
+        revenue跟踪成功日志：revenue tracked
