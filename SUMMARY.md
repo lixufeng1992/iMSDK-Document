@@ -245,6 +245,13 @@
             * [6.21.2.3  VNG & VNGSEA 分享功能说明](Channel/VNG/share.md)    
             * [6.21.2.4  VNG & VNGSEA 推送功能说明](Channel/VNG/push.md)    
             * [6.21.2.5  VNG & VNGSEA 帮助中心功能说明](Channel/VNG/help.md)     
+            
+    * [6.22 Adjust平台指引](Channel/README.md)     
+        * [6.22.1 Adjust渠道设置](Channel/adjust.md)       
+           * [6.22.1.1 Android工程配置](Channel/Adjust/android.md)    
+           * [6.22.1.2 iOS工程配置](Channel/Adjust/iOS.md)        
+        * [6.22.2 Adjust功能说明](Channel/Adjust/stat.md)     
+         
 * [7. iMSDK后台](Server/README.md)
     * [7.1 登录态判定接口定义](Server/login.md)
     * [7.2 errorcode定义](Server/errorcode.md)
