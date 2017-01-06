@@ -32,8 +32,8 @@ IMSDKApi.IMStove
 > 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
 
 ## 参考
-###iMSDK基础返回结构体
-* iMSDK基础返回结构体  <font color=blue>IMResult</font>
+###iMSDK基础返回结构体,之下返回结构体都继承与IMResult
+* iMSDK基础返回结构体  <font color=blue>IMResult</font>
 
 | 变量 | 说明 |
 | :-- | :-- |
