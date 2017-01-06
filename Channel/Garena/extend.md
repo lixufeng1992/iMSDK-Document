@@ -32,7 +32,7 @@ IMSDKApi.IMGarena
 > 主要需要修改目标iOS工程plist文件、IMSDKAppSetting.bundle文件中的配置，具体内容可参考渠道功能文档。
 
 ## 参考
-###iMSDK基础返回结构体（监听MShop窗口关闭结构体及回调代理函数）
+###iMSDK基础返回结构体【iMSDK不同返回结构体都继承于IMResult】
 * iMSDK基础返回结构体  <font color=blue>IMResult</font>
 
 | 变量 | 说明 |
@@ -45,11 +45,17 @@ IMSDKApi.IMGarena
 | public int ThirdRetMsg| 第三方返回信息|
 | public int RetExtraJson| 扩展信息 |
 
+* 回调代理函数 <font color=blue>无,IMResult为所有返回结构体基类</font>
+
+###获取MShop关闭回调结构体及回调代理函数
+*  获取MShop关闭回调结构体及回调代理函数  <font color=blue>IMGarenaMShopClosedCallBack(IMResult result) </font> 
+
 | 类型 | 说明 |
 | :-- | :-- |
 | public delegate void IMGarenaMShopClosedCallBack(IMResult result) | 打开MShop，返回结构体 |
 
-
+##方法函数说明
+* IMGarena方法类 <font color=blue> IMGarena </font>
 | 函数名 | 函数说明 |
 | :-- | :-- |
 | public void Initialize () | 初始化方法，在调用其他函数之前必须调用该函数 |
