@@ -56,6 +56,7 @@ IMSDKApi.IMGarena
 
 ##方法函数说明
 * IMGarena方法类 <font color=blue> IMGarena </font>
+
 | 函数名 | 函数说明 |
 | :-- | :-- |
 | public void Initialize () | 初始化方法，在调用其他函数之前必须调用该函数 |
