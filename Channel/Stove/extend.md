@@ -125,6 +125,7 @@ IMSDKApi.IMStove
 | :-- | :-- |
 | public delegate void IMStovePrepareLoginCallBack(IMResult result); |  设置监听预登录回调  |
 
+##方法函数说明
 * IMStove方法类 <font color=blue> IMStove </font>
 
 | 函数名 | 函数说明 |
