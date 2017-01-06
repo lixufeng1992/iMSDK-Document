@@ -8,7 +8,7 @@
 | 2 | public bool Initialize(string channel) | 初始化，并制定登录渠道 |√ | |
 | 3 | public bool SetChannel(string channel) | 设置登录渠道| √ | |
 | 4 | public string GetChannel() | 获取当前设定渠道 | √ | |
-| 5 | public void SetType(string type) | 复杂渠道设置登录类型 | √ | |
+| 5 | public void SetType(string type) | 复杂渠道设置登录类型 | × | |
 | 6 | public void Login( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 一般登录 | √ | |
 | 7 | public void StrictLogin( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 严格登录 | × | |
 | 8 | public void QuickLogin(LoginCallback callback = null) | 快速登录 | √ | |
@@ -23,7 +23,7 @@
 | 17 | public void DeactivatePlayingReport() | 关闭状态上报 | × | |
 | 18 | public bool IsChannelAppInstalled() | 是否安装渠道应用 | × | |
 | 19 | public bool IsChannelSupportApi() | 应用API版本是否可用 | × | - |
-| 20 | <font color=red>public void Bind(string channel, LoginCallback callback = null,string subChannel = "",string extrasJsonString = "") </font>| 绑定到第三方子渠道 | √ | |
+| 20 | <font color=red>public void Bind(string channel, LoginCallback callback = null,string subChannel = "",string extrasJsonString = "") </font>| 绑定到第三方子渠道 | × | |
 
 > 注意：Stove登录需Google环境的支持   
 
