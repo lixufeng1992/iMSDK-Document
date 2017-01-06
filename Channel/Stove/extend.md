@@ -33,7 +33,7 @@ IMSDKApi.IMStove
 
 ## 参考
 ###iMSDK返回基础结构体
-* iMSDK基础结构体【iMSDK不同返回结构体都继承于IMResult】  <font color=blue>IMResult</font>
+* iMSDK基础结构体  <font color=blue>IMResult【iMSDK不同返回结构体都继承于IMResult】</font>
 
 | 变量 | 说明 |
 | :-- | :-- |
