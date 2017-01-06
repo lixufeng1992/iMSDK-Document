@@ -10,7 +10,7 @@
 | 4 | public string GetChannel() | 获取当前设定渠道 | √ | |
 | 5 | public void SetType(string type) | 复杂渠道设置登录类型 | √ | |
 | 6 | public void Login( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 一般登录 | √ | |
-| 7 | public void StrictLogin( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 严格登录 | √ | |
+| 7 | public void StrictLogin( <br>&emsp;&emsp;LoginCallback callback = null,<br> &emsp;&emsp;List< string > permissionList = null,<br>&emsp;&emsp;bool needGuid = true) | 严格登录 | × | |
 | 8 | public void QuickLogin(LoginCallback callback = null) | 快速登录 | √ | |
 | 9 | public bool IsLogin() | 判断用户是否已经登录 | √ | |
 | 10 | public void AutoLogin(LoginCallback callback = null) | 自动登录 | √ | |
@@ -25,12 +25,13 @@
 | 19 | public bool IsChannelSupportApi() | 应用API版本是否可用 | × | - |
 | 20 | <font color=red>public void Bind(string channel, LoginCallback callback = null,string subChannel = "",string extrasJsonString = "") </font>| 绑定到第三方子渠道 | √ | |
 
-> 注意：Stove登入是依赖于Stove扩展模块的，具体登入流程（参考代码示例部分）：
+> 注意：Stove登录是依赖于Stove扩展模块的，具体登入流程（参考代码示例部分）：
    1. IMSDKAPi.Stove.PrepareLogin(callback);
    2. IMSDKAPi.Stove.SetWorldID(worldID);
    3. IMSDKApi.Login.Login(callback, permissionList, true);   
   
-  
+> 注意：Stove登录需Google环境的支持
+  
 ## 工程配置
 
  [Stove Android工程配置](../../../Channel/Stove/android.md)
