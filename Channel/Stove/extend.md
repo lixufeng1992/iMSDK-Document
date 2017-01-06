@@ -130,7 +130,7 @@ IMSDKApi.IMStove
 
 | 函数名 | 函数说明 |
 | :-- | :-- |
-| public void Initialize (IMStoveConfigCallback callback) | 初始化方法，在调用其他函数之前必须调用该函数 |
+| public void Initialize (IMStoveConfigCallback callback) | Stove初始化为异步方法，调用登录等接口前请务必确认初始化已返回成功回调 |
 | public void LaunchUI (int uiType, IMStoveLaunchUICallBack callback, int noticeParam = 0) | 展示弹窗|
 | public void getConfigInfo (IMStoveConfigCallback callback) | 获取配置信息 |
 | public void SetPushActive (bool isActive, IMStoveCallBack callback) | 设置推送开关 |
