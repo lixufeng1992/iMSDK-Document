@@ -45,6 +45,9 @@ IMSDKApi.IMStove
 | public int ThirdRetMsg| 第三方返回信息|
 | public int RetExtraJson| 扩展信息 |
 
+* 回调代理函数 <font color=blue>无,IMResult为所有返回结构体基类</font>
+
+
 ###初始化&获取配置信息结构体及回调代理函数
 *  初始化&获取配置信息结构体  <font color=blue>IMStoveConfigResult ：IMResult </font>    
 
