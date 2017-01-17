@@ -82,7 +82,9 @@
 | GetCountry() | 获取设备所在国家 |
 | GetAndroidId() | 获取设备AndroidId |
 | GetMac() | 获取设备mac地址 |
-| GetSeriesId() | 获取设备SeriesId |
+| GetSeriesId() | 获取设备SeriesId |   
+|InitSchemeUrl(List &lt; string &gt; schemeList, SchemeDataBackCallback callback = null)|从openUrl 的query url获取key-value|  
+|IsChannelInstalled (string channel)|判断channel对应app是否安装|
 
 ### 代码示例
 
