@@ -24,7 +24,6 @@
 | Beacon       | [Beacon配置](beacon.md)                    | [Beacon功能](../Channel/Beacon/beacon_module.md) |      |      |
 | VNG & VNGSEA | [VNG& VNGSEA配置](../Channel/VNG/vng_settings.md) | [VNG& VNGSEA功能](../Channel/VNG/vng_module.md) |      |      |
 | Adjust       | [Adjust配置](adjust.md)                    | [Adjust功能](../Channel/Adjust/stat.md)    |      |      |
-
-
+| Netmarble    | [Netmarble配置](netmarble.md)              | [Netmarble功能](../Channel/Netmarble/facebook_module.md) |      |      |
 
 
