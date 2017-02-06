@@ -20,7 +20,7 @@
 
 配置Kakao AppKey
 ```
-<meta-data    android:name="com.kakao.sdk.AppKey"    android:value="{your_kakao_appkey}" />
+<meta-data    android:name="com.kakao.sdk.AppKey"    android:value="@string/kakao_app_key" />
 ```
 
 配置ChannelSigninTimeout值（可选，默认10000毫秒，表示Netmarble自动登录kakao回调超时时间）
