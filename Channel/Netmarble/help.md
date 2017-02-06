@@ -26,41 +26,22 @@
 |21|public void ShowFAQ(string extraJson = "",HelpCallback callback = null)|显示FAQ|x|-|
 |22|public void ShowCustomerService(string extraJson = "",HelpCallback callback = null)|显示用户中心|x|-|
 
-
-
-###关于MTO ShowHelpCenter参数具体说明
-
-* extrajson格式：
-
-
-
- ```json
-
- {
-
- guild : xxxx
-
- content : xxxx
-
- }
-
- ```
-
-
-
-###SET接口说明
-
-如果拉出帮助中心，需要传入roleName， level， serverId等值，需要在调showHelpCenter接口前，调用对应的set接口。
-
+### ShowHelpCenter接口extrajson格式：
+```json
+{    "location":12001}
 ```
 
-SetLevel(string level);
+location 参数意义如下
 
-SetRoleName(string roleName);
+* 12001 --- CustomerSupport.HOME: 客服中心主页
 
-SetServerId(string serverId);
+* 12002 --- CustomerSupport.FAQ: 经常提问内容
 
-```
+* 12003 --- CustomerSupport.INQUIRY: 我的询问记录
+
+* 12004 --- CustomerSupport.GUIDE: 指南
+
+* 12005 --- CustomerSupport.INQUIRY_HISTOR: 我的询问记录
 
 
 
