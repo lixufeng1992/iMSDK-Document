@@ -9,5 +9,3 @@
 | [Friend](friend.md) | 关系链 | - |
 | [Help](help.md) | 帮助系统 | - |
 | [Extend](extend.md) | 扩展 | - |
-
-
