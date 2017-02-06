@@ -25,7 +25,7 @@
     android:value="@string/kakao_app_key" />
 ```
 
-配置ChannelSigninTimeout值（可选，默认10000毫秒，表示Netmarble自动登录kakao回调超时时间）
+配置ChannelSigninTimeout值（可选，不填此配置项，则默认10000毫秒，表示Netmarble自动登录kakao回调超时时间）
 ```
 <meta-data 
     android:name="com.tencent.imsdk.netmarble.ChannelSigninTimeout"    
