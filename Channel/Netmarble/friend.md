@@ -13,14 +13,15 @@
 | 7|public void SendMessage(<br> &emsp;&emsp;IMFriendContent content, <br> &emsp;&emsp;FriendCallback callback=null<br>&emsp;&emsp;) | 给好友发消息 <br> content 为消息参数，具体参见 IMFriendContent 说明<br> callback 为发送消息回调 |√ | - |
 
 其中7 发送消息接口 支持情况如下
+
 | 序号 | 功能 | 是否支持 | 备注 |
 | :-- | :-- | :-- | :-- |
-| 1 | 发送文本-后台 | x | - |
-| 2 | 发送文本-对话框 | x | - |
-| 3 | 发送链接-后台 | x | - |
-| 4 | 发送链接-对话框 | x | - |
-| 5 | 发送图片-后台 | x | - |
-| 6 | 发送图片-对话框 | x | - |
+| 1 | 发送文本-后台 | √ | - |
+| 2 | 发送文本-对话框 | √ | - |
+| 3 | 发送链接-后台 | √ | - |
+| 4 | 发送链接-对话框 | √ | - |
+| 5 | 发送图片-后台 | √ | - |
+| 6 | 发送图片-对话框 | √ | - |
 
 
 
