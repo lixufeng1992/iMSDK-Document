@@ -30,7 +30,6 @@
 <meta-data 
     android:name="com.tencent.imsdk.netmarble.ChannelSigninTimeout"    
     android:value="10000" />
-
 ```
 
 
