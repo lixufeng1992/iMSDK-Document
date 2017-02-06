@@ -32,7 +32,6 @@
     android:value="10000" />
 ```
 
-
 * 3. Activity和Provider配置
 
 ```
