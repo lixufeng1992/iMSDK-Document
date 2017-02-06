@@ -32,3 +32,9 @@
 
 
 * 3. Activity和Provider配置
+```
+<activity    android:name="com.netmarble.LoginActivity"    android:configChanges="orientation|keyboardHidden|screenSize" />
+
+<provider    android:name="com.netmarble.contentprovider.NetmarbleContentProvider"    android:authorities="{your_packageName}"     android:exported="true" >
+```
+> 将your_packageName改成应用包名
