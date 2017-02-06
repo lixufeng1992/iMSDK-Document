@@ -36,12 +36,14 @@
 | 图片（对话框） | - | - | - | √（本地路径）| - | 接收消息好友列表 |
 
 ### ExtraJson格式
+```
+{
+    "templateID":"123",
+    "templateContent":
+    {
+        "key1":"value1",
+        "key2":"value2"
+    }
+}
 
-
-
-
-
-
-
-
-
+```
