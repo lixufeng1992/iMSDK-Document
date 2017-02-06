@@ -28,7 +28,9 @@
 
 ### ShowHelpCenter接口extrajson格式：
 ```json
-{    "location":12001}
+{    
+"location":12001
+}
 ```
 
 location 参数意义如下
