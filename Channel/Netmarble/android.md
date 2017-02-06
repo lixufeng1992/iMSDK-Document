@@ -20,21 +20,30 @@
 
 配置Kakao AppKey
 ```
-<meta-data    android:name="com.kakao.sdk.AppKey"    android:value="@string/kakao_app_key" />
+<meta-data    
+    android:name="com.kakao.sdk.AppKey"    
+    android:value="@string/kakao_app_key" />
 ```
 
 配置ChannelSigninTimeout值（可选，默认10000毫秒，表示Netmarble自动登录kakao回调超时时间）
 ```
 <meta-data 
-    android:name="com.tencent.imsdk.netmarble.ChannelSigninTimeout"    android:value="10000" />
+    android:name="com.tencent.imsdk.netmarble.ChannelSigninTimeout"    
+    android:value="10000" />
 
 ```
 
 
 * 3. Activity和Provider配置
-```
-<activity    android:name="com.netmarble.LoginActivity"    android:configChanges="orientation|keyboardHidden|screenSize" />
 
-<provider    android:name="com.netmarble.contentprovider.NetmarbleContentProvider"    android:authorities="{your_packageName}"     android:exported="true" >
+```
+<activity
+    android:name="com.netmarble.LoginActivity"
+    android:configChanges="orientation|keyboardHidden|screenSize" />
+
+<provider    
+    android:name="com.netmarble.contentprovider.NetmarbleContentProvider"    
+    android:authorities="{your_packageName}"     
+    android:exported="true" >
 ```
 > 将your_packageName改成应用包名
