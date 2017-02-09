@@ -39,3 +39,12 @@
 ```  
 
 
+###3. 配置VK APP_ID: IMSDKAppSetting.bundle/Contents/Resources/app.plist
+
+```
+<key>VK</key>
+<dict>
+	<key>appid</key>
+	<string>5331335</string>
+</dict>
+```
