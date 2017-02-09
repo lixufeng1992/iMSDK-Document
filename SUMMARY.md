@@ -250,7 +250,13 @@
         * [6.22.1 Adjust渠道设置](Channel/adjust.md)       
            * [6.22.1.1 Android工程配置](Channel/Adjust/android.md)    
            * [6.22.1.2 iOS工程配置](Channel/Adjust/iOS.md)        
-        * [6.22.2 Adjust功能说明](Channel/Adjust/stat.md)     
+        * [6.22.2 Adjust功能说明](Channel/Adjust/stat.md) 
+    
+   * [6.23 Netmarble 平台指引](Channel/README.md)     
+       * [6.23.1 Netmarble 渠道设置](Channel/netmarble/Netmarble.md)       
+			* [6.23.1.1 Android工程配置](Channel/netmarble/android.md)    
+        	* [6.23.1.2 iOS工程配置](Channel/netmarble/iOS.md)        
+		 * [6.23.2 Netmarble 功能说明](Channel/netmarble/netmarble_module.md)     
          
 * [7. iMSDK后台](Server/README.md)
     * [7.1 登录态判定接口定义](Server/login.md)

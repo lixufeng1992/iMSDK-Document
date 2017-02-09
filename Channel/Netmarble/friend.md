@@ -26,7 +26,7 @@
 发送消息接口字段填写规则
 
 | 消息类型 | 标题（Title）| 内容（Content）| 链接（Link）| 图片（ImagePath） | 缩略图（ThumbPath）| 扩展字段（ExtraJson） |
-| :--: | :--: | :--: | :--: | :--: | :--: | -- |
+| :--: | :--: | :--: | :--: | :--: | :--: | :-- |
 | 邀请 | - | - | - | √（可选）| - | √（见ExtraJson格式） |
 | 文本（后台） | - | - | - | - | - | √（见ExtraJson格式） |
 | 文本（对话框）| - | - | - | - | - | √（见ExtraJson格式） |
@@ -47,4 +47,6 @@
 }
 ```
 
-> 注意： 调用邀请和发消息接口前，需要县调用IMNetmarble.RequestKakaoFriends()接口拉取好友
+> 注意： 调用邀请和发消息接口前，需要先调用IMNetmarble.RequestKakaoFriends()接口拉取好友
+
+

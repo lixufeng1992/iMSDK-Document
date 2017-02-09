@@ -1,10 +1,9 @@
-## Netmarble 工程配置
-
-### Android工程配置
+## Netmarble Android工程配置
 
 * 1. 权限配置
 
 请在AndroidManifest.xml文件中增加如下权限配置
+
 ```
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -19,6 +18,7 @@
 * 2. Meta-data配置
 
 配置Kakao AppKey
+
 ```
 <meta-data    
     android:name="com.kakao.sdk.AppKey"    
@@ -26,6 +26,7 @@
 ```
 
 配置ChannelSigninTimeout值（可选，不填此配置项，则默认10000毫秒，表示Netmarble自动登录kakao回调超时时间）
+
 ```
 <meta-data 
     android:name="com.tencent.imsdk.netmarble.ChannelSigninTimeout"    
@@ -45,3 +46,5 @@
     android:exported="true" >
 ```
 > 将your_packageName改成应用包名
+
+

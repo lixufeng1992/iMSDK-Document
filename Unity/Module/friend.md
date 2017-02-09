@@ -85,7 +85,7 @@
 * 消息参数类 <font color=blue>IMFriendContent</font>
 
 | 变量 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | Type | 分享类型，取值取值可以从 <font color=blue>IMShareContent.MessageType</font> 获取
 | Title | 标题（部分分享无效） |
 | ~~User~~ | 接收消息用户 |
@@ -98,7 +98,7 @@
 * 消息类型<font color=blue>IMShareContent.MessageType</font>
 
 | 类型 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | ~~ShareType.TEXT~~ | ~~文字，后台无界面~~ |
 | ShareType.TEXT_DIALOG | 文本，弹窗 |
 | ~~ShareType.LINK~~ | ~~链接，后台无界面~~ |
@@ -109,7 +109,7 @@
 * 返回结构体 <font color=blue>IMFriendResult</font>
 
 | 类型 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public int RetCode | 返回码，为 1 时表示成功 |
 | publit string ErrorMsg | 错误信息 |
 | public string OpenId | OpenId，用户游戏账号 | 
@@ -129,7 +129,7 @@
 * 好友信息类 <font color=blue>IMFriendInfo</font>
 
 | 类型 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public string ChannelUserId | 原始渠道用户 ID |
 | public string GuidUserName | 好友名 |
 | public int GuidUserSex | 好友性别，用户性别，0-未知；1-男；2-女 |
@@ -139,13 +139,13 @@
 * 回调代理函数 <font color=blue>FriendCallback</font>
 
 | 类型 | 说明 |
-| -- | -- |
+| :-- | :-- |
 | public delegate void FriendCallback(IMFriendResult result) | 关系链回调函数，返回关系链结果结构体 |
 
 * 关系链方法类 <font color=blue>IMFriend</font>
 
 | 函数名 | 函数说明 |
-| -- | -- |
+| :-- | :-- |
 | public bool Initialize() | 初始化方法，在调用其他函数之前需要调用该函数 |
 | public bool Initialize(string channel) | 初始化，并制定关系链渠道（如Facebook） |
 | public bool SetChannel(string channel) | 设置关系链渠道 |
@@ -153,3 +153,4 @@
 | public void GetFriends(<br> &emsp;&emsp;int page, int count,<br> &emsp;&emsp;FriendCallback callback<br>&emsp;&emsp;) | 获取好友列表<br> page 为起始页数，从 1 开始<br> count 为每页好友数<br> callback 为关系链回调函数 |
 | public void Invite(<br> &emsp;&emsp;IMFriendContent content, <br> &emsp;&emsp;FriendCallback callback=null<br>&emsp;&emsp;) | 邀请好友<br> content 为消息参数，具体参见 IMFriendContent 说明<br> callback 为发送消息回调 |
 | public void SendMessage(<br> &emsp;&emsp;IMFriendContent content, <br> &emsp;&emsp;FriendCallback callback=null<br>&emsp;&emsp;) | 给好友发消息 <br> content 为消息参数，具体参见 IMFriendContent 说明<br> callback 为发送消息回调 |
+
