@@ -55,6 +55,7 @@ void TestLogout() {
     IMSDKApi.Login.Logout(OnLogout);
 }
 ```
+#### 登陆模块Editor/Mac/Windows三个平台有回调的函数都支持返回模拟数据，方便游戏在Editor/Mac/PC测试
 
 ### 参考
 
@@ -150,7 +151,6 @@ void TestLogout() {
 | public bool IsChannelSupportApi() | 应用API版本是否可用，只有部分渠道支持 |
 
 
-#### 登陆模块Editor/Mac/Windows三个平台有回调的函数都支持返回模拟数据，方便游戏在Editor/Mac/PC测试
 
 ### 代码示例
 
