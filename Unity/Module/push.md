@@ -121,7 +121,8 @@ void Start() {
      IMLocalMessage message = new IMLocalMessage (); 
      message.Title = "Local Notification"; 
      message.Content = "Local Notification Content"; 
-     message.FireTime = 5 * 1000 +  + (long) (DateTime.UtcNow - Jan1st1970).TotalMilliseconds;// 5秒后弹出通知
+     // 1分钟后弹出通知，本地推送的最小单位是分钟。设置成秒会马上弹出通知
+     message.FireTime = 60 * 1000 + (long) (DateTime.UtcNow - Jan1st1970).TotalMilliseconds;
      IMSDKApi.Push.AddLocalNotification (message); 
 ``` 
  
