@@ -12,6 +12,6 @@
 | 6|public void Invite(<br> &emsp;&emsp;IMFriendContent content, <br> &emsp;&emsp;FriendCallback callback=null<br>&emsp;&emsp;) | 邀请好友<br> content 为消息参数，具体参见 IMFriendContent 说明<br> callback 为发送消息回调 |√ | - |     
 | 7|public void SendMessage(<br> &emsp;&emsp;IMFriendContent content, <br> &emsp;&emsp;FriendCallback callback=null<br>&emsp;&emsp;) | 给好友发消息 <br> content 为消息参数，具体参见 IMFriendContent 说明<br> callback 为发送消息回调 |x | - |
 
-> 注意：1、好友模块VNG & VNGSEA目前只支持Facebook     
-> 2、获取好友列表入参可以填任意值
-> 3、获取好友列表错误码：iOS只有：1：success, Android。。
+> 注意：1、好友模块VNG & VNGSEA目前只支持Facebook         
+> 2、获取好友列表入参可以填任意值     
+> 3、获取好友列表错误码：iOS只有：1：success, Android。。    
