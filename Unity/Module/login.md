@@ -12,59 +12,60 @@
 ### 快速入门
 1. [完成特定渠道配置](../../Channel/README.md)
 2. 代码实例
+	
+	```cs
+	void Start() {
+	    // 我们建议在游戏开始时就初始化登陆方法
+	    IMSDKApi.Login.Initialize ();
+	    // 设定渠道可以根据自己的需要，在调用登录方法之前调用
+	    IMSDKApi.Login.SetChannel("Facebook");
+	}
+	
+	// 登录回调函数，处理登陆结果
+	void TestLoginCallback(IMLoginResult result) {
+	    if(result.RetCode == 1) {
+	        Debug.Log("login ok, user open id is " + result.OpenId);
+	    }
+	    else {
+	        Debug.Log("login error : " + result.ErrorMsg);
+	    }
+	}
+	
+	void TestLogin() {
+	    // 设定登陆需要的权限，部分没有权限控制的，渠道填空的List即可
+	    List<string> permissionList = new List<string>();
+	    permissionList.Add("email");
+	    // 调动登陆方法
+	    IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
+	}
+	
+	void OnLogout(IMResult result)
+	{
+	    testInfo = "logout ok:"
+	        + "\n ret code : " + result.RetCode
+	        + "\n ret msg : " + result.ErrorMsg
+	        + "\n ret IMSDKRetCode : " + result.IMSDKRetCode
+	        + "\n ret IMSDKRetMsg : " + result.IMSDKRetMsg
+	        + "\n ret ThirdRetCode : " + result.ThirdRetCode
+	        + "\n ret ThirdRetMsg : " + result.ThirdRetMsg;                  
+	}
+	                
+	void TestLogout() {
+	    // 登出,设置LogoutCallback可获登出回调,可以为空，默认为空
+	    IMSDKApi.Login.Logout(OnLogout);
+	}
+	```
 
-```cs
-void Start() {
-    // 我们建议在游戏开始时就初始化登陆方法
-    IMSDKApi.Login.Initialize ();
-    // 设定渠道可以根据自己的需要，在调用登录方法之前调用
-    IMSDKApi.Login.SetChannel("Facebook");
-}
+3. PC平台登录支持（Editor/Windows/Mac）
 
-// 登录回调函数，处理登陆结果
-void TestLoginCallback(IMLoginResult result) {
-    if(result.RetCode == 1) {
-        Debug.Log("login ok, user open id is " + result.OpenId);
-    }
-    else {
-        Debug.Log("login error : " + result.ErrorMsg);
-    }
-}
+登录模块支持Editor/Windows/Mac三个平台返回模拟数据。
 
-void TestLogin() {
-    // 设定登陆需要的权限，部分没有权限控制的，渠道填空的List即可
-    List<string> permissionList = new List<string>();
-    permissionList.Add("email");
-    // 调动登陆方法
-    IMSDKApi.Login.Login(TestLoginCallback, permissionList, true);
-}
-
-void OnLogout(IMResult result)
-{
-    testInfo = "logout ok:"
-        + "\n ret code : " + result.RetCode
-        + "\n ret msg : " + result.ErrorMsg
-        + "\n ret IMSDKRetCode : " + result.IMSDKRetCode
-        + "\n ret IMSDKRetMsg : " + result.IMSDKRetMsg
-        + "\n ret ThirdRetCode : " + result.ThirdRetCode
-        + "\n ret ThirdRetMsg : " + result.ThirdRetMsg;                  
-}
-                
-void TestLogout() {
-    // 登出,设置LogoutCallback可获登出回调,可以为空，默认为空
-    IMSDKApi.Login.Logout(OnLogout);
-}
-```
-
-####登陆模块模拟数据用法
-
-登陆模块支持mac，windows和edior三个平台返回模拟数据，目前登陆数据均是假的，不能用于真实的登陆。如果有需要可登录的模拟数据的需求，可以联系@brightwan/lamarzhang
-
-####修改模拟数据 
+- 获取模拟登录数据 
  
- 以Login模块为例，打开LoginSimulatorData.txt文件，修改相关的字段即可   
+ 打开LoginSimulatorData.txt文件，修改相关的字段即可   
  
  ![](../Images/4.7_unity_login_data_position.png)
+
 ### 参考
 
 * 登录返回结构体 <font color=blue>IMLoginResult</font>
