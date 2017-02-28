@@ -56,6 +56,15 @@ void TestLogout() {
 }
 ```
 
+####登陆模块模拟数据用法
+
+登陆模块支持mac，windows和edior三个平台返回模拟数据，目前登陆数据均是假的，不能用于真实的登陆。如果有需要可登录的模拟数据的需求，可以联系@brightwan/lamarzhang
+
+####修改模拟数据 
+ 
+ 以Login模块为例，打开LoginSimulatorData.txt文件，修改相关的字段即可   
+ 
+ ![](../Images/4.7_unity_login_data_position.png)
 ### 参考
 
 * 登录返回结构体 <font color=blue>IMLoginResult</font>
