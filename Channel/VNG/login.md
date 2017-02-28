@@ -27,8 +27,10 @@
 
 
 ### ExtraJson字段说明  
-+ LoginResult里的extraJson返回的为VNG返回的loginType(子渠道_国家简称)
++ LoginResult里的extraJson返回的为VNG返回的loginType(子渠道_国家简称),sessionId
 
 ```
-  {"loginType":"FB_VN"}
-```
+  {"loginType":"FB_VN","sessionId":"xxxxx"}
+```    
+
+> 注意： VNG & VNGSEA userId可从channelUserId中获取

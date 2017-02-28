@@ -31,3 +31,15 @@
 | MTO | MTO\_FB | MTO内部Facebook渠道 |
 | MTO | MTO\_GG | MTO内部Google渠道 |
 | Kakao | Kakao | 韩国Kakao登录渠道 |
+| STV | STV | Stove |
+| STV_GU | STV_GU | Stove 内部游客 |
+| STV_FB | STV_FB | Stove 内部 Facebook 渠道 |
+| STV_GP | STV_GP | Stove 内部 Google Play 渠道 |
+| VNG_ZL | VNG_ZL | VNG 内部 Zalo 渠道 |
+| VNG_GU | VNG_GU | VNG 内部游客 |
+| VNG_ZM | VNG_ZM | VNG 内部 ZM 渠道 |
+| VNG_FB | VNG_FB | VNG 内部 Facebook 渠道 |
+| VNG_GG | VNG_GG | VNG 内部 Google Plus 渠道 |
+| VNGSEA_GU | VNGSEA_GU | VNG 国际版 内部游客 |
+| VNGSEA_FB | VNGSEA_FB | VNG 国际版 内部 Facebook 渠道 |
+| VNGSEA_GG | VNGSEA_GG | VNG 国际版 内部 Google Plus 渠道 |

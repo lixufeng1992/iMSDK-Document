@@ -66,6 +66,7 @@
  
  ![](../Images/4.7_unity_login_data_position.png)
 
+
 ### 参考
 
 * 登录返回结构体 <font color=blue>IMLoginResult</font>
@@ -160,7 +161,6 @@
 | public bool IsChannelSupportApi() | 应用API版本是否可用，只有部分渠道支持 |
 
 
-3. 登陆模块Editor/Mac/Windows三个平台有回调的函数都支持返回模拟数据，方便游戏在／Editor/Mac／PC测试
 
 ### 代码示例
 
