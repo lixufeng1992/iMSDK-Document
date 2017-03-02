@@ -58,9 +58,12 @@
 
 3. PC平台登录支持（Editor/Windows/Mac）
 
-登录模块支持Editor/Windows/Mac三个平台返回模拟数据。
+登录模块支持Editor/Windows/Mac三个平台返回模拟数据。   
 
-- 获取模拟登录数据 
+- 获取登录模拟数据  
+	- Anroid平台，生成APK，真机运行，查看日志，获取取登录/绑定/登出结果
+	- iOS平台，生成Xocde工程，联iOS设备调试并运行，查看日志，获取取登录/绑定/登出结果
+- 使用模拟登录数据 
  
  打开LoginSimulatorData.txt文件，修改相关的字段即可   
  
