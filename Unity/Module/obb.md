@@ -71,7 +71,7 @@ void OnStart(){
 |public void RequestContinueDownload()|继续当前下载|
 |public void RequestAbortDownload()|放弃当前的下载，无法再继续，需要从新开始下载|
 |public void SetDownloadFlag(int flag)|当开启移动网络下载的情况，需要设置为‘1’<br>然后再次调用RequestContinueDownload继续下载|
-|public long GetCusUrlSize(string url)|返回指定 URL 文件大小，是同步方法|
+|public long GetCusUrlSize(string url)|返回指定 URL 文件大小，是同步方法。单位：Byte|
 
 * IMDownloadState 下载状态码
 
